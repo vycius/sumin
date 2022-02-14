@@ -30,6 +30,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  baseurl: https://maas.vycius.lt/
 
 sphinx:
   config:
