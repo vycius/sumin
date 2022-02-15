@@ -32,13 +32,15 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
+from keplergl import KeplerGl
 import gtfs_functions as gtfs
 
 routes, stops, stop_times, trips, shapes = gtfs.import_gtfs("data/gtfs/gtfs-lt-all.zip", busiest_date = True)
 
-cutoffs = [0,6,9,15,19,22,24]
-line_freq = gtfs.lines_freq(stop_times, trips, shapes, routes, cutoffs = cutoffs)
+map_1 = KeplerGl()
 
-gtfs.map_gdf(line_freq, )
+map_1.add_data(data=stops, name='stops')
+
+map_1
 -------------------
 
