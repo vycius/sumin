@@ -4,6 +4,12 @@
 format: jb-book
 root: notebooks/intro
 parts:
-  - caption: Mobiliosios programėlės
+  - caption: Standartai
+    chapters:
+      - file: notebooks/standartai/gtfs-realtime
+  - caption: Programos
     chapters:
       - file: notebooks/apps/apple_maps
+  - caption: Šaltiniai
+    chapters:
+      - file: notebooks/saltiniai
