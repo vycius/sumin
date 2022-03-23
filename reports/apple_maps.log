@@ -1,0 +1,73 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/asyncio/base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/nbclient/client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import json
+import pandas as pd
+import plotly.express as px
+
+mapbox_access_token = open("../../.mapbox_token").read()
+px.set_mapbox_access_token(mapbox_access_token)
+
+europe_center = {'lat': 55, 'lon': 10}
+
+
+with open('../../data/geojson/world.geojson', 'r') as world_geojson_file:
+    world_geojson = json.load(world_geojson_file)
+
+df = pd.read_csv("../../data/apps/apple-maps.csv", delimiter=';')
+
+df_apple_transit = df[df['Transit'] == 'Yes']
+
+fig = px.choropleth_mapbox(
+    data_frame=df_apple_transit,
+    geojson=world_geojson,
+    featureidkey='properties.NAME_LONG',
+    locations='Country',
+    color='Transit',
+    mapbox_style="light",
+    zoom=2,
+    center=europe_center,
+    title='Apple Maps Transit palaikymas',
+    color_discrete_sequence=['#ee7762']
+)
+
+fig.update_traces(showlegend=False)
+
+fig.update_layout(
+    mapbox_layers=[
+        {
+            "sourceattribution": '© <a href="https://judumas.vycius.lt" target="_blank">Karolis Vyčius</a> © <a href="https://en.wikipedia.org/wiki/Apple_Maps" target="_blank">Wikipedia</a>'
+        }
+    ])
+fig.update_layout(margin={"r":0,"l":0,"b":0})
+fig.show()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Input [0;32mIn [1][0m, in [0;36m<cell line: 5>[0;34m()[0m
+[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mplotly[39;00m[38;5;21;01m.[39;00m[38;5;21;01mexpress[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpx[39;00m
+[0;32m----> 5[0m mapbox_access_token [38;5;241m=[39m [38;5;28;43mopen[39;49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43m../../.mapbox_token[39;49m[38;5;124;43m"[39;49m[43m)[49m[38;5;241m.[39mread()
+[1;32m      6[0m px[38;5;241m.[39mset_mapbox_access_token(mapbox_access_token)
+[1;32m      8[0m europe_center [38;5;241m=[39m {[38;5;124m'[39m[38;5;124mlat[39m[38;5;124m'[39m: [38;5;241m55[39m, [38;5;124m'[39m[38;5;124mlon[39m[38;5;124m'[39m: [38;5;241m10[39m}
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '../../.mapbox_token'
+FileNotFoundError: [Errno 2] No such file or directory: '../../.mapbox_token'
+
