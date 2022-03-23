@@ -2,9 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: Test
-- file: MaaS
+root: notebooks/intro
+parts:
+  - caption: Mobiliosios programėlės
+    chapters:
+      - file: notebooks/apps/apple_maps

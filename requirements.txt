@@ -6,4 +6,6 @@ seaborn==0.11.2
 pandas==1.3.4
 geopandas==0.10.2
 itables==0.4.5
-rasta==0.0.3
+keplergl==0.3.2
+gtfs-kit==5.2.0
+pyarrow==7.0.0
