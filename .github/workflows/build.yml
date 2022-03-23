@@ -27,6 +27,8 @@ jobs:
         with:
           requirements: requirements.txt
 
+      - run: echo $MAPBOX_ACCESS_TOKEN >> .mapbox_token
+
       - name: Build 🔧
         run: jupyter-book build .
 
