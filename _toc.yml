@@ -11,6 +11,10 @@ parts:
   - caption: Programos
     chapters:
       - file: notebooks/apps/apple_maps
+  - caption: Viešasis transportas
+    chapters:
+      - file: notebooks/viesasis_transportas/gtfs
+      - file: notebooks/viesasis_transportas/transporto_priemoniu_pozicijos
   - caption: Šaltiniai
     chapters:
       - file: notebooks/saltiniai
