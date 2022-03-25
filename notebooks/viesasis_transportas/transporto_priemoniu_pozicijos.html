@@ -57,7 +57,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Šaltiniai" href="../saltiniai.html" />
-    <link rel="prev" title="GTFS" href="gtfs.html" />
+    <link rel="prev" title="VINTRA" href="gtfs-vintra.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -136,10 +136,22 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="gtfs.html">
    GTFS
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gtfs-vintra.html">
+     VINTRA
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
@@ -366,8 +378,17 @@
 <tr class="row-even"><td><p>Klaipėda</p></td>
 <td><p><a class="reference external" href="https://www.stops.lt/klaipeda/gps_full.txt">https://www.stops.lt/klaipeda/gps_full.txt</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Panevėžys</p></td>
+<tr class="row-odd"><td><p>Šiauliai</p></td>
+<td><p><a class="reference external" href="https://kis.busturas.lt:4431">https://kis.busturas.lt:4431</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Panevėžys</p></td>
 <td><p><a class="reference external" href="https://www.stops.lt/panevezys/gps.txt">https://www.stops.lt/panevezys/gps.txt</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Alytus</p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/alytus/gps.txt">https://www.stops.lt/alytus/gps.txt</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Druskininkai</p></td>
+<td><p><a class="reference external" href="https://www.stops.lt/druskininkai/gps.txt">https://www.stops.lt/druskininkai/gps.txt</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -647,20 +668,20 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kaunas_gps_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
     <span class="s1">&#39;../../data/vehicle_positions/kaunas_gps_full.csv&#39;</span><span class="p">,</span>
     <span class="n">dtype</span><span class="o">=</span><span class="p">{</span>
-    <span class="s1">&#39;Transportas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
-    <span class="s1">&#39;Marsrutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
-    <span class="s1">&#39;ReisoID&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
-    <span class="s1">&#39;MasinosNumeris&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
-    <span class="s1">&#39;Ilguma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;Platuma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;Greitis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;Azimutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;AtvykimoLaikasSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;ReisoPradziaMinutemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;NuokrypisSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;MatavimoLaikas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
-    <span class="s1">&#39;MasinosTipas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
-<span class="p">})</span>
+        <span class="s1">&#39;Transportas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Marsrutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoID&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosNumeris&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Ilguma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Platuma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Greitis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Azimutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;AtvykimoLaikasSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoPradziaMinutemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;NuokrypisSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MatavimoLaikas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosTipas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+    <span class="p">})</span>
 <span class="n">kaunas_gps_df</span>
 </pre></div>
 </div>
@@ -1816,11 +1837,11 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="gtfs.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gtfs-vintra.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">GTFS</p>
+            <p class="prev-next-title">VINTRA</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../saltiniai.html" title="next page">
