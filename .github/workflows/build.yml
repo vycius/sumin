@@ -39,6 +39,12 @@ jobs:
       - name: Build 🔧
         run: jupyter-book build .
 
+      - uses: actions/upload-artifact@v3
+        name: Upload reports
+        with:
+          name: build-report
+          path: _build/html/reports
+
       - run: touch _build/html/.nojekyll
 
       - name: Deploy 🚀
