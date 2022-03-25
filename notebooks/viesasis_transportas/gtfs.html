@@ -307,7 +307,8 @@
 <h2>GTFS VINTRA<a class="headerlink" href="#gtfs-vintra" title="Permalink to this headline">¶</a></h2>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">subprocess</span>
@@ -484,12 +485,14 @@
                     <span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="p">)</span>
 
 
-<span class="n">gtfs_notices_df</span>
+<span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;viso&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;viso&#39;</span><span class="p">],</span> <span class="n">downcast</span><span class="o">=</span><span class="s1">&#39;integer&#39;</span><span class="p">)</span>
+
+<span class="n">gtfs_notices_df</span><span class="p">[</span><span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;sunkumas&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ERROR&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table id="647f8009-60d1-48a5-8807-e746139b175f" class="display"style="max-width:100%"><thead><th>failas</th><th>klaida</th><th>sunkumas</th><th>viso</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<div class="output text_html"><table id="f0bfcf45-83c0-47a9-877b-64f7fb5a10c1" class="display"style="max-width:100%"><thead><th></th><th>failas</th><th>klaida</th><th>sunkumas</th><th>viso</th></thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 <style> table td {
     text-overflow: ellipsis;
@@ -501,7 +504,7 @@
 } </style>
 <script type="module">
     // Define the table data
-    const data = [["AlytausM", "missing_timepoint_value", "WARNING", 5744.0], ["AlytausM", "unknown_column", "INFO", 2.0], ["AlytausR", "equal_shape_distance_same_coordinates", "WARNING", 3.0], ["AlytausR", "missing_timepoint_value", "WARNING", 2885.0], ["AlytausR", "unknown_column", "INFO", 2.0], ["AnyksciuR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["AnyksciuR", "missing_timepoint_value", "WARNING", 2627.0], ["AnyksciuR", "stop_too_far_from_shape", "WARNING", 2.0], ["AnyksciuR", "unknown_column", "INFO", 2.0], ["Birstono", "missing_required_file", "ERROR", 5.0], ["Birstono", "missing_timepoint_column", "WARNING", 1.0], ["BirzuR", "missing_required_file", "ERROR", 4.0], ["BirzuR", "missing_timepoint_column", "WARNING", 1.0], ["Druskininku", "missing_required_file", "ERROR", 4.0], ["Druskininku", "missing_timepoint_column", "WARNING", 1.0], ["Elektrenu", "missing_timepoint_value", "WARNING", 434.0], ["Elektrenu", "unknown_column", "INFO", 2.0], ["IgnalinosR", "equal_shape_distance_diff_coordinates", "ERROR", 5.0], ["IgnalinosR", "missing_timepoint_value", "WARNING", 1608.0], ["IgnalinosR", "stop_too_far_from_shape", "WARNING", 5.0], ["IgnalinosR", "unknown_column", "INFO", 2.0], ["JonavosR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["JonavosR", "leading_or_trailing_whitespaces", "WARNING", 1.0], ["JonavosR", "missing_timepoint_value", "WARNING", 6866.0], ["JonavosR", "stop_too_far_from_shape", "WARNING", 3.0], ["JonavosR", "unknown_column", "INFO", 2.0], ["JoniskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["JoniskioR", "equal_shape_distance_same_coordinates", "WARNING", 4.0], ["JoniskioR", "missing_timepoint_value", "WARNING", 880.0], ["JoniskioR", "unknown_column", "INFO", 2.0], ["JurbarkoR", "equal_shape_distance_diff_coordinates", "ERROR", 2.0], ["JurbarkoR", "leading_or_trailing_whitespaces", "WARNING", 2.0], ["JurbarkoR", "missing_timepoint_value", "WARNING", 941.0], ["JurbarkoR", "stop_too_far_from_shape", "WARNING", 1.0], ["JurbarkoR", "unknown_column", "INFO", 2.0], ["Kalvarijos", "missing_required_file", "ERROR", 4.0], ["Kalvarijos", "missing_timepoint_column", "WARNING", 1.0], ["KaunoM", "missing_required_file", "ERROR", 4.0], ["KaunoM", "missing_timepoint_column", "WARNING", 1.0], ["KaunoR", "missing_timepoint_value", "WARNING", 13005.0], ["KaunoR", "unknown_column", "INFO", 2.0], ["Kazlurudos", "missing_required_file", "ERROR", 4.0], ["Kazlurudos", "missing_timepoint_column", "WARNING", 1.0], ["KedainiuR", "equal_shape_distance_diff_coordinates", "ERROR", 17.0], ["KedainiuR", "equal_shape_distance_same_coordinates", "WARNING", 1.0], ["KedainiuR", "missing_timepoint_value", "WARNING", 4685.0], ["KedainiuR", "stop_too_far_from_shape", "WARNING", 2.0], ["KedainiuR", "stops_match_shape_out_of_order", "WARNING", 1.0], ["KedainiuR", "unknown_column", "INFO", 2.0], ["KelmesR", "equal_shape_distance_diff_coordinates", "ERROR", 13417.0], ["KelmesR", "equal_shape_distance_same_coordinates", "WARNING", 5536.0], ["KelmesR", "fast_travel_between_consecutive_stops", "WARNING", 8.0], ["KelmesR", "fast_travel_between_far_stops", "WARNING", 3.0], ["KelmesR", "leading_or_trailing_whitespaces", "WARNING", 3.0], ["KelmesR", "missing_timepoint_value", "WARNING", 19387.0], ["KelmesR", "stop_too_far_from_shape", "WARNING", 9.0], ["KelmesR", "unknown_column", "INFO", 2.0], ["KiasiadoriuR", "missing_timepoint_value", "WARNING", 46.0], ["KiasiadoriuR", "unknown_column", "INFO", 2.0], ["KlaipedosM", "missing_timepoint_value", "WARNING", 217.0], ["KlaipedosM", "unknown_column", "INFO", 2.0], ["KlaipedosR", "equal_shape_distance_diff_coordinates", "ERROR", 13417.0], ["KlaipedosR", "equal_shape_distance_same_coordinates", "WARNING", 5536.0], ["KlaipedosR", "fast_travel_between_consecutive_stops", "WARNING", 8.0], ["KlaipedosR", "fast_travel_between_far_stops", "WARNING", 3.0], ["KlaipedosR", "leading_or_trailing_whitespaces", "WARNING", 3.0], ["KlaipedosR", "missing_timepoint_value", "WARNING", 19387.0], ["KlaipedosR", "stop_too_far_from_shape", "WARNING", 9.0], ["KlaipedosR", "unknown_column", "INFO", 2.0], ["KretingosR", "equal_shape_distance_same_coordinates", "WARNING", 1.0], ["KretingosR", "missing_timepoint_value", "WARNING", 2748.0], ["KretingosR", "unknown_column", "INFO", 2.0], ["KupiskioR", "missing_required_file", "ERROR", 4.0], ["KupiskioR", "missing_timepoint_column", "WARNING", 1.0], ["LTSAR", "equal_shape_distance_diff_coordinates", "ERROR", 10317.0], ["LTSAR", "equal_shape_distance_same_coordinates", "WARNING", 4270.0], ["LTSAR", "fast_travel_between_consecutive_stops", "WARNING", 8.0], ["LTSAR", "fast_travel_between_far_stops", "WARNING", 3.0], ["LTSAR", "leading_or_trailing_whitespaces", "WARNING", 4.0], ["LTSAR", "missing_timepoint_value", "WARNING", 16101.0], ["LTSAR", "stop_too_far_from_shape", "WARNING", 7.0], ["LTSAR", "unknown_column", "INFO", 2.0], ["LazdijuR", "missing_required_file", "ERROR", 4.0], ["LazdijuR", "missing_timepoint_column", "WARNING", 1.0], ["Marijampoles", "equal_shape_distance_same_coordinates", "WARNING", 2.0], ["Marijampoles", "missing_timepoint_value", "WARNING", 3996.0], ["Marijampoles", "unknown_column", "INFO", 2.0], ["MazeikiuR", "equal_shape_distance_same_coordinates", "WARNING", 2.0], ["MazeikiuR", "missing_timepoint_value", "WARNING", 1909.0], ["MazeikiuR", "stop_too_far_from_shape", "WARNING", 3.0], ["MazeikiuR", "unknown_column", "INFO", 2.0], ["MoletuR", "equal_shape_distance_same_coordinates", "WARNING", 15.0], ["MoletuR", "leading_or_trailing_whitespaces", "WARNING", 1.0], ["MoletuR", "missing_timepoint_value", "WARNING", 919.0], ["MoletuR", "unknown_column", "INFO", 2.0], ["PagegiuR", "missing_timepoint_value", "WARNING", 94.0], ["PagegiuR", "unknown_column", "INFO", 2.0], ["PakruojoR", "missing_required_file", "ERROR", 4.0], ["PakruojoR", "missing_timepoint_column", "WARNING", 1.0], ["PalangosM", "missing_timepoint_value", "WARNING", 160.0], ["PalangosM", "unknown_column", "INFO", 2.0], ["PanevezioM", "missing_required_file", "ERROR", 4.0], ["PanevezioM", "missing_timepoint_column", "WARNING", 1.0], ["PanevezioR", "missing_required_file", "ERROR", 4.0], ["PanevezioR", "missing_timepoint_column", "WARNING", 1.0], ["PasvalioR", "equal_shape_distance_diff_coordinates", "ERROR", 13416.0], ["PasvalioR", "equal_shape_distance_same_coordinates", "WARNING", 5543.0], ["PasvalioR", "fast_travel_between_consecutive_stops", "WARNING", 8.0], ["PasvalioR", "fast_travel_between_far_stops", "WARNING", 3.0], ["PasvalioR", "leading_or_trailing_whitespaces", "WARNING", 3.0], ["PasvalioR", "missing_timepoint_value", "WARNING", 19531.0], ["PasvalioR", "stop_too_far_from_shape", "WARNING", 7.0], ["PasvalioR", "unknown_column", "INFO", 2.0], ["PlungesR", "missing_timepoint_value", "WARNING", 2687.0], ["PlungesR", "stop_too_far_from_shape", "WARNING", 1.0], ["PlungesR", "unknown_column", "INFO", 2.0], ["PrienuR", "missing_required_file", "ERROR", 4.0], ["PrienuR", "missing_timepoint_column", "WARNING", 1.0], ["RadviliskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["RadviliskioR", "equal_shape_distance_same_coordinates", "WARNING", 13.0], ["RadviliskioR", "missing_timepoint_value", "WARNING", 4077.0], ["RadviliskioR", "unknown_column", "INFO", 2.0], ["RaseiniuR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["RaseiniuR", "missing_timepoint_value", "WARNING", 787.0], ["RaseiniuR", "unknown_column", "INFO", 2.0], ["Rietavo", "missing_timepoint_value", "WARNING", 24.0], ["Rietavo", "unknown_column", "INFO", 2.0], ["RokiskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["RokiskioR", "equal_shape_distance_same_coordinates", "WARNING", 3.0], ["RokiskioR", "missing_timepoint_value", "WARNING", 2685.0], ["RokiskioR", "unknown_column", "INFO", 2.0], ["SalcininkuR", "missing_timepoint_value", "WARNING", 1027.0], ["SalcininkuR", "unknown_column", "INFO", 2.0], ["SiauliuM", "missing_timepoint_value", "WARNING", 256.0], ["SiauliuM", "unknown_column", "INFO", 2.0], ["SiauliuR", "equal_shape_distance_same_coordinates", "WARNING", 10.0], ["SiauliuR", "missing_timepoint_value", "WARNING", 2257.0], ["SiauliuR", "unknown_column", "INFO", 2.0], ["SilalesR", "equal_shape_distance_same_coordinates", "WARNING", 2.0], ["SilalesR", "missing_timepoint_value", "WARNING", 367.0], ["SilalesR", "unknown_column", "INFO", 2.0], ["SilutesR", "equal_shape_distance_diff_coordinates", "ERROR", 7.0], ["SilutesR", "missing_timepoint_value", "WARNING", 1240.0], ["SilutesR", "unknown_column", "INFO", 2.0], ["SkuodoR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["SkuodoR", "equal_shape_distance_same_coordinates", "WARNING", 1.0], ["SkuodoR", "leading_or_trailing_whitespaces", "WARNING", 1.0], ["SkuodoR", "missing_timepoint_value", "WARNING", 978.0], ["SkuodoR", "unknown_column", "INFO", 2.0], ["SvencioniuR", "equal_shape_distance_same_coordinates", "WARNING", 2.0], ["SvencioniuR", "missing_timepoint_value", "WARNING", 1962.0], ["SvencioniuR", "unknown_column", "INFO", 2.0], ["TauragesR", "missing_timepoint_value", "WARNING", 2082.0], ["TauragesR", "stop_too_far_from_shape", "WARNING", 1.0], ["TauragesR", "unknown_column", "INFO", 2.0], ["Taurages_R", "missing_timepoint_value", "WARNING", 2082.0], ["Taurages_R", "stop_too_far_from_shape", "WARNING", 1.0], ["Taurages_R", "unknown_column", "INFO", 2.0], ["TrakuR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["TrakuR", "equal_shape_distance_same_coordinates", "WARNING", 23.0], ["TrakuR", "leading_or_trailing_whitespaces", "WARNING", 1.0], ["TrakuR", "missing_timepoint_value", "WARNING", 2436.0], ["TrakuR", "stop_too_far_from_shape", "WARNING", 2.0], ["TrakuR", "unknown_column", "INFO", 2.0], ["UkmergesR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["UkmergesR", "equal_shape_distance_same_coordinates", "WARNING", 2.0], ["UkmergesR", "leading_or_trailing_whitespaces", "WARNING", 5.0], ["UkmergesR", "missing_timepoint_value", "WARNING", 4968.0], ["UkmergesR", "unknown_column", "INFO", 2.0], ["UtenosR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["UtenosR", "equal_shape_distance_same_coordinates", "WARNING", 7.0], ["UtenosR", "missing_timepoint_value", "WARNING", 3900.0], ["UtenosR", "unknown_column", "INFO", 2.0], ["VarenosR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["VarenosR", "equal_shape_distance_same_coordinates", "WARNING", 48.0], ["VarenosR", "missing_timepoint_value", "WARNING", 1967.0], ["VarenosR", "unknown_column", "INFO", 2.0], ["VilkaviskioR", "fast_travel_between_consecutive_stops", "WARNING", 1.0], ["VilkaviskioR", "fast_travel_between_far_stops", "WARNING", 1.0], ["VilkaviskioR", "missing_timepoint_value", "WARNING", 1400.0], ["VilkaviskioR", "stop_too_far_from_shape", "WARNING", 3.0], ["VilkaviskioR", "stops_match_shape_out_of_order", "WARNING", 1.0], ["VilkaviskioR", "unknown_column", "INFO", 2.0], ["VilniausM", "missing_timepoint_value", "WARNING", 477375.0], ["VilniausM", "unexpected_enum_value", "WARNING", 17.0], ["VilniausM", "unknown_column", "INFO", 2.0], ["VilniausR", "missing_timepoint_value", "WARNING", 870.0], ["VilniausR", "unknown_column", "INFO", 2.0], ["VisaginoM", "missing_timepoint_value", "WARNING", 116.0], ["VisaginoM", "unknown_column", "INFO", 2.0], ["ZarasuR", "equal_shape_distance_diff_coordinates", "ERROR", 1.0], ["ZarasuR", "equal_shape_distance_same_coordinates", "WARNING", 7.0], ["ZarasuR", "missing_timepoint_value", "WARNING", 1332.0], ["ZarasuR", "stop_too_far_from_shape", "WARNING", 2.0], ["ZarasuR", "unknown_column", "INFO", 2.0], ["akmene", "equal_shape_distance_same_coordinates", "WARNING", 46.0], ["akmene", "missing_timepoint_value", "WARNING", 1322.0], ["akmene", "unknown_column", "INFO", 2.0], ["birstono-gtfs", "missing_required_file", "ERROR", 5.0], ["birstono-gtfs", "missing_timepoint_column", "WARNING", 1.0], ["google_transit", "equal_shape_distance_diff_coordinates", "ERROR", 6.0], ["google_transit", "equal_shape_distance_same_coordinates", "WARNING", 7.0], ["google_transit", "missing_timepoint_value", "WARNING", 2940.0], ["google_transit", "stop_too_far_from_shape", "WARNING", 7.0], ["google_transit", "unknown_column", "INFO", 2.0], ["gtfs_all", "decreasing_or_equal_stop_time_distance", "ERROR", 8.0], ["gtfs_all", "duplicate_fare_rule_zone_id_fields", "ERROR", 2368.0], ["gtfs_all", "duplicate_route_name", "WARNING", 1328.0], ["gtfs_all", "equal_shape_distance_diff_coordinates", "ERROR", 10327.0], ["gtfs_all", "equal_shape_distance_same_coordinates", "WARNING", 4325.0], ["gtfs_all", "fast_travel_between_consecutive_stops", "WARNING", 340.0], ["gtfs_all", "fast_travel_between_far_stops", "WARNING", 97.0], ["gtfs_all", "missing_timepoint_value", "WARNING", 61318.0], ["gtfs_all", "same_route_and_agency_url", "WARNING", 1923.0], ["gtfs_all", "stop_too_far_from_shape", "WARNING", 56.0], ["gtfs_all", "stop_too_far_from_shape_using_user_distance", "WARNING", 1657.0], ["gtfs_all", "unexpected_enum_value", "WARNING", 1.0], ["gtfs_all", "unknown_column", "INFO", 8.0], ["neringa", "missing_timepoint_value", "WARNING", 329.0], ["neringa", "unknown_column", "INFO", 2.0]];
+    const data = [[5, "AnyksciuR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [9, "Birstono", "missing_required_file", "ERROR", 5], [11, "BirzuR", "missing_required_file", "ERROR", 4], [13, "Druskininku", "missing_required_file", "ERROR", 4], [17, "IgnalinosR", "equal_shape_distance_diff_coordinates", "ERROR", 5], [21, "JonavosR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [26, "JoniskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [30, "JurbarkoR", "equal_shape_distance_diff_coordinates", "ERROR", 2], [35, "Kalvarijos", "missing_required_file", "ERROR", 4], [37, "KaunoM", "missing_required_file", "ERROR", 4], [41, "Kazlurudos", "missing_required_file", "ERROR", 4], [43, "KedainiuR", "equal_shape_distance_diff_coordinates", "ERROR", 17], [49, "KelmesR", "equal_shape_distance_diff_coordinates", "ERROR", 13417], [61, "KlaipedosR", "equal_shape_distance_diff_coordinates", "ERROR", 13417], [72, "KupiskioR", "missing_required_file", "ERROR", 4], [74, "LTSAR", "equal_shape_distance_diff_coordinates", "ERROR", 10317], [82, "LazdijuR", "missing_required_file", "ERROR", 4], [97, "PakruojoR", "missing_required_file", "ERROR", 4], [101, "PanevezioM", "missing_required_file", "ERROR", 4], [103, "PanevezioR", "missing_required_file", "ERROR", 4], [105, "PasvalioR", "equal_shape_distance_diff_coordinates", "ERROR", 13416], [116, "PrienuR", "missing_required_file", "ERROR", 4], [118, "RadviliskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [122, "RaseiniuR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [127, "RokiskioR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [141, "SilutesR", "equal_shape_distance_diff_coordinates", "ERROR", 7], [144, "SkuodoR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [158, "TrakuR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [164, "UkmergesR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [169, "UtenosR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [173, "VarenosR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [190, "ZarasuR", "equal_shape_distance_diff_coordinates", "ERROR", 1], [198, "birstono-gtfs", "missing_required_file", "ERROR", 5], [200, "google_transit", "equal_shape_distance_diff_coordinates", "ERROR", 6], [205, "gtfs_all", "decreasing_or_equal_stop_time_distance", "ERROR", 8], [206, "gtfs_all", "duplicate_fare_rule_zone_id_fields", "ERROR", 2368], [208, "gtfs_all", "equal_shape_distance_diff_coordinates", "ERROR", 10327]];
 
     if (typeof require === 'undefined') {
         // TODO: This should become the default (use a simple import)
@@ -519,7 +522,7 @@
 
         // Display the table
         $(document).ready(function () {
-            $('#647f8009-60d1-48a5-8807-e746139b175f').DataTable(dt_args);
+            $('#f0bfcf45-83c0-47a9-877b-64f7fb5a10c1').DataTable(dt_args);
         });
     } else {
         require(["jquery", "datatables"], ($, datatables) => {
@@ -529,7 +532,7 @@
 
                 // Display the table
                 $(document).ready(function () {
-                    $('#647f8009-60d1-48a5-8807-e746139b175f').DataTable(dt_args);
+                    $('#f0bfcf45-83c0-47a9-877b-64f7fb5a10c1').DataTable(dt_args);
                 });
             }
         )
@@ -539,17 +542,294 @@
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import gtfs_functions as gtfs</span>
-<span class="c1"># import keplergl as kp</span>
-<span class="c1">#</span>
-<span class="c1"># routes, stops, stop_times, trips, shapes = gtfs.import_gtfs(&quot;../../data/gtfs/vintra/PanevezioM.zip&quot;, busiest_date=True)</span>
-<span class="c1">#</span>
-<span class="c1"># cutoffs = [0, 6, 9, 15.5, 19, 22, 24]</span>
-<span class="c1"># line_freq = gtfs.lines_freq(stop_times, trips, shapes, routes, cutoffs=cutoffs)</span>
-<span class="c1"># line_freq.head()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_notices_df</span><span class="p">[</span><span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;sunkumas&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ERROR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sunkumas&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;failas&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;klaida&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;viso&#39;</span><span class="p">)</span>
+
+<span class="n">float_col</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float64&#39;</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">float_col</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="n">gtfs_errors_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int64&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;background: orange&quot;</span> <span class="k">if</span> <span class="n">v</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">x</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">gtfs_errors_df</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_6ad8c_row0_col2, #T_6ad8c_row1_col3, #T_6ad8c_row2_col3, #T_6ad8c_row3_col3, #T_6ad8c_row4_col2, #T_6ad8c_row5_col2, #T_6ad8c_row6_col2, #T_6ad8c_row7_col2, #T_6ad8c_row8_col3, #T_6ad8c_row9_col3, #T_6ad8c_row10_col3, #T_6ad8c_row11_col2, #T_6ad8c_row12_col2, #T_6ad8c_row13_col2, #T_6ad8c_row14_col3, #T_6ad8c_row15_col2, #T_6ad8c_row16_col3, #T_6ad8c_row17_col3, #T_6ad8c_row18_col3, #T_6ad8c_row19_col3, #T_6ad8c_row20_col2, #T_6ad8c_row21_col3, #T_6ad8c_row22_col2, #T_6ad8c_row23_col2, #T_6ad8c_row24_col2, #T_6ad8c_row25_col2, #T_6ad8c_row26_col2, #T_6ad8c_row27_col2, #T_6ad8c_row28_col2, #T_6ad8c_row29_col2, #T_6ad8c_row30_col2, #T_6ad8c_row31_col2, #T_6ad8c_row32_col3, #T_6ad8c_row33_col2, #T_6ad8c_row34_col0, #T_6ad8c_row34_col1, #T_6ad8c_row34_col2 {
+  background: orange;
+}
+</style>
+<table id="T_6ad8c_">
+  <thead>
+    <tr>
+      <th class="index_name level0" >klaida</th>
+      <th class="col_heading level0 col0" >decreasing_or_equal_stop_time_distance</th>
+      <th class="col_heading level0 col1" >duplicate_fare_rule_zone_id_fields</th>
+      <th class="col_heading level0 col2" >equal_shape_distance_diff_coordinates</th>
+      <th class="col_heading level0 col3" >missing_required_file</th>
+    </tr>
+    <tr>
+      <th class="index_name level0" >failas</th>
+      <th class="blank col0" >&nbsp;</th>
+      <th class="blank col1" >&nbsp;</th>
+      <th class="blank col2" >&nbsp;</th>
+      <th class="blank col3" >&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_6ad8c_level0_row0" class="row_heading level0 row0" >AnyksciuR</th>
+      <td id="T_6ad8c_row0_col0" class="data row0 col0" ></td>
+      <td id="T_6ad8c_row0_col1" class="data row0 col1" ></td>
+      <td id="T_6ad8c_row0_col2" class="data row0 col2" >1.000000</td>
+      <td id="T_6ad8c_row0_col3" class="data row0 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row1" class="row_heading level0 row1" >Birstono</th>
+      <td id="T_6ad8c_row1_col0" class="data row1 col0" ></td>
+      <td id="T_6ad8c_row1_col1" class="data row1 col1" ></td>
+      <td id="T_6ad8c_row1_col2" class="data row1 col2" ></td>
+      <td id="T_6ad8c_row1_col3" class="data row1 col3" >5.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row2" class="row_heading level0 row2" >BirzuR</th>
+      <td id="T_6ad8c_row2_col0" class="data row2 col0" ></td>
+      <td id="T_6ad8c_row2_col1" class="data row2 col1" ></td>
+      <td id="T_6ad8c_row2_col2" class="data row2 col2" ></td>
+      <td id="T_6ad8c_row2_col3" class="data row2 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row3" class="row_heading level0 row3" >Druskininku</th>
+      <td id="T_6ad8c_row3_col0" class="data row3 col0" ></td>
+      <td id="T_6ad8c_row3_col1" class="data row3 col1" ></td>
+      <td id="T_6ad8c_row3_col2" class="data row3 col2" ></td>
+      <td id="T_6ad8c_row3_col3" class="data row3 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row4" class="row_heading level0 row4" >IgnalinosR</th>
+      <td id="T_6ad8c_row4_col0" class="data row4 col0" ></td>
+      <td id="T_6ad8c_row4_col1" class="data row4 col1" ></td>
+      <td id="T_6ad8c_row4_col2" class="data row4 col2" >5.000000</td>
+      <td id="T_6ad8c_row4_col3" class="data row4 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row5" class="row_heading level0 row5" >JonavosR</th>
+      <td id="T_6ad8c_row5_col0" class="data row5 col0" ></td>
+      <td id="T_6ad8c_row5_col1" class="data row5 col1" ></td>
+      <td id="T_6ad8c_row5_col2" class="data row5 col2" >1.000000</td>
+      <td id="T_6ad8c_row5_col3" class="data row5 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row6" class="row_heading level0 row6" >JoniskioR</th>
+      <td id="T_6ad8c_row6_col0" class="data row6 col0" ></td>
+      <td id="T_6ad8c_row6_col1" class="data row6 col1" ></td>
+      <td id="T_6ad8c_row6_col2" class="data row6 col2" >1.000000</td>
+      <td id="T_6ad8c_row6_col3" class="data row6 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row7" class="row_heading level0 row7" >JurbarkoR</th>
+      <td id="T_6ad8c_row7_col0" class="data row7 col0" ></td>
+      <td id="T_6ad8c_row7_col1" class="data row7 col1" ></td>
+      <td id="T_6ad8c_row7_col2" class="data row7 col2" >2.000000</td>
+      <td id="T_6ad8c_row7_col3" class="data row7 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row8" class="row_heading level0 row8" >Kalvarijos</th>
+      <td id="T_6ad8c_row8_col0" class="data row8 col0" ></td>
+      <td id="T_6ad8c_row8_col1" class="data row8 col1" ></td>
+      <td id="T_6ad8c_row8_col2" class="data row8 col2" ></td>
+      <td id="T_6ad8c_row8_col3" class="data row8 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row9" class="row_heading level0 row9" >KaunoM</th>
+      <td id="T_6ad8c_row9_col0" class="data row9 col0" ></td>
+      <td id="T_6ad8c_row9_col1" class="data row9 col1" ></td>
+      <td id="T_6ad8c_row9_col2" class="data row9 col2" ></td>
+      <td id="T_6ad8c_row9_col3" class="data row9 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row10" class="row_heading level0 row10" >Kazlurudos</th>
+      <td id="T_6ad8c_row10_col0" class="data row10 col0" ></td>
+      <td id="T_6ad8c_row10_col1" class="data row10 col1" ></td>
+      <td id="T_6ad8c_row10_col2" class="data row10 col2" ></td>
+      <td id="T_6ad8c_row10_col3" class="data row10 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row11" class="row_heading level0 row11" >KedainiuR</th>
+      <td id="T_6ad8c_row11_col0" class="data row11 col0" ></td>
+      <td id="T_6ad8c_row11_col1" class="data row11 col1" ></td>
+      <td id="T_6ad8c_row11_col2" class="data row11 col2" >17.000000</td>
+      <td id="T_6ad8c_row11_col3" class="data row11 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row12" class="row_heading level0 row12" >KelmesR</th>
+      <td id="T_6ad8c_row12_col0" class="data row12 col0" ></td>
+      <td id="T_6ad8c_row12_col1" class="data row12 col1" ></td>
+      <td id="T_6ad8c_row12_col2" class="data row12 col2" >13417.000000</td>
+      <td id="T_6ad8c_row12_col3" class="data row12 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row13" class="row_heading level0 row13" >KlaipedosR</th>
+      <td id="T_6ad8c_row13_col0" class="data row13 col0" ></td>
+      <td id="T_6ad8c_row13_col1" class="data row13 col1" ></td>
+      <td id="T_6ad8c_row13_col2" class="data row13 col2" >13417.000000</td>
+      <td id="T_6ad8c_row13_col3" class="data row13 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row14" class="row_heading level0 row14" >KupiskioR</th>
+      <td id="T_6ad8c_row14_col0" class="data row14 col0" ></td>
+      <td id="T_6ad8c_row14_col1" class="data row14 col1" ></td>
+      <td id="T_6ad8c_row14_col2" class="data row14 col2" ></td>
+      <td id="T_6ad8c_row14_col3" class="data row14 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row15" class="row_heading level0 row15" >LTSAR</th>
+      <td id="T_6ad8c_row15_col0" class="data row15 col0" ></td>
+      <td id="T_6ad8c_row15_col1" class="data row15 col1" ></td>
+      <td id="T_6ad8c_row15_col2" class="data row15 col2" >10317.000000</td>
+      <td id="T_6ad8c_row15_col3" class="data row15 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row16" class="row_heading level0 row16" >LazdijuR</th>
+      <td id="T_6ad8c_row16_col0" class="data row16 col0" ></td>
+      <td id="T_6ad8c_row16_col1" class="data row16 col1" ></td>
+      <td id="T_6ad8c_row16_col2" class="data row16 col2" ></td>
+      <td id="T_6ad8c_row16_col3" class="data row16 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row17" class="row_heading level0 row17" >PakruojoR</th>
+      <td id="T_6ad8c_row17_col0" class="data row17 col0" ></td>
+      <td id="T_6ad8c_row17_col1" class="data row17 col1" ></td>
+      <td id="T_6ad8c_row17_col2" class="data row17 col2" ></td>
+      <td id="T_6ad8c_row17_col3" class="data row17 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row18" class="row_heading level0 row18" >PanevezioM</th>
+      <td id="T_6ad8c_row18_col0" class="data row18 col0" ></td>
+      <td id="T_6ad8c_row18_col1" class="data row18 col1" ></td>
+      <td id="T_6ad8c_row18_col2" class="data row18 col2" ></td>
+      <td id="T_6ad8c_row18_col3" class="data row18 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row19" class="row_heading level0 row19" >PanevezioR</th>
+      <td id="T_6ad8c_row19_col0" class="data row19 col0" ></td>
+      <td id="T_6ad8c_row19_col1" class="data row19 col1" ></td>
+      <td id="T_6ad8c_row19_col2" class="data row19 col2" ></td>
+      <td id="T_6ad8c_row19_col3" class="data row19 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row20" class="row_heading level0 row20" >PasvalioR</th>
+      <td id="T_6ad8c_row20_col0" class="data row20 col0" ></td>
+      <td id="T_6ad8c_row20_col1" class="data row20 col1" ></td>
+      <td id="T_6ad8c_row20_col2" class="data row20 col2" >13416.000000</td>
+      <td id="T_6ad8c_row20_col3" class="data row20 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row21" class="row_heading level0 row21" >PrienuR</th>
+      <td id="T_6ad8c_row21_col0" class="data row21 col0" ></td>
+      <td id="T_6ad8c_row21_col1" class="data row21 col1" ></td>
+      <td id="T_6ad8c_row21_col2" class="data row21 col2" ></td>
+      <td id="T_6ad8c_row21_col3" class="data row21 col3" >4.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row22" class="row_heading level0 row22" >RadviliskioR</th>
+      <td id="T_6ad8c_row22_col0" class="data row22 col0" ></td>
+      <td id="T_6ad8c_row22_col1" class="data row22 col1" ></td>
+      <td id="T_6ad8c_row22_col2" class="data row22 col2" >1.000000</td>
+      <td id="T_6ad8c_row22_col3" class="data row22 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row23" class="row_heading level0 row23" >RaseiniuR</th>
+      <td id="T_6ad8c_row23_col0" class="data row23 col0" ></td>
+      <td id="T_6ad8c_row23_col1" class="data row23 col1" ></td>
+      <td id="T_6ad8c_row23_col2" class="data row23 col2" >1.000000</td>
+      <td id="T_6ad8c_row23_col3" class="data row23 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row24" class="row_heading level0 row24" >RokiskioR</th>
+      <td id="T_6ad8c_row24_col0" class="data row24 col0" ></td>
+      <td id="T_6ad8c_row24_col1" class="data row24 col1" ></td>
+      <td id="T_6ad8c_row24_col2" class="data row24 col2" >1.000000</td>
+      <td id="T_6ad8c_row24_col3" class="data row24 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row25" class="row_heading level0 row25" >SilutesR</th>
+      <td id="T_6ad8c_row25_col0" class="data row25 col0" ></td>
+      <td id="T_6ad8c_row25_col1" class="data row25 col1" ></td>
+      <td id="T_6ad8c_row25_col2" class="data row25 col2" >7.000000</td>
+      <td id="T_6ad8c_row25_col3" class="data row25 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row26" class="row_heading level0 row26" >SkuodoR</th>
+      <td id="T_6ad8c_row26_col0" class="data row26 col0" ></td>
+      <td id="T_6ad8c_row26_col1" class="data row26 col1" ></td>
+      <td id="T_6ad8c_row26_col2" class="data row26 col2" >1.000000</td>
+      <td id="T_6ad8c_row26_col3" class="data row26 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row27" class="row_heading level0 row27" >TrakuR</th>
+      <td id="T_6ad8c_row27_col0" class="data row27 col0" ></td>
+      <td id="T_6ad8c_row27_col1" class="data row27 col1" ></td>
+      <td id="T_6ad8c_row27_col2" class="data row27 col2" >1.000000</td>
+      <td id="T_6ad8c_row27_col3" class="data row27 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row28" class="row_heading level0 row28" >UkmergesR</th>
+      <td id="T_6ad8c_row28_col0" class="data row28 col0" ></td>
+      <td id="T_6ad8c_row28_col1" class="data row28 col1" ></td>
+      <td id="T_6ad8c_row28_col2" class="data row28 col2" >1.000000</td>
+      <td id="T_6ad8c_row28_col3" class="data row28 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row29" class="row_heading level0 row29" >UtenosR</th>
+      <td id="T_6ad8c_row29_col0" class="data row29 col0" ></td>
+      <td id="T_6ad8c_row29_col1" class="data row29 col1" ></td>
+      <td id="T_6ad8c_row29_col2" class="data row29 col2" >1.000000</td>
+      <td id="T_6ad8c_row29_col3" class="data row29 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row30" class="row_heading level0 row30" >VarenosR</th>
+      <td id="T_6ad8c_row30_col0" class="data row30 col0" ></td>
+      <td id="T_6ad8c_row30_col1" class="data row30 col1" ></td>
+      <td id="T_6ad8c_row30_col2" class="data row30 col2" >1.000000</td>
+      <td id="T_6ad8c_row30_col3" class="data row30 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row31" class="row_heading level0 row31" >ZarasuR</th>
+      <td id="T_6ad8c_row31_col0" class="data row31 col0" ></td>
+      <td id="T_6ad8c_row31_col1" class="data row31 col1" ></td>
+      <td id="T_6ad8c_row31_col2" class="data row31 col2" >1.000000</td>
+      <td id="T_6ad8c_row31_col3" class="data row31 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row32" class="row_heading level0 row32" >birstono-gtfs</th>
+      <td id="T_6ad8c_row32_col0" class="data row32 col0" ></td>
+      <td id="T_6ad8c_row32_col1" class="data row32 col1" ></td>
+      <td id="T_6ad8c_row32_col2" class="data row32 col2" ></td>
+      <td id="T_6ad8c_row32_col3" class="data row32 col3" >5.000000</td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row33" class="row_heading level0 row33" >google_transit</th>
+      <td id="T_6ad8c_row33_col0" class="data row33 col0" ></td>
+      <td id="T_6ad8c_row33_col1" class="data row33 col1" ></td>
+      <td id="T_6ad8c_row33_col2" class="data row33 col2" >6.000000</td>
+      <td id="T_6ad8c_row33_col3" class="data row33 col3" ></td>
+    </tr>
+    <tr>
+      <th id="T_6ad8c_level0_row34" class="row_heading level0 row34" >gtfs_all</th>
+      <td id="T_6ad8c_row34_col0" class="data row34 col0" >8.000000</td>
+      <td id="T_6ad8c_row34_col1" class="data row34 col1" >2368.000000</td>
+      <td id="T_6ad8c_row34_col2" class="data row34 col2" >10327.000000</td>
+      <td id="T_6ad8c_row34_col3" class="data row34 col3" ></td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
 </div>
 </div>
 </div>
