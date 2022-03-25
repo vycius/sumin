@@ -14,6 +14,8 @@ parts:
   - caption: Viešasis transportas
     chapters:
       - file: notebooks/viesasis_transportas/gtfs
+        sections:
+          - file: notebooks/viesasis_transportas/gtfs-vintra
       - file: notebooks/viesasis_transportas/transporto_priemoniu_pozicijos
   - caption: Šaltiniai
     chapters:
