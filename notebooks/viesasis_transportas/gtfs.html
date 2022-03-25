@@ -268,8 +268,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gtfs-vilnius-vintra">
-     GTFS Vilnius VINTRA
+    <a class="reference internal nav-link" href="#gtfs-vintra">
+     GTFS VINTRA
     </a>
    </li>
   </ul>
@@ -300,8 +300,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gtfs-vilnius-vintra">
-     GTFS Vilnius VINTRA
+    <a class="reference internal nav-link" href="#gtfs-vintra">
+     GTFS VINTRA
     </a>
    </li>
   </ul>
@@ -319,60 +319,191 @@
 <h1>GTFS<a class="headerlink" href="#gtfs" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="agenturos-informacija-agency-txt">
 <h2>Agentūros informacija (agency.txt)<a class="headerlink" href="#agenturos-informacija-agency-txt" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="gtfs-vilnius-vintra">
-<h3>GTFS Vilnius VINTRA<a class="headerlink" href="#gtfs-vilnius-vintra" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="section" id="gtfs-vintra">
+<h3>GTFS VINTRA<a class="headerlink" href="#gtfs-vintra" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
 
-<span class="n">vintra_agency_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../data/gtfs/vilnius/vintra/agency.txt&#39;</span><span class="p">)</span>
-
-<span class="n">vintra_agency_df</span>
+<span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">all_interactive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<script type="application/javascript">if (typeof require !== 'undefined')
+    require.config({
+        paths: {
+            jquery: 'https://code.jquery.com/jquery-3.5.1.min',
+            datatables: 'https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min',
+        }
+    });
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">working_directory</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="si">}</span><span class="s1">/../../data/gtfs/vintra/&#39;</span>
+<span class="n">gtfs_files_directory</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">working_directory</span><span class="si">}</span><span class="s1">/gtfs-files/&#39;</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>agency_id</th>
-      <th>agency_name</th>
-      <th>agency_url</th>
-      <th>agency_timezone</th>
-      <th>agency_lang</th>
-      <th>agency_phone</th>
-      <th>agency_fare_url</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>59</td>
-      <td>Vilniaus m. sav.</td>
-      <td>http://www.vilniustransport.lt</td>
-      <td>Europe/Vilnius</td>
-      <td>lt</td>
-      <td>852709339</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">gtfs_files_directory</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">):</span>
+        <span class="n">filename</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">)</span>
+
+        <span class="n">p</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span>
+            <span class="sa">f</span><span class="s1">&#39;java -jar gtfs-validator-301.jar -i gtfs-files/</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s1"> -o reports -v </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">.json -e </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">_system_errors.json -n -c lt&#39;</span><span class="p">],</span>
+            <span class="n">cwd</span><span class="o">=</span><span class="n">working_directory</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+            <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+        <span class="n">out</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
+        <span class="n">errcode</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">returncode</span>
+
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">gtfs_files_txt</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;seconds</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">gtfs_files</span> <span class="o">=</span> <span class="n">gtfs_files_txt</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+
+        <span class="n">gtfs_files_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;failas&#39;</span><span class="p">:</span> <span class="n">filename</span><span class="p">}</span>
+        <span class="k">for</span> <span class="n">gtfs_file_rep</span> <span class="ow">in</span> <span class="n">gtfs_files</span><span class="p">:</span>
+            <span class="n">gtfs_file</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">gtfs_file_rep</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">gtfs_files_dict</span><span class="p">[</span><span class="n">gtfs_file</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span> <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="s1">&#39;MISSING_FILE&#39;</span> <span class="k">else</span> <span class="kc">None</span>
+
+        <span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gtfs_files_dict</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;failas&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;attributions.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;feed_info.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;frequencies.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;levels.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pathways.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;transfers.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;translations.txt&#39;</span>
+    <span class="p">]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;failas&#39;</span><span class="p">)</span>
+
+
+<span class="n">gtfs_file_stats_df</span><span class="p">[</span>
+    <span class="p">[</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">]</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="p">[</span>
+    <span class="p">[</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;❌&#39;</span><span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;⚠️&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_sticky</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">Input In [2],</span> in <span class="ni">&lt;cell line: 6&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">filename</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">p</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="sa">f</span><span class="s1">&#39;java -jar gtfs-validator-301.jar -i gtfs-files/</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s1"> -o reports -v </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">.json -e </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">_system_errors.json -n -c lt&#39;</span><span class="p">],</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">cwd</span><span class="o">=</span><span class="n">working_directory</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">14</span> <span class="n">out</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">communicate</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="n">errcode</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">returncode</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">gtfs_files_txt</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;seconds</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/subprocess.py:1149,</span> in <span class="ni">Popen.communicate</span><span class="nt">(self, input, timeout)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1146</span>     <span class="n">endtime</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1148</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1149</span>     <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_communicate</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">endtime</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1150</span> <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1151</span>     <span class="c1"># https://bugs.python.org/issue25942</span>
+<span class="g g-Whitespace">   </span><span class="mi">1152</span>     <span class="c1"># See the detailed comment in .wait().</span>
+<span class="g g-Whitespace">   </span><span class="mi">1153</span>     <span class="k">if</span> <span class="n">timeout</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/subprocess.py:2000,</span> in <span class="ni">Popen._communicate</span><span class="nt">(self, input, endtime, orig_timeout)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1993</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_check_timeout</span><span class="p">(</span><span class="n">endtime</span><span class="p">,</span> <span class="n">orig_timeout</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1994</span>                         <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1995</span>                         <span class="n">skip_check_and_raise</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1996</span>     <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>  <span class="c1"># Impossible :)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1997</span>         <span class="s1">&#39;_check_timeout(..., skip_check_and_raise=True) &#39;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1998</span>         <span class="s1">&#39;failed to raise TimeoutExpired.&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">2000</span> <span class="n">ready</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2001</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_timeout</span><span class="p">(</span><span class="n">endtime</span><span class="p">,</span> <span class="n">orig_timeout</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2003</span> <span class="c1"># XXX Rewrite these to use non-blocking I/O on the file</span>
+<span class="g g-Whitespace">   </span><span class="mi">2004</span> <span class="c1"># objects; they are no longer using C stdio!</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/selectors.py:416,</span> in <span class="ni">_PollLikeSelector.select</span><span class="nt">(self, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">414</span> <span class="n">ready</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="g g-Whitespace">    </span><span class="mi">415</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">416</span>     <span class="n">fd_event_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_selector</span><span class="o">.</span><span class="n">poll</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">417</span> <span class="k">except</span> <span class="ne">InterruptedError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">418</span>     <span class="k">return</span> <span class="n">ready</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">keplergl</span> <span class="kn">import</span> <span class="n">KeplerGl</span>
+<span class="kn">import</span> <span class="nn">gtfs_kit</span> <span class="k">as</span> <span class="nn">gk</span>
+
+
+
+<span class="c1"># map_2 = KeplerGl()</span>
+<span class="c1">#</span>
+<span class="c1"># feed = gk.read_feed(&quot;https://www.visimarsrutai.lt/gtfs/gtfs_all.zip&quot;, dist_units=&#39;km&#39;)</span>
+<span class="c1">#</span>
+<span class="c1"># feed.map_routes(feed.routes.route_id, include_stops=True)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import gtfs_functions as gtfs</span>
+<span class="c1"># import keplergl as kp</span>
+<span class="c1">#</span>
+<span class="c1"># routes, stops, stop_times, trips, shapes = gtfs.import_gtfs(&quot;../../data/gtfs/vintra/PanevezioM.zip&quot;, busiest_date=True)</span>
+<span class="c1">#</span>
+<span class="c1"># cutoffs = [0, 6, 9, 15.5, 19, 22, 24]</span>
+<span class="c1"># line_freq = gtfs.lines_freq(stop_times, trips, shapes, routes, cutoffs=cutoffs)</span>
+<span class="c1"># line_freq.head()</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
