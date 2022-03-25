@@ -9,6 +9,8 @@ logo: logo.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  timeout: 600
+
 
 parse:
   myst_enable_extensions:
