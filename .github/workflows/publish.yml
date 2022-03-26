@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Publish to Cloudflare Pages
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    concurrency: ci-deploy-${{ github.ref }}
+    concurrency: ci-publish-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       - name: Notify Cloudflare pages
