@@ -9,3 +9,4 @@ itables==0.4.5
 keplergl==0.3.2
 gtfs-kit==5.2.0
 pyarrow==7.0.0
+nbstripout==0.5.0
