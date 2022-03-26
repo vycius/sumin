@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy to Cloudflare Pages
 on:
   push:
     branches:
