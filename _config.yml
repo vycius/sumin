@@ -51,8 +51,8 @@ html:
   use_issues_button: false
   use_repository_button: true
   extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
-  extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
   baseurl: https://judumas.vycius.lt/
+  google_analytics_id: G-PSPT787FKK
 
 sphinx:
   config:
