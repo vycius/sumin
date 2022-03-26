@@ -3,6 +3,7 @@
 
 title: Judumo duomenų ekosistemos plėtra
 author: Karolis Vyčius
+copyright: "2022"
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -39,15 +40,18 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/vycius/judumas
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: true
+  favicon: favicon.ico
+  use_edit_page_button: false
+  use_issues_button: false
   use_repository_button: true
+  extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
+  extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
   baseurl: https://judumas.vycius.lt/
 
 sphinx:
