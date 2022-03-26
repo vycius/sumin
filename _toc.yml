@@ -2,24 +2,24 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: notebooks/intro
+root: index
 parts:
   - caption: Standartai
     chapters:
-      - file: notebooks/standartai/gtfs-realtime
-      - file: notebooks/standartai/mobility-data-specification
+      - file: standartai/gtfs-realtime
+      - file: standartai/mobility-data-specification
   - caption: Programos
     chapters:
-      - file: notebooks/apps/apple_maps
+      - file: apps/apple_maps
   - caption: Viešasis transportas
     chapters:
-      - file: notebooks/viesasis_transportas/gtfs
+      - file: viesasis_transportas/gtfs
         sections:
-          - file: notebooks/viesasis_transportas/gtfs-vintra
-      - file: notebooks/viesasis_transportas/transporto_priemoniu_pozicijos
+          - file: viesasis_transportas/gtfs-vintra
+      - file: viesasis_transportas/transporto_priemoniu_pozicijos
   - caption: Šaltiniai
     chapters:
-      - file: notebooks/saltiniai
+      - file: saltiniai
   - caption: Aplinka
     chapters:
-      - file: notebooks/internal
+      - file: internal
