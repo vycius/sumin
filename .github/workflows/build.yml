@@ -24,7 +24,7 @@ jobs:
           path: _build/.jupyter_cache
           key: ${{ runner.os }}-jupyter-cache
           restore-keys: |
-            ${{ runner.os }}-jupyter-cache-
+            ${{ runner.os }}-jupyter-cache
 
       - uses: actions/setup-python@v2
         with:
