@@ -59,3 +59,9 @@ jobs:
         with:
           branch: gh-pages
           folder: _build/html/
+          
+      - name: Notify Cloudflare pages
+        run: curl -X POST "$CLOUDFLARE_PAGES_DEPLOY_URL"
+        env:
+          CLOUDFLARE_PAGES_DEPLOY_URL: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_URL }}
+          
