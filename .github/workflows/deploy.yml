@@ -1,0 +1,16 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deploy:
+    concurrency: ci-deploy-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Cloudflare pages
+        run: curl -X POST "$CLOUDFLARE_PAGES_DEPLOY_URL"
+        env:
+          CLOUDFLARE_PAGES_DEPLOY_URL: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_URL }}
+          
