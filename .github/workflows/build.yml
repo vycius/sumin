@@ -19,6 +19,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
+      - uses: actions/cache@v2
+        with:
+          path: _build/.jupyter_cache
+          key: ${{ runner.os }}-jupyter-cache
+          restore-keys: |
+            ${{ runner.os }}-jupyter-cache-
+
       - uses: actions/setup-python@v2
         with:
           python-version: '3.10'
