@@ -50,6 +50,7 @@ html:
   use_edit_page_button: false
   use_issues_button: false
   use_repository_button: true
+  home_page_in_navbar: false
   extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
   baseurl: https://judumas.vycius.lt/
   google_analytics_id: G-PSPT787FKK
