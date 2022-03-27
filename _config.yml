@@ -47,7 +47,7 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: favicon.ico
-  use_edit_page_button: false
+  use_edit_page_button: true
   use_issues_button: false
   use_repository_button: true
   home_page_in_navbar: false
@@ -61,6 +61,8 @@ launch_buttons:
   binderhub_url: ""
 
 sphinx:
+  local_extensions:
+    extensions: ./extensions/spinxext/
   config:
     bibtex_reference_style: author_year
     html_js_files:
