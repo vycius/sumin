@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="lt">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -56,12 +57,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://judumas.vycius.lt/viesasis_transportas/transporto_priemoniu_pozicijos.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="index" title="Indeksas" href="../genindex.html" />
+    <link rel="search" title="Paieška" href="../search.html" />
     <link rel="next" title="Šaltiniai" href="../saltiniai.html" />
     <link rel="prev" title="VINTRA" href="gtfs-vintra.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="lt">
     
 
     <!-- Google Analytics -->
@@ -101,7 +102,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Ieškoti šioje knygoje ..." aria-label="Ieškoti šioje knygoje ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
@@ -210,8 +211,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Perjungti naršymą" aria-controls="site-navigation"
+                title="Perjungti naršymą" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -219,7 +220,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Atsisiųskite šį puslapį"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -227,10 +228,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/viesasis_transportas/transporto_priemoniu_pozicijos.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -243,20 +244,20 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/vycius/judumas"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
+                data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
+                    class="fab fa-github"></i>saugykla</button></a>
         
         <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/viesasis_transportas/transporto_priemoniu_pozicijos.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+                title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
     </div>
 </div>
 
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pilno ekrano režimas"
+        title="Pilno ekrano režimas"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -267,7 +268,7 @@
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+                <i class="fas fa-list"></i> Turinys
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -309,7 +310,7 @@
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Contents </h2>
+                            <h2> Turinys </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -345,7 +346,7 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="transporto-priemoniu-pozicijos">
-<h1>Transporto priemonių pozicijos<a class="headerlink" href="#transporto-priemoniu-pozicijos" title="Permalink to this headline">¶</a></h1>
+<h1>Transporto priemonių pozicijos<a class="headerlink" href="#transporto-priemoniu-pozicijos" title="Nuoroda į šią antraštę">¶</a></h1>
 <p>Šiuo metu Lietuvoje informacija apie viešojo transporto priemonių pozicijas atvirų duomenų pavidalu prieinama 4 Lietuvos miestuose.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -394,9 +395,9 @@
 <p>Pateikiami miestų duomenys skiriasi savo formatu ir pateikia skirtinga informaciją (pvz., Vilniuje pateikiamas reisoID, Kaune ne) dėl to organizacijai norinčiai naudoti duomenis reikia skirtingai apdoroti kiekvieno miesto duomenis.</p>
 </div>
 <div class="section" id="duomenu-pavyzdziai">
-<h2>Duomenų pavyzdžiai<a class="headerlink" href="#duomenu-pavyzdziai" title="Permalink to this headline">¶</a></h2>
+<h2>Duomenų pavyzdžiai<a class="headerlink" href="#duomenu-pavyzdziai" title="Nuoroda į šią antraštę">¶</a></h2>
 <div class="section" id="vilnius">
-<h3>Vilnius<a class="headerlink" href="#vilnius" title="Permalink to this headline">¶</a></h3>
+<h3>Vilnius<a class="headerlink" href="#vilnius" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="warning admonition">
 <p class="admonition-title">Pateikiamas reiso identifikatorius nesisieja su GTFS duomenimis</p>
 <p>Realaus laiko transporto priemonių pozicijų duomenys pateikiami nestandartizuotu formatu dėl šios priežasties nėra galimybės juos integruoti į jau egzistuojančias priemones pvz., Google Maps.</p>
@@ -839,7 +840,7 @@
 </div>
 </div>
 <div class="section" id="klaipeda">
-<h3>Klaipėda<a class="headerlink" href="#klaipeda" title="Permalink to this headline">¶</a></h3>
+<h3>Klaipėda<a class="headerlink" href="#klaipeda" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
@@ -1035,7 +1036,7 @@
 </div>
 </div>
 <div class="section" id="panevezys">
-<h3>Panevėžys<a class="headerlink" href="#panevezys" title="Permalink to this headline">¶</a></h3>
+<h3>Panevėžys<a class="headerlink" href="#panevezys" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
@@ -1749,16 +1750,16 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="gtfs-vintra.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gtfs-vintra.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">praeitas</p>
             <p class="prev-next-title">VINTRA</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../saltiniai.html" title="next page">
+    <a class='right-next' id="next-link" href="../saltiniai.html" title="kitas page">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">kitas</p>
         <p class="prev-next-title">Šaltiniai</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -1770,9 +1771,9 @@
     <footer class="footer">
   <p>
     
-      By Karolis Vyčius<br/>
+      Iki Karolis Vyčius<br/>
     
-        &copy; Copyright 2022.<br/>
+        &copy; Autorių teisės 2022.<br/>
   </p>
 </footer>
 </main>

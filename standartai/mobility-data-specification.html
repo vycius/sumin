@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="lt">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -56,12 +57,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://judumas.vycius.lt/standartai/mobility-data-specification.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="index" title="Indeksas" href="../genindex.html" />
+    <link rel="search" title="Paieška" href="../search.html" />
     <link rel="next" title="Apple Maps" href="../apps/apple_maps.html" />
     <link rel="prev" title="GTFS Realtime" href="gtfs-realtime.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="lt">
     
 
     <!-- Google Analytics -->
@@ -101,7 +102,7 @@
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Ieškoti šioje knygoje ..." aria-label="Ieškoti šioje knygoje ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
@@ -210,8 +211,8 @@
             
             <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
                 data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                aria-expanded="true" aria-label="Perjungti naršymą" aria-controls="site-navigation"
+                title="Perjungti naršymą" data-toggle="tooltip" data-placement="left">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-arrow-left"></i>
                 <i class="fas fa-arrow-up"></i>
@@ -219,7 +220,7 @@
             
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Atsisiųskite šį puslapį"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
@@ -227,10 +228,10 @@
         
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/standartai/mobility-data-specification.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -243,20 +244,20 @@
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/vycius/judumas"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
+                data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
+                    class="fab fa-github"></i>saugykla</button></a>
         
         <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/mobility-data-specification.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+                title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
     </div>
 </div>
 
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pilno ekrano režimas"
+        title="Pilno ekrano režimas"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -285,8 +286,8 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="mobility-data-specification">
-<h1>Mobility Data Specification<a class="headerlink" href="#mobility-data-specification" title="Permalink to this headline">¶</a></h1>
-<p>Mobility Data Specification (MDS) yra vienas iš standartų paspirtukų kompanijų kontrolei yra. Šis standartas naudojamas daugiau nei 130 miestų <span id="id1">[<a class="reference internal" href="../saltiniai.html#id3">Foundation, 2021</a>]</span> ir jau dabar palaikomas Bolt, Lime, Lyft ir kt.</p>
+<h1>Mobility Data Specification<a class="headerlink" href="#mobility-data-specification" title="Nuoroda į šią antraštę">¶</a></h1>
+<p>Mobility Data Specification (MDS) yra vienas iš standartų paspirtukų kompanijų kontrolei yra. Šis standartas naudojamas daugiau nei 130 miestų <span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id3">2</a></sup></span> ir jau dabar palaikomas Bolt, Lime, Lyft ir kt.</p>
 <p>MDS suteikia galimybę kontroliuojančiai institucijai iš kompanijų gauti duomenis, kurie gali padėti:</p>
 <ul class="simple">
 <li><p>Nagrinėjant skundus (paspirtukų palikimą neleistinose vietose, važiavimo greitį ir pnš.);</p></li>
@@ -427,16 +428,16 @@ if (outputEl) {{
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="gtfs-realtime.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gtfs-realtime.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-subtitle">praeitas</p>
             <p class="prev-next-title">GTFS Realtime</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../apps/apple_maps.html" title="next page">
+    <a class='right-next' id="next-link" href="../apps/apple_maps.html" title="kitas page">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">kitas</p>
         <p class="prev-next-title">Apple Maps</p>
     </div>
     <i class="fas fa-angle-right"></i>
@@ -448,9 +449,9 @@ if (outputEl) {{
     <footer class="footer">
   <p>
     
-      By Karolis Vyčius<br/>
+      Iki Karolis Vyčius<br/>
     
-        &copy; Copyright 2022.<br/>
+        &copy; Autorių teisės 2022.<br/>
   </p>
 </footer>
 </main>
