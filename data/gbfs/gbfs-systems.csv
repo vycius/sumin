@@ -1,0 +1,647 @@
+Country Code,Name,Location,Latitude,Longitude,System ID,URL,Auto-Discovery URL
+AE,Careem BIKE,"Dubai, AE",25.2048493,55.2707828,careem_bike,https://www.careem.com/en-ae/careem-bike/,https://dubai.publicbikesystem.net/ube/gbfs/v1/
+AR,Ecobici,"Buenos Aires, AR",-34.6036844,-58.3815591,bike_buenosaires,https://www.buenosaires.gob.ar/ecobici,https://buenosaires.publicbikesystem.net/ube/gbfs/v1/
+AR,Bike Nordelta,"Buenos Aires, AR",-34.6036844,-58.3815591,bike_nordelta,https://bikeitau.com.br/nordelta/,https://nordelta.publicbikesystem.net/ube/gbfs/v1/
+AR,MiBiciTuBici,"Rosario, Santa Fe, AR",-32.9587022,-60.6930416,biketobike,https://www.mibicitubici.gob.ar/,https://www.mibicitubici.gob.ar/opendata/gbfs.json
+AT,city bike Linz,"Linz, AT",48.30694,14.28583,nextbike_al,https://citybikelinz.at/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_al/gbfs.json
+AT,nextbike Austria,"Salzburg, AT",47.80949,13.05501,nextbike_at,https://www.nextbike.at/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_at/gbfs.json
+AT,nextbike Burgenland Austria,"Neusiedler See, AT",47.8650427,16.7775594,nextbike_na,https://www.nextbike.at/de/burgenland/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_na/gbfs.json
+AT,nextbike Klagenfurt Austria,"Klagenfurt, AT",46.6364598,14.3122246,nextbike_ka,https://www.nextbike.at/de/klagenfurt/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ka/gbfs.json
+AT,nextbike Niederösterreich Austria,Austria,47.516231,14.550072,nextbike_la,https://www.nextbike.at/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_la/gbfs.json
+AT,nextbike Tirol Austria,"Serfaus, AT",47.0386917,10.6048273,nextbike_ta,https://www.serfaus.gv.at/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ta/gbfs.json
+AT,Stadtrad Innsbruck Austria,"Innsbruck, AT",47.2692124,11.4041024,nextbike_si,https://stadtrad.ivb.at/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_si/gbfs.json
+AT,Vienna,"Vienna, AT",48.2081743,16.3738189,Link_Vienna,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Vienna/gbfs.json
+AU,Neuron Mobility,"Brisbane, AU",-27.4704528,153.0260341,11b14b88-3598-4d3c-821d-e6f2e37cd902,https://www.neuron.sg,https://mds-global-bne.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Canberra, AU",-35.2801903,149.1310038,11b14b88-3598-4d3c-821d-e6f2e37cd903,https://www.neuron.sg,https://mds-global-cbr.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Darwin, AU",-12.4637333,130.8444446,11b14b88-3598-4d3c-821d-e6f2e37cd904,https://www.neuron.sg,https://mds-global-drw.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Hobart, AU",-42.8826055,147.3257196,11b14b88-3598-4d3c-821d-e6f2e37cd902,https://www.rideneuron.com,https://mds-global-hba.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Launceston, AU",-41.439068,147.1357671,11b14b88-3598-4d3c-821d-e6f2e37cd903,https://www.rideneuron.com,https://mds-global-lst.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Melbourne, AU",-37.8136276,144.9630576,11b14b88-3598-4d3c-821d-e6f2e37cd901,https://www.rideneuron.com,https://mds-global-mel.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Perth, AU",-31.9523123,115.861309,11b14b88-3598-4d3c-821d-e6f2e37cd904,https://www.rideneuron.com,https://mds-global-per.neuron-mobility.com/gbfs/2/
+AU,Neuron Mobility,"Townsville, AU",-19.2589635,146.8169483,11b14b88-3598-4d3c-821d-e6f2e37cd909,https://www.neuron.sg,https://mds-global-tsv.neuron-mobility.com/gbfs/2/
+AW,Greenbike Aruba,"Aruba, AW",12.52111,-69.968338,greenbike_aruba,http://greenbikearuba.com,https://aru.publicbikesystem.net/ube/gbfs/v1/
+BA,BL bike,"Banja Luka, BA",44.7721811,17.191,nextbike_bj,https://www.nextbike.ba/sr/banjaluka/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bj/gbfs.json
+BA,Sarajevo Bosnia and Herzegovina,"Sarajevo, BA",43.8562586,18.4130763,nextbike_ba,https://www.nextbike.ba/bs/sarajevo/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ba/gbfs.json
+BA,Zenica,"Zenica, BA",44.2034392,17.9077432,nextbike_bz,https://www.nextbike.ba/bs/zenica/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bz/gbfs.json
+BE,Bird Antwerp,"Antwerpen, BE",51.2213404,4.4051485,bird-antwerp,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/antwerp/gbfs.json
+BE,Blue-bike,"Antwerpen, BE",51.2213404,4.4051485,bluebike,https://www.blue-bike.be/nl,https://api.delijn.be/gbfs/gbfs.json
+BE,Donkey Republic Ghent,"Ghent, BE",51.0500182,3.7303351,donkey_gh,https://www.donkey.bike/cities/bike-rental-ghent/,https://stables.donkey.bike/api/public/gbfs/2/donkey_gh/gbfs.json
+BE,Donkey Republic Kortrijk & Leiedal,"Kortrijk & Leiedal, BE",50.8005119,3.2703098,donkey_kortrijk_leiedal,https://www.donkey.bike/cities/bike-rental-kortrijk-zuid-west-vlaanderen/,https://stables.donkey.bike/api/public/gbfs/2/donkey_kortrijk_leiedal/gbfs
+BE,Lime Brussels,"Brussels, BE",50.8476424,4.3571696,lime_brussels,https://www.li.me,https://data.lime.bike/api/partners/v2/gbfs/brussels/gbfs.json
+BE,Pony Brussels,"Bruxelles, BE",50.8476424,4.3571696,pony_brussels,https://getapony.com,https://gbfs.getapony.com/v1/brussels/en/gbfs.json
+BE,Pony Liège,"Liège, BE",50.6329586,5.5697498,pony_liège,https://getapony.com,https://gbfs.getapony.com/v1/liege/en/gbfs.json
+BE,Velo Antwerpen,"Antwerpen, BE",51.2213404,4.4051485,cc_smartbike_antwerp,https://www.velo-antwerpen.be/nl,https://gbfs.smartbike.com/antwerp/1.0/gbfs.json
+BR,Bike Itaú - Pernambuco,"Recife, BR",-8.0577401,-34.8829629,bike_pe,https://bikeitau.com.br/bikepe,https://rec.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike Itaú - Poa,"Porto Alegre, BR",-30.0368176,-51.2089887,bike_poa,https://bikeitau.com.br/bikepoa,https://poa.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike Itaú - Rio,"Rio de Janeiro, BR",-22.9068467,-43.1728965,bike_rio,https://bikeitau.com.br/bikerio/,https://riodejaneiro.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike Itaú - Riviera,"Riviera, BR",,,rivi_bike,https://www.rivieradesaolourenco.com/rivibike-2/,https://riviera.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike Itaú - Salvador,"Salvador, BR",-12.9777334,-38.501648,bike_salvador,https://bikeitau.com.br/bikesalvador/,https://salvador.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike Itaú - Sampa,"São Paulo, BR",-23.5557714,-46.6395571,bike_sampa,https://bikeitau.com.br/bikesampa,https://saopaulo.publicbikesystem.net/ube/gbfs/v1/
+BR,Bike VV,"Vila Velha, BR",-20.3518079,-40.3079697,bike_vv,https://www.bikevv.com.br/,https://vilavelha.publicbikesystem.net/ube/gbfs/v1/
+CA,Accès Vélo,"Saguenay, CA",48.4280529,-71.0684923,saguenay_bike,https://sts.saguenay.ca/infos-pratiques/acces-velo-1/acces-velo,https://saguenay.publicbikesystem.net/customer/gbfs/v2/gbfs.json
+CA,àVélo,"Ville de Québec, CA",46.8138783,-71.2079809,avelo_quebec,https://www.rtcquebec.ca/informations-pratiques/services-complementaires/avelo,https://quebec.publicbikesystem.net/customer/gbfs/v2/gbfs.json
+CA,Bike Share Toronto,"Toronto, CA",43.653226,-79.3831843,bike_share_toronto,https://www.bikesharetoronto.com/,https://tor.publicbikesystem.net/customer/gbfs/v2/gbfs.json
+CA,Bird Calgary,"Calgary, CA",51.0447331,-114.0718831,bird-calgary,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/calgary/gbfs.json
+CA,Bird Edmonton,"Edmonton, CA",53.5461245,-113.4938229,bird-edmonton,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/edmonton/gbfs.json
+CA,Bird Ottawa,"Ottawa, CA",45.4215296,-75.6971931,bird-ottawa,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/ottawa/gbfs.json
+CA,BIXI Montréal,"Montréal, CA",45.5016889,-73.567256,Bixi_MTL,https://www.bixi.com/,https://gbfs.velobixi.com/gbfs/gbfs.json
+CA,HOPR Vancouver,"Vancouver, CA",49.2827291,-123.1207375,22,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/22/
+CA,Lime Calgary,"Calgary, CA",51.0447331,-114.0718831,lime_calgary,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/calgary/gbfs.json
+CA,Lime Edmonton,"Edmonton, CA",53.5461245,-113.4938229,lime_edmonton,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/edmonton/gbfs.json
+CA,Lime Kelowna,"Kelowna, CA",49.8879519,-119.4960106,lime_kelowna,https://www.li.me,https://data.lime.bike/api/partners/v2/gbfs/kelowna/gbfs.json
+CA,Lime Ottawa,"Ottawa, CA",45.4215296,-75.6971931,lime_ottawa,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/ottawa/gbfs.json
+CA,Mobi Bike Share,"Vancouver, CA",49.2827291,-123.1207375,mobi_bikes,https://www.mobibikes.ca/,https://vancouver-gbfs.smoove.pro/gbfs/gbfs.json
+CA,Neuron Mobility,"Calgary, CA",51.0447331,-114.0718831,11b14b88-3598-4d3c-821d-e6f2e37cd901,https://www.neuron.sg,https://mds-global-yyc.neuron-mobility.com/gbfs/2/
+CA,Neuron Mobility,"Ottawa, CA",45.4215296,-75.6971931,11b14b88-3598-4d3c-821d-e6f2e37cd901,https://www.neuron.sg,https://mds-global-yow.neuron-mobility.com/gbfs/2/
+CA,Neuron Mobility,"Red Deer, CA",52.268975,-113.8115599,11b14b88-3598-4d3c-821d-e6f2e37cd901,https://www.neuron.sg,https://mds-global-yqf.neuron-mobility.com/gbfs/2/
+CA,Red Deer,"Red Deer, CA",52.268975,-113.8115599,Link_Red_Deer,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Red%20Deer/gbfs.json
+CA,Roll Calgary,"Calgary, CA",51.0447331,-114.0718831,roll_technologies_ca,https://rollscooters.com,https://data.rollapi.com/v1/gbfs/calgary/gbfs.json
+CA,Roll Kelowna,"Kelowna, CA",49.8879519,-119.4960106,roll_technologies_ca,https://rollscooters.com,https://data.rollapi.com/v1/gbfs/kelowna/gbfs.json
+CA,Roll Ottawa,"Ottawa, CA",45.4215296,-75.6971931,roll_technologies_ca,https://rollscooters.com,https://data.rollapi.com/v1/gbfs/ottawa/gbfs.json
+CA,Sobi Hamilton,"Hamilton, CA",39.7426598,-122.0135914,sobi_hamilton,https://hamilton.socialbicycles.com/,https://hamilton.socialbicycles.com/opendata/gbfs.json
+CA,Spin Edmonton,"Edmonton, CA",53.5461245,-113.4938229,spin edmonton,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/edmonton/gbfs
+CA,Spin Kelowna,"Kelowna, CA",49.8879519,-119.4960106,spin kelowna_sr,https://www.spin.app,https://gbfs.spin.pm/api/gbfs/v2_2/kelowna/gbfs.json
+CA,Wilson Commons,"Victoria, BC,CA",48.4284207,-123.3656444,36,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/36/
+CH,Donkey Republic Geneva,"Geneva, CH",46.2043907,6.1431577,donkey_ge,https://www.donkey.bike/cities/bike-rental-geneva/,https://stables.donkey.bike/api/public/gbfs/2/donkey_ge/gbfs.json
+CH,Donkey Republic Le Locle,"Le Locle, CH",47.0577195,6.7487354,donkey_le_locle,https://www.donkey.bike/cities/bike-rental-le-locle/,https://stables.donkey.bike/api/public/gbfs/2/donkey_le_locle/gbfs.json
+CH,Donkey Republic Neuchâtel,"Neuchâtel, CH",46.9899874,6.9292732,donkey_neuchatel,https://www.donkey.bike/cities/bike-rental-neuchatel/,https://stables.donkey.bike/api/public/gbfs/2/donkey_neuchatel/gbfs.json
+CH,Donkey Republic Sion,"Sion, CH",46.2331221,7.360626,donkey_sion,https://www.donkey.bike/cities/bike-rental-sion/,https://stables.donkey.bike/api/public/gbfs/2/donkey_sion/gbfs.json
+CH,Donkey Republic Thun,"Thun, CH",46.7579868,7.6279881,donkey_thun,https://www.donkey.bike/cities/bike-rental-thun/,https://stables.donkey.bike/api/public/gbfs/2/donkey_thun/gbfs.json
+CH,Donkey Republic Yverdon-les-Bains,"Yverdon Les Bains, CH",46.7784736,6.641183,donkey_yverdon-les-bains,https://www.donkey.bike/cities/bike-rental-yverdon-les-bains/,https://stables.donkey.bike/api/public/gbfs/2/donkey_yverdon-les-bains/gbfs.json
+CH,nextbike Switzerland,"Switzerland, CH",46.818188,8.227512,nextbike_ch,https://www.nextbike.ch/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ch/gbfs.json
+CH,sharedmobility.ch,"Switzerland, CH",46.818188,8.227512,sharedmobility.ch,https://www.sharedmobility.ch/info,https://www.sharedmobility.ch/gbfs.json
+CL,Bike Itaú - Santiago,"Santiago, CL",-33.4488897,-70.6692655,bike_santiago,https://www.bikesantiago.cl/,https://santiago.publicbikesystem.net/ube/gbfs/v1/
+CY,nextbike Cyprus,Cyprus,35.126413,33.429859,nextbike_cy,https://www.nextbike.com.cy/el/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cy/gbfs.json
+CY,Velespeed,"Nicosia, CY",35.1855659,33.3822764,velespeed,https://en.velespeed.net/,https://nicosia.publicbikesystem.net/ube/gbfs/v1/
+CZ,nextbike Berounsko,"Berounsko, CZ",49.9672047,14.0862836,nextbike_td,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_td/gbfs.json
+CZ,nextbike Brno,"Brno, CZ",49.1950602,16.6068371,nextbike_te,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_te/gbfs.json
+CZ,nextbike Frýdek-Místek,"Frýdek-Místek, CZ",49.6819305,18.3673216,nextbike_ts,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ts/gbfs.json
+CZ,nextbike Havířov,"Havířov, CZ",49.7803923,18.4306254,nextbike_th,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_th/gbfs.json
+CZ,nextbike Hradec Králové,"Hradec Králové, CZ",50.2103605,15.825211,nextbike_tl,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tl/gbfs.json
+CZ,nextbike Kladno,"Kladno, CZ",50.1416986,14.1067465,nextbike_tk,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tk/gbfs.json
+CZ,nextbike Krnov,"Krnov, CZ",50.0905834,17.7030681,nextbike_tw,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tw/gbfs.json
+CZ,nextbike Mladoboleslavsko,CZ,,,nextbike_tq,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tq/gbfs.json
+CZ,nextbike Olomouc,"Olomouc, CZ",49.593778,17.2508787,nextbike_ti,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ti/gbfs.json
+CZ,nextbike Opava,"Opava, CZ",49.9406598,17.8947989,nextbike_tj,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tj/gbfs.json
+CZ,nextbike Ostrava,CZ,,,nextbike_to,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_to/gbfs.json
+CZ,nextbike Pardubice,"Pardubice, CZ",50.0343092,15.7811994,nextbike_tm,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tm/gbfs.json
+CZ,nextbike Praha,CZ,,,nextbike_tg,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tg/gbfs.json
+CZ,nextbike Prostejov,"Prostejov, CZ",49.4724489,17.1067513,nextbike_cz,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cz/gbfs.json
+CZ,nextbike Písek,"Písek, CZ",49.303454,14.158029,nextbike_ty,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ty/gbfs.json
+CZ,nextbike Rychnovsko,"Rychnovsko, CZ",49.7759656,16.0668926,nextbike_tx,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tx/gbfs.json
+CZ,nextbike Uherské Hradiště,"Uherské Hradiště, CZ",49.0597969,17.4958501,nextbike_tt,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tt/gbfs.json
+CZ,nextbike Zlín,"Zlín, CZ",49.2244365,17.6627635,nextbike_tv,https://www.nextbikeczech.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tv/gbfs.json
+DE,Bergisches e-Bike,"Bergisches e-Bike, DE",51.0014241,7.1712599,nextbike_ac,https://www.nextbike.de/de/bergisches-ebike/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ac/gbfs.json
+DE,Berlin-Buch Campus,"Berlin-Buch, DE",52.641401,13.496539,nextbike_cb,https://www.nextbike.de/de/berlin-buch/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cb/gbfs.json
+DE,Bonn nextbike,"Bonn, DE",50.73743,7.0982068,nextbike_bf,https://www.nextbike.de/de/bonn/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bf/gbfs.json
+DE,Donkey Republic Berlin,"Berlin, DE",52.5200066,13.404954,donkey_berlin,https://www.donkey.bike/cities/bike-rental-berlin/,https://stables.donkey.bike/api/public/gbfs/2/donkey_berlin/gbfs.json
+DE,Donkey Republic Freiburg,"Freiburg, DE",47.9990077,7.8421043,donkey_freiburg,https://www.donkey.bike/cities/bike-rental-freiburg/,https://stables.donkey.bike/api/public/gbfs/2/donkey_freiburg/gbfs.json
+DE,Donkey Republic Munich,"Munich, DE",48.1351253,11.5819806,donkey_munich,https://www.donkey.bike/cities/bike-rental-munich/,https://stables.donkey.bike/api/public/gbfs/2/donkey_munich/gbfs.json
+DE,Eifel e-Bike,"Eifel e-Bike, DE",50.2020431,6.4101953,nextbike_eb,https://www.nextbike.de/de/eifel-ebike/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eb/gbfs.json
+DE,Frelo Freiburg,"Freiburg, DE",47.9990077,7.8421043,nextbike_df,https://www.frelo-freiburg.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_df/gbfs.json
+DE,Graben - ready4green,"Graben, DE",48.1888315,10.8223549,nextbike_da,https://www.nextbike.de/de/ready4green/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_da/gbfs.json
+DE,KVB Rad Germany,"Köln, DE",50.937531,6.9602786,nextbike_kg,https://www.kvb-rad.de/de/koeln/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kg/gbfs.json
+DE,KVV.nextbike,DE,,,nextbike_fg,https://www.kvv-nextbike.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_fg/gbfs.json
+DE,Lime Hamburg,"Hamburg, DE",53.5510846,9.9936818,lime_hamburg,https://li.me,https://data.lime.bike/api/partners/v2/gbfs/hamburg/gbfs.json
+DE,meinSiggi,"Bielefeld, DE",52.0302285,8.5324708,nextbike_dg,https://www.nextbike.de/de/bielefeld/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dg/gbfs.json
+DE,metropolradruhr Bochum,"Bochum, DE",51.4818445,7.2162363,nextbike_ms,https://www.metropolradruhr.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ms/gbfs.json
+DE,metropolradruhr Germany,DE,,,nextbike_mr,https://www.metropolradruhr.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mr/gbfs.json
+DE,MOBIbike,"Dresden, DE",51.0504088,13.7372621,nextbike_dx,https://www.nextbike.de/de/dresden/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dx/gbfs.json
+DE,NEW MöBus nextbike,"Mönchengladbach, DE",51.1941686,6.4315392,nextbike_sn,https://www.nextbike.de/de/moenchengladbach/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sn/gbfs.json
+DE,nextbike Berlin,"Berlin, DE",52.5200066,13.404954,nextbike_bn,https://www.nextbike.de/de/berlin/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json
+DE,nextbike Düsseldorf,"Düsseldorf, DE",51.2277411,6.7734556,nextbike_dd,https://www.nextbike.de/de/duesseldorf/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dd/gbfs.json
+DE,nextbike Erfurt,"Erfurt, DE",50.9847679,11.0298799,nextbike_ef,https://www.nextbike.de/de/erfurt/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ef/gbfs.json
+DE,nextbike Frankfurt,"Frankfurt, DE",50.1109221,8.6821267,nextbike_ff,https://www.nextbike.de/de/frankfurt/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ff/gbfs.json
+DE,nextbike Gießen,"Gießen, DE",50.5840512,8.6784031,nextbike_ng,https://www.nextbike.de/de/giessen/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ng/gbfs.json
+DE,nextbike Gütersloh,"Gütersloh, DE",51.9032375,8.3857535,nextbike_dj,https://www.nextbike.de/de/guetersloh/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dj/gbfs.json
+DE,nextbike Kassel,"Kassel, DE",51.3127114,9.4797461,nextbike_dk,https://www.nextbike.de/de/kassel/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dk/gbfs.json
+DE,nextbike Lahr (Pedelecs),"Lahr, DE",48.33915,7.8781487,nextbike_lr,https://www.nextbike.de/de/lahr/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lr/gbfs.json
+DE,nextbike Leipzig,"Leipzig, DE",51.3396955,12.3730747,nextbike_le,https://www.nextbike.de/de/leipzig/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_le/gbfs.json
+DE,nextbike Lippstadt,"Lippstadt, DE",51.6712278,8.3406481,nextbike_li,https://www.nextbike.de/de/lippstadt/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_li/gbfs.json
+DE,nextbike Marburg,"Marburg, DE",50.8018843,8.7657677,nextbike_nm,https://www.nextbike.de/de/marburg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nm/gbfs.json
+DE,nextbike Norderstedt,"Norderstedt, DE",53.6993066,10.0008798,nextbike_nn,https://www.nextbike.de/de/norderstedt/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nn/gbfs.json
+DE,nextbike Offenburg,"Offenburg, DE",48.473451,7.9498017,nextbike_dl,https://www.nextbike.de/de/offenburg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dl/gbfs.json
+DE,nextbike Quickborn,"Quickborn, DE",53.7289353,9.9078766,nextbike_dq,https://www.nextbike.de/de/quickborn/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dq/gbfs.json
+DE,nextbike Rüsselsheim am Main,"Rüsselsheim am Main, DE",49.9887497,8.4216976,nextbike_do,https://www.nextbike.de/de/ruesselsheim/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_do/gbfs.json
+DE,nextbike Wiesbaden,"Wiesbaden, DE",50.0782184,8.2397608,nextbike_wn,https://www.nextbike.de/de/wiesbaden/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wn/gbfs.json
+DE,nextbike Würzburg,"Würzburg, DE",49.7913044,9.9533548,nextbike_dt,https://www.nextbike.de/de/wuerzburg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dt/gbfs.json
+DE,Nibelungen-Bike,"Braunschweig, DE",52.2688736,10.5267696,nextbike_dn,https://www.nextbike.de/de/braunschweig/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dn/gbfs.json
+DE,Oeynrad,"Bad Oeynhausen, DE",52.2084623,8.8009706,nextbike_dz,https://www.nextbike.de/de/badoeynhausen/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dz/gbfs.json
+DE,Potsdam Rad,"Potsdam, DE",52.3905689,13.0644729,nextbike_dc,https://www.nextbike.de/de/potsdam/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dc/gbfs.json
+DE,RSVG-Bike,"RSVG, DE",,,nextbike_rb,https://www.nextbike.de/de/rsvg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rb/gbfs.json
+DE,RVK,"RVK e-Bike, DE",,,nextbike_dr,https://www.nextbike.de/de/rvk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dr/gbfs.json
+DE,SAP Walldorf,"Walldorf, DE",49.3063689,8.6427693,nextbike_ds,https://www.nextbike.de/de/walldorf/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ds/gbfs.json
+DE,Sprottenflotte,DE,,,nextbike_sf,https://www.nextbike.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sf/gbfs.json
+DE,SWA Rad,"Augsburg, DE",48.3705449,10.89779,nextbike_ag,https://www.swa-rad.de/de/augsburg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ag/gbfs.json
+DE,UsedomRad Germany,"Usedom, DE",53.9335819,14.0958343,nextbike_ur,https://usedomrad.de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ur/gbfs.json
+DE,VAG_Rad,"Nürnberg, DE",49.4591094,11.1092049,nextbike_dv,https://www.vagrad.de/de/nuernberg/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dv/gbfs.json
+DE,VRNnextbike,DE,,,nextbike_vn,https://www.vrnnextbike.de/de/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vn/gbfs.json
+DE,WK-Bike (Bremen),"Bremen, DE",53.0792962,8.8016937,nextbike_wk,https://www.wk-bike.de/de/bremen/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_wk/gbfs.json
+DE,wupsiRad Leverkusen,"Leverkusen, DE",51.0459248,7.0192196,nextbike_dw,https://www.wupsirad.de/de/leverkusen/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_dw/gbfs.json
+DK,Donkey Republic Aalborg,"Aalborg, DK",57.0488195,9.921747,donkey_aalborg,https://www.donkey.bike/cities/bike-rental-aalborg/,https://stables.donkey.bike/api/public/gbfs/2/donkey_aalborg/gbfs.json
+DK,Donkey Republic Aarhus,"Aarhus, DK",56.162939,10.203921,donkey_aarhus,https://www.donkey.bike/cities/bike-rental-aarhus/,https://stables.donkey.bike/api/public/gbfs/2/donkey_aarhus/gbfs.json
+DK,Donkey Republic Bandholm,"Bandholm, DK",54.835782,11.482409,donkey_bandholm,https://www.donkey.bike/cities/bike-rental-bandholm/,https://stables.donkey.bike/api/public/gbfs/2/donkey_bandholm/gbfs.json
+DK,Donkey Republic Copenhagen,"Copenhagen, DK",55.6760968,12.5683371,donkey_copenhagen,https://www.donkey.bike/cities/bike-rental-copenhagen/,https://stables.donkey.bike/api/public/gbfs/2/donkey_copenhagen/gbfs.json
+DK,Donkey Republic Frederikshavn,"Frederikshavn, DK",57.442711,10.521006,donkey_frederikshavn,https://www.donkey.bike/cities/bike-rental-frederikshavn/,https://stables.donkey.bike/api/public/gbfs/2/donkey_frederikshavn/gbfs.json
+DK,Donkey Republic Glostrup,"Glostrup, DK",55.669217,12.402144,donkey_glostrup,https://www.donkey.bike/cities/bike-rental-glostrup/,https://stables.donkey.bike/api/public/gbfs/2/donkey_glostrup/gbfs.json
+DK,Donkey Republic Herning,"Herning, DK",56.138557,8.967322,donkey_herning,https://www.donkey.bike/cities/herning/,https://stables.donkey.bike/api/public/gbfs/2/donkey_herning/gbfs.json
+DK,Donkey Republic Klampenborg,"Klampenborg, DK",55.775472,12.589495,donkey_klampenborg,https://www.donkey.bike/cities/bike-rental-klampenborg/,https://stables.donkey.bike/api/public/gbfs/2/donkey_klampenborg/gbfs.json
+DK,Donkey Republic Lalandia (Rødby),"Lalandia (Rødby), DK",54.6661758,11.3325192,donkey_lalandia,https://www.donkey.bike/cities/bike-rental-lalandia-rodby/,https://stables.donkey.bike/api/public/gbfs/2/donkey_lalandia/gbfs.json
+DK,Donkey Republic Middelfart,"Middelfart, DK",55.497204,9.747172,donkey_middelfart,https://www.donkey.bike/cities/bike-rental-middelfart/,https://stables.donkey.bike/api/public/gbfs/2/donkey_middelfart/gbfs.json
+DK,Donkey Republic Odense,"Odense, DK",55.403756,10.40237,donkey_odense,https://www.donkey.bike/cities/bike-rental-odense/,https://stables.donkey.bike/api/public/gbfs/2/donkey_odense/gbfs.json
+DK,Donkey Republic Rødvig,"Rødvig, DK",55.256142,12.371851,donkey_roedvig,https://www.donkey.bike/cities/bike-rental-rodvig/,https://stables.donkey.bike/api/public/gbfs/2/donkey_roedvig/gbfs.json
+DK,Donkey Republic Store Heddinge,"Store Heddinge, DK",55.308933,12.38723,donkey_store_heddinge,https://www.donkey.bike/cities/bike-rental-store-heddinge/,https://stables.donkey.bike/api/public/gbfs/2/donkey_store_heddinge/gbfs.json
+ES,Alcala de Henares,"Alcalá de Henares, ES",40.4843898,-3.3688023,Link_Alcala_de_Henares,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Alcala%20de%20Henares/gbfs.json
+ES,BiciMAD (unofficial),"Madrid, ES",40.4167754,-3.7037902,bici_madrid,https://www.bicimad.com/,https://gbfs.bici.madrid/gbfs.json
+ES,Bicing,"Barcelona, ES",41.3873974,2.168568,bike_barcelona,https://www.bicing.barcelona/,https://barcelona.publicbikesystem.net/ube/gbfs/v1/
+ES,Bilbaobizi (Bilbao),"Bilbao, ES",43.2630126,-2.9349852,nextbike_bo,https://www.bilbaobizi.bilbao.eus/eu/bilbao/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bo/gbfs.json
+ES,Bird Madrid,"Madrid, ES",40.4167754,-3.7037902,bird-madrid,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/madrid/gbfs.json
+ES,Canary Islands,"Canary Islands, ES",28.2915637,-16.6291304,Link_Canary_Islands,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Canary%20Islands/gbfs.json
+ES,Dbizi,"Donostia, ES",43.318334,-1.9812313,sansebastian,https://www.dbizi.eus,https://sansebastian.publicbikesystem.net/ube/gbfs/v1/
+ES,Donkey Republic Barcelona,"Barcelona, ES",41.3873974,2.168568,donkey_barcelona,https://www.donkey.bike/cities/bike-rental-barcelona/,https://stables.donkey.bike/api/public/gbfs/2/donkey_barcelona/gbfs.json
+ES,El Puerto de Santa Maria,"El Puerto de Santa Maria, ES",36.600595,-6.2329094,Link_El_Puerto_de_Santa_Maria,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/El%20Puerto%20de%20Santa%20Maria/gbfs.json
+ES,ibizi,"Ibiza-City, ES",38.9067339,1.4205983,nextbike_ei,https://www.nextbike.es/es/ibiza/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ei/gbfs.json
+ES,Lovesharing (Canary Islands),ES,,,nextbike_ls,https://www.lovesharing.com/bikesharing/es/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ls/gbfs.json
+ES,Madrid,"Madrid, ES",40.4167754,-3.7037902,Link_Madrid,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Madrid/gbfs.json
+ES,Malaga,"Malaga, ES",36.721261,-4.4212655,Link_Malaga,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Malaga/gbfs.json
+ES,Sitycleta (Las Palmas),"Las Palmas de Gran Canaria, ES",28.2574221,-14.1466046,nextbike_el,https://www.sitycleta.com/es/laspalmas/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_el/gbfs.json
+ES,Tenerife,"Tenerife, ES",28.2915637,-16.6291304,Link_Tenerife,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Tenerife/gbfs.json
+FI,Donkey Republic Hamina,"Hamina, FI",60.5693374,27.1878318,donkey_hamina,https://www.donkey.bike/cities/bike-rental-hamina/,https://stables.donkey.bike/api/public/gbfs/2/donkey_hamina/gbfs.json
+FI,Donkey Republic Hyvinkää,"Hyvinkää,FI",60.6299525,24.8580797,donkey_hyvinkaa,https://www.donkey.bike/cities/bike-rental-hyvinkaa/,https://stables.donkey.bike/api/public/gbfs/2/donkey_hyvinkaa/gbfs
+FI,Donkey Republic Hämeenlinna,"Hämeenlinna,FI",60.9928787,24.4590243,donkey_haemeenlinna,https://www.donkey.bike/cities/bike-rental-hameenlinna/,https://stables.donkey.bike/api/public/gbfs/2/donkey_haemeenlinna/gbfs.json
+FI,Donkey Republic Iisalmi,"Iisalmi, FI",63.5694237,27.1826451,donkey_iisalmi,https://www.donkey.bike/cities/bike-rental-iisalmi/,https://stables.donkey.bike/api/public/gbfs/2/donkey_iisalmi/gbfs.json
+FI,Donkey Republic Imatra,"Imatra, FI",61.1695977,28.7645463,donkey_imatra,https://www.donkey.bike/cities/bike-rental-imatra/,https://stables.donkey.bike/api/public/gbfs/2/donkey_imatra/gbfs.json
+FI,Donkey Republic Kotka,"Kotka, FI",60.4665666,26.9459403,donkey_kotka,https://www.donkey.bike/cities/bike-rental-kotka/,https://stables.donkey.bike/api/public/gbfs/2/donkey_kotka/gbfs.json
+FI,Donkey Republic Kouvola,"Kouvola, FI",60.8678835,26.7041601,donkey_kouvola,https://www.donkey.bike/cities/bike-rental-kouvola/,https://stables.donkey.bike/api/public/gbfs/2/donkey_kouvola/gbfs.json
+FI,Donkey Republic Lappeenranta,"Lappeenranta, FI",61.0549929,28.1896628,donkey_lappeenranta,https://www.donkey.bike/cities/bike-rental-lappeenranta/,https://stables.donkey.bike/api/public/gbfs/2/donkey_lappeenranta/gbfs.json
+FI,Donkey Republic Mikkeli,"Mikkeli,FI",61.6887271,27.2721457,donkey_mikkeli,https://www.donkey.bike/cities/bike-rental-mikkeli/,https://stables.donkey.bike/api/public/gbfs/2/donkey_mikkeli/gbfs
+FI,Donkey Republic Mäntsälä,"Mäntsälä, FI",60.6373186,25.3187278,donkey_maentsaelae,https://www.donkey.bike/cities/bike-rental-mantsala/,https://stables.donkey.bike/api/public/gbfs/2/donkey_maentsaelae/gbfs.json
+FI,Donkey Republic Porvoo,"Porvoo, FI",60.3931919,25.6652739,donkey_porvoo,https://www.donkey.bike/cities/bike-rental-porvoo/,https://stables.donkey.bike/api/public/gbfs/2/donkey_porvoo/gbfs.json
+FI,Donkey Republic Raasepori,"Raasepori, FI",59.8583831,23.5902437,donkey_raasepori,https://www.donkey.bike/cities/bike-rental-raasepori/,https://stables.donkey.bike/api/public/gbfs/2/donkey_raasepori/gbfs
+FI,Donkey Republic Riihimäki,"Riihimäki, FI",60.7373073,24.7548524,donkey_riihimaki,https://www.donkey.bike/cities/bike-rental-riihimaki/,https://stables.donkey.bike/api/public/gbfs/2/donkey_riihimaki/gbfs
+FR,VéloCité,"Besançon, FR",47.237829,6.0240539,besançon,https://www.velocite.besancon.fr/,https://transport.data.gouv.fr/gbfs/besancon/gbfs.json
+FR,Bicloo,"Nantes, FR",47.218371,-1.553621,nantes,https://www.bicloo.nantesmetropole.fr/en/home,https://transport.data.gouv.fr/gbfs/nantes/gbfs.json
+FR,Bird Bordeaux,"Bordeaux, FR",44.837789,-0.57918,bird-bordeaux,https://bird.co,https://mds.bird.co/gbfs/v2/public/bordeaux/gbfs.json
+FR,Bird Castres,"Castres, FR",43.606214,2.241295,bird-castres,https://bird.co,https://mds.bird.co/gbfs/v2/public/castres/gbfs.json
+FR,Bird Chalonsenchampagne,"Châlons-en-Champagne, FR",48.956682,4.363073,bird-chalonsenchampagne,https://bird.co,https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/gbfs.json
+FR,Bird Dieppe,"Dieppe, FR",49.922992,1.077483,bird-dieppe,https://bird.co,https://mds.bird.co/gbfs/v2/public/dieppe/gbfs.json
+FR,Bird Draguignan,"Draguignan, FR",43.5377269,6.464993,bird-draguignan,https://bird.co,https://mds.bird.co/gbfs/v2/public/draguignan/gbfs.json
+FR,Bird Epron,"Epron, FR",49.222732,-0.37032,bird-epron,https://bird.co,https://mds.bird.co/gbfs/v2/public/epron/gbfs.json
+FR,Bird Herouvillesaintclair,"Herouville-Saint-Clair, FR",49.20358,-0.333655,bird-herouvillesaintclair,https://bird.co,https://mds.bird.co/gbfs/v2/public/herouvillesaintclair/gbfs.json
+FR,Bird Larochesuryon,"Roche-sur-Yon, FR",46.670511,-1.426442,bird-larochesuryon,https://bird.co,https://mds.bird.co/gbfs/v2/public/larochesuryon/gbfs.json
+FR,Bird Laval,"Laval, FR",48.0785146,-0.7669906,bird-laval,https://bird.co,https://mds.bird.co/gbfs/v2/public/laval/gbfs.json
+FR,Bird Marseille,"Marseille, FR",43.296482,5.36978,bird-marseille,https://bird.co,https://mds.bird.co/gbfs/v2/public/marseille/gbfs.json
+FR,Bird Millau,"Millau, FR",44.100575,3.077801,bird-millau,https://bird.co,https://mds.bird.co/gbfs/v2/public/millau/gbfs.json
+FR,Bird Montlucon,"Montluçon, FR",46.3415466,2.6019912,bird-montlucon,https://bird.co,https://mds.bird.co/gbfs/v2/public/montlucon/gbfs.json
+FR,Bird Ouistreham,"Ouistreham, FR",49.276656,-0.258658,bird-ouistreham,https://bird.co,https://mds.bird.co/gbfs/v2/public/ouistreham/gbfs.json
+FR,Bird Sarreguemines,"Sarreguemines, FR",49.106031,7.070862,bird-sarreguemines,https://bird.co,https://mds.bird.co/gbfs/v2/public/sarreguemines/gbfs.json
+FR,Bird Vichy,"Vichy, FR",46.131859,3.425488,bird-vichy,https://bird.co,https://mds.bird.co/gbfs/v2/public/vichy/gbfs.json
+FR,Bordeaux,"Bordeaux, FR",44.837789,-0.57918,Link_Bordeaux,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Bordeaux/gbfs.json
+FR,C-Vélo,"Clermont-Ferrand, FR",45.777222,3.087025,CVelo_FR_Clermont-Ferrand,https://www.c-velo.fr,https://clermontferrand.publicbikesystem.net/ube/gbfs/v1/gbfs.json
+FR,CristoLib,"Créteil, Paris, FR",48.790367,2.455572,creteil,https://www.cristolib.fr/,https://transport.data.gouv.fr/gbfs/creteil/gbfs.json
+FR,Cy'clic,"Rouen, FR",49.443232,1.099971,rouen,http://cyclic.rouen.fr/,https://transport.data.gouv.fr/gbfs/rouen/gbfs.json
+FR,Cyclolib,"Carcassonne,FR",43.2132151,2.3517703,carcassonne,https://cyclolib.fr/en,https://gbfs.urbansharing.com/cyclolib.fr/gbfs.json
+FR,Donkey Republic Valenciennes,"Valenciennes,FR",50.357113,3.518332,donkey_valenciennes,https://www.donkey.bike/cities/bike-rental-valenciennes/,https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/gbfs.json
+FR,LE vélo STAR,"Rennes, FR",48.117266,-1.6777926,le_velo_star,https://www.star.fr/le-velo/nos-offres/vls/,https://eu.ftp.opendatasoft.com/star/gbfs/gbfs.json
+FR,levélo,"Marseille, FR",43.296482,5.36978,marseille,http://www.levelo-mpm.fr/,https://transport.data.gouv.fr/gbfs/marseille/gbfs.json
+FR,Libélo,"Valence, FR",44.933393,4.89236,libelo,https://www.vrd-mobilites.fr/velo/,https://valence.publicbikesystem.net/ube/gbfs/v1/gbfs.json
+FR,Lime Marseille,"Marseille, FR",43.296482,5.36978,lime_marseille,https://www.li.me,https://data.lime.bike/api/partners/v2/gbfs/marseille/gbfs.json
+FR,Lime Paris,"Paris, FR",48.856614,2.3522219,lime_paris,https://li.me/,https://data.lime.bike/api/partners/v2/gbfs/paris/gbfs.json
+FR,Optymo Belfort,"Belfort, FR",47.639674,6.863849,Optymo_FR_Belfort,https://www.optymo.fr/,https://belfort-gbfs.klervi.net/gbfs/gbfs.json
+FR,Perpignan,"Perpignan, FR",42.6886591,2.8948332,Link_Perpignan,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Perpignan/gbfs.json
+FR,Pony Angers,"Angers, FR",47.4711616,-0.5518257,pony_Angers,https://getapony.com/,https://gbfs.getapony.com/v1/angers/en/gbfs.json
+FR,Pony Bordeaux,"Bordeaux, FR",44.837789,-0.57918,pony_bordeaux,https://getapony.com/,https://gbfs.getapony.com/v1/bordeaux/en/gbfs.json
+FR,Pony Grenoble,"Grenoble, FR",45.188529,5.724524,pony_Grenoble,https://getapony.com,https://gbfs.getapony.com/v1/grenoble/fr/gbfs.json
+FR,Pony Paris,"Paris, FR",48.856614,2.3522219,pony_paris,https://getapony.com/,https://gbfs.getapony.com/v1/paris/en/gbfs.json
+FR,Tier GRENOBLE,"Grenoble, FR",45.188529,5.724524,tier_GRENOBLE,https://www.tier.app,https://data.mobilites-m.fr/api/gbfs/tier_grenoble/gbfs
+FR,V'lille,"Lille, FR",50.62925,3.057256,vlille,https://www.ilevia.fr/cms/vlille/,https://transport.data.gouv.fr/gbfs/vlille/gbfs.json
+FR,VCub Bordeaux,"Bordeaux, FR",44.837789,-0.57918,vcub,https://www.vcub.fr/,https://transport.data.gouv.fr/gbfs/vcub/gbfs.json
+FR,Vélam,"Amiens, FR",49.894067,2.295753,amiens,http://www.velam.amiens.fr/,https://transport.data.gouv.fr/gbfs/amiens/gbfs.json
+FR,Vélhop,"Strasbourg, FR",48.5734053,7.7521113,strasbourg,https://velhop.strasbourg.eu/,https://transport.data.gouv.fr/gbfs/strasbourg/gbfs.json
+FR,Vélib' Metropole,"Paris, FR",48.856614,2.3522219,Paris,https://www.velib-metropole.fr/,https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/gbfs.json
+FR,Vélivert,"Saint-Etienne, FR",45.439695,4.3871779,Velivert_FR_Saint-Etienne,https://www.velivert.fr/,https://saint-etienne-gbfs.klervi.net/gbfs/gbfs.json
+FR,Vélo'v,"Lyon, FR",45.764043,4.835659,lyon,https://velov.grandlyon.com/en/home,https://transport.data.gouv.fr/gbfs/lyon/gbfs.json
+FR,VélO2,"Cergy-Pontoise, FR",49.0331671,2.0547222,cergy-pontoise,http://www.velo2.cergypontoise.fr/,https://transport.data.gouv.fr/gbfs/cergy-pontoise/gbfs.json
+FR,VéloCité,"Mulhouse, FR",47.750839,7.335888,mulhouse,https://www.compte-mobilite.fr/services/velos-en-libre-service/,https://transport.data.gouv.fr/gbfs/mulhouse/gbfs.json
+FR,Vélocéo,"Vannes, FR",47.658236,-2.760847,Veloceo_FR_Vannes,https://veloceo.kiceo.fr/,https://vannes-gbfs.klervi.net/gbfs/gbfs.json
+FR,Vélomagg',"Montpellier, FR",43.610769,3.876716,montpellier,https://www.tam-voyages.com/presentation/?rub_code=1&thm_id=6,https://transport.data.gouv.fr/gbfs/montpellier/gbfs.json
+FR,Vélopop,"Avignon, FR",43.949317,4.805528,Vélopop_FR_Avignon,https://www.velopop.fr/,https://avignon-gbfs.klervi.net/gbfs/gbfs.json
+FR,VélOstan'lib,"Nancy, FR",48.692054,6.184417,nancy,http://www.velostanlib.fr/,https://transport.data.gouv.fr/gbfs/nancy/gbfs.json
+FR,VélÔToulouse,"Toulouse, FR",43.604652,1.444209,toulouse,http://www.velo.toulouse.fr/,https://transport.data.gouv.fr/gbfs/toulouse/gbfs.json
+FR,VélYcéo,"Saint-Nazaire, FR",47.2734979,-2.213848,velyceo,https://www.velyceo.com,https://api.gbfs.v1.ecovelo.mobi/gbfs/velyceo
+GB,BelfastBikes,"Belfast, GB",54.597285,-5.93012,nextbike_bu,https://www.belfastbikes.co.uk/en/belfast/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bu/gbfs.json
+GB,Beryl - BCP,"Bournemouth, Christchurch, Poole, GB",50.7380046,-1.9883161,beryl_bcp,https://www.beryl.cc,https://gbfs.beryl.cc/v2/BCP/gbfs.json
+GB,Beryl - Hereford,"Hereford, GB",52.056398,-2.715974,beryl_hereford,https://www.beryl.cc,https://gbfs.beryl.cc/v2/Hereford/gbfs.json
+GB,Beryl - Isle of Wight,"Isle of Wight, GB",50.6938479,-1.304734,beryl_isle_of_wight,https://www.beryl.cc,https://gbfs.beryl.cc/v2/Isle_of_Wight/gbfs.json
+GB,Beryl - London,"London, GB",51.5072178,-0.1275862,beryl_london,https://www.beryl.cc,https://gbfs.beryl.cc/v2/London/gbfs.json
+GB,Beryl-London Cargo Bike,"London,GB",51.5072178,-0.1275862,beryl_london_cargo_bike,https://beryl.cc/,https://gbfs.beryl.cc/v2/London_Cargo_Bike/gbfs.json
+GB,Beryl - Norwich,"Norwich, GB",52.6292567,1.2978802,beryl_norwich,https://www.beryl.cc,https://gbfs.beryl.cc/v2/Norwich/gbfs.json
+GB,Beryl - Watford,"Watford, GB",51.6611283,-0.3970199,beryl_watford,https://www.beryl.cc,https://gbfs.beryl.cc/v2/Watford/gbfs.json
+GB,Beryl - West Midlands,"West Midlands, GB",52.4750743,-1.829833,beryl_west_midlands,https://www.beryl.cc,https://gbfs.beryl.cc/v2/West_Midlands/gbfs.json
+GB,Co-bikes,GB,,,nextbike_eu,https://www.co-bikes.co.uk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_eu/gbfs.json
+GB,Donkey Republic Charlbury,"Charlbury, GB",51.8745,-1.479752,donkey_charlbury,https://www.donkey.bike/cities/bike-rental-charlbury/,https://stables.donkey.bike/api/public/gbfs/2/donkey_charlbury/gbfs.json
+GB,Donkey Republic Cirencester,"Cirencester, GB",51.718495,-1.968243,donkey_cirencester,https://www.donkey.bike/cities/bike-rental-cirencester/,https://stables.donkey.bike/api/public/gbfs/2/donkey_cirencester/gbfs.json
+GB,Donkey Republic Henley On Thames,"Henley On Thames, GB",51.535764,-0.902894,donkey_henley_on_thames,https://www.donkey.bike/cities/bike-rental-henley-on-thames/,https://stables.donkey.bike/api/public/gbfs/2/donkey_henley_on_thames/gbfs.json
+GB,Donkey Republic Kingham,"Kingham, GB",51.9125854,-1.6243398,donkey_kingham,https://www.donkey.bike/cities/bike-rental-kingham/,https://stables.donkey.bike/api/public/gbfs/2/donkey_kingham/gbfs.json
+GB,Donkey Republic Moreton In Marsh,"Moreton In Marsh, GB",51.9914181,-1.7028526,donkey_moreton_in_marsh,https://www.donkey.bike/cities/bike-rental-moreton-in-marsh/,https://stables.donkey.bike/api/public/gbfs/2/donkey_moreton_in_marsh/gbfs.json
+GB,Donkey Republic Northleach,"Northleach, GB",51.830777,-1.837254,donkey_northleach,https://www.donkey.bike/cities/bike-rental-northleach/,https://stables.donkey.bike/api/public/gbfs/2/donkey_northleach/gbfs.json
+GB,Donkey Republic Oxford,"Oxford, GB",51.7520209,-1.2577263,donkey_oxford,https://www.donkey.bike/cities/bike-rental-oxford/,https://stables.donkey.bike/api/public/gbfs/2/donkey_oxford/gbfs.json
+GB,Donkey Republic Plymouth,"Plymouth, GB",50.3754565,-4.1426565,donkey_plymouth,https://www.donkey.bike/cities/bike-rental-plymouth/,https://stables.donkey.bike/api/public/gbfs/2/donkey_plymouth/gbfs.json
+GB,Donkey Republic Stroud,"Stroud, GB",51.745734,-2.217758,donkey_stroud,https://www.donkey.bike/cities/bike-rental-stroud/,https://stables.donkey.bike/api/public/gbfs/2/donkey_stroud/gbfs.json
+GB,Donkey Republic Tetbury,"Tetbury, GB",51.639295,-2.15818,donkey_tetbury,https://www.donkey.bike/cities/bike-rental-tetbury/,https://stables.donkey.bike/api/public/gbfs/2/donkey_tetbury/gbfs.json
+GB,Donkey Republic The Cotswold Water Park,"The Cotswold Water Park, GB",51.6450008,-1.9683981,donkey_the_cotswold_water_park,https://www.donkey.bike/cities/bike-rental-the-cotswold-water-park/,https://stables.donkey.bike/api/public/gbfs/2/donkey_the_cotswold_water_park/gbfs.json
+GB,Donkey Republic Whichford,"Whichford, GB",52.0093559,-1.541546,donkey_whichford,https://www.donkey.bike/cities/bike-rental-whichford/,https://stables.donkey.bike/api/public/gbfs/2/donkey_whichford/gbfs.json
+GB,Donkey Republic Worthing,"Worthing, GB",50.81787,-0.372882,donkey_worthing,https://www.donkey.bike/cities/bike-rental-worthing/,https://stables.donkey.bike/api/public/gbfs/2/donkey_worthing/gbfs.json
+GB,Neuron Mobility,"Newcastle, GB",54.978252,-1.61778,11b14b88-3598-4d3c-821d-e6f2e37cd905,https://www.neuron.sg,https://mds-global-ncl.neuron-mobility.com/gbfs/2/
+GB,nextbike Stirling,"Stirling, GB",56.1165227,-3.9369029,nextbike_uk,https://www.nextbike.co.uk/en/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uk/gbfs.json
+GB,Nottingham,"Nottingham, GB",52.9540223,-1.1549892,Link_Nottingham,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Nottingham/gbfs.json
+GB,OVO Bikes Cardiff & Vale of Glamorgan,GB,,,nextbike_uc,https://www.nextbike.co.uk/en/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uc/gbfs.json
+GB,OVO Bikes Glasgow,"Glasgow, GB",55.864237,-4.251806,nextbike_gg,https://www.nextbike.co.uk/en/glasgow/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gg/gbfs.json
+GB,Pony Oxford,"Oxford, GB",51.7520209,-1.2577263,pony_oxford,https://getapony.com,https://gbfs.getapony.com/v1/oxford/en/gbfs.json
+GB,Santander Cycles - Brunel,"Brunel University, GB",51.5321389,-0.4727493,nextbike_ub,https://www.santandercycles.co.uk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ub/gbfs.json
+GB,Santander Cycles - Milton Keynes,"Milton Keynes, GB",52.0406224,-0.7594171,nextbike_ku,https://www.santandercycles.co.uk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ku/gbfs.json
+GB,Santander Cycles - Swansea,"Swansea University, GB",,,nextbike_uu,https://www.santandercycles.co.uk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uu/gbfs.json
+GB,Spin Basildon,"Basildon, GB",51.576084,0.488736,spin basildon,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/basildon/gbfs
+GB,Spin Chelmsford,"Chelmsford, GB",51.7355868,0.4685497,spin chelmsford,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/chelmsford/gbfs
+GB,Spin Clacton,"Clacton-on-Sea, GB",51.789534,1.153035,spin clacton,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/clacton/gbfs
+GB,Spin Colchester,"Colchester, GB",51.895927,0.891874,spin colchester,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/colchester/gbfs
+GB,Spin Milton Keynes,"Milton Keynes, GB",52.0406224,-0.7594171,spin milton_keynes,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/milton_keynes/gbfs
+GB,University of Surrey,"University of Surrey, GB",51.2431429,-0.5894664,nextbike_su,https://www.nextbike.co.uk/en/university-of-surrey/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_su/gbfs.json
+HR,eMobi (Croatia),"Osijek, HR",45.5549624,18.6955144,nextbike_em,https://www.nextbike.hr/hr/osijek/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_em/gbfs.json
+HR,Grad Drniš (Croatia),"Drniš, HR",43.8602887,16.1558635,nextbike_gd,https://www.nextbike.hr/hr/drnis/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gd/gbfs.json
+HR,Grad Ivanić-Grad (Croatia),"Ivanic Grad, HR",45.7071022,16.3959765,nextbike_ig,https://www.nextbike.hr/hr/ivanicgrad/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ig/gbfs.json
+HR,Grad Karlovac (Croatia),"Karlovac, HR",45.4928973,15.5552683,nextbike_kc,https://www.nextbike.hr/hr/karlovac/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_kc/gbfs.json
+HR,Grad Makarska (Croatia),"Makarska, HR",43.2937769,17.0215239,nextbike_ma,https://www.nextbike.hr/hr/makarska/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ma/gbfs.json
+HR,Grad Metković (Croatia),"Metković, HR",43.0532801,17.6493431,nextbike_cm,https://www.nextbike.hr/hr/metkovic/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cm/gbfs.json
+HR,Grad Sisak (Croatia),"Sisak, HR",45.4850767,16.3731156,nextbike_cs,https://www.nextbike.hr/hr/sisak/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cs/gbfs.json
+HR,Grad Slavonski Brod (Croatia),"Slavonski Brod, HR",45.1631431,18.0116081,nextbike_sb,https://www.nextbike.hr/hr/slavonskibrod/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sb/gbfs.json
+HR,Grad Split (Croatia),"Split , HR",43.5147118,16.4435148,nextbike_gt,https://www.nextbike.hr/hr/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gt/gbfs.json
+HR,Grad Velika Gorica (Croatia),"Velika Gorica, HR",45.7142122,16.0752431,nextbike_cg,https://www.nextbike.hr/hr/velikagorica/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cg/gbfs.json
+HR,Grad Vukovar (Croatia),"Vukovar, HR",45.3452377,19.0010204,nextbike_vu,https://www.nextbike.hr/hr/vukovar/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vu/gbfs.json
+HR,Grad Zadar (Croatia),"Zadar, HR",44.119371,15.2313648,nextbike_zd,https://www.nextbike.hr/hr/zadar/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zd/gbfs.json
+HR,Grad Zaprešić (Croatia),"Zaprešić, HR",45.8571742,15.8046577,nextbike_sg,https://www.nextbike.hr/hr/zapresic/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sg/gbfs.json
+HR,Grad Šibenik (Croatia),"Šibenik, HR",43.7350196,15.8952045,nextbike_bc,https://www.nextbike.hr/hr/sibenik/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bc/gbfs.json
+HR,Jastrebarsko (Croatia),"Jastrebarsko, HR",45.6717716,15.6507903,nextbike_cj,https://www.nextbike.hr/hr/jastrebarsko/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cj/gbfs.json
+HR,nextbike Croatia,Croatia,45.1,15.2,nextbike_hr,https://www.nextbike.hr/hr/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_hr/gbfs.json
+HR,Općina Brinje (Croatia),"Brinje, HR",44.9986892,15.1290974,nextbike_br,https://www.nextbike.hr/hr/brinje/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_br/gbfs.json
+HR,Općina Dugopolje (Croatia),"Dugopolje, HR",43.582096,16.5989117,nextbike_od,https://www.nextbike.hr/hr/dugopolje/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_od/gbfs.json
+HR,Općina Pitomača (Croatia),"Pitomača, HR",45.9501067,17.2326521,nextbike_se,https://www.nextbike.hr/hr/pitomaca/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_se/gbfs.json
+HR,Porec bike share (Croatia),"Poreč, HR",45.2271652,13.5947399,nextbike_cv,https://www.porecbikeshare.com/hr/porecbikeshare/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cv/gbfs.json
+HU,Donkey Republic Budapest,"Budapest, HU",47.497912,19.040235,donkey_budapest,https://www.donkey.bike/cities/bike-rental-budapest/,https://stables.donkey.bike/api/public/gbfs/2/donkey_budapest/gbfs.json
+IL,Bird Tel Aviv,"Tel Aviv, IL",32.0852999,34.7817676,bird-tel-aviv,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/tel-aviv/gbfs.json
+IL,Lime Tel Aviv,"Tel Aviv, IL",32.0852999,34.7817676,lime_tel_aviv,https://li.me/,https://data.lime.bike/api/partners/v2/gbfs/tel_aviv/gbfs.json
+IN,Chartered Bike (Bhopal - India),"Bhopal, IN",23.2599333,77.412615,nextbike_bi,http://www.charteredbike.in/en/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bi/gbfs.json
+IS,Donkey Republic Reykjavik,Reykjavik,64.146582,-21.9426354,donkey_reykjavik,https://www.donkey.bike/cities/bike-rental-reykjavik/,https://stables.donkey.bike/api/public/gbfs/2/donkey_reykjavik/gbfs.json
+IT,Aprillia,"Aprillia, IT",,,Link_Aprilia,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Aprilia/gbfs.json
+IT,Bird Rome,"Rome, IT",41.9027835,12.4963655,bird-rome,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/rome/gbfs.json
+IT,Giulianova,"Giulianova, IT",42.7538138,13.9665051,Link_Giulianova,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Giulianova/gbfs.json
+IT,Helbiz Bari,"Bari, IT",41.1171432,16.8718715,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/bari/gbfs/gbfs.json
+IT,Helbiz Catania,"Catania, IT",37.5078829,15.0830836,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/catania/gbfs/gbfs.json
+IT,Helbiz Cesena,"Cesena, IT",44.1396438,12.2464292,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/cesena/gbfs/gbfs.json
+IT,Helbiz Fiumicino,"Fiumicino, IT",41.7735409,12.2397117,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/fiumicino/gbfs/gbfs.json
+IT,Helbiz Firenze,"Firenze, IT",43.7695604,11.2558136,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/firenze/gbfs/gbfs.json
+IT,Helbiz Frosinone,"Frosinone, IT",41.6396009,13.3426341,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/frosinone/gbfs/gbfs.json
+IT,Helbiz Genova,"Genova, IT",44.4056499,8.946256,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/genova/gbfs/gbfs.json
+IT,Helbiz H-Farm,"H-Farm, IT",,,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/h-farm/gbfs/gbfs.json
+IT,Helbiz Latina,"Latina, IT",,,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/latina/gbfs/gbfs.json
+IT,Helbiz Modena,"Modena, IT",44.647128,10.9252269,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/modena/gbfs/gbfs.json
+IT,Helbiz Montesilvano,"Montesilvano, IT",42.5102079,14.1436996,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/montesilvano/gbfs/gbfs.json
+IT,Helbiz Napoli,"Napoli, IT",40.8517983,14.26812,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/napoli/gbfs/gbfs.json
+IT,Helbiz Palermo,"Palermo, IT",38.11569,13.3614868,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/palermo/gbfs/gbfs.json
+IT,Helbiz Parma,"Parma, IT",44.801485,10.3279036,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/parma/gbfs/gbfs.json
+IT,Helbiz Pescara,"Pescara, IT",42.4617902,14.2160898,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/pescara/gbfs/gbfs.json
+IT,Helbiz Pisa,"Pisa,  IT",43.7228386,10.4016888,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/pisa/gbfs/gbfs.json
+IT,Helbiz Reggio,"Reggio, IT",,,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/reggio/gbfs/gbfs.json
+IT,Helbiz Rome,"Rome, IT",41.9027835,12.4963655,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/rome/gbfs/gbfs.json
+IT,Helbiz USA,"Ferrara, IT",40.1342678,-75.2741855,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/ferrara/gbfs/gbfs.json
+IT,Isola delle Femmine,"Isola delle Femmine, IT",38.1985979,13.2493239,Link_Isola_delle_Femmine,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Isola%20delle%20Femmine/gbfs.json
+IT,Lime Rome,"Rome, IT",41.9027835,12.4963655,lime_rome,https://li.me,https://data.lime.bike/api/partners/v1/gbfs/rome/gbfs.json
+IT,Mazara del Vallo,"Mazara del Vallo, IT",37.6550933,12.5899615,Link_Mazara_del_Vallo,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Mazara%20del%20Vallo/gbfs.json
+IT,Milan Bikemi,"Milan, IT",45.4642035,9.189982,milan-bikemi,https://bikemi.com/en,https://gbfs.urbansharing.com/bikemi.com/gbfs.json
+IT,Modena,"Modena, IT",44.647128,10.9252269,Link_Modena,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Modena/gbfs.json
+IT,Moncalieri,"Moncalieri, IT",44.9983525,7.6802878,Link_Moncalieri,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Moncalieri/gbfs.json
+IT,Nettuno,"Nettuno, IT",41.4577305,12.6654914,Link_Nettuno,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Nettuno/gbfs.json
+IT,nextbike Bergamo,"Bergamo, IT",45.8578304,9.8819978,nextbike_ib,https://www.nextbike.it/it/bergamo/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ib/gbfs.json
+IT,Palermo,"Palermo, IT",38.11569,13.3614868,Link_Palermo,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Palermo/gbfs.json
+IT,Pomezia,"Pomezia, IT",41.6693373,12.5023439,Link_Pomezia,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Pomezia/gbfs.json
+IT,Rome,"Rome, IT",41.9027835,12.4963655,Link_Rome,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Rome/gbfs.json
+IT,Teramo,"Teramo, IT",42.6611431,13.6986639,Link_Teramo,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Teramo/gbfs.json
+IT,Vejer de la Frontera,"Vejer de la Frontera, IT",36.252034,-5.9667359,Link_Vejer_de_la_Frontera,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Vejer%20de%20la%20Frontera/gbfs.json
+IT,Verona Bike,"Verona, IT",45.4383842,10.9916215,verona-bike,https://bikeverona.it/en,https://gbfs.urbansharing.com/bikeverona.it/gbfs.json
+LI,Donkey Republic Liechtenstein,Liechtenstein,47.166,9.555373,donkey_li,https://www.donkey.bike/cities/,https://stables.donkey.bike/api/public/gbfs/2/donkey_li/gbfs.json
+LV,nextbike LV,Latvia,56.879635,24.603189,nextbike_lv,https://www.nextbike.lv/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_lv/gbfs.json
+MC,MonaBike,"Monaco, MC",43.7384176,7.4246158,mona_bike,https://monabike.mc/,https://monaco.publicbikesystem.net/ube/gbfs/v1/
+MT,nextbike Malta,"Malta, MT",48.3597197,-107.8742831,nextbike_mt,https://www.nextbike.com.mt/en/malta/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_mt/gbfs.json
+MX,Mibici Guadalajara,"Guadalajara, MX",20.6596988,-103.3496092,mibici_guadalajara,https://www.mibici.net/en/,https://guad.publicbikesystem.net/ube/gbfs/v1/
+MX,YOY - San Luis Potosi,MX,40.4297201,-111.8917672,nextbike_yp,https://www.yoymobility.com/es/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_yp/gbfs.json
+NL,Cykl,"Wageningen, NL",51.9812239,5.6584157,CKL,https://www.cykl.nl/,https://www.cykl.nl/gbfs/gbfs.json
+NL,Donkey Republic Amsterdam,"Amsterdam, NL",52.3675734,4.9041389,donkey_am,https://www.donkey.bike/cities/bike-rental-amsterdam/,https://stables.donkey.bike/api/public/gbfs/2/donkey_am/gbfs.json
+NL,Donkey Republic Den Haag,"Den Haag, NL",52.0704978,4.3006999,donkey_den_haag,https://www.donkey.bike/cities/bike-rental-den-haag/,https://stables.donkey.bike/api/public/gbfs/2/donkey_den_haag/gbfs.json
+NL,Donkey Republic Rotterdam,"Rotterdam, NL",51.9244201,4.4777325,donkey_rt,https://www.donkey.bike/nl/steden/deelfietsen-rotterdam/,https://stables.donkey.bike/api/public/gbfs/2/donkey_rt/gbfs.json
+NL,Donkey Republic Utrecht,"Utrecht, NL",52.0907374,5.1214201,donkey_ut,https://www.donkey.bike/cities/bike-rental-utrecht/,https://stables.donkey.bike/api/public/gbfs/2/donkey_ut/gbfs.json
+NL,GoAbout,Netherlands,52.132633,5.291266,goabout,https://goabout.com,https://gbfs.goabout.com/2/gbfs.json
+NL,nextbike Dordrecht,"Dordrecht, NL",51.8132979,4.6900929,nextbike_nd,https://www.nextbike.nl/nl/dordrecht/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nd/gbfs.json
+NL,NS OV Fiets,Netherlands,52.132633,5.291266,ns_ov_fiets,https://www.ns.nl/en/door-to-door/ov-fiets,http://gbfs.openov.nl/ovfiets/gbfs.json
+NO,Bergen Bysykkel,"Bergen, NO",60.3912628,5.3220544,bergenbysykkel,https://www.bergenbysykkel.no,https://api.entur.io/mobility/v2/gbfs/bergenbysykkel/gbfs
+NO,Bergen City Bike,"Bergen, NO",60.3912628,5.3220544,bergen-city-bike,https://bergenbysykkel.no/en,https://gbfs.urbansharing.com/bergenbysykkel.no/gbfs.json
+NO,Bolt Bergen,"Bergen, NO",60.3912628,5.3220544,boltbergen,https://bolt.eu/en/cities/bergen/,https://api.entur.io/mobility/v2/gbfs/boltbergen/gbfs
+NO,Bolt Drammen,"Drammen, NO",59.7440738,10.2044564,boltdrammen,https://bolt.eu/en/cities/drammen/,https://api.entur.io/mobility/v2/gbfs/boltdrammen/gbfs
+NO,Bolt Fredrikstad,"Fredrikstad, NO",59.2205369,10.9347012,boltfredrikstad,https://bolt.eu/en/cities/fredrikstad/,https://api.entur.io/mobility/v2/gbfs/boltfredrikstad/gbfs
+NO,Bolt Gjovik,"Gjovik, NO",60.8941465,10.5001072,boltgjovik,https://bolt.eu/en/cities/gjovik/,https://api.entur.io/mobility/v2/gbfs/boltgjovik/gbfs
+NO,Bolt Hamar,"Hamar, NO",60.7945331,11.0679977,bolthamar,https://bolt.eu/en/cities/hamar/,https://api.entur.io/mobility/v2/gbfs/bolthamar/gbfs
+NO,Bolt Lillehammer,"Lillehammer, NO",61.1152713,10.4662306,boltlillehammer,https://bolt.eu/en/cities/lillehammer/,https://api.entur.io/mobility/v2/gbfs/boltlillehammer/gbfs
+NO,Bolt Lillestrom,"Lillestrom, NO",59.9559696,11.0503785,boltlillestrom,https://bolt.eu/en/cities/lillestrom/,https://api.entur.io/mobility/v2/gbfs/boltlillestrom/gbfs
+NO,Bolt Oslo,"Oslo, NO",59.9138688,10.7522454,boltoslo,https://bolt.eu/en/cities/oslo/,https://api.entur.io/mobility/v2/gbfs/boltoslo/gbfs
+NO,Brakar Bysykkel,"Kongsberg, NO",59.6688776,9.6501891,brakarbysykkel,https://www.brakar.no,https://api.entur.io/mobility/v2/gbfs/brakarbysykkel/gbfs
+NO,Kolumbus Bysykkel,"Kolumbus, NO",,,kolumbusbysykkel,https://www.kolumbus.no/reise/sykkel-oversikt/bysykkelen/,https://api.entur.io/mobility/v2/gbfs/kolumbusbysykkel/gbfs
+NO,Lillestrom Bysykkel,"Lillestrom, NO",59.9559696,11.0503785,lillestrombysykkel,http://www.bysykkel.org/,https://api.entur.io/mobility/v2/gbfs/lillestrombysykkel/gbfs
+NO,Lime Olso,"Oslo, NO",59.9138688,10.7522454,limeoslo,https://www.li.me/,https://api.entur.io/mobility/v2/gbfs/limeoslo/gbfs
+NO,Move About,"Multiple cities, NO",,,moveaboutno,https://www.moveabout.no/,https://api.entur.io/mobility/v2/gbfs/moveaboutno/gbfs
+NO,Oslo Bysykkel,"Olso, NO",59.9138688,10.7522454,olsobysykkel,https://oslobysykkel.no/,https://api.entur.io/mobility/v2/gbfs/oslobysykkel/gbfs
+NO,Tier ASANE,"Asane, NO",60.4711503,5.3273573,tierasane,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierasane/gbfs
+NO,Tier Asker,"Asker, NO",59.8346001,10.4365687,tierasker,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierasker/gbfs
+NO,Tier Baerum,"Baerum, NO",59.9574233,10.4786126,tierbaerum,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierbaerum/gbfs
+NO,Tier Bergen,"Bergen, NO",60.3912628,5.3220544,tierbergen,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierbergen/gbfs
+NO,Tier Drammen,"Drammen, NO",59.7440738,10.2044564,tierdrammen,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierdrammen/gbfs
+NO,Tier Lillestrom,"Lillestrom, NO",59.9559696,11.0503785,tierlillestrom,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierlillestrom/gbfs
+NO,Tier Lorenskog,"Lorenskog, NO",59.924507,10.9540481,tierlorenskog,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierlorenskog/gbfs
+NO,Tier Namsos,"Namsos, NO",64.4662906,11.4955928,tiernamsos,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tiernamsos/gbfs
+NO,Tier Oslo,"Oslo, NO",59.9138688,10.7522454,tieroslo,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tieroslo/gbfs
+NO,Tier Ski,"Ski, NO",59.7352058,10.9082107,tierski,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierski/gbfs
+NO,Tier Stavanger,"Stavanger, NO",58.9699756,5.7331073,tierstavanger,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tierstavanger/gbfs
+NO,Tier Trondheim,"Trondheim, NO",63.4305149,10.3950528,tiertrondheim,https://www.tier.app/,https://api.entur.io/mobility/v2/gbfs/tiertrondheim/gbfs
+NO,Trondheim Bysykkel,"Trondheim, NO",63.4305149,10.3950528,trondheimbysykkel,https://trondheimbysykkel.no/,https://api.entur.io/mobility/v2/gbfs/trondheimbysykkel/gbfs
+NO,Voi Technology AB,"Multiple cities, NO",,,voi,https://www.voiscooters.com/,https://api.entur.io/mobility/v2/gbfs/voi/gbfs
+NO,Zvipp,"Trondheim, NO",63.4305149,10.3950528,zvipptrondheim,https://www.zvipp.no/support,https://api.entur.io/mobility/v2/gbfs/zvipptrondheim/gbfs
+NZ,Flamingo Auckland,"Auckland, NZ",-36.8508827,174.7644881,flamingo_auckland,https://flamingoscooters.com,https://api.flamingoscooters.com/gbfs/auckland/gbfs.json
+NZ,Flamingo Christchurch,"Christchurch, NZ",-43.5320214,172.6305589,flamingo_christchurch,https://flamingoscooters.com,https://api.flamingoscooters.com/gbfs/christchurch/gbfs.json
+NZ,Flamingo Wellington,"Wellington, NZ",-41.2923814,174.7787463,flamingo_wellington,https://flamingoscooters.com,https://api.flamingoscooters.com/gbfs/wellington/gbfs.json
+NZ,Neuron Mobility Auckland,"Auckland, NZ",-36.8508827,174.7644881,11b14b88-3598-4d3c-821d-e6f2e37cd906,https://www.neuron.sg,https://mds-global-akl.neuron-mobility.com/gbfs/2/
+NZ,Neuron Mobility Christchurch,"Christchurch, NZ",-43.5320214,172.6305589,11b14b88-3598-4d3c-821d-e6f2e37cd907,https://www.neuron.sg,https://mds-global-chc.neuron-mobility.com/gbfs/2/
+NZ,Neuron Mobility Dunedin,"Dunedin, NZ",-45.8795455,170.5005957,11b14b88-3598-4d3c-821d-e6f2e37cd908,https://www.neuron.sg,https://mds-global-dud.neuron-mobility.com/gbfs/2/
+NZ,Neuron Mobility Hamilton,"Hamilton, NZ",-37.7825893,175.2527624,11b14b88-3598-4d3c-821d-e6f2e37cd907,https://www.neuron.sg,https://mds-global-hlz.neuron-mobility.com/gbfs/2/
+NZ,nextbike New Zealand,NZ,-40.900557,174.885971,nextbike_nz,https://www.nextbike.co.nz/en/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nz/gbfs.json
+PL,Bike_S SRM Poland,"Szczecin, PL",53.4285438,14.5528116,nextbike_sp,https://bikes-srm.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_sp/gbfs.json
+PL,Ciechanowski Rower Miejski Poland,"Ciechanów, PL",52.8814838,20.6197948,nextbike_pd,https://www.ciechanowskirower.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pd/gbfs.json
+PL,LRM Lublin Poland,Lublin Poland,51.2464536,22.5684463,nextbike_ln,https://www.lubelskirower.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ln/gbfs.json
+PL,Oleski Rower Miejski Poland,"Olesno, PL",50.87526,18.41472,nextbike_pf,https://oleskirower.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pf/gbfs.json
+PL,Pobiedziski Rower Gminny Poland,"Pobiedziska, PL",52.47747,17.2880008,nextbike_pu,https://rowery.pobiedziska.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pu/gbfs.json
+PL,Rowerowe Łódzkie Poland (RL),Rowerowe Łódzkie Poland,51.7781659,19.3951802,nextbike_pw,https://www.rowerowelodzkie.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pw/gbfs.json
+PL,System Roweru Gminnego Poland,"Pielgrzymka, PL",49.6153784,21.4399182,nextbike_pg,https://rowery.pielgrzymka.biz/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pg/gbfs.json
+PL,VETURILO Poland,"Warszawa-testy, PL",52.2296756,21.0122287,nextbike_vp,https://www.veturilo.waw.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_vp/gbfs.json
+PL,WRM nextbike Poland,"Wrocław, PL",51.1078852,17.0385376,nextbike_pl,https://www.wroclawskirower.pl/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pl/gbfs.json
+PT,Bird Lisbon,"Lisbon, PT",38.7222524,-9.1393366,bird-lisbon,https://www.bird.co,https://mds.bird.co/gbfs/lisbon/gbfs.json
+PT,Cascais,"Cascais, PT",38.6970565,-9.4222945,Link_Cascais,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Cascais/gbfs.json
+PT,Faro,Faro PT,37.0193548,-7.9304397,Link_Faro,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Faro/gbfs.json
+PT,Lisbon,"Lisbon, PT",38.7222524,-9.1393366,Link_Lisbon,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Lisbon/gbfs.json
+RO,Drobeta Velopark,"Drobeta, RO",44.6369227,22.6597342,nextbike_rd,https://www.nextbike.ro/ro/drobeta/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rd/gbfs.json
+RO,nextbike Romania,"Focșani, RO",45.6964745,27.184043,nextbike_nw,https://nextbike.ro/en/foc%C8%99ani/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nw/gbfs.json
+RO,Saturn,"Saturn, RO",43.8299125,28.5881336,nextbike_rs,https://www.nextbike.ro/ro/saturn/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_rs/gbfs.json
+SC,Just Eat Cycles,"Edinburgh, SC",34.0851529,-80.9484225,edinburgh-city-bikes,https://edinburghcyclehire.com/,https://gbfs.urbansharing.com/edinburghcyclehire.com/gbfs.json
+SE,"Styr & Ställ (Sweden, Göteborg)","Göteborg, SE",57.70887,11.97456,nextbike_zg,https://styrochstall.se/sv/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_zg/gbfs.json
+SE,Donkey Republic Båstad,"Båstad, SE",56.4273888,12.8477217,donkey_baastad,https://www.donkey.bike/cities/bike-rental-bastad/,https://stables.donkey.bike/api/public/gbfs/2/donkey_baastad/gbfs.json
+SE,Donkey Republic Malmö,"Malmö, SE",55.604981,13.003822,donkey_malmoe,https://www.donkey.bike/cities/bike-rental-malmo/,https://stables.donkey.bike/api/public/gbfs/2/donkey_malmoe/gbfs.json
+SE,Donkey Republic Ystad,"Ystad, SE",55.4295051,13.8200308,donkey_ystad,https://www.donkey.bike/cities/bike-rental-ystad/,https://stables.donkey.bike/api/public/gbfs/2/donkey_ystad/gbfs.json
+SE,Donkey Republic Ängelholm,"Ängelholm, SE",56.245748,12.863881,donkey_aengelholm,https://www.donkey.bike/cities/bike-rental-angelholm/,https://stables.donkey.bike/api/public/gbfs/2/donkey_aengelholm/gbfs.json
+SE,Stockholm,"Stockholm, SE",59.3293235,18.0685808,Link_Stockholm,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Stockholm/gbfs.json
+SI,Nomago Bikes - GO2GO,"Nova Gorica, SI",45.9549755,13.6493044,nextbike_ce,https://bikes.nomago.si/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ce/gbfs.json
+SI,Nomago Bikes - KOLESCE,SI,,,nextbike_cn,https://bikes.nomago.si/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cn/gbfs.json
+SI,Nomago Bikes - ZANAPREJ,"Zagorje ob Savi, SI",46.1345186,14.9945975,nextbike_cf,https://bikes.nomago.si/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cf/gbfs.json
+SK,Arriva Nitra Slovakia,"Nitra, SK",48.3061414,18.076376,nextbike_as,https://arriva.bike/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_as/gbfs.json
+SK,BikeKIA,"Žilina, SK",49.2194498,18.7408001,nextbike_ak,https://bikekia.sk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ak/gbfs.json
+UA,nextbike (Ukraine),Ukraine,48.379433,31.16558,nextbike_nu,https://www.nextbike.ua/uk/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_nu/gbfs.json
+UA,nextbike Vinnitsa (Ukraine),"Vinnytsia, UA",49.233083,28.468217,nextbike_uv,https://www.nextbike.ua/uk/Vinnytsia/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_uv/gbfs.json
+US,Bird New York,"New York, NY",40.7127753,-74.0059728,bird-new-york,https://bird.co,https://mds.bird.co/gbfs/v2/public/new-york/gbfs.json
+US,Asbury Park,"Asbury Park, NJ",40.2203907,-74.0120817,Link_Asbury_Park,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Asbury%20Park/gbfs.json
+US,Austin,"Austin, TX",30.267153,-97.7430608,Link_Austin,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Austin/gbfs.json
+US,Austin B-cycle,"Austin, TX",30.267153,-97.7430608,bcycle_austin,http://austinbcycle.com,https://gbfs.bcycle.com/bcycle_austin/gbfs.json
+US,Aventura BCycle,"Aventura, FL",25.9564812,-80.1392121,bcycle_aventura,https://aventura.bcycle.com,https://gbfs.bcycle.com/bcycle_aventura/gbfs.json
+US,Baltimore,"Baltimore, MD",39.2903848,-76.6121893,Link_Baltimore,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Baltimore/gbfs.json
+US,Bay Wheels,"San Francisco Bay Area, CA",37.8271784,-122.2913078,BA,https://www.baywheels.com/,https://gbfs.baywheels.com/gbfs/gbfs.json
+US,Bike Chattanooga,"Chattanooga, TN",35.0457984,-85.3093995,bike_chattanooga,http://www.bikechattanooga.com/,https://chat.publicbikesystem.net/ube/gbfs/v1/
+US,BikeLNK,"Lincoln, NE",40.813616,-96.7025955,bcycle_bikelnk,https://bikelnk.bcycle.com,https://gbfs.bcycle.com/bcycle_bikelnk/gbfs.json
+US,Bikeshare Kona,"Kona, HI",19.639994,-155.9969261,bikeshare_kona,https://hawaiiislandbikeshare.org/,https://kona.publicbikesystem.net/ube/gbfs/v1/
+US,BIKETOWN,"Portland, OR",45.515232,-122.6783853,biketown_pdx,https://www.biketownpdx.com/,https://gbfs.biketownpdx.com/gbfs/gbfs.json
+US,Biki,"Honolulu, HI",21.3069444,-157.8583333,go_biki,https://gobiki.org/,https://hon.publicbikesystem.net/ube/gbfs/v1/
+US,Bird Alexandria,"Alexandria, VA",38.8048355,-77.0469214,bird-alexandria,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/alexandria/gbfs.json
+US,Bird Chicago,"Chicago, IL",41.8781136,-87.6297982,bird-chicago,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/chicago/gbfs.json
+US,Bird Cleveland,"Cleveland, OH",41.49932,-81.6943605,bird-cleveland,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/cleveland/gbfs.json
+US,Bird Columbus,"Columbus, OH",39.9611755,-82.9987942,bird-columbus,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/columbus/gbfs.json
+US,Bird Culver City,"Culver City, CA",34.0211224,-118.3964665,bird-culver-city,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/culver-city/gbfs.json
+US,Bird Detriot,"Detroit, MI",42.331427,-83.0457538,bird-detroit,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/detroit/gbfs.json
+US,Bird Fairfax,"Fairfax, VA",38.8462236,-77.3063733,bird-fairfax,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/fairfax/gbfs.json
+US,Bird Indianapolis,"Indianapolis,IN",39.768403,-86.158068,bird-indianapolis,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/indianapolis/gbfs.json
+US,Bird Kansas City,"Kansas City, MO",39.0997265,-94.5785667,bird-kansas-city,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/kansas-city/gbfs.json
+US,Bird Los Angeles,"Los Angeles, CA",34.0522342,-118.2436849,bird-los-angeles,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/los-angeles/gbfs.json
+US,Bird Louisville,"Louisville, KY",38.2526647,-85.7584557,bird-louisville,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/louisville/gbfs.json
+US,Bird Miami,"Miami, FL",25.7616798,-80.1917902,bird-miami,https://bird.co,https://mds.bird.co/gbfs/v2/public/miami/gbfs.json
+US,Bird Portland,"Portland, OR",45.515232,-122.6783853,bird-portland,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/portland/gbfs.json
+US,Bird San Francisco,"San Francisco, CA",37.7749295,-122.4194155,bird-san-francisco,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/san-francisco/gbfs.json
+US,Bird Tempe,"Tempe, AZ",33.4255104,-111.9400054,bird-tempe,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/tempe/gbfs.json
+US,Bird Washington DC,"Washington, DC",38.9071923,-77.0368707,bird-washington-dc,https://www.bird.co,https://mds.bird.co/gbfs/v2/public/washington-dc/gbfs.json
+US,Blue Bikes,"Boston, MA",42.3600825,-71.0588801,bluebikes,https://www.bluebikes.com/,https://gbfs.bluebikes.com/gbfs/gbfs.json
+US,Boaz Bikes,"Detroit, MI",42.331427,-83.0457538,576347857979998215,https://www.boazbikes.com/,https://gbsf.movatic.co/en/1.1/576347857979998215
+US,Bolt Durham,"Durham, NC",35.9940329,-78.898619,bolt_dur,https://micromobility.com,https://api-lb.micromobility.com/dur/gbfs/en/gbfs.json
+US,Bolt Portland,Portland OR,45.515232,-122.6783853,bolt_ptl,https://micromobility.com,https://bolt.miami/bolt2/ptl/gbfs/gbfs.json
+US,Bolt Washington DC,"Washington DC, DC",38.9071923,-77.0368707,bolt_dc,https://micromobility.com,https://api-lb.micromobility.com/dc/gbfs/en/gbfs.json
+US,Broward B-cycle,"Fort Lauderdale, FL",26.1224386,-80.1373174,bcycle_broward,https://broward.bcycle.com,https://gbfs.bcycle.com/bcycle_broward/gbfs.json
+US,Bublr Bikes,"Milwaukee, WI",43.0389025,-87.9064736,bcycle_bublr,http://bublrbikes.com,https://gbfs.bcycle.com/bcycle_bublr/gbfs.json
+US,Capital Bike Share,"Washington, DC",38.9071923,-77.0368707,cabi,http://www.capitalbikeshare.com,https://gbfs.capitalbikeshare.com/gbfs/gbfs.json
+US,Charlotte B-cycle,"Charlotte, NC",35.2270869,-80.8431267,bcycle_charlotte,https://charlotte.bcycle.com,https://gbfs.bcycle.com/bcycle_charlotte/gbfs.json
+US,Cincy Red Bike,"Cincinnati, OH",39.1031182,-84.5120196,bcycle_cincyredbike,http://www.cincyredbike.org,https://gbfs.bcycle.com/bcycle_cincyredbike/gbfs.json
+US,Citi Bike,"NYC, NY",40.7127753,-74.0059728,NYC,https://www.citibikenyc.com,https://gbfs.citibikenyc.com/gbfs/gbfs.json
+US,Clarksville B-cycle,"Clarksville, TN",36.5297706,-87.3594528,bcycle_clarksville,https://clarksville.bcycle.com,https://gbfs.bcycle.com/bcycle_clarksville/gbfs.json
+US,Clemson BikeShare,"Clemson, SC",34.6834382,-82.8373654,bcycle_clemson,https://clemson.bcycle.com,https://gbfs.bcycle.com/bcycle_clemson/gbfs.json
+US,Cleveland,"Cleveland, OH",41.49932,-81.6943605,Link_Cleveland,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Cleveland/gbfs.json
+US,CLEVR Mobility,"Oakland, CA",37.8043514,-122.2711639,daecbe87-a9f2-4a5a-b5df-8e3e14180513,https://www.clevrmobility.com/,https://portal.clevrmobility.com/api/gbfs/oakland/en/discovery/
+US,Coast Bike Share,"St. Petersburg, FL",27.7676008,-82.6402915,coast_bike_share,http://coastbikeshare.com/,http://coast.socialbicycles.com/opendata/gbfs.json
+US,CoGo,"Columbus, OH",39.9611755,-82.9987942,cogo,http://www.cogobikeshare.com/,https://gbfs.cogobikeshare.com/gbfs/gbfs.json
+US,Columbus,"Columbus, OH",39.9611755,-82.9987942,Link_Columbus,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Columbus/gbfs.json
+US,Des Moines B-cycle,"Des Moines, IA",41.5868353,-93.6249593,bcycle_desmoines,https://desmoines.bcycle.com,https://gbfs.bcycle.com/bcycle_desmoines/gbfs.json
+US,Detroit,"Detroit, MI",42.331427,-83.0457538,Link_Detroit,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Detroit/gbfs.json
+US,Divvy,"Chicago, IL",41.8781136,-87.6297982,divvy,http://www.divvybikes.com/,https://gbfs.divvybikes.com/gbfs/gbfs.json
+US,El Paso B-cycle,"El Paso, TX",31.7618778,-106.4850217,bcycle_elpaso,https://elpaso.bcycle.com,https://gbfs.bcycle.com/bcycle_elpaso/gbfs.json
+US,Encinitas BCycle,"Encinitias, CA",33.0369867,-117.2919818,bcycle_encinitas,https://encinitas.bcycle.com,https://gbfs.bcycle.com/bcycle_encinitas/gbfs.json
+US,Explore Bike Share,"Memphis, TN",35.1495343,-90.0489801,bcycle_memphis,https://explorebikeshare.bcycle.com,https://gbfs.bcycle.com/bcycle_memphis/gbfs.json
+US,Fairfax,"Fairfax, VA",38.8462236,-77.3063733,Link_Fairfax,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Fairfax/gbfs.json
+US,Fort Worth Bike Sharing,"Fort Worth, TX",32.7554883,-97.3307658,bcycle_fortworth,https://fortworth.bcycle.com,https://gbfs.bcycle.com/bcycle_fortworth/gbfs.json
+US,GREENbike,"Salt Lake City, UT",40.7607793,-111.8910474,bcycle_greenbikeslc,https://greenbikeslc.org,https://gbfs.bcycle.com/bcycle_greenbikeslc/gbfs.json
+US,Greenville B-cycle,"Greenville, SC",34.8526176,-82.3940104,bcycle_greenville,https://greenville.bcycle.com,https://gbfs.bcycle.com/bcycle_greenville/gbfs.json
+US,Hartford,"Hartford, CT",41.7658043,-72.6733723,Link_Hartford,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Hartford/gbfs.json
+US,Healthy Ride Pittsburgh,"Pittsburgh, US",40.4406248,-79.9958864,nextbike_pp,https://healthyridepgh.com/,https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pp/gbfs.json
+US,Heartland B-cycle,"Omaha, NE",41.2565369,-95.9345034,bcycle_heartland,https://heartland.bcycle.com,https://gbfs.bcycle.com/bcycle_heartland/gbfs.json
+US,Helbiz Alexandria,"Alexandria, VA",38.8048355,-77.0469214,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/alexandria/gbfs/gbfs.json
+US,Helbiz Arlington,"Arlington, VA",38.8799697,-77.1067698,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/arlington/gbfs/gbfs.json
+US,Helbiz Durham,"Durham, NC",35.9940329,-78.898619,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/durham/gbfs/gbfs.json
+US,Helbiz Jacksonville,"Jacksonville, FL",30.3321838,-81.655651,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/jacksonville/gbfs/gbfs.json
+US,Helbiz Miami,"Miami, FL",25.7616798,-80.1917902,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/miami/gbfs/gbfs.json
+US,Helbiz Oklahoma City,"Oklahoma City, OK",35.4675602,-97.5164276,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/oklahoma/gbfs/gbfs.json
+US,Helbiz Santa Barbara,"Santa Barbara, CA",34.4208305,-119.6981901,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/santabarbara/gbfs/gbfs.json
+US,Helbiz Sacramento,"Sacramento, CA",38.5815719,-121.4943996,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/sacramento/gbfs/gbfs.json
+US,Helbiz Washington DC,"Washington DC, DC",38.9071923,-77.0368707,HELBIZ-US,https://helbiz.com,https://api.helbiz.com/admin/reporting/washington/gbfs/gbfs.json
+US,Helbiz Waterloo,"Waterloo, IA",42.492786,-92.3425775,HELBIZ-US,https://helbiz.com/,https://api.helbiz.com/admin/reporting/waterloo/gbfs/gbfs.json
+US,HOPR Atlanta,"Atlanta, GA",33.7489954,-84.3879824,20,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/20/
+US,HOPR Bishop Ranch,"San Ramon, CA",37.7643595,-121.9539616,27,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/27/
+US,HOPR Freemont,"Freemont, CA",37.5485396,-121.988583,16,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/16/
+US,HOPR Margaritaville,"Kissimmee, FL",28.2919557,-81.407571,21,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/21/
+US,HOPR Miami,"Miami, FL",25.7616798,-80.1917902,11,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/11/
+US,HOPR Rochester-Genesee,"Rochester, NY",43.1565779,-77.6088465,32,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/32/
+US,HOPR Tampa,"Tampa, FL",27.950575,-82.4571776,8,https://gohopr.com/tampabay/,https://gbfs.hopr.city/api/gbfs/8/
+US,Houston B-cycle,"Houston, TX",29.7604267,-95.3698028,bcycle_houston,https://houston.bcycle.com,https://gbfs.bcycle.com/bcycle_houston/gbfs.json
+US,Indego,"Philadelphia, PA",39.9525839,-75.1652215,bcycle_indego,https://www.rideindego.com,https://gbfs.bcycle.com/bcycle_indego/gbfs.json
+US,Indy - Pacers Bikeshare,"Indianapolis, IN",39.768403,-86.158068,bcycle_pacersbikeshare,https://www.pacersbikeshare.org,https://gbfs.bcycle.com/bcycle_pacersbikeshare/gbfs.json
+US,Jackson County,"Jackson, MI",42.245869,-84.4013462,bcycle_jacksoncounty,https://jacksoncounty.bcycle.com,https://gbfs.bcycle.com/bcycle_jacksoncounty/gbfs.json
+US,Jacksonville,"Jacksonville, FL",30.3321838,-81.655651,Link_Jacksonville,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Jacksonville/gbfs.json
+US,Knoxville,"Knoxville, TN",35.9606384,-83.9207392,Link_Knoxville,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Knoxville/gbfs.json
+US,Lime Arlington,"Arlington, VA",38.8799697,-77.1067698,lime_arlington,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/arlington/gbfs.json
+US,Lime Baltimore,"Baltimore, MD",39.2903848,-76.6121893,lime_baltimore,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/baltimore/gbfs.json
+US,Lime Chicago,"Chicago, IL",41.8781136,-87.6297982,lime_chicago,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/chicago/gbfs.json
+US,Lime Cleveland,"Cleveland, OH",41.49932,-81.6943605,lime_cleveland,https://li.me/,https://data.lime.bike/api/partners/v2/gbfs/cleveland/gbfs.json
+US,Lime Detroit,"Detroit, MI",42.331427,-83.0457538,lime_detroit,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/detroit/gbfs.json
+US,Lime Louisville,"Louisville, KY",38.2526647,-85.7584557,lime_louisville,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/louisville/gbfs.json
+US,Lime New York,"New York, NY",40.7127753,-74.0059728,lime_new_york,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/new_york/gbfs.json
+US,Lime Oakland,"Oakland, CA",37.8043514,-122.2711639,lime_oakland,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/oakland/gbfs.json
+US,Lime Portland,"Portland, OR",45.515232,-122.6783853,lime_portland,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/portland/gbfs.json
+US,Lime Providence,"Providence, RI",41.8239891,-71.4128343,lime_providence,https://www.li.me,https://data.lime.bike/api/partners/v2/gbfs/providence/gbfs.json
+US,Lime San Francisco,"San Francisco, CA",37.7749295,-122.4194155,lime_san_francisco,https://li.me,https://data.lime.bike/api/partners/v2/gbfs/san_francisco/gbfs.json
+US,Lime San Jose,"San Jose,CA",37.3382082,-121.8863286,lime_san_jose,https://www.li.me,https://data.lime.bike/api/partners/v2/gbfs/san_jose/gbfs.json
+US,Lime Seattle,"Seattle, WA",47.6062095,-122.3320708,lime_seattle,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/seattle/gbfs.json
+US,Lime Washington DC,"Washington, DC",38.9071923,-77.0368707,lime_washington_dc,https://www.li.me/,https://data.lime.bike/api/partners/v2/gbfs/washington_dc/gbfs.json
+US,LINK Alexandria,"Alexandria, VA",38.8048355,-77.0469214,Link_Alexandria,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Alexandria/gbfs.json
+US,LINK Lost Angeles,"Los Angeles, CA",34.0522342,-118.2436849,Link_Los_Angeles,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Los%20Angeles/gbfs.json
+US,LINK Manhattan,"Manhattan, KS",39.1836082,-96.5716694,Link_Manhattan,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Manhattan/gbfs.json
+US,LINK Oakland,"Oakland, CA",37.8043514,-122.2711639,Link_Oakland,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Oakland/gbfs.json
+US,LINK Seattle,"Seattle, WA",47.6062095,-122.3320708,Link_Seattle,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Seattle%2C%20WA/gbfs.json
+US,Louvelo,"Louisville, KY",38.2526647,-85.7584557,Louvelo,https://louvelo.com/,https://lou.publicbikesystem.net/ube/gbfs/v1/
+US,Lyft,"Washington, DC",38.9071923,-77.0368707,lyft_dca,https://www.lyft.com/scooters/washington-dc,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/dca/gbfs.json
+US,Lyft Scooters Chicago,"Chicago, IL",41.8781136,-87.6297982,chicago,https://www.divvybikes.com,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/chi/gbfs.json
+US,Lyft Scooters Denver,"Denver, CO",39.7392358,-104.990251,lyft_den,https://www.lyft.com/,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/den/gbfs.json
+US,Lyft Scooters Los Angeles,"Los Angeles, CA",34.0522342,-118.2436849,lyft_lax,https://www.lyft.com/,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/lax/gbfs.json
+US,Lyft Scooters Miami,"Miami, FL",25.7616798,-80.1917902,lyft_mia,https://www.lyft.com/,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/mia/gbfs.json
+US,Lyft Scooters Minneapolis,"Minneapolis, MN",44.977753,-93.2650108,niceridemn,https://www.lyft.com/,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/msp/gbfs.json
+US,Lyft Scooters San Diego,"San Diego, CA",32.715738,-117.1610838,lyft_san,https://www.lyft.com/,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/san/gbfs.json
+US,Madison B-cycle,"Madison, WI",43.0721661,-89.4007501,bcycle_madison,https://madison.bcycle.com,https://gbfs.bcycle.com/bcycle_madison/gbfs.json
+US,McAllen B-cycle,"McAllen, TX",26.2034071,-98.2300124,bcycle_mcallen,https://mcallen.bcycle.com,https://gbfs.bcycle.com/bcycle_mcallen/gbfs.json
+US,Menlo Park Labs,"Menlo Park, CA",37.4529598,-122.1817252,35,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/35/
+US,Metro Bike Share,"Los Angeles, CA",34.0522342,-118.2436849,bcycle_lametro,https://bikeshare.metro.net,https://gbfs.bcycle.com/bcycle_lametro/gbfs.json
+US,Mogo Detroit,"Detroit, MI",42.331427,-83.0457538,mogo,https://mogodetroit.org/,https://det.publicbikesystem.net/ube/gbfs/v1/
+US,Nice Ride Minnesota,"Minneapolis, MN",44.977753,-93.2650108,niceridemn,https://www.niceridemn.com,https://gbfs.niceridemn.com/gbfs/gbfs.json
+US,OKC Spokies,"Oklahoma City, OK",35.4675602,-97.5164276,bcycle_spokies,https://spokies.bcycle.com,https://gbfs.bcycle.com/bcycle_spokies/gbfs.json
+US,PeaceHealth Rides,"Eugene, OR",44.0520691,-123.0867536,peacehealth_rides,https://www.peacehealthrides.com/,https://peacehealthrides.com/opendata/gbfs.json
+US,Provo,"Provo, UT",40.2338438,-111.6585337,Link_Provo,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Provo/gbfs.json
+US,Rad Sharing Fleet,"Seattle, WA",47.6062095,-122.3320708,33,https://gohopr.com/,https://gbfs.hopr.city/api/gbfs/33/
+US,Razor Tempe,"Tempe, AZ",33.4255104,-111.9400054,razor,https://www.razor.com/share/,https://razorapi.net/api/v1/gbfs/Tempe/gbfs.json
+US,Razor Washington DC,"Washington DC, DC",38.9071923,-77.0368707,razor,https://www.razor.com/share/,https://razorapi.net/api/v1/gbfs/Washington%20DC/gbfs.json
+US,Reddy Bikeshare,"Buffalo, NY",42.8864468,-78.8783689,reddy_bikeshare,http://reddybikeshare.socialbicycles.com,https://reddybikeshare.socialbicycles.com/opendata/gbfs.json
+US,Relay Bike Share,"Atlanta, GA",33.7489954,-84.3879824,relay_bike_share,http://relaybikeshare.com/,https://relaybikeshare.socialbicycles.com/opendata/gbfs.json
+US,Revel Miami,"Miami, FL",25.7616798,-80.1917902,revel_miami,https://gorevel.com/miami/,https://gbfs.gorevel.com/gbfs/v2/miami/en/gbfs.json
+US,Revel New York,"New York, NY",40.7127753,-74.0059728,revel_newyork,https://gorevel.com,https://gbfs.gorevel.com/gbfs/v2/newyork/en/gbfs.json
+US,Revel Oakland,"Oakland, CA",37.8043514,-122.2711639,revel_oakland,https://gorevel.com/oakland/,https://gbfs.gorevel.com/gbfs/v2/oakland/en/gbfs.json
+US,Revel San Francisco,"San Francisco, CA",37.7749295,-122.4194155,revel_sanfrancisco,https://gorevel.com,https://gbfs.gorevel.com/gbfs/v2/sanfrancisco/en/gbfs.json
+US,Revel Washington D.C.,"Washington, DC",38.9071923,-77.0368707,revel_washingtondc,https://gorevel.com,https://gbfs.gorevel.com/gbfs/v2/washingtondc/en/gbfs.json
+US,RTC Bike Share,"Las Vegas, NV",36.1699412,-115.1398296,bcycle_rtcbikeshare,https://rtcbikeshare.bcycle.com,https://gbfs.bcycle.com/bcycle_rtcbikeshare/gbfs.json
+US,Salt Lake City,"Salt Lake City, UT",40.7607793,-111.8910474,Link_Salt_Lake_City,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/Salt%20Lake%20City/gbfs.json
+US,San Antonio B-cycle,"San Antonio, TX",29.4295234,-98.4976116,bcycle_sanantonio,https://sanantonio.bcycle.com/,https://gbfs.bcycle.com/bcycle_sanantonio/gbfs.json
+US,San Diego,"San Diego, CA",32.715738,-117.1610838,Link_San_Diego,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/San%20Diego/gbfs.json
+US,San Jose,"San Jose, Ca",37.3382082,-121.8863286,Link_San_Jose,https://www.link.city,https://wrangler-mds-production.herokuapp.com/gbfs/San%20Jose/gbfs.json
+US,Santa Barbara BCycle,"Santa Barbara, CA",34.4208305,-119.6981901,bcycle_santabarbara,https://santabarbara.bcycle.com,https://gbfs.bcycle.com/bcycle_santabarbara/gbfs.json
+US,SBU Wolf Ride Bike Share,"Stony Brook, NY",40.9256538,-73.1409429,sbu,https://www.stonybrook.edu/commcms/sustainability/transportation/_Wolf_Ride_Bike_Share/,https://sbu.publicbikesystem.net/ube/gbfs/v1/
+US,Spartanburg BCycle,"Spartanburg, SC",34.9495672,-81.9320482,bcycle_spartanburg,https://spartanburg.bcycle.com,https://gbfs.bcycle.com/bcycle_spartanburg/gbfs.json
+US,Spin Aiken,"Aiken, SC",33.5604168,-81.7195533,spin aiken,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/aiken/gbfs
+US,Spin Akron,"Akron, OH",41.0814447,-81.5190053,spin akron,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/akron/gbfs
+US,Spin Albuquerque,"Albuquerque, NM",35.0843859,-106.650422,spin albuquerque,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/albuquerque/gbfs
+US,Spin Alexandria,"Alexandria, VA",38.8048355,-77.0469214,spin alexandria,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/alexandria/gbfs
+US,Spin Ann Arbor,"Ann Arbor, MI",42.2808256,-83.7430378,spin ann_arbor,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/ann_arbor/gbfs
+US,Spin Arkadelphia,"Arkadelphia, VA",34.1209292,-93.0537839,spin arkadelphia,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/arkadelphia/gbfs
+US,Spin Arlington,"Arlington, VA",38.8799697,-77.1067698,spin arlington,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/arlington/gbfs
+US,Spin Asbury Park,"Asbury Park, NY",40.2203907,-74.0120817,spin asbury_park,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/asbury_park/gbfs
+US,Spin Atlanta,"Atlanta, GA",33.7489954,-84.3879824,spin atlanta,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/atlanta/gbfs
+US,Spin Austin,"Austin, TX",30.267153,-97.7430608,spin austin,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/austin/gbfs
+US,Spin Baltimore,"Baltimore, MD",39.2903848,-76.6121893,spin baltimore,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/baltimore/gbfs.json
+US,Spin Boise,"Boise, ID",43.6150186,-116.2023137,spin boise,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/boise/gbfs
+US,Spin Brookline,"Brookline, MA",42.3317642,-71.1211635,spin brookline,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/brookline/gbfs
+US,Spin Charlotte,"Charlotte,NC",35.2270869,-80.8431267,spin charlotte,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/charlotte/gbfs
+US,Spin Chicago,"Chicago, IL",41.8781136,-87.6297982,spin chicago,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/chicago_territory/gbfs
+US,Spin Cleveland,"Cleveland, OH",41.49932,-81.6943605,spin cleveland,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/cleveland/gbfs
+US,Spin Columbus,"Columbus, OH",39.9611755,-82.9987942,spin columbus,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/columbus/gbfs
+US,Spin Coral Gables,"Coral Gables, FL",25.7491968,-80.2635411,spin coral_gables,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/coral_gables/gbfs
+US,Spin Dayton,"Dayton, OH",39.7589478,-84.1916069,spin dayton,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/dayton/gbfs
+US,Spin Denver,"Denver, CO",39.7392358,-104.990251,spin denver,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/denver/gbfs
+US,Spin Detroit,"Detroit, MI",42.331427,-83.0457538,spin detroit,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/detroit/gbfs
+US,Spin Duke,Durham NS,45.61882,-62.810447,spin duke,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/duke/gbfs
+US,Spin Durham,"Durham, NC",35.9940329,-78.898619,spin durham,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/durham/gbfs
+US,Spin Fayetteville,"Fayetteville, AR",36.0662419,-94.157853,spin fayetteville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/fayetteville/gbfs
+US,Spin Fort Collins,"Fort Collins, CO",40.5852602,-105.084423,spin fort_collins,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/fort_collins/gbfs
+US,Spin Fort Pierce,"Fort Pierce, FL",27.4467056,-80.3256056,spin fort_pierce,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/fort_pierce/gbfs
+US,Spin Gainesville,"Gainesville, FL",29.6516344,-82.3248262,spin gainesville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/gainesville/gbfs
+US,Spin Garden City,"Garden City, ID",43.6221108,-116.2381744,spin garden city,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/garden_city/gbfs
+US,Spin Grand Rapids,"Grand Rapids, MI",42.9633599,-85.6680863,spin grand_rapids,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/grand_rapids/gbfs
+US,Spin Greenville,"Greenville, SC",34.8526176,-82.3940104,spin greenville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/greenville/gbfs
+US,Spin Isla Vista,"Isla Vista, CA",34.4133292,-119.8609718,spin isla_vista,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/isla_vista/gbfs
+US,Spin Jacksonville,"Jacksonville, FL",30.3321838,-81.655651,spin jacksonville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/jacksonville/gbfs
+US,Spin Jefferson City,"Jefferson City, MO",38.5767017,-92.1735164,spin jefferson_city,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/jefferson_city/gbfs
+US,Spin Kansas City,"Kansas City, MO",39.0997265,-94.5785667,spin kansas_city,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/kansas_city/gbfs
+US,Spin Knoxville,"Knoxville, TN",35.9606384,-83.9207392,spin knoxville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/knoxville/gbfs
+US,Spin Lexington,"Lexington, KY",38.0405837,-84.5037164,spin lexington,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/lexington/gbfs
+US,Spin Lincoln,"Lincoln, NB",40.813616,-96.7025955,spin lincoln,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/lincoln/gbfs
+US,Spin Long Beach,"Long Beach, CA",33.7700504,-118.1937395,spin long_beach,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/long_beach/gbfs
+US,Spin Los Angeles,"Los Angeles, CA",34.0522342,-118.2436849,spin los_angeles,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/los_angeles/gbfs
+US,Spin Louisville,"Louisville, KY",38.2526647,-85.7584557,spin louisville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/louisville/gbfs
+US,Spin Memphis,"Memphis, TN",35.1495343,-90.0489801,spin memphis,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/memphis/gbfs
+US,Spin Mesa,"Mesa, AZ",33.4151843,-111.8314724,spin mesa,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/mesa/gbfs
+US,Spin Miami,"Miami, FL",25.7616798,-80.1917902,spin miami,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/miami/gbfs
+US,Spin Michigan State University,"East Lansing, MI",42.7369792,-84.4838654,spin michigan_state_university,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/michigan_state_university/gbfs
+US,Spin Minneapolis,"Minneapolis, MN",44.977753,-93.2650108,spin minneapolis,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/minneapolis/gbfs
+US,Spin Mongomery County,"Mongomery County, MD",39.1547426,-77.2405153,spin montgomery_county,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/montgomery_county/gbfs
+US,Spin Nashville,"Nashville, TN",36.1626638,-86.7816016,spin nashville,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/nashville/gbfs
+US,Spin Nicholls State University,"Thibodaux, LA",29.7957633,-90.822871,spin nicholls_state,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/nicholls_state/gbfs
+US,Spin NMSU,"Las Cruces, NM",32.3199396,-106.7636538,spin nmsu,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/nmsu/gbfs
+US,Spin Oakland University,"Rochester, MI",42.680588,-83.1338214,spin oakland_university,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/oakland_university/gbfs
+US,Spin Ohio State,"Columbus, OH",39.9611755,-82.9987942,spin ohio_state,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/ohio_state/gbfs
+US,Spin Omaha,"Omaha, NB",41.2565369,-95.9345034,spin omaha,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/omaha/gbfs
+US,Spin Orem,"Orem, UT",40.2968979,-111.6946475,spin orem,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/orem/gbfs
+US,Spin Orlando,"Orlando, FL",28.5383832,-81.3789269,spin orlando,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/orlando/gbfs
+US,Spin Phoenix,"Phoenix, AZ",33.4483771,-112.0740373,spin phoenix,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/phoenix/gbfs
+US,Spin Pittsburgh,"Pittsburgh, PA",40.4406248,-79.9958864,spin pittsburgh,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/pittsburgh/gbfs
+US,Spin Portland,"Portland, OR",45.515232,-122.6783853,spin portland,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/portland/gbfs
+US,Spin Providence,"Providence, RI",41.8239891,-71.4128343,spin providence,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/providence/gbfs
+US,Spin Provo,"Provo, UT",40.2338438,-111.6585337,spin provo,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/provo/gbfs
+US,Spin Purdue University,"West Lafayette, IN",40.4258686,-86.9080655,spin purdue_university,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/purdue_university/gbfs
+US,Spin Raleigh,"Raleigh, NC",35.7795897,-78.6381787,spin raleigh,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/raleigh/gbfs
+US,Spin Salem,"Salem, MA",42.51954,-70.8967155,spin salem,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/salem/gbfs
+US,Spin Salt Lake City,"Salt Lake City, UT",40.7607793,-111.8910474,spin salt_lake_city,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/salt_lake_city/gbfs
+US,Spin San Antonio,"San Antonio, TX",29.4295234,-98.4976116,spin san_antonio,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/san_antonio/gbfs
+US,Spin San Diego,"San Diego, CA",32.715738,-117.1610838,spin san_diego,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/san_diego/gbfs
+US,Spin San Francisco,"San Francisco, CA",37.7749295,-122.4194155,spin san_francisco,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/san_francisco/gbfs
+US,Spin San Marcos,"San Marcos, TX",29.8832749,-97.9413941,spin san_marcos,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/san_marcos/gbfs
+US,Spin Santa Monica,"Santa Monica, CA",34.0194543,-118.4911912,spin santa monica,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/santa%20monica/gbfs
+US,Spin Seattle,"Seattle, WA",47.6062095,-122.3320708,spin seattle,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/seattle/gbfs
+US,Spin South Miami,"South Miami, FL",25.7050697,-80.2907618,spin south_miami,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/south_miami/gbfs
+US,Spin St George,"St George, UT",37.0965278,-113.5684164,spin st_george,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/st_george/gbfs
+US,Spin St Louis,"St Louis, MO",38.6270025,-90.1994042,spin st_louis,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/st_louis/gbfs
+US,Spin Stillwater,"Stillwater, OK",36.1156071,-97.0583681,spin stillwater,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/stillwater/gbfs
+US,Spin Tallahassee,"Tallahassee, FL",30.4382559,-84.2807329,spin tallahassee,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/tallahassee/gbfs
+US,Spin Tampa,"Tampa, FL",27.950575,-82.4571776,spin tampa,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/tampa/gbfs
+US,Spin Tempe,"Tempe, AZ",33.4255104,-111.9400054,spin tempe,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/tempe/gbfs
+US,Spin Towson,"Towson, MD",39.4014955,-76.6019125,spin towson,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/towson/gbfs
+US,Spin Troy,"Troy, AL",31.8087678,-85.969951,spin troy,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/troy/gbfs
+US,Spin UC San Diego,"San Diego, CA",32.715738,-117.1610838,spin uc_san_diego,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/uc_san_diego/gbfs
+US,Spin University of Central Florida,"Orlando, FL",28.5383832,-81.3789269,spin university_of_central_florida,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/university_of_central_florida/gbfs
+US,Spin University of Kentucky,"Lexington, KY",38.0405837,-84.5037164,spin university_of_kentucky,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/university_of_kentucky/gbfs
+US,Spin Virginia Tech,"Blackburg, VA",37.2295733,-80.4139393,spin virginia_tech,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/virginia_tech/gbfs
+US,Spin Washington DC,"Washington, DC",38.9071923,-77.0368707,spin washington_dc,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/washington_dc/gbfs
+US,Spin White Center,"White Center, WA",47.5085671,-122.3551164,spin white_center,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/white_center/gbfs
+US,Spin Wichita,"Wichita, KS",37.6871761,-97.330053,spin wichita,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/wichita/gbfs
+US,Spin Winston Salem,"Winston Salem, NC",36.0998596,-80.244216,spin winston_salem,https://www.spin.pm,https://gbfs.spin.pm/api/gbfs/v2_2/winston_salem/gbfs
+US,START Bike,"Jackson, WY",43.4799291,-110.7624282,bcycle_startbike,https://startbike.bcycle.com,https://gbfs.bcycle.com/bcycle_startbike/gbfs.json
+US,Tugo,"Tucson, AZ",32.2226066,-110.9747108,tugo,https://tugobikeshare.com/,https://tuc.publicbikesystem.net/ube/gbfs/v1/
+US,Valentine Bike Share,"Valentine, NE",42.8727833,-100.5509669,bcycle_valentine,https://heartlandbikeshare.org,https://gbfs.bcycle.com/bcycle_valentine/gbfs.json
+US,We-cycle,"Aspen, CO",39.1910983,-106.8175387,we_cycle,https://www.we-cycle.org/,https://asp.publicbikesystem.net/ube/gbfs/v1/
+US,Wheels Austin,"Austin, TX",30.267153,-97.7430608,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://austin-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Dallas,"Dallas, TX",32.7766642,-96.7969879,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://dfw-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Los Angeles,"Los Angeles, CA",34.0522342,-118.2436849,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://la-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Orlando,"Orlando, FL",28.5383832,-81.3789269,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://orlando-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels San Diego,"San Diego, CA",32.715738,-117.1610838,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://san-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Seattle,"Seattle, WA",47.6062095,-122.3320708,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://seattle-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Tallahassee,"Tallahassee, FL",30.4382559,-84.2807329,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://tallahassee-gbfs.getwheelsapp.com/gbfs.json
+US,Wheels Tempe,"Tempe, AZ",33.4255104,-111.9400054,9f74fa80-fb2f-48dc-b2d8-01a889ac008a,https://takewheels.com/,https://tempe-gbfs.getwheelsapp.com/gbfs.json
