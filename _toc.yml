@@ -6,8 +6,10 @@ root: index
 parts:
   - caption: Standartai
     chapters:
+      - file: standartai/gtfs
       - file: standartai/gtfs-realtime
-      - file: standartai/mobility-data-specification
+      - file: standartai/gbfs
+      - file: standartai/mbs
   - caption: Programos
     chapters:
       - file: apps/apple_maps
