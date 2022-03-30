@@ -1,4 +1,4 @@
-jupyter-book==0.12.1
+jupyter-book==0.12.2
 matplotlib==3.5.1
 gtfs_functions==1.0.1
 plotly==5.6.0
