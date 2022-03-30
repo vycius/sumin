@@ -61,8 +61,8 @@ launch_buttons:
   binderhub_url: ""
 
 sphinx:
-  local_extensions:
-    extensions: ./extensions/spinxext/
+#  local_extensions:
+#    extensions: ./extensions/spinxext/
   config:
     language: lt
     bibtex_reference_style: super
