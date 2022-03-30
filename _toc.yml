@@ -4,12 +4,16 @@
 format: jb-book
 root: index
 parts:
-  - caption: Standartai
+  - caption: Duomenų standartai
     chapters:
-      - file: standartai/gtfs
-      - file: standartai/gtfs-realtime
-      - file: standartai/gbfs
-      - file: standartai/mbs
+      - file: standartai/viesasis-transportas
+        sections:
+          - file: standartai/gtfs
+          - file: standartai/gtfs-realtime
+      - file: standartai/dalijimosi-paslaugos
+        sections:
+          - file: standartai/gbfs
+          - file: standartai/mbs
   - caption: Programos
     chapters:
       - file: apps/apple_maps

@@ -11,7 +11,7 @@ logo: logo.png
 execute:
   execute_notebooks: auto
   timeout: 600
-
+#  stderr_output: warn
 
 parse:
   myst_enable_extensions:
@@ -61,6 +61,7 @@ launch_buttons:
   binderhub_url: ""
 
 sphinx:
+  recursive_update: true
   local_extensions:
     extensions: ./extensions/spinxext/
   config:
