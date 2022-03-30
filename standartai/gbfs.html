@@ -46,12 +46,11 @@
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://judumas.vycius.lt/standartai/gbfs.html" />
@@ -342,7 +341,7 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gbfs-general-bikeshare-feed-specification">
 <h1>GBFS (General Bikeshare Feed Specification)<a class="headerlink" href="#gbfs-general-bikeshare-feed-specification" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>GBFS (General Bikeshare Feed Specification) yra atvirų duomenų standartas suteikiantis galimybę darnaus judumo paslaugų teikėjams perduoti realaus laiko informacija apie transporto priemones (dviračius, motorolerius, mopedus ir automobilius), jų stoteles, kainodarą ir kita<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id5">4</a></sup></span>:</p>
+<p>GBFS (General Bikeshare Feed Specification) yra atvirų duomenų standartas suteikiantis galimybę darnaus judumo paslaugų teikėjams perduoti realaus laiko informacija apie transporto priemones (dviračius, motorolerius, mopedus ir automobilius), jų stoteles, kainodarą ir kita<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id5" title="Mobility Data. General bikeshare feed specification. URL: https://gbfs.mobilitydata.org (visited on 2022-03-29).">4</a></sup></span>:</p>
 <ul class="simple">
 <li><p>Transporto priemonių, jų stotelių vietos ir prieinamumas;</p></li>
 <li><p>Transporto priemonės būklė: modelis, galia, galimas nuvažiuoti atstumas;</p></li>
@@ -358,7 +357,7 @@
 <p>GBFS duomenys gali būti ne tik naudojami kelionių planavimo ir Mobility as a Service (MaaS) programų, tačiau gali suteikti galimybę savivaldybėms ir transporto agentūroms  analizuoti, planuoti, vizualizuoti ir palyginti darnaus judumo paslaugų teikėjų duomenis standartizuotu būdu.</p>
 <div class="section" id="gbfs-standarto-paplitimas">
 <h2>GBFS Standarto paplitimas<a class="headerlink" href="#gbfs-standarto-paplitimas" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>2022 m. GBFS buvo naudojamas daugiau nei 600 dviračių, paspirtukų motorolerių dalijimosi paslaugų teikėju pasaulyje<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id6">2</a></sup></span>. Taip pat 2020 m. 69% Šiaurės Amerikos miestų iš judumo paslaugų teikėjų reikalauja duomenų GBFS formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id4">3</a></sup></span>.</p>
+<p>2022 m. GBFS buvo naudojamas daugiau nei 600 dviračių, paspirtukų motorolerių dalijimosi paslaugų teikėju pasaulyje<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id6" title="North American Bikeshare Association (NABSA). About gbfs. URL: https://nabsa.net/resources/gbfs/ (visited on 2022-03-29).">2</a></sup></span>. Taip pat 2020 m. 69% Šiaurės Amerikos miestų iš judumo paslaugų teikėjų reikalauja duomenų GBFS formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id4" title="The North American Bikeshare &amp; Scootershare Association (NABSA). 2020 shared micromobility state of the industry report. 2020. URL: https://www.dropbox.com/s/f417a5xasdxm4fv/FINAL%20-%202020%20State%20of%20the%20Industry%20Report.pdf?dl=0&amp;submissionGuid=de6369ad-03c7-41e6-9aac-0b55b12a0679#page=15 (visited on 2022-03-27).">3</a></sup></span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
@@ -434,7 +433,7 @@
 </div>
 <div class="section" id="igyvendinimo-rekomendacijos-savivaldybems">
 <h2>Įgyvendinimo rekomendacijos savivaldybėms<a class="headerlink" href="#igyvendinimo-rekomendacijos-savivaldybems" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>Siekiant užtikrinti efektyviausia GBFS naudojimą rekomenduojama<span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id7">6</a></sup></span>:</p>
+<p>Siekiant užtikrinti efektyviausia GBFS naudojimą rekomenduojama<span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id7" title="DATA GOOD PRACTICES FOR MUNICIPALITIES: Understanding the General Bikeshare Feed Specification(GBFS). About gbfs. 1 2021. URL: https://nabsa.net/wp-content/uploads/2021/01/FINAL-Data-Good-Practices-for-Municipalities_-Understanding-the-General-Bikeshare-Feed-Specification-GBFS-1.pdf (visited on 2022-03-29).">6</a></sup></span>:</p>
 <ul class="simple">
 <li><p>Užtikrinti viešai prieinamą GBFS informacijos šaltinį, kuriai nereikėtų autentifikavimo;</p></li>
 <li><p>Patalpinti nuorodą į kiekvieno paslaugų teikėjo gbfs.json failą savivaldybės puslapyje arba atvirų duomenų portale;</p></li>

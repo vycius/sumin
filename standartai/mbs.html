@@ -46,12 +46,11 @@
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://judumas.vycius.lt/standartai/mbs.html" />
@@ -296,7 +295,7 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="mbs-mobility-data-specification">
 <h1>MBS (Mobility Data Specification)<a class="headerlink" href="#mbs-mobility-data-specification" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>Mobility Data Specification (MDS) yra vienas iš standartų paspirtukų kompanijų kontrolei yra. Šis standartas naudojamas daugiau nei 130 miestų <span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id3">5</a></sup></span> ir jau dabar palaikomas Bolt, Lime, Lyft ir kt.</p>
+<p>Mobility Data Specification (MDS) yra vienas iš standartų paspirtukų kompanijų kontrolei yra. Šis standartas naudojamas daugiau nei 130 miestų <span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id3" title="Open Mobility Foundation. Who is using mds? | open mobility foundation. 3 2022. URL: https://www.openmobilityfoundation.org/mds-users/.">5</a></sup></span> ir jau dabar palaikomas Bolt, Lime, Lyft ir kt.</p>
 <p>MDS suteikia galimybę kontroliuojančiai institucijai iš kompanijų gauti duomenis, kurie gali padėti:</p>
 <ul class="simple">
 <li><p>Nagrinėjant skundus (paspirtukų palikimą neleistinose vietose, važiavimo greitį ir pnš.);</p></li>
