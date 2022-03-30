@@ -58,7 +58,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
-    <link rel="next" title="GBFS (General Bikeshare Feed Specification)" href="gbfs.html" />
+    <link rel="next" title="Dalijimosi paslaugos" href="dalijimosi-paslaugos.html" />
     <link rel="prev" title="GTFS (General Transit Feed Specification)" href="gtfs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
@@ -106,29 +106,53 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Standartai
+  Duomenų standartai
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="gtfs.html">
-   GTFS (General Transit Feed Specification)
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="viesasis-transportas.html">
+   Viešasis transportas
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="gtfs.html">
+     GTFS (General Transit Feed Specification)
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     GTFS Realtime (General Transit Feed Specification Realtime)
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   GTFS Realtime (General Transit Feed Specification Realtime)
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="dalijimosi-paslaugos.html">
+   Dalijimosi paslaugos
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="gbfs.html">
-   GBFS (General Bikeshare Feed Specification)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mbs.html">
-   MBS (Mobility Data Specification)
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gbfs.html">
+     GBFS (General Bikeshare Feed Specification)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mbs.html">
+     MBS (Mobility Data Specification)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -153,8 +177,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../viesasis_transportas/gtfs.html">
    GTFS
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -282,6 +306,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-realtime-dalys">
+   GTFS Realtime dalys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keliones-eiga">
+     Kelionės eiga
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#programos-naudojancios-gtfs-realtime-duomenis">
    Programos naudojančios GTFS realtime duomenis
   </a>
@@ -307,6 +343,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-realtime-dalys">
+   GTFS Realtime dalys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keliones-eiga">
+     Kelionės eiga
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#programos-naudojancios-gtfs-realtime-duomenis">
    Programos naudojančios GTFS realtime duomenis
   </a>
@@ -322,6 +370,21 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gtfs-realtime-general-transit-feed-specification-realtime">
 <h1>GTFS Realtime (General Transit Feed Specification Realtime)<a class="headerlink" href="#gtfs-realtime-general-transit-feed-specification-realtime" title="Nuoroda į šią antraštę">¶</a></h1>
+<div class="section" id="gtfs-realtime-dalys">
+<h2>GTFS Realtime dalys<a class="headerlink" href="#gtfs-realtime-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>GTFS Realtime susideda iš trijų informacijos dalių.
+<a class="reference external" href="https://opentransportdata.swiss/en/cookbook/gtfs-rt/">https://opentransportdata.swiss/en/cookbook/gtfs-rt/</a></p>
+<div class="section" id="keliones-eiga">
+<h3>Kelionės eiga<a class="headerlink" href="#keliones-eiga" title="Nuoroda į šią antraštę">¶</a></h3>
+<p>Pavyzdys: “7 troleibusas vėluos atvažiuoti į Centro poliklinikos stotelę 6 minutes”</p>
+<p>Skelbiami transporto priemonės vėlavimai / skubėjimai maršrute, informacija apie pakeistus maršrutus, pakaitines transporto priemonės ar atskirų maršrutų atšaukimus.</p>
+<ul class="simple">
+<li><p>Eiga: transporto priemonės eiga maršrute (pvz., vėlavimas, skubėjimas, )</p></li>
+<li><p>Transporto priemonių koordinates</p></li>
+<li><p>Trikdžiai: pranešimai naudotojams apie transporto sutrikimus (pvz., avariją, šventę, statybų darbus, kurie gali turėti įtakos maršrutui).</p></li>
+</ul>
+</div>
+</div>
 <div class="section" id="programos-naudojancios-gtfs-realtime-duomenis">
 <h2>Programos naudojančios GTFS realtime duomenis<a class="headerlink" href="#programos-naudojancios-gtfs-realtime-duomenis" title="Nuoroda į šią antraštę">¶</a></h2>
 <ul class="simple">
@@ -369,10 +432,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">GTFS (General Transit Feed Specification)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="gbfs.html" title="kitas page">
+    <a class='right-next' id="next-link" href="dalijimosi-paslaugos.html" title="kitas page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">kitas</p>
-        <p class="prev-next-title">GBFS (General Bikeshare Feed Specification)</p>
+        <p class="prev-next-title">Dalijimosi paslaugos</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
