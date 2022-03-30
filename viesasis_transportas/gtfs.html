@@ -359,24 +359,194 @@
 <div class="section" id="gtfs-vintra">
 <h2>GTFS VINTRA<a class="headerlink" href="#gtfs-vintra" title="Nuoroda į šią antraštę">¶</a></h2>
 <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">itables</span> <span class="kn">import</span> <span class="n">init_notebook_mode</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">all_interactive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">working_directory</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span><span class="si">}</span><span class="s1">/../data/gtfs/vintra/&#39;</span>
+<span class="n">gtfs_files_directory</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">working_directory</span><span class="si">}</span><span class="s1">/gtfs-files/&#39;</span>
+
+<span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">gtfs_files_directory</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">):</span>
+        <span class="n">filename</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">)</span>
+
+        <span class="n">p</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span>
+            <span class="sa">f</span><span class="s1">&#39;java -jar gtfs-validator-301.jar -i gtfs-files/</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s1"> -o reports -v </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">_report.json -e </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s1">_system_errors.json -n -c lt&#39;</span><span class="p">],</span>
+            <span class="n">cwd</span><span class="o">=</span><span class="n">working_directory</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span>
+            <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+        <span class="n">out</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">communicate</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">errcode</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">returncode</span>
+
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">gtfs_files_txt</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;seconds</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">gtfs_files</span> <span class="o">=</span> <span class="n">gtfs_files_txt</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+
+        <span class="n">gtfs_files_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;failas&#39;</span><span class="p">:</span> <span class="n">filename</span><span class="p">}</span>
+        <span class="k">for</span> <span class="n">gtfs_file_rep</span> <span class="ow">in</span> <span class="n">gtfs_files</span><span class="p">:</span>
+            <span class="n">gtfs_file</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">gtfs_file_rep</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">gtfs_files_dict</span><span class="p">[</span><span class="n">gtfs_file</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span> <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="s1">&#39;MISSING_FILE&#39;</span> <span class="k">else</span> <span class="kc">None</span>
+
+        <span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gtfs_files_dict</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;failas&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;attributions.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;feed_info.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;frequencies.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;levels.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pathways.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;transfers.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;translations.txt&#39;</span>
+    <span class="p">]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;failas&#39;</span><span class="p">)</span>
+
+
+<span class="n">gtfs_file_stats_df</span><span class="p">[</span>
+    <span class="p">[</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">]</span> <span class="o">=</span> <span class="n">gtfs_file_stats_df</span><span class="p">[</span>
+    <span class="p">[</span>
+        <span class="s1">&#39;agency.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;calendar_dates.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;routes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;shapes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stop_times.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;stops.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;trips.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_attributes.txt&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fare_rules.txt&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;❌&#39;</span><span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;⚠️&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">gtfs_file_stats_df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_sticky</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+
+<span class="n">gtfs_file_stats_df</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">reports_dir</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">working_directory</span><span class="si">}</span><span class="s1">/reports/&#39;</span>
+
+<span class="n">gtfs_notices_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">reports_dir</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;report.json&#39;</span><span class="p">):</span>
+        <span class="n">gtfs_filename</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;_report.json&#39;</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">reports_dir</span><span class="p">,</span> <span class="n">file</span><span class="p">))</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
+
+                <span class="k">for</span> <span class="n">notice</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;notices&#39;</span><span class="p">]:</span>
+                    <span class="n">gtfs_notices_df</span> <span class="o">=</span> <span class="n">gtfs_notices_df</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                        <span class="s1">&#39;failas&#39;</span><span class="p">:</span> <span class="n">gtfs_filename</span><span class="p">,</span>
+                        <span class="s1">&#39;klaida&#39;</span><span class="p">:</span> <span class="n">notice</span><span class="p">[</span><span class="s1">&#39;code&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;sunkumas&#39;</span><span class="p">:</span> <span class="n">notice</span><span class="p">[</span><span class="s1">&#39;severity&#39;</span><span class="p">],</span>
+                        <span class="s1">&#39;viso&#39;</span><span class="p">:</span> <span class="n">notice</span><span class="p">[</span><span class="s1">&#39;totalNotices&#39;</span><span class="p">],</span>
+                    <span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="p">)</span>
+
+
+<span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;viso&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;viso&#39;</span><span class="p">],</span> <span class="n">downcast</span><span class="o">=</span><span class="s1">&#39;integer&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="gtfs-patikrinimo-klaidos">
 <h3>GTFS patikrinimo klaidos<a class="headerlink" href="#gtfs-patikrinimo-klaidos" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_notices_table_by_severity</span><span class="p">(</span><span class="n">severity</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+    <span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_notices_df</span><span class="p">[</span><span class="n">gtfs_notices_df</span><span class="p">[</span><span class="s1">&#39;sunkumas&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">severity</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sunkumas&#39;</span><span class="p">])</span>
+
+    <span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;failas&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;klaida&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;viso&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+    <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_sticky</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+    <span class="n">gtfs_errors_df</span> <span class="o">=</span> <span class="n">gtfs_errors_df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;background: orange&quot;</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">x</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">gtfs_errors_df</span>
+
+<span class="n">show_notices_table_by_severity</span><span class="p">(</span><span class="s1">&#39;ERROR&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="gtfs-patikrinimo-ispejimai">
 <h3>GTFS patikrinimo įspėjimai<a class="headerlink" href="#gtfs-patikrinimo-ispejimai" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_notices_table_by_severity</span><span class="p">(</span><span class="s1">&#39;WARNING&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="stoteles">
 <h3>Stotelės<a class="headerlink" href="#stoteles" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">zipfile</span> <span class="kn">import</span> <span class="n">ZipFile</span>
+<span class="kn">import</span> <span class="nn">gtfs_functions</span> <span class="k">as</span> <span class="nn">gtfs</span>
+
+<span class="n">all_stops</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">gtfs_files_directory</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">):</span>
+        <span class="n">filename</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;.zip&#39;</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="n">ZipFile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">gtfs_files_directory</span><span class="p">,</span> <span class="n">file</span><span class="p">))</span> <span class="k">as</span> <span class="n">gtfs_zip</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;stops.txt&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">gtfs_zip</span><span class="o">.</span><span class="n">namelist</span><span class="p">():</span>
+                <span class="k">continue</span>
+
+            <span class="n">stops_csv</span> <span class="o">=</span> <span class="n">gtfs_zip</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;stops.txt&quot;</span><span class="p">)</span>
+
+        <span class="n">stops_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">stops_csv</span><span class="p">)</span>
+        <span class="n">stops_df</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="n">all_stops</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">all_stops</span><span class="p">,</span> <span class="n">stops_df</span><span class="p">])</span>
+
+<span class="n">all_stops</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

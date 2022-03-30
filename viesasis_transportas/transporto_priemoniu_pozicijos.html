@@ -412,20 +412,93 @@
 <p>Realaus laiko transporto priemonių pozicijų duomenys pateikiami nestandartizuotu formatu dėl šios priežasties nėra galimybės juos integruoti į jau egzistuojančias priemones pvz., Google Maps.</p>
 </div>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">vilnius_gps_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s1">&#39;../data/vehicle_positions/vilnius_gps_full.csv&#39;</span><span class="p">,</span>
+    <span class="n">dtype</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;Transportas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Marsrutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoID&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosNumeris&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Ilguma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Platuma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Greitis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Azimutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoPradziaMinutemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;NuokrypisSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MatavimoLaikas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosTipas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+    <span class="p">})</span>
+<span class="n">vilnius_gps_df</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Kaunas</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">kaunas_gps_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s1">&#39;../data/vehicle_positions/kaunas_gps_full.csv&#39;</span><span class="p">,</span>
+    <span class="n">dtype</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;Transportas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Marsrutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoID&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosNumeris&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Ilguma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Platuma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Greitis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;Azimutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;AtvykimoLaikasSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;ReisoPradziaMinutemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;NuokrypisSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MatavimoLaikas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+        <span class="s1">&#39;MasinosTipas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+    <span class="p">})</span>
+<span class="n">kaunas_gps_df</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="klaipeda">
 <h3>Klaipėda<a class="headerlink" href="#klaipeda" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">klaipeda_gps_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/vehicle_positions/klaipeda_gps_full.csv&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;Transportas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(),</span>
+    <span class="s1">&#39;Marsrutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+    <span class="s1">&#39;ReisoID&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+    <span class="s1">&#39;MasinosNumeris&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">StringDtype</span><span class="p">(),</span>
+    <span class="s1">&#39;Ilguma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+    <span class="s1">&#39;Platuma&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+    <span class="s1">&#39;Greitis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+    <span class="s1">&#39;Azimutas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+    <span class="s1">&#39;ReisoPradziaMinutemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+    <span class="s1">&#39;NuokrypisSekundemis&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Int64Dtype</span><span class="p">(),</span>
+<span class="p">})</span>
+<span class="n">klaipeda_gps_df</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="panevezys">
 <h3>Panevėžys<a class="headerlink" href="#panevezys" title="Nuoroda į šią antraštę">¶</a></h3>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="n">panevezys_gps_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/vehicle_positions/panevezys_gps_no_header.csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">panevezys_gps_df</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>

@@ -360,6 +360,46 @@
 <h2>GBFS Standarto paplitimas<a class="headerlink" href="#gbfs-standarto-paplitimas" title="Nuoroda į šią antraštę">¶</a></h2>
 <p>2022 m. GBFS buvo naudojamas daugiau nei 600 dviračių, paspirtukų motorolerių dalijimosi paslaugų teikėju pasaulyje<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id6">2</a></sup></span>. Taip pat 2020 m. 69% Šiaurės Amerikos miestų iš judumo paslaugų teikėjų reikalauja duomenų GBFS formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id4">3</a></sup></span>.</p>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="n">mapbox_access_token</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../.mapbox_token&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">px</span><span class="o">.</span><span class="n">set_mapbox_access_token</span><span class="p">(</span><span class="n">mapbox_access_token</span><span class="p">)</span>
+
+<span class="n">europe_center</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;lat&#39;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/geojson/world.geojson&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">world_geojson_file</span><span class="p">:</span>
+    <span class="n">world_geojson</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">world_geojson_file</span><span class="p">)</span>
+
+<span class="n">gbfs_cities_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/gbfs/gbfs-systems.csv&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span>
+    <span class="n">data_frame</span><span class="o">=</span><span class="n">gbfs_cities_df</span><span class="p">,</span>
+    <span class="n">lat</span><span class="o">=</span><span class="s1">&#39;Latitude&#39;</span><span class="p">,</span>
+    <span class="n">lon</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span>
+    <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;light&quot;</span><span class="p">,</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">center</span><span class="o">=</span><span class="n">europe_center</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;GBFS paplitimas pasaulyje&#39;</span><span class="p">,</span>
+    <span class="n">hover_name</span><span class="o">=</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span>
+    <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">,</span> <span class="s1">&#39;System ID&#39;</span><span class="p">,</span> <span class="s1">&#39;URL&#39;</span><span class="p">],</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">mapbox_layers</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;sourceattribution&quot;</span><span class="p">:</span> <span class="s1">&#39;© &lt;a href=&quot;https://judumas.vycius.lt&quot; target=&quot;_blank&quot;&gt;Karolis Vyčius&lt;/a&gt; © &lt;a href=&quot;https://raw.githubusercontent.com/NABSA/gbfs/master/systems.csv&quot; target=&quot;_blank&quot;&gt;NABSA&lt;/a&gt;&#39;</span>
+        <span class="p">}</span>
+    <span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="gbfs-failu-struktura">
