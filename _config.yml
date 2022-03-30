@@ -54,15 +54,15 @@ html:
   extra_navbar: Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
   baseurl: https://judumas.vycius.lt/
   google_analytics_id: G-PSPT787FKK
-#  comments:
-#    hypothesis: true
+  comments:
+    hypothesis: true
 
 launch_buttons:
   binderhub_url: ""
 
 sphinx:
-#  local_extensions:
-#    extensions: ./extensions/spinxext/
+  local_extensions:
+    extensions: ./extensions/spinxext/
   config:
     language: lt
     bibtex_reference_style: super
