@@ -6,9 +6,11 @@ root: index
 parts:
   - caption: Duomenų standartai
     chapters:
-      - file: standartai/viesasis-transportas
+      - file: standartai/viesasis-transportas-statiniai-duomenys
         sections:
           - file: standartai/gtfs
+      - file: standartai/viesasis-transportas-realaus-laiko-duomenys
+        sections:
           - file: standartai/gtfs-realtime
       - file: standartai/dalijimosi-paslaugos
         sections:
