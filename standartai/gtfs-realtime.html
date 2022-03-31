@@ -306,8 +306,8 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#gtfs-realtime-dalys">
-   GTFS Realtime dalys
+  <a class="reference internal nav-link" href="#sudedamosios-dalys">
+   Sudedamosios dalys
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -316,13 +316,13 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#transporto-priemoniu-pozicijos">
-     Transporto priemonių pozicijos
+    <a class="reference internal nav-link" href="#transporto-priemoniu-buvimo-vieta">
+     Transporto priemonių buvimo vieta
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paslaugu-ivykiai">
-     Paslaugų įvykiai
+    <a class="reference internal nav-link" href="#ivykiai-veikiantys-transporta">
+     Įvykiai veikiantys transportą
     </a>
    </li>
   </ul>
@@ -353,8 +353,8 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#gtfs-realtime-dalys">
-   GTFS Realtime dalys
+  <a class="reference internal nav-link" href="#sudedamosios-dalys">
+   Sudedamosios dalys
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -363,13 +363,13 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#transporto-priemoniu-pozicijos">
-     Transporto priemonių pozicijos
+    <a class="reference internal nav-link" href="#transporto-priemoniu-buvimo-vieta">
+     Transporto priemonių buvimo vieta
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#paslaugu-ivykiai">
-     Paslaugų įvykiai
+    <a class="reference internal nav-link" href="#ivykiai-veikiantys-transporta">
+     Įvykiai veikiantys transportą
     </a>
    </li>
   </ul>
@@ -390,16 +390,20 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gtfs-realtime-general-transit-feed-specification-realtime">
 <h1>GTFS Realtime (General Transit Feed Specification Realtime)<a class="headerlink" href="#gtfs-realtime-general-transit-feed-specification-realtime" title="Nuoroda į šią antraštę">¶</a></h1>
-<div class="section" id="gtfs-realtime-dalys">
-<h2>GTFS Realtime dalys<a class="headerlink" href="#gtfs-realtime-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>GTFS Realtime susideda iš trijų informacijos dalių.
-<a class="reference external" href="https://opentransportdata.swiss/en/cookbook/gtfs-rt/">https://opentransportdata.swiss/en/cookbook/gtfs-rt/</a></p>
+<div class="section" id="sudedamosios-dalys">
+<h2>Sudedamosios dalys<a class="headerlink" href="#sudedamosios-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>GTFS Realtime standartas susideda iš trijų dalių:</p>
+<ul class="simple">
+<li><p>Kelionės eigos (angl. <a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/trip-updates"><em>Trip updates</em></a>)</p></li>
+<li><p>Transporto priemonių buvimo vietos (angl. <a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/vehicle-positions"><em>Vehicle positions</em></a>)</p></li>
+<li><p>Įvykiai veikiantys transportą (angl. <a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/service-alerts"><em>Service alerts</em></a>)</p></li>
+</ul>
 <div class="section" id="keliones-eiga">
 <h3>Kelionės eiga<a class="headerlink" href="#keliones-eiga" title="Nuoroda į šią antraštę">¶</a></h3>
-<p>Panaudojimo pavyzdys: “7 troleibusas vėluos atvažiuoti į Centro poliklinikos stotelę 6 minutes”</p>
-<p>Skelbiami transporto priemonės vėlavimai / skubėjimai maršrute, informacija apie pakeistus maršrutus, pakaitines transporto priemonės ar atskirų maršrutų atšaukimus.</p>
+<p>Skelbiamas realaus laiko transporto priemonės vėlavimas / skubėjimas maršrute, numatomas atvykimo į stotelę laikas, informacija apie transporto priemonę.</p>
+<p><strong>Panaudojimo pavyzdys:</strong> „Numatoma, kad 7 troleibusas atvažiuos į Centro poliklinikos stotelę 11:07 (pagal grafiką 11:05, vėluos 2 min.)“</p>
 <div class="info dropdown admonition">
-<p class="admonition-title">Duomenų kontraktas</p>
+<p class="admonition-title">Kelionės eigos duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realtime update of the progress of a vehicle along a trip.</span>
 <span class="c1">// Depending on the value of ScheduleRelationship, a TripUpdate can specify:</span>
 <span class="c1">// - A trip that proceeds along the schedule.</span>
@@ -674,10 +678,12 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<div class="section" id="transporto-priemoniu-pozicijos">
-<h3>Transporto priemonių pozicijos<a class="headerlink" href="#transporto-priemoniu-pozicijos" title="Nuoroda į šią antraštę">¶</a></h3>
+<div class="section" id="transporto-priemoniu-buvimo-vieta">
+<h3>Transporto priemonių buvimo vieta<a class="headerlink" href="#transporto-priemoniu-buvimo-vieta" title="Nuoroda į šią antraštę">¶</a></h3>
+<p>Skelbiama realaus laiko informacija apie transporto priemonių buvimo vietą, greitį kuri yra susieta su statine GTFS informacija. Taip pat gali būti pateikiama informacija apie priemonės užpildymą, patekimą į spūstį, transporto priemonės tipą ir pnš.</p>
+<p><strong>Panaudojimo pavyzdys:</strong> „7 troleibusas turintis laisvų sėdimų vietų 11:20 buvo Žaliojo tilto stotelėje“</p>
 <div class="info dropdown admonition">
-<p class="admonition-title">Duomenų kontraktas</p>
+<p class="admonition-title">Transporto priemonės buvimo vietos duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realtime positioning information for a given vehicle.</span>
 <span class="kd">message</span><span class="w"> </span><span class="nc">VehiclePosition</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// The Trip that this vehicle is serving.</span>
@@ -901,10 +907,12 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<div class="section" id="paslaugu-ivykiai">
-<h3>Paslaugų įvykiai<a class="headerlink" href="#paslaugu-ivykiai" title="Nuoroda į šią antraštę">¶</a></h3>
+<div class="section" id="ivykiai-veikiantys-transporta">
+<h3>Įvykiai veikiantys transportą<a class="headerlink" href="#ivykiai-veikiantys-transporta" title="Nuoroda į šią antraštę">¶</a></h3>
+<p>Viešojo transporto naudotojams galima suteikti informaciją apie įvykius turinčius įtakos stotelei, maršrutui ar visam transporto paslaugų tinklų nurodant trumpą pranešimą ir pakeitimo priežastį.</p>
+<p><strong>Panaudojimo pavyzdys:</strong> „Šnipiškių stotelė uždaryta dėl įvykusios avarijos“</p>
 <div class="info dropdown admonition">
-<p class="admonition-title">Duomenų kontraktas</p>
+<p class="admonition-title">Įvykių veikiančių transportą duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// An alert, indicating some sort of incident in the public transit network.</span>
 <span class="kd">message</span><span class="w"> </span><span class="nc">Alert</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// Time when the alert should be shown to the user. If missing, the</span>
@@ -1125,11 +1133,6 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div>
-<ul class="simple">
-<li><p>Eiga: transporto priemonės eiga maršrute (pvz., vėlavimas, skubėjimas, )</p></li>
-<li><p>Transporto priemonių koordinates</p></li>
-<li><p>Trikdžiai: pranešimai naudotojams apie transporto sutrikimus (pvz., avariją, šventę, statybų darbus, kurie gali turėti įtakos maršrutui).</p></li>
-</ul>
 </div>
 </div>
 <div class="section" id="programos-naudojancios-gtfs-realtime-duomenis">
