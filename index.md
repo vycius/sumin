@@ -26,6 +26,17 @@ Per standartizuotų judumo duomenų atvėrimą:
 
 ## Nacionaliniai teisės aktai ir dokumentai
 
+### Lietuvos susisiekimo plėtros iki 2050 m. strategija
+> **1.2. tikslas. Darnus, integruotas ir įtraukus susisiekimas.** Šiuo tikslu siekiama užtikrinti, jog vartotojams būtų sudaromos sąlygos naudotis aplinkai draugiška, vartotojų poreikius atitinkančia susisiekimo sistema.
+
+> **1.2.1. uždavinys. Vietinio (miestų ir priemiesčių) susisiekimo punktualumo, dažnumo ir išmanumo skatinimas.** Šiuo uždaviniu siekiama pritraukti gyventojus naudotis viešuoju transportu, o norint tai pasiekti būtina užtikrinti viešojo transporto patrauklumą ir patogumą vartotojui.
+
+>  **1.2.2. uždavinys. Darnaus judumo įgyvendinimo užtikrinimo ir universalaus dizaino priemonių skatinimas.** Šiuo uždaviniu siekiama įgyvendinti darnų judumą, kadangi bemotorio transporto naudojimas miestuose mažintų ŠESD, vizualinę ir triukšmo taršas, taip pat prisidėtų prie individualių automobilių skaičiaus mažinimo. Skatinant darnų judumą būtina atsižvelgti ir į riboto judumo asmenų poreikius, kad viešuoju transportu ar kitomis netaršiomis judumo alternatyvomis (įskaitant alternatyvių degalų infrastruktūra) galėtų pasinaudoti visi asmenys.
+
+> **1.2.3. uždavinys. Integruoto regionų pasiekiamumo skatinimas.** Kadangi susisiekimas su regionais šalyje užtikrinamas nepakankamai, nėra vieningos viešojo transporto organizavimo sistemos derinant tolimąjį ir priemiestinį susisiekimą bei susisiekimą geležinkeliu, taip pat dėl mažo gyventojų skaičiaus atokiose gyvenvietėse, UPP teikimo vietų išlaikymas yra netvarus, todėl šiuo uždaviniu siekiama užtikrinti integruotą ir prieinamą paslaugų teikimą taikant modernius sprendimus regionuose.
+
+> **1.2.4. uždavinys. Intermodalumo ir funkcinio suderinamumo skatinimas keleivių ir krovinių vežimuose.** Šiuo uždaviniu siekiama skatinti transporto rūšių integruotumą bei intermodalumą, kadangi šalyje trūksta skirtingų transporto rūšių suderinamumo, neišnaudojamas vidaus vandenų, geležinkelių transporto potencialas krovinių vežimui (kroviniai daugiausiai vežami kelių transportu, o tai lemia didesnes ŠESD emisijas), nėra vieningos viešojo transporto sistemos derinant susisiekimą skirtingomis transporto rūšimis.
+
 ### Nacionalinės susisiekimo plėtros 2014–2022 m. programa
 
 > **Tikslas:** užtikrinti miesto ir priemiesčio įvairių rūšių viešojo transporto maršrutų suderinamumą ir didesnę jų sąveiką su privačiu transportu.
