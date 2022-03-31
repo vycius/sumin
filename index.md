@@ -9,12 +9,12 @@ tikslūs su judumu susiję duomenys.
 ## Projekto siekiai
 
 Per standartizuotų judumo duomenų atvėrimą:
-
+- Sudaryti sąlygas Lietuvos gyventojams mėgautis pačiomis patogiausiomis ir maloniausiomis kelionėmis bei keliavimo įrankiais;
 - Įgalinti egzistuojančias kelionių planavimo programų pilnavertį veikimą Lietuvoje (pvz., Google Maps Transit, Apple
   Maps Transit);
-- Patobulinti sąlygas vystyti judumo startuolius;
+- Patobulinti sąlygas Lietuvoje vystyti judumo startuolius;
 - Sukurti sąlygas įgyvendinti visą Lietuvą apimančius judumo, kaip paslaugos (angl. *Mobility as a Service*) sprendimus;
-- Užtikrinti darnią judumo plėtrą Lietuvoje;
+- Užtikrinti darnią judumo paslaugų plėtrą Lietuvoje;
 
 ## Pagrindiniai faktai
 
