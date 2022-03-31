@@ -59,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
     <link rel="next" title="Dalijimosi paslaugos" href="dalijimosi-paslaugos.html" />
-    <link rel="prev" title="GTFS (General Transit Feed Specification)" href="gtfs.html" />
+    <link rel="prev" title="Realaus laiko viešojo transporto duomenys" href="viesasis-transportas-realaus-laiko-duomenys.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -110,21 +110,33 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="viesasis-transportas.html">
-   Viešasis transportas
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="viesasis-transportas-statiniai-duomenys.html">
+   Statiniai viešojo transporto duomenys
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="gtfs.html">
      GTFS (General Transit Feed Specification)
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="viesasis-transportas-realaus-laiko-duomenys.html">
+   Realaus laiko viešojo transporto duomenys
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      GTFS Realtime (General Transit Feed Specification Realtime)
@@ -136,8 +148,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dalijimosi-paslaugos.html">
    Dalijimosi paslaugos
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -177,8 +189,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../viesasis_transportas/gtfs.html">
    GTFS
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -390,6 +402,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gtfs-realtime-general-transit-feed-specification-realtime">
 <h1>GTFS Realtime (General Transit Feed Specification Realtime)<a class="headerlink" href="#gtfs-realtime-general-transit-feed-specification-realtime" title="Nuoroda į šią antraštę">¶</a></h1>
+<p>GTFS Realtime yra de facto standartinis atvirų duomenų formatas skirtas realaus laiko viešojo transporto informacija perduoti. Šis formatas papildo papildo GTFS teikiamą statinę informaciją.</p>
 <div class="section" id="sudedamosios-dalys">
 <h2>Sudedamosios dalys<a class="headerlink" href="#sudedamosios-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
 <p>GTFS Realtime standartas susideda iš trijų dalių:</p>
@@ -402,7 +415,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Kelionės eiga<a class="headerlink" href="#keliones-eiga" title="Nuoroda į šią antraštę">¶</a></h3>
 <p>Skelbiamas realaus laiko transporto priemonės vėlavimas / skubėjimas maršrute, numatomas atvykimo į stotelę laikas, informacija apie transporto priemonę.</p>
 <p><strong>Panaudojimo pavyzdys:</strong> „Numatoma, kad 7 troleibusas atvažiuos į Centro poliklinikos stotelę 11:07 (pagal grafiką 11:05, vėluos 2 min.)“</p>
-<div class="info dropdown admonition">
+<div class="tip dropdown admonition">
 <p class="admonition-title">Kelionės eigos duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realtime update of the progress of a vehicle along a trip.</span>
 <span class="c1">// Depending on the value of ScheduleRelationship, a TripUpdate can specify:</span>
@@ -682,7 +695,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Transporto priemonių buvimo vieta<a class="headerlink" href="#transporto-priemoniu-buvimo-vieta" title="Nuoroda į šią antraštę">¶</a></h3>
 <p>Skelbiama realaus laiko informacija apie transporto priemonių buvimo vietą, greitį kuri yra susieta su statine GTFS informacija. Taip pat gali būti pateikiama informacija apie priemonės užpildymą, patekimą į spūstį, transporto priemonės tipą ir pnš.</p>
 <p><strong>Panaudojimo pavyzdys:</strong> „7 troleibusas turintis laisvų sėdimų vietų 11:20 buvo Žaliojo tilto stotelėje“</p>
-<div class="info dropdown admonition">
+<div class="tip dropdown admonition">
 <p class="admonition-title">Transporto priemonės buvimo vietos duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// Realtime positioning information for a given vehicle.</span>
 <span class="kd">message</span><span class="w"> </span><span class="nc">VehiclePosition</span><span class="w"> </span><span class="p">{</span>
@@ -911,7 +924,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Įvykiai veikiantys transportą<a class="headerlink" href="#ivykiai-veikiantys-transporta" title="Nuoroda į šią antraštę">¶</a></h3>
 <p>Viešojo transporto naudotojams galima suteikti informaciją apie įvykius turinčius įtakos stotelei, maršrutui ar visam transporto paslaugų tinklų nurodant trumpą pranešimą ir pakeitimo priežastį.</p>
 <p><strong>Panaudojimo pavyzdys:</strong> „Šnipiškių stotelė uždaryta dėl įvykusios avarijos“</p>
-<div class="info dropdown admonition">
+<div class="tip dropdown admonition">
 <p class="admonition-title">Įvykių veikiančių transportą duomenų kontraktas</p>
 <div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// An alert, indicating some sort of incident in the public transit network.</span>
 <span class="kd">message</span><span class="w"> </span><span class="nc">Alert</span><span class="w"> </span><span class="p">{</span>
@@ -1175,11 +1188,11 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="gtfs.html" title="praeitas page">
+    <a class='left-prev' id="prev-link" href="viesasis-transportas-realaus-laiko-duomenys.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">praeitas</p>
-            <p class="prev-next-title">GTFS (General Transit Feed Specification)</p>
+            <p class="prev-next-title">Realaus laiko viešojo transporto duomenys</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="dalijimosi-paslaugos.html" title="kitas page">
