@@ -30,7 +30,7 @@ Per standartizuotų judumo duomenų atvėrimą:
 - Patogesnis ir prieinamesnis keliavimas viešioju transportu;
 - Sumažintas kelionės laikas (pagal realią informaciją gali koreguoti planus);
 - Mažesnis laukimo laikas;
-- 
+
 ### Savivaldybėms ir transporto valdytojams:
 - Išaugęs viešojo transporto naudojimas ir daugiau bilietų pardavimų;
 - Lengvesnis viešojo transporto planavimas;
