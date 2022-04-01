@@ -6,6 +6,15 @@ skirtingų transporto rūšių. Siekdami, kad judėjimo patirtis būtų kuo malo
 laiko pasitelkiame programas pvz., Trafi, Google Maps, Apple Maps. Visų šių programų veikimui yra reikalingi atviri,
 tikslūs su judumu susiję duomenys.
 
+## Pagrindiniai faktai
+- 2019 m. Lietuva buvo **pirma ES** pagal kelionių atliktų automobiliu kiekį (90.6%){cite}`eurostat_model_split_of_passenger_transport`;
+- 2019 m. Lietuva pagal automobilių skaičiaus prieaugį 1000 gyv. buvo **antra ES** (24% prieaugis 2019 m. lyginant su 2015 m.){cite}`eurostat_passenger_cars`;
+- Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu **yra informacijos apie maršrutus ir planavimo priemonių stoka**;
+- Apple Maps Transit **neveikia Lietuvoje** (veikia Estijoje ir 17 kitų ES šalių);
+- Google Maps Transit Lietuvoje **neturi realaus laiko atvykimų**;
+- **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų GTFS-Realtime formatu.
+
+
 ## Projekto siekiai
 
 Per standartizuotų judumo duomenų atvėrimą:
@@ -16,13 +25,22 @@ Per standartizuotų judumo duomenų atvėrimą:
 - Sukurti sąlygas įgyvendinti visą Lietuvą apimančius judumo, kaip paslaugos (angl. *Mobility as a Service*) sprendimus;
 - Užtikrinti darnią judumo paslaugų plėtrą Lietuvoje;
 
-## Pagrindiniai faktai
+## Nauda
+### Visuomenei:
+- Patogesnis ir prieinamesnis keliavimas viešioju transportu;
+- Sumažintas kelionės laikas (pagal realią informaciją gali koreguoti planus);
+- Mažesnis laukimo laikas;
+- 
+### Savivaldybėms ir transporto valdytojams:
+- Išaugęs viešojo transporto naudojimas ir daugiau bilietų pardavimų;
+- Lengvesnis viešojo transporto planavimas;
+- Geresnis viešojo transporto vertinimas;
 
-- 2019 m. Lietuva užimė antrą vietą Europoje pagal kelionių atliktų automobiliu kiekį (90.6%). Europos vidurkis
-  83.4 [[EUROSTAT]](https://ec.europa.eu/eurostat/databrowser/bookmark/90c56a68-63d2-42dc-9318-d89219a00517?lang=en)
-- Apple Maps Transit neveikia Lietuvoje (nors veikia Estijoje ir 17 kitų ES šalių);
-- Google Maps Transit Lietuvoje neturi realaus laiko atvykimų;
-- Lietuvoje nėra nė vienos savivaldybės teikiančios viešojo transporto realaus laiko duomenis GTFS-Realtime formatu;
+### Startuoliams ir akademijai:
+- Nauji startuoliai grįsti atvertais duomenimis;
+- Daugiau mokslinių tyrimų susijusių su transporto tinklo optimizavimu ir kokybės gerinimu;
+
+
 
 ## Nacionaliniai teisės aktai ir dokumentai
 
@@ -31,7 +49,7 @@ Per standartizuotų judumo duomenų atvėrimą:
 
 > **1.2.1. uždavinys. Vietinio (miestų ir priemiesčių) susisiekimo punktualumo, dažnumo ir išmanumo skatinimas.** Šiuo uždaviniu siekiama pritraukti gyventojus naudotis viešuoju transportu, o norint tai pasiekti būtina užtikrinti viešojo transporto patrauklumą ir patogumą vartotojui.
 
->  **1.2.2. uždavinys. Darnaus judumo įgyvendinimo užtikrinimo ir universalaus dizaino priemonių skatinimas.** Šiuo uždaviniu siekiama įgyvendinti darnų judumą, kadangi bemotorio transporto naudojimas miestuose mažintų ŠESD, vizualinę ir triukšmo taršas, taip pat prisidėtų prie individualių automobilių skaičiaus mažinimo. Skatinant darnų judumą būtina atsižvelgti ir į riboto judumo asmenų poreikius, kad viešuoju transportu ar kitomis netaršiomis judumo alternatyvomis (įskaitant alternatyvių degalų infrastruktūra) galėtų pasinaudoti visi asmenys.
+> **1.2.2. uždavinys. Darnaus judumo įgyvendinimo užtikrinimo ir universalaus dizaino priemonių skatinimas.** Šiuo uždaviniu siekiama įgyvendinti darnų judumą, kadangi bemotorio transporto naudojimas miestuose mažintų ŠESD, vizualinę ir triukšmo taršas, taip pat prisidėtų prie individualių automobilių skaičiaus mažinimo. Skatinant darnų judumą būtina atsižvelgti ir į riboto judumo asmenų poreikius, kad viešuoju transportu ar kitomis netaršiomis judumo alternatyvomis (įskaitant alternatyvių degalų infrastruktūra) galėtų pasinaudoti visi asmenys.
 
 > **1.2.3. uždavinys. Integruoto regionų pasiekiamumo skatinimas.** Kadangi susisiekimas su regionais šalyje užtikrinamas nepakankamai, nėra vieningos viešojo transporto organizavimo sistemos derinant tolimąjį ir priemiestinį susisiekimą bei susisiekimą geležinkeliu, taip pat dėl mažo gyventojų skaičiaus atokiose gyvenvietėse, UPP teikimo vietų išlaikymas yra netvarus, todėl šiuo uždaviniu siekiama užtikrinti integruotą ir prieinamą paslaugų teikimą taikant modernius sprendimus regionuose.
 
