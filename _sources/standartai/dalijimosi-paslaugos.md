@@ -1,8 +1,8 @@
 # Dalijimosi paslaugos
 
 Lietuvos transporto sektorius, kaip ir visas pasaulis, sparčiai pritaiko naujoves. Lietuvos gyventojai po miestus juda
-ne tik viešuoju transportu, tačiau ir dviračiais, paspirtukais, naudojasi pavežėjimo ar kitomis dalijimosi paslaugomis (
-žr. [schemą](shared-mobility-transport-types)).
+ne tik viešuoju transportu, tačiau ir dviračiais, paspirtukais, naudojasi pavežėjimo ar kitomis dalijimosi 
+paslaugomis (žr. [schemą](shared-mobility-transport-types)).
 
 ```{figure} /images/standartai/shared-mobility-transport-types.png
 :name: shared-mobility-transport-types
