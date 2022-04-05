@@ -17,7 +17,7 @@ parts:
       - file: standartai/dalijimosi-paslaugos
         sections:
           - file: standartai/gbfs
-          - file: standartai/mbs
+          - file: standartai/mds
   - caption: Programos
     chapters:
       - file: apps/apple_maps
