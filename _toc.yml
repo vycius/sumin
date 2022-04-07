@@ -27,6 +27,7 @@ parts:
         sections:
           - file: viesasis_transportas/gtfs-vintra
       - file: viesasis_transportas/transporto_priemoniu_pozicijos
+      - file: viesasis_transportas/stops
   - caption: Šaltiniai
     chapters:
       - file: saltiniai
