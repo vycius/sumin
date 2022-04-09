@@ -4,4 +4,8 @@ Vienas iš VINTRA tikslų buvo buvo sudaryti galimybę viešąjį transporta
 
 > 13 straipnis 3 dalis: Viešojo keleivinio transporto kelionių duomenys kaupiami viešojo transporto kelionių duomenų informacinėje sistemoje, kurios valdytoją paskiria Vyriausybė ar jos įgaliota institucija. Viešojo transporto kelionių duomenų kaupimo tvarką nustato Vyriausybė ar jos įgaliota institucija. **Vežėjai ir savivaldybės teikia viešojo transporto kelionių duomenis, susijusius su tvarkaraščiais ir tarifais, ir informuoja duomenų tvarkytoją apie jų pasikeitimus**.
 >
-> -- <cite>Lietuvos Respublikos transporto veiklos pagrindų įstatymas{cite}`transporto_veiklos_pagrindu_istatymas`</cite>
+> -- <cite>Lietuvos Respublikos transporto veiklos pagrindų įstatymas{cite}`transporto_veiklos_pagrindu_istatymas`</cite> 
+
+
+```{tableofcontents}
+```
