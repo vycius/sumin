@@ -18,17 +18,20 @@ parts:
         sections:
           - file: standartai/gbfs
           - file: standartai/mds
+
+  - caption: Duomenų šaltiniai
+    chapters:
+      - file: saltiniai/vintra
+        sections:
+          - file: saltiniai/vintra-gtfs
+          - file: saltiniai/vintra-netex
+      - file: saltiniai/stops
+        sections:
+          - file: saltiniai/transporto-priemoniu-pozicijos
   - caption: Programos
     chapters:
       - file: apps/apple_maps
-  - caption: Viešasis transportas
-    chapters:
-      - file: viesasis_transportas/gtfs
-        sections:
-          - file: viesasis_transportas/gtfs-vintra
-      - file: viesasis_transportas/transporto_priemoniu_pozicijos
-      - file: viesasis_transportas/stops
-  - caption: Šaltiniai
+  - caption: Literatūra
     chapters:
       - file: saltiniai
   - caption: Aplinka

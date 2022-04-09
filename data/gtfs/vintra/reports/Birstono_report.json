@@ -1,1 +1,0 @@
-{"notices":[{"code":"missing_required_file","severity":"ERROR","totalNotices":5,"sampleNotices":[{"filename":"stop_times.txt"},{"filename":"routes.txt"},{"filename":"trips.txt"},{"filename":"stops.txt"},{"filename":"agency.txt"}]},{"code":"missing_timepoint_column","severity":"WARNING","totalNotices":1,"sampleNotices":[{"filename":"stop_times.txt"}]}]}
