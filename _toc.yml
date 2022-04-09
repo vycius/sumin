@@ -5,6 +5,7 @@ format: jb-book
 root: index
 parts:
   - caption: Duomenų standartai
+    numbered: True
     chapters:
       - file: standartai/viesasis-transportas-statiniai-duomenys
         sections:
@@ -19,7 +20,9 @@ parts:
           - file: standartai/gbfs
           - file: standartai/mds
 
+
   - caption: Duomenų šaltiniai
+    numbered: True
     chapters:
       - file: saltiniai/vintra
         sections:
@@ -29,11 +32,14 @@ parts:
         sections:
           - file: saltiniai/transporto-priemoniu-pozicijos
   - caption: Programos
+    numbered: True
     chapters:
       - file: apps/apple_maps
   - caption: Literatūra
+    numbered: True
     chapters:
       - file: saltiniai
   - caption: Aplinka
+    numbered: True
     chapters:
       - file: internal
