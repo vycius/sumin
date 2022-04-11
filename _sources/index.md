@@ -9,10 +9,23 @@ tikslūs su judumu susiję duomenys.
 ## Pagrindiniai faktai
 - 2019 m. Lietuva buvo **pirma ES** pagal kelionių atliktų automobiliu kiekį (90.6%){cite}`eurostat_model_split_of_passenger_transport`;
 - 2019 m. Lietuva pagal automobilių skaičiaus prieaugį 1000 gyv. buvo **antra ES** (24% prieaugis 2019 m. lyginant su 2015 m.){cite}`eurostat_passenger_cars`;
-- Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu **yra informacijos apie maršrutus ir planavimo priemonių stoka**;
+- Susisiekimo ministerija koordinuoja ir leidžia teisės aktus susijusius su intelektinių transporto sistemų diegimu ir 
+  naudojimu{cite}`transporto_veiklos_pagrindu_istatymas`;
+- Statiniai viešojo transporto duomenys turi būti teikiami bent jau `NeTEx` formatu, o realaus laiko bent jau `SIRI`
+  formatu pagal direktyvos 2010/40/ES nuostatas{cite}`directive_multimodal_travel_information_services`</cite>;
+- VINTRA tvarkytojo LAKD (*VĮ Lietuvos automobilių kelių direkcija*) funkijų atlikimui nėra reikalingi viešojo 
+  transporto duomenys;
+- Per dieną VINTRA (visimarsrutai.lt) aplanko **apie 10 unikalių lankytojų** (TODO patikrinti su LAKD);
+- VINTRA skelbiami **statiniai viešojo transporto duomenys yra pasenę** (23 savivaldybių duomenys neturi nė vieno 
+  galiojančio reiso); 
+- VINTRA `NeTEx` formatu pateikiami 8 Lietuvos savivaldybių viešojo transporto statiniai duomenys;
+- **VINTRA neteikia jokių realaus laiko atvirų duomenų**;
+- **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų `SIRI` ar `GTFS-Realtime` 
+  formatais.
+- 11 savivaldybių naudojama Stops.lt sistema statiniams duomenims atiduoti palaiko tik `GTFS` formatą, o **realaus laiko 
+  duomenims nepalaiko jokio standartizuoto formato**;
 - Apple Maps Transit **neveikia Lietuvoje** (veikia Estijoje ir 17 kitų ES šalių);
-- Google Maps Transit Lietuvoje **neturi realaus laiko atvykimų**;
-- **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų GTFS-Realtime formatu.
+- Google Maps Transit Lietuvoje **neturi realaus laiko atvykimų** dėl duomenų `GTFS-Realtime` formato nebuvimo;
 
 
 ## Projekto siekiai
@@ -96,3 +109,4 @@ darbą https://ec.europa.eu/info/sites/default/files/file_import/2019-european-s
   That is, we all benefit when data is open and standardized. This enables industry growth and innovation. GTFS is a
   perfect example.
   https://trilliumtransit.com/2019/10/01/data-transit-riders-want/
+- Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu **yra informacijos apie maršrutus ir planavimo priemonių stoka**;
