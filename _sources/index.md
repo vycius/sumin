@@ -16,8 +16,9 @@ tikslūs su judumu susiję duomenys.
 - VINTRA tvarkytojo LAKD (*VĮ Lietuvos automobilių kelių direkcija*) funkijų atlikimui nėra reikalingi viešojo 
   transporto duomenys;
 - Per dieną VINTRA (visimarsrutai.lt) aplanko **apie 10 unikalių lankytojų** (TODO patikrinti su LAKD);
-- VINTRA skelbiami **statiniai viešojo transporto duomenys yra pasenę** (23 savivaldybių duomenys neturi nė vieno 
+- Dalis VINTRA skelbiamų **statinių viešojo transporto duomenų yra pasenę** (23 savivaldybių duomenys neturi nė vieno 
   galiojančio reiso); 
+- Į VINTRA iš kitų sistemų automatiškai įkeliama 12 savivaldybių viešojo transporto statiniai duomenys;
 - VINTRA `NeTEx` formatu pateikiami 8 Lietuvos savivaldybių viešojo transporto statiniai duomenys;
 - **VINTRA neteikia jokių realaus laiko atvirų duomenų**;
 - **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų `SIRI` ar `GTFS-Realtime` 
