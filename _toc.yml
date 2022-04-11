@@ -30,6 +30,9 @@ parts:
       - file: saltiniai/stops
         sections:
           - file: saltiniai/transporto-priemoniu-pozicijos
+  - caption: Sprendimas
+    chapters:
+      - file: sprendimas/architektura
   - caption: Programos
     chapters:
       - file: apps/apple_maps
