@@ -11,10 +11,10 @@ gyventojams sužinoti, ar autobusas atvyks anksčiau ir gyventojas, nespėjęs �
 ir galbūt reikėtų pasirinkti alternatyvų kelionės būdą. Taip pat, šie duomenys suteikia galimybę atsakyti į klausimus,
 ar transporto priemonėje yra laisvų vietų atsisėsti, ar transporto priemonė netrukus pateks į kamštį, ar apskritai
 neatvažiuos į stotelę dėl mieste vykstančio maratono. Dėl šių priežasčių, moksliniai tyrimai rodo, kad realaus laiko
-duomenys gali padidinti keleivių skaičių net 2 procentais{cite}`chicago_ridership_realtime_study`
+duomenys gali padidinti keleivių skaičių net 2 proc.{cite}`chicago_ridership_realtime_study`
 {cite}`new_york_ridershio_realtime_study`, o skirtingų realių laiko duomenų sąveika (pvz., duomenimis grįstos prognozės,
 patogi bilieto sistema) gali keleivių skaičių papildomai padidinti dar 3-10
-procentais{cite}`transit_data_interoperability_study`. Svarbu pabrėžti, jog galimas ir atvirkštinis efektas - keleiviui
+proc.{cite}`transit_data_interoperability_study`. Svarbu pabrėžti, jog galimas ir atvirkštinis efektas - keleiviui
 praradus pasitikėjimą viešojo transporto informacija (pvz., teikiami duomenys rodo, kad autobusas atvyks už 2 min,
 tačiau jis į stotelėje neatvyksta net ir po 10 min), tikėtina, kad keleivis nebesinaudos viešuoju transportu ir rinksis
 alternatyvų kelionės būdą.
@@ -25,7 +25,7 @@ Lietuvoje iš viso nepalaiko viešojo transporto maršrutų planavimo, nors šis
 šalių{cite}`apple_feature_availability`. Taip pat Lietuvoje nėra nė vieno realaus laiko duomenų šaltinio, kuris atitiktų
 ES direktyvą dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų
 teikimo ([2010/40/ES](https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&from=LT)) ar pasaulinio
-de facto standarto GTFS-Realtime, skirto realaus laiko duomenims perduoti. Dėl šios priežasties, nėra galimybės
+de facto standarto [GTFS Realtime](https://gtfs.org/realtime/), skirto realaus laiko duomenims perduoti. Dėl šios priežasties, nėra galimybės
 integruoti realaus laiko duomenų į jau egzistuojančias kelionių planavimo priemones.
 
 ## Tikslas
