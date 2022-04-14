@@ -1,38 +1,70 @@
 # Judumo duomenų ekosistemos plėtra
 
-Kiekvieną dieną po miestą judame mums patogiausiais būdais: vieni tą darome naudodamiesi viešuoju transportu,
-dviračiais, paspirtukais, kiti automobilių dalijimosi, pavežėjimo paslaugomis. Dažnai naudojame ne vieną, o keletą
-skirtingų transporto rūšių. Siekdami, kad judėjimo patirtis būtų kuo malonesnė, sklandesnė ir sutaupytume kuo daugiau
-laiko pasitelkiame programas pvz., Trafi, Google Maps, Apple Maps. Visų šių programų veikimui yra reikalingi atviri,
-tikslūs su judumu susiję duomenys.
+Lietuvoje daugiau nei 90 proc. kelionės atstumo yra įveikiama automobiliu ir pagal šį rodiklį Lietuva užima pirmą vietą
+Europos sąjungoje (ES){cite}`eurostat_model_split_of_passenger_transport`. Siekiant paversti viešąjį transportą
+patrauklesniu ir patogesniu, ypač sparčiai atnaujinamas transporto priemonių parkas, gerinama viešojo transporto
+infrastruktūra, investuojama į el. bilieto sistemas, kelionių planavimo priemones ir skaitmeninius sprendimus.
+
+Skaitmeninėms priemonėms bei transporto inovacijoms kurti ir plėtoti yra ypač svarbūs atvirai prieinami, reguliariai
+atnaujinami aukštos kokybės standartizuoti duomenys. Realaus laiko viešojo transporto duomenys suteikia galimybę
+gyventojams sužinoti, ar autobusas atvyks anksčiau ir gyventojas, nespėjęs į jį, pavėluos į darbą, ar autobusas vėluos,
+ir galbūt reikėtų pasirinkti alternatyvų kelionės būdą. Taip pat, šie duomenys suteikia galimybę atsakyti į klausimus,
+ar transporto priemonėje yra laisvų vietų atsisėsti, ar transporto priemonė netrukus pateks į kamštį, ar apskritai
+neatvažiuos į stotelę dėl mieste vykstančio maratono. Dėl šių priežasčių, moksliniai tyrimai rodo, kad realaus laiko
+duomenys gali padidinti keleivių skaičių net 2 procentais{cite}`chicago_ridership_realtime_study`
+{cite}`new_york_ridershio_realtime_study`, o skirtingų realių laiko duomenų sąveika (pvz., duomenimis grįstos prognozės,
+patogi bilieto sistema) gali keleivių skaičių papildomai padidinti dar 3-10
+procentais{cite}`transit_data_interoperability_study`. Svarbu pabrėžti, jog galimas ir atvirkštinis efektas - keleiviui
+praradus pasitikėjimą viešojo transporto informacija (pvz., teikiami duomenys rodo, kad autobusas atvyks už 2 min,
+tačiau jis į stotelėje neatvyksta net ir po 10 min), tikėtina, kad keleivis nebesinaudos viešuoju transportu ir rinksis
+alternatyvų kelionės būdą.
+
+Nors Google Maps turi daugiau nei 1 milijardą naudotojų pasaulyje{cite}`gogle_maps_users`, tačiau joje nėra pateikiami
+Lietuvos realaus laiko viešojo transporto atvykimai. Daugiau nei kas penkto Lietuvos gyventojo naudojamas Apple Maps,
+Lietuvoje iš viso nepalaiko viešojo transporto maršrutų planavimo, nors šis funkcionalumas yra prieinamas kitose 18 ES
+šalių{cite}`apple_feature_availability`. Taip pat Lietuvoje nėra nė vieno realaus laiko duomenų šaltinio, kuris atitiktų
+ES direktyvą dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų
+teikimo ([2010/40/ES](https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&from=LT)) ar pasaulinio
+de facto standarto GTFS-Realtime, skirto realaus laiko duomenims perduoti. Dėl šios priežasties, nėra galimybės
+integruoti realaus laiko duomenų į jau egzistuojančias kelionių planavimo priemones.
+
+## Tikslas
+
+Sudaryti sąlygas teikti atvirus, aukštos kokybės realaus laiko viešojo transporto duomenis standartizuotais formatais,
+kuriuos būtų galima integruoti į kelionių planavimo priemones, naudoti maršrutų tobulinimui, skatinti startuolius kurti
+inovatyvius sprendimus šių duomenų pavidalu ir kelti viešojo transporto keleivių skaičių.
 
 ## Pagrindiniai faktai
-- 2019 m. Lietuva buvo **pirma ES** pagal kelionių atliktų automobiliu kiekį (90.6%){cite}`eurostat_model_split_of_passenger_transport`;
-- 2019 m. Lietuva pagal automobilių skaičiaus prieaugį 1000 gyv. buvo **antra ES** (24% prieaugis 2019 m. lyginant su 2015 m.){cite}`eurostat_passenger_cars`;
-- Susisiekimo ministerija koordinuoja ir leidžia teisės aktus susijusius su intelektinių transporto sistemų diegimu ir 
+
+- 2019 m. Lietuva buvo **pirma ES** pagal kelionių atliktų automobiliu kiekį (90.6%)
+  {cite}`eurostat_model_split_of_passenger_transport`;
+- 2019 m. Lietuva pagal automobilių skaičiaus prieaugį 1000 gyv. buvo **antra ES** (24% prieaugis 2019 m. lyginant su
+  2015 m.){cite}`eurostat_passenger_cars`;
+- Susisiekimo ministerija koordinuoja ir leidžia teisės aktus susijusius su intelektinių transporto sistemų diegimu ir
   naudojimu{cite}`transporto_veiklos_pagrindu_istatymas`;
 - Statiniai viešojo transporto duomenys turi būti teikiami bent jau `NeTEx` formatu, o realaus laiko bent jau `SIRI`
   formatu pagal direktyvos 2010/40/ES nuostatas{cite}`directive_multimodal_travel_information_services`</cite>;
-- VINTRA tvarkytojo LAKD (*VĮ Lietuvos automobilių kelių direkcija*) funkijų atlikimui nėra reikalingi viešojo 
+- VINTRA tvarkytojo LAKD (*VĮ Lietuvos automobilių kelių direkcija*) funkijų atlikimui nėra reikalingi viešojo
   transporto duomenys;
 - Per dieną VINTRA (visimarsrutai.lt) aplanko **apie 10 unikalių lankytojų** (TODO patikrinti su LAKD);
-- Dalis VINTRA skelbiamų **statinių viešojo transporto duomenų yra pasenę** (23 savivaldybių duomenys neturi nė vieno 
-  galiojančio reiso); 
+- Dalis VINTRA skelbiamų **statinių viešojo transporto duomenų yra pasenę** (23 savivaldybių duomenys neturi nė vieno
+  galiojančio reiso);
 - Į VINTRA iš kitų sistemų automatiškai įkeliama 12 savivaldybių viešojo transporto statiniai duomenys;
 - VINTRA `NeTEx` formatu pateikiami 8 Lietuvos savivaldybių viešojo transporto statiniai duomenys;
 - **VINTRA neteikia jokių realaus laiko atvirų duomenų**;
-- **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų `SIRI` ar `GTFS-Realtime` 
+- **Nė viena Lietuvos savivaldybė** neteikia viešojo transporto realaus laiko duomenų `SIRI` ar `GTFS-Realtime`
   formatais.
-- 11 savivaldybių naudojama Stops.lt sistema statiniams duomenims atiduoti palaiko tik `GTFS` formatą, o **realaus laiko 
+- 11 savivaldybių naudojama Stops.lt sistema statiniams duomenims atiduoti palaiko tik `GTFS` formatą, o **realaus laiko
   duomenims nepalaiko jokio standartizuoto formato**;
 - Apple Maps Transit **neveikia Lietuvoje** (veikia Estijoje ir 17 kitų ES šalių);
 - Google Maps Transit Lietuvoje **neturi realaus laiko atvykimų** dėl duomenų `GTFS-Realtime` formato nebuvimo;
 
-
 ## Projekto siekiai
 
 Per standartizuotų judumo duomenų atvėrimą:
-- Sudaryti sąlygas Lietuvos gyventojams mėgautis pačiomis patogiausiomis ir maloniausiomis kelionėmis bei keliavimo įrankiais;
+
+- Sudaryti sąlygas Lietuvos gyventojams mėgautis pačiomis patogiausiomis ir maloniausiomis kelionėmis bei keliavimo
+  įrankiais;
 - Įgalinti egzistuojančias kelionių planavimo programų pilnavertį veikimą Lietuvoje (pvz., Google Maps Transit, Apple
   Maps Transit);
 - Patobulinti sąlygas Lietuvoje vystyti judumo startuolius;
@@ -40,25 +72,28 @@ Per standartizuotų judumo duomenų atvėrimą:
 - Užtikrinti darnią judumo paslaugų plėtrą Lietuvoje;
 
 ## Nauda
+
 ### Visuomenei:
+
 - Patogesnis ir prieinamesnis keliavimas viešioju transportu;
 - Sumažintas kelionės laikas (pagal realią informaciją gali koreguoti planus);
 - Mažesnis laukimo laikas;
 
 ### Savivaldybėms ir transporto valdytojams:
+
 - Išaugęs viešojo transporto naudojimas ir daugiau bilietų pardavimų;
 - Lengvesnis viešojo transporto planavimas;
 - Geresnis viešojo transporto vertinimas;
 
 ### Startuoliams ir akademijai:
+
 - Nauji startuoliai grįsti atvertais duomenimis;
 - Daugiau mokslinių tyrimų susijusių su transporto tinklo optimizavimu ir kokybės gerinimu;
-
-
 
 ## Nacionaliniai teisės aktai ir dokumentai
 
 ### Lietuvos susisiekimo plėtros iki 2050 m. strategija
+
 > **1.2. tikslas. Darnus, integruotas ir įtraukus susisiekimas.** Šiuo tikslu siekiama užtikrinti, jog vartotojams būtų sudaromos sąlygos naudotis aplinkai draugiška, vartotojų poreikius atitinkančia susisiekimo sistema.
 
 > **1.2.1. uždavinys. Vietinio (miestų ir priemiesčių) susisiekimo punktualumo, dažnumo ir išmanumo skatinimas.** Šiuo uždaviniu siekiama pritraukti gyventojus naudotis viešuoju transportu, o norint tai pasiekti būtina užtikrinti viešojo transporto patrauklumą ir patogumą vartotojui.
@@ -110,4 +145,5 @@ darbą https://ec.europa.eu/info/sites/default/files/file_import/2019-european-s
   That is, we all benefit when data is open and standardized. This enables industry growth and innovation. GTFS is a
   perfect example.
   https://trilliumtransit.com/2019/10/01/data-transit-riders-want/
-- Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu **yra informacijos apie maršrutus ir planavimo priemonių stoka**;
+- Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu **yra informacijos apie maršrutus ir
+  planavimo priemonių stoka**;
