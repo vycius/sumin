@@ -20,13 +20,13 @@ tačiau jis į stotelėje neatvyksta net ir po 10 min), tikėtina, kad keleivis 
 alternatyvų kelionės būdą.
 
 Nors Google Maps turi daugiau nei 1 milijardą naudotojų pasaulyje{cite}`gogle_maps_users`, tačiau joje nėra pateikiami
-Lietuvos realaus laiko viešojo transporto atvykimai. Daugiau nei kas penkto Lietuvos gyventojo naudojamas Apple Maps,
-Lietuvoje iš viso nepalaiko viešojo transporto maršrutų planavimo, nors šis funkcionalumas yra prieinamas kitose 18 ES
-šalių{cite}`apple_feature_availability`. Taip pat Lietuvoje nėra nė vieno realaus laiko duomenų šaltinio, kuris atitiktų
-ES direktyvą dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų
-teikimo ([2010/40/ES](https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&from=LT)) ar pasaulinio
-de facto standarto [GTFS Realtime](https://gtfs.org/realtime/), skirto realaus laiko duomenims perduoti. Dėl šios priežasties, nėra galimybės
-integruoti realaus laiko duomenų į jau egzistuojančias kelionių planavimo priemones.
+Lietuvos realaus laiko viešojo transporto atvykimai. Daugiau nei kas penkto Lietuvos gyventojo naudojamas Apple
+Maps{cite}`mobile_os_market_share`, Lietuvoje iš viso nepalaiko viešojo transporto maršrutų planavimo, nors šis
+funkcionalumas yra prieinamas kitose 18 ES šalių{cite}`apple_feature_availability`. Taip pat Lietuvoje nėra nė vieno
+realaus laiko duomenų šaltinio, kuris atitiktų ES direktyvą dėl informacijos apie keliavimą daugiarūšiu transportu
+paslaugų teikimo ([2010/40/ES](https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&from=LT)) ar
+pasaulinio de facto standarto [GTFS Realtime](https://gtfs.org/realtime/), skirto realaus laiko duomenims perduoti. Dėl
+šios priežasties, nėra galimybės integruoti realaus laiko duomenų į jau egzistuojančias kelionių planavimo priemones.
 
 ## Tikslas
 
