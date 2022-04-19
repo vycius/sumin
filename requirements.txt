@@ -10,4 +10,4 @@ gtfs-kit==5.2.0
 pyarrow==7.0.0
 nbstripout==0.5.0
 diagrams==0.21.1
-kaleido==0.2.1.post1
+kaleido==0.2.1
