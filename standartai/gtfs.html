@@ -356,6 +356,26 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Turinys
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#struktrua">
+   Struktrūa
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rysiai-tarp-failu">
+     Ryšiai tarp failų
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -368,6 +388,26 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Turinys </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#struktrua">
+   Struktrūa
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rysiai-tarp-failu">
+     Ryšiai tarp failų
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -376,7 +416,93 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gtfs">
 <h1>GTFS<a class="headerlink" href="#gtfs" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>GTFS (<em>General Transit Feed Specification</em>) yra ypač plačiai naudojamas standartas skirtas pateikti viešojo transporto statinę informaciją.</p>
+<p>GTFS (<em>General Transit Feed Specification</em>) yra ypač plačiai naudojamas standartas skirtas pateikti viešojo transporto statinę informaciją. Šis formatas yra naudojamas ne tik daugybės transporto paslaugų teikėjų visame pasaulyje, tačiau ir visų populiariausių kelionių planavimo priemonių (pvz., Google Maps Transit, Apple Maps Transit).</p>
+<div class="section" id="struktrua">
+<h2>Struktrūa<a class="headerlink" href="#struktrua" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>GTFS duomenų rinkinys būna suspaustas į <code class="docutils literal notranslate"><span class="pre">.zip</span></code> failą susidedantį iš keleto <code class="docutils literal notranslate"><span class="pre">.csv</span></code> kablelių atskirtų failų. Kiekviename iš failų saugoma informacija apie konkretų transporto sistemos elementą pvz., stoteles, maršrutus, reisus, tvarkaraštį ir pnš.</p>
+<p>Toliau detaliau aprašomas kiekvienas GTFS duomenų rinkinio failas<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id25" title="Google Developers. Static transit reference. URL: https://developers.google.com/transit/gtfs/reference (visited on 2022-04-20).">9</a></sup></span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Failas</p></th>
+<th class="head"><p>Privalomumas</p></th>
+<th class="head"><p>Aprašymas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#agencytxt"><code class="docutils literal notranslate"><span class="pre">agency.txt</span></code></a></p></td>
+<td><p>Privalomas</p></td>
+<td><p>Informacija apie transporto paslaugų teikėjus.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#stopstxt"><code class="docutils literal notranslate"><span class="pre">stops.txt</span></code></a></p></td>
+<td><p>Privalomas</p></td>
+<td><p>Stotelių informacija.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#routestxt"><code class="docutils literal notranslate"><span class="pre">routes.txt</span></code></a></p></td>
+<td><p>Privalomas</p></td>
+<td><p>Maršrutų informacija.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#tripstxt"><code class="docutils literal notranslate"><span class="pre">trips.txt</span></code></a></p></td>
+<td><p>Privalomas</p></td>
+<td><p>Reisų informacija.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#stop_timestxt"><code class="docutils literal notranslate"><span class="pre">stop_times.txt</span></code></a></p></td>
+<td><p>Provalomas</p></td>
+<td><p>Laikai, kada transporto priemonė atvyksta ir išvyksta iš stotelių.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#calendartxt"><code class="docutils literal notranslate"><span class="pre">calendar.txt</span></code></a></p></td>
+<td><p>Sąlyginai privalomas</p></td>
+<td><p>Informacija kada paslauga yra teikiama.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#calendar_datestxt"><code class="docutils literal notranslate"><span class="pre">calendar_dates.txt</span></code></a></p></td>
+<td><p>Sąlyginai privalomas</p></td>
+<td><p>Aprašo kada transporto paslaugos nėra teikiamos.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#feed_infotxt"><code class="docutils literal notranslate"><span class="pre">feed_info.txt</span></code></a></p></td>
+<td><p>Sąlyginai privalomas</p></td>
+<td><p>Duomenų šaltinio informacija.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#fare_attributestxt"><code class="docutils literal notranslate"><span class="pre">fare_attributes.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Bilietų kainodaros informacija.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#fare_rulestxt"><code class="docutils literal notranslate"><span class="pre">fare_rules.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Taisyklės aprašančios kainodaros taikymą.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#shapestxt"><code class="docutils literal notranslate"><span class="pre">shapes.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Maršruto nubrėžimui žemėlapyje reikalinga informacija.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#frequenciestxt"><code class="docutils literal notranslate"><span class="pre">frequencies.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Aprašo intervalinius maršrutus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#transferstxt"><code class="docutils literal notranslate"><span class="pre">transfers.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Taisyklės aprašančios persėdimus tarp maršrutų.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#pathwaystxt"><code class="docutils literal notranslate"><span class="pre">pathways.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Aprašo kelius jungiančius stoteles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#levelstxt"><code class="docutils literal notranslate"><span class="pre">levels.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Aprašo skirtingi stoties lygiai.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#translationstxt"><code class="docutils literal notranslate"><span class="pre">translations.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Vertimai į kitas kalbas.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://developers.google.com/transit/gtfs/reference#attributionstxt"><code class="docutils literal notranslate"><span class="pre">attributions.txt</span></code></a></p></td>
+<td><p>Neprivalomas</p></td>
+<td><p>Nurodo papildomus duomenų rinkinio atributus.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="rysiai-tarp-failu">
+<h3>Ryšiai tarp failų<a class="headerlink" href="#rysiai-tarp-failu" title="Nuoroda į šią antraštę">¶</a></h3>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
