@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realaus laiko viešojo transporto duomenys &#8212; Judumo duomenų ekosistemos plėtra</title>
+    <title>Realaus laiko duomenys &#8212; Judumo duomenų ekosistemos plėtra</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -115,47 +115,59 @@ const thebe_selector_output = ".output, .cell_output"
    Judumo duomenų standartai
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="viesasis-transportas-statiniai-duomenys.html">
-   Statiniai viešojo transporto duomenys
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="viesasis-transportas.html">
+   Viešasis transportas
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="gtfs.html">
-     GTFS
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="viesasis-transportas-statiniai-duomenys.html">
+     Statiniai duomenys
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="gtfs.html">
+       GTFS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="netex.html">
+       NeTEx
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="netex.html">
-     NeTEx
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     Realaus laiko duomenys
     </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Realaus laiko viešojo transporto duomenys
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="gtfs-realtime.html">
-     GTFS Realtime
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="siri.html">
-     SIRI
-    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="gtfs-realtime.html">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="siri.html">
+       SIRI
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -163,8 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="dalijimosi-paslaugos.html">
    Dalijimosi paslaugos
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -192,8 +204,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../saltiniai/vintra.html">
    VINTRA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -214,8 +226,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../saltiniai/stops.html">
    Stops.lt
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -363,7 +375,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Realaus laiko viešojo transporto duomenys</h1>
+                <h1>Realaus laiko duomenys</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -374,8 +386,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="realaus-laiko-viesojo-transporto-duomenys">
-<h1>Realaus laiko viešojo transporto duomenys<a class="headerlink" href="#realaus-laiko-viesojo-transporto-duomenys" title="Nuoroda į šią antraštę">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="realaus-laiko-duomenys">
+<h1>Realaus laiko duomenys<a class="headerlink" href="#realaus-laiko-duomenys" title="Nuoroda į šią antraštę">¶</a></h1>
 <p>Šiame skyriuje aprašomi pagrindiniai viešojo transporto atvirų duomenų standartai. Ši informacija yra suformuojama iš įvairių šaltinių pvz., viešajame transporte įrengtos GPS įrangos, keleivių skaičiavimo įrangos, eismo stebėjimo sistemų.</p>
 <div class="toctree-wrapper compound">
 <ul>
