@@ -7,14 +7,16 @@ parts:
   - caption: Judumo duomenų standartai
     chapters:
       - file: standartai/duomenu-standartai
-      - file: standartai/viesasis-transportas-statiniai-duomenys
+      - file: standartai/viesasis-transportas
         sections:
-          - file: standartai/gtfs
-          - file: standartai/netex
-      - file: standartai/viesasis-transportas-realaus-laiko-duomenys
-        sections:
-          - file: standartai/gtfs-realtime
-          - file: standartai/siri
+          - file: standartai/viesasis-transportas-statiniai-duomenys
+            sections:
+              - file: standartai/gtfs
+              - file: standartai/netex
+          - file: standartai/viesasis-transportas-realaus-laiko-duomenys
+            sections:
+              - file: standartai/gtfs-realtime
+              - file: standartai/siri
       - file: standartai/dalijimosi-paslaugos
         sections:
           - file: standartai/gbfs
