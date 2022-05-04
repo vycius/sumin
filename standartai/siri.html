@@ -383,6 +383,11 @@ const thebe_selector_output = ".output, .cell_output"
    Sudedamosios dalys
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-apsikeitimo-procesas">
+   Duomenų apsikeitimo procesas
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -413,6 +418,11 @@ const thebe_selector_output = ".output, .cell_output"
    Sudedamosios dalys
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-apsikeitimo-procesas">
+   Duomenų apsikeitimo procesas
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -427,17 +437,49 @@ const thebe_selector_output = ".output, .cell_output"
 <p>SIRI (angl. <em>Service Interface for Real Time Information</em>) yra realaus laiko duomenų formatas vyraujantis Europos Sąjungoje. Šis formatas turi būti naudojamas visuose ES nacionalinės prieigos taškuose siekiant užtikrinti sistemų sąveikumą bei informuoti apie trumpalaikiais pokyčiais transporto sistemoje<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span>.</p>
 <div class="section" id="es-direktyva">
 <h2>ES direktyva<a class="headerlink" href="#es-direktyva" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Pagal ITS direktyvą (2010/40/ES) šalys nusprendusios atverti dinaminius duomenis turi šiuos duomenis pateikti bent jau SIRI formatu<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span>.</p>
 <blockquote>
 <div><p>(16) […] Dėl keitimosi dinaminiais viešojo transporto duomenimis pasakytina, kad, valstybėms narėms nutarus į nacionalinį prieigos punktą <strong>įtraukti dinaminius duomenis, tokiems duomenims turėtų būti naudojamos atitinkamos keitimosi viešojo transporto duomenimis standarto SIRI CEN/TS 15531</strong>, kurį nustatė Europos standartizacijos komitetas, dalys ir paskesnės atnaujintos jų redakcijos arba kitas visiškai suderintas kompiuterio skaitomas formatas. Valstybės narės gali nuspręsti valstybės narės lygmens nacionaliniam transportui toliau taikyti nacionalinius viešojo transporto duomenų standartus, tačiau nacionaliniame prieigos punkte turi būti naudojami nurodyti ES standartai, kad paslaugų sąveikumas ir ištisinis veikimas būtų užtikrintas visoje Europos Sąjungoje. Laikydamosi Europos standartizavimo reikalavimų, valstybės narės gali taikyti transliavimo ir konvertavimo metodus. Turėtų būti laikomasi nurodytų taikymo dieną aktualios redakcijos standartų. Turėtų būti atsižvelgiama į visus aktualius atnaujinimus, kuriais išplečiama standartų taikymo sritis arba į ją įtraukiami naujų rūšių duomenys;</p>
-<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
+<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
 </div></blockquote>
 </div>
 <div class="section" id="sudedamosios-dalys">
 <h2>Sudedamosios dalys<a class="headerlink" href="#sudedamosios-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>SIRI standartas yra paremtas Transmodel (CEN TC278, EN12896) modeliu ir susideda iš tokių funkcinių dalių:</p>
+<p>SIRI standartas yra paremtas Transmodel (CEN TC278, EN12896) modeliu ir susideda iš tokių funkcinių dalių<span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id31" title="Kizoom Limited. Siri handbook &amp; functional service diagrams. URL: https://www.siri.org.uk/schema/1.3/doc/Handbook/Handbookv15.pdf (visited on 2022-04-20).">17</a></sup></span>:</p>
+<table class="colwidths-auto table" id="siri-functional-services-table">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">SIRI funkcinės dalys</span><a class="headerlink" href="#siri-functional-services-table" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Funkcinė dalis</p></th>
+<th class="head"><p>Aprašymas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Estimated Timetable (ET)</strong></p></td>
+<td><p>Realaus laiko nukrypimai nuo reguliariaus tvarkaraščio pateikiami dabartinei dienai</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Production Timetable (PT)</strong></p></td>
+<td><p>Ateityje planuojami nurypimai nuo reguliariaus tvarkaraščio</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Situation Exchange (SX)</strong></p></td>
+<td><p>Planuoti ir neplanuoti įvykiai transporto sistemoje</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vehicle Monitoring (VM)</strong></p></td>
+<td><p>Dabartinė konkrečios transporto priemonės pozicija bei su tuo susijusią informacija</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Stop Timetable (ST)</strong> ir <strong>Stop Monitoring (SM)</strong></p></td>
+<td><p>Konkrečių stotelių prognozuojami transporto priemonių atvykimai ir išvykimai</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Connection Timetable (CT)</strong> ir <strong>Connection Monitoring (CM)</strong></p></td>
+<td><p>Su persėdimu tarp skirtingų transporto priemonių susijusi realaus laiko informacija pvz., skirtas informuoti, kad vėluojančių traukinio keleivių palauks autobusas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="duomenu-apsikeitimo-procesas">
+<h2>Duomenų apsikeitimo procesas<a class="headerlink" href="#duomenu-apsikeitimo-procesas" title="Nuoroda į šią antraštę">¶</a></h2>
 <div class="figure align-default" id="siri-functional-services">
 <img alt="../_images/siri-functional-services.jpg" src="../_images/siri-functional-services.jpg" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">SIRI funkcinės dalys<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id30" title="SIRI. Siri overview. URL: https://www.siri.org.uk/overview.htm (visited on 2022-04-20).">23</a></sup></span></span><a class="headerlink" href="#siri-functional-services" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">SIRI duomenų apsikeitimo procesas ir funkcinės dalys<span id="id5"><sup><a class="reference internal" href="../saltiniai.html#id30" title="SIRI. Siri overview. URL: https://www.siri.org.uk/overview.htm (visited on 2022-04-20).">24</a></sup></span></span><a class="headerlink" href="#siri-functional-services" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="simple">
 <li><p><strong>Numatomas tvarkaraštis (angl. <em>Estimated Timetable, ET</em>)</strong> - šios dienos realaus laiko nukrypimai nuo numatyto tvarkaraščio;</p></li>
