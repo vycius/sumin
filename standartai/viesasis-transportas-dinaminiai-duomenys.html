@@ -368,6 +368,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Turinys
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#panaudojimas">
+   Panaudojimas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nauda-keleiviui">
+   Nauda keleiviui
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -380,6 +398,24 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Turinys </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#panaudojimas">
+   Panaudojimas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nauda-keleiviui">
+   Nauda keleiviui
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -388,12 +424,46 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="dinaminiai-duomenys">
 <h1>Dinaminiai duomenys<a class="headerlink" href="#dinaminiai-duomenys" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>Šiame skyriuje aprašomi pagrindiniai viešojo transporto atvirų duomenų standartai. Ši informacija yra suformuojama iš įvairių šaltinių pvz., viešajame transporte įrengtos GPS įrangos, keleivių skaičiavimo įrangos, eismo stebėjimo sistemų.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gtfs-realtime.html">GTFS Realtime</a></li>
-<li class="toctree-l1"><a class="reference internal" href="siri.html">SIRI</a></li>
+<p>Statiniai duomenys keleiviui suteikia bazinę informaciją, tad vien jų neužtenka, nes transporto
+priemonės genda, miestuose vyksta renginiai, gatvėse atsiranda kamščiai ar įvyksta avarijos. Siekaint reaguoti į
+trumpalaikiais pokyčius transporto sistemoje būtini dinaminiai duomenys. Dažnai šių duomenų šaltinių gali tapti
+viešajame transporte įrengta GPS įranga, keleivių skaičiavimo įranga, eismo stebėjimo sistemos.</p>
+<div class="section" id="panaudojimas">
+<h2>Panaudojimas<a class="headerlink" href="#panaudojimas" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Dinaminių duomenų pagalba viešojo transporto keleiviai gali realiu laiku matyti transporto priemonės poziciją, sužinoti
+kiek minučių transporto priemonė vėluos atvykti į stotelę, matyti realų transporto priemonėje esančių keleivių skaičių
+ir gauti informacinius pranešimus susietus su stotele, maršrutu ar visa transporto sistema.</p>
+<p>Pažvelkime, kaip dinaminiai viešojo transporto duomenys gali būti integruoti į kelionių planavimo priemones. Paimkime
+realų Google Maps pavyzdį iš San Fracisko, tačiau analogiškas funkcionalumas yra prieinamas Suomijoje, Švedijoje,
+Jungtinėje Karalystėje ir daugybėje kitų šalių.</p>
+<div class="figure align-default" id="google-maps-dynamic-information">
+<img alt="../_images/google-maps-dynamic-information.jpg" src="../_images/google-maps-dynamic-information.jpg" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Dinaminiai viešojo transporto duomenys Google Maps<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id29" title="Techspot. Google maps adds new commute tab and music streaming integration. URL: https://www.techspot.com/news/76700-google-maps-adds-new-commute-tab-music-streaming.html (visited on 2022-04-20).">26</a></sup></span></span><a class="headerlink" href="#google-maps-dynamic-information" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="nauda-keleiviui">
+<h2>Nauda keleiviui<a class="headerlink" href="#nauda-keleiviui" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Jei dinaminiai duomenys nepasiekia keleivio, tai keleivis gali:</p>
+<ul class="simple">
+<li><p><strong>Pavėluoti į grafike skubantį autobusą</strong>:  nors keleivis į stotelę ateina numatytu laiku, tačiau pavėluoja į
+maršrute skubantį autobusą, nes anksčiau atvykęs autobusas jau išvyko iš stotelės. Jei keleivis būtų matęs
+prognozuojamą
+atvykimo laiką, į stotelę būtų atėjęs keliomis minutėmis anksčiau ir į jį nebūtų pavėlavęs.</p></li>
+<li><p><strong>Iš viso nesulaukti autobuso</strong>: dėl įvykusios didelės avarijos buvo laikinai pakeistas autobuso maršrutas. Jei
+keleivis būtų žinojęs apie pakeistą maršrutą, nebūtų tuščiai laukęs stotelėje ir būtų galėjes pasirinkęs alternatyvų
+kelionės maršrutą;</p></li>
+<li><p><strong>Netilpti į autobusą</strong>, nes autobusas į stotelę atvyko visiškai pilnas su daugybe krepšinio sirgalių po pergalės
+krepišinio aikštelėje arenoje. Jei keleivis būtų žinojęs apie pilną žmonių atvykstantį autobusą, būtų galėjęs
+pasirinkęs alternatyvų kelionės būdą.</p></li>
 </ul>
+<p>Kiekviena iš šių patirčių mažina pasitikėjimą viešuoju transportu ir didina tikimybę, kad keleivis nebesinaudos viešuoju
+transportu bei rinksis alternatyvius keliavimo būdus.</p>
+<p>Dėl šių priežasčių būtina užtikrinti, kad keleivį pasiektų visi imanomi dinaminiai duomenys iš autobusuose įrengtų GPS
+imtyvų, keleivių skaičiavimo įrangos, eismo analizavimo ir
+keleivių informavimo sistemų.</p>
+<p>Toliau šiame skyriuje aprašomi pagrindiniai viešojo transporto dinaminių duomenų standartai.</p>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
