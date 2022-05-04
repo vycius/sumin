@@ -13,7 +13,7 @@ parts:
             sections:
               - file: standartai/gtfs
               - file: standartai/netex
-          - file: standartai/viesasis-transportas-realaus-laiko-duomenys
+          - file: standartai/viesasis-transportas-dinaminiai-duomenys
             sections:
               - file: standartai/gtfs-realtime
               - file: standartai/siri
