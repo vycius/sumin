@@ -374,6 +374,11 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudojimo-galimybes">
+   Naudojimo galimybės
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#es-direktyva">
    ES direktyva
   </a>
@@ -386,6 +391,28 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#duomenu-apsikeitimo-procesas">
    Duomenų apsikeitimo procesas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#asinchroninis-duomenu-apsikeitimas">
+     Asinchroninis duomenų apsikeitimas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sinchroninis-duomenu-apsikeitimas">
+     Sinchroninis duomenų apsikeitimas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#siri-ir-gtfs-realtime">
+   SIRI ir GTFS Realtime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudinga-informacija">
+   Naudinga informacija
   </a>
  </li>
 </ul>
@@ -409,6 +436,11 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudojimo-galimybes">
+   Naudojimo galimybės
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#es-direktyva">
    ES direktyva
   </a>
@@ -421,6 +453,28 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#duomenu-apsikeitimo-procesas">
    Duomenų apsikeitimo procesas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#asinchroninis-duomenu-apsikeitimas">
+     Asinchroninis duomenų apsikeitimas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sinchroninis-duomenu-apsikeitimas">
+     Sinchroninis duomenų apsikeitimas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#siri-ir-gtfs-realtime">
+   SIRI ir GTFS Realtime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudinga-informacija">
+   Naudinga informacija
   </a>
  </li>
 </ul>
@@ -435,17 +489,31 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="siri">
 <h1>SIRI<a class="headerlink" href="#siri" title="Nuoroda į šią antraštę">¶</a></h1>
 <p>SIRI (angl. <em>Service Interface for Real Time Information</em>) yra realaus laiko duomenų formatas vyraujantis Europos Sąjungoje. Šis formatas turi būti naudojamas visuose ES nacionalinės prieigos taškuose siekiant užtikrinti sistemų sąveikumą bei informuoti apie trumpalaikiais pokyčiais transporto sistemoje<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span>.</p>
+<p>SIRI yra NeTEx papildymas, NeTEx teikia statinę informaciją, o SIRI – dinaminę informaciją. Tiek SIRI, tiek NeTEx yra sukurti remiantis bendru koncepciniu modeliu (Transmodel (CEN TC278, EN12896)).</p>
+<div class="section" id="naudojimo-galimybes">
+<h2>Naudojimo galimybės<a class="headerlink" href="#naudojimo-galimybes" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>SIRI gali būti naudojamas įvairiose srityse, pavyzdžiui<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id31" title="SIRI-CEN. Siri overview. URL: https://www.siri-cen.eu/Page.aspx?CAT=STANDARD&amp;IdPage=2fb18063-5ae9-4553-a931-d0296d5b4315 (visited on 2022-04-20).">25</a></sup></span>:</p>
+<ul class="simple">
+<li><p>Teikti informaciją apie prognozuojamą transporto priemonių išvykimą iš stotelės realiu laiku;</p></li>
+<li><p>Teikti realaus laiko informaciją apie transporto priemones;</p></li>
+<li><p>Organizuoti transporto priemonių judėjimą tarp skirtingų transporto agentūrų;</p></li>
+<li><p>Keistis suplanuotais ir realaus laiko tvarkaraščių pakeitimais;</p></li>
+<li><p>Teikti pranešimus viešojo transporto keleiviams;</p></li>
+<li><p>Sinchronizuoti skirtingas transporto priemones ir organizuoti persėdimus tarp jų;</p></li>
+<li><p>Teikti informaciją apie veiklos rezultatus kitoms valdymo sistemoms</p></li>
+</ul>
+</div>
 <div class="section" id="es-direktyva">
 <h2>ES direktyva<a class="headerlink" href="#es-direktyva" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>Pagal ITS direktyvą (2010/40/ES) šalys nusprendusios atverti dinaminius duomenis turi šiuos duomenis pateikti bent jau SIRI formatu<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span>.</p>
+<p>Pagal ITS direktyvą (2010/40/ES) šalys nusprendusios atverti dinaminius duomenis turi šiuos duomenis pateikti bent jau SIRI formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span>.</p>
 <blockquote>
 <div><p>(16) […] Dėl keitimosi dinaminiais viešojo transporto duomenimis pasakytina, kad, valstybėms narėms nutarus į nacionalinį prieigos punktą <strong>įtraukti dinaminius duomenis, tokiems duomenims turėtų būti naudojamos atitinkamos keitimosi viešojo transporto duomenimis standarto SIRI CEN/TS 15531</strong>, kurį nustatė Europos standartizacijos komitetas, dalys ir paskesnės atnaujintos jų redakcijos arba kitas visiškai suderintas kompiuterio skaitomas formatas. Valstybės narės gali nuspręsti valstybės narės lygmens nacionaliniam transportui toliau taikyti nacionalinius viešojo transporto duomenų standartus, tačiau nacionaliniame prieigos punkte turi būti naudojami nurodyti ES standartai, kad paslaugų sąveikumas ir ištisinis veikimas būtų užtikrintas visoje Europos Sąjungoje. Laikydamosi Europos standartizavimo reikalavimų, valstybės narės gali taikyti transliavimo ir konvertavimo metodus. Turėtų būti laikomasi nurodytų taikymo dieną aktualios redakcijos standartų. Turėtų būti atsižvelgiama į visus aktualius atnaujinimus, kuriais išplečiama standartų taikymo sritis arba į ją įtraukiami naujų rūšių duomenys;</p>
-<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
+<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo<span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
 </div></blockquote>
 </div>
 <div class="section" id="sudedamosios-dalys">
 <h2>Sudedamosios dalys<a class="headerlink" href="#sudedamosios-dalys" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>SIRI standartas yra paremtas Transmodel (CEN TC278, EN12896) modeliu ir susideda iš tokių funkcinių dalių<span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id31" title="Kizoom Limited. Siri handbook &amp; functional service diagrams. URL: https://www.siri.org.uk/schema/1.3/doc/Handbook/Handbookv15.pdf (visited on 2022-04-20).">17</a></sup></span>:</p>
+<p>SIRI standartas duomenų apsikeitimui naudoja XML formatą (angl. <em>Extensible Markup Language</em>) ir susideda iš tokių funkcinių dalių<span id="id5"><sup><a class="reference internal" href="../saltiniai.html#id32" title="Kizoom Limited. Siri handbook &amp; functional service diagrams. URL: https://www.siri.org.uk/schema/1.3/doc/Handbook/Handbookv15.pdf (visited on 2022-04-20).">17</a></sup></span>:</p>
 <table class="colwidths-auto table" id="siri-functional-services-table">
 <caption><span class="caption-number">Table 2 </span><span class="caption-text">SIRI funkcinės dalys</span><a class="headerlink" href="#siri-functional-services-table" title="Permalink to this table">¶</a></caption>
 <thead>
@@ -477,32 +545,52 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="duomenu-apsikeitimo-procesas">
 <h2>Duomenų apsikeitimo procesas<a class="headerlink" href="#duomenu-apsikeitimo-procesas" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>SIRI formato duomenimis galima apsikeisti trimis skirtingais būdais.</p>
 <div class="figure align-default" id="siri-functional-services">
 <img alt="../_images/siri-functional-services.jpg" src="../_images/siri-functional-services.jpg" />
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">SIRI duomenų apsikeitimo procesas ir funkcinės dalys<span id="id5"><sup><a class="reference internal" href="../saltiniai.html#id30" title="SIRI. Siri overview. URL: https://www.siri.org.uk/overview.htm (visited on 2022-04-20).">24</a></sup></span></span><a class="headerlink" href="#siri-functional-services" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">SIRI duomenų apsikeitimo procesas ir funkcinės dalys<span id="id6"><sup><a class="reference internal" href="../saltiniai.html#id30" title="SIRI. Siri overview. URL: https://www.siri.org.uk/overview.htm (visited on 2022-04-20).">24</a></sup></span></span><a class="headerlink" href="#siri-functional-services" title="Permalink to this image">¶</a></p>
 </div>
-<ol class="simple">
-<li><p><strong>Numatomas tvarkaraštis (angl. <em>Estimated Timetable, ET</em>)</strong> - šios dienos realaus laiko nukrypimai nuo numatyto tvarkaraščio;</p></li>
-<li><p><strong>Situacijos informacija (angl. <em>Situation Exchange, SX</em>)</strong></p></li>
-</ol>
-<p>and contains a general model for real-time data and an XML Schema for its implementation</p>
-<p>SIRI defines a standard for exchanging dynamic public transport passenger information data in XML format. SIRI (Service Interface for Real-time Information) is divided into five parts:
-Part 1 describes the context and the framework including the different organisations involved, public transport vehicle control centres, fleet of public transport vehicles, network information, information provision systems, passenger information services or devices.
-Part 2 describes the communication infrastructures and mechanism to exchange real time information. Part 3 specifies individual application interface of functional modules on real-time tables (production,
-estimated, at stop, for connection) or on monitoring of vehicles with current position and travel time.
-Part 4, named Facility Monitoring, enables the exchange of information on the current status of available facilities.
-Part 5 is linked with DATEX II to provide real-time information on situation and incident that appends along the road network and which impacts the journey of the public transport vehicles.
-To give some simple examples, SIRI provides:
-•
-• •
-EU EIP
-real-time departure which could be different from the departure announced in the time table provided by NeTEx,
-real-time information about the position along the route to an individual vehicle,
-synchronisation between arrival and departure to guarantee the connection, if connections are needed for a journey
-EU EIP A2/2021/N°1
-EU EIP A2 WG NAP - Annual NAP Report 2020 38
-A SIRI-Lite version is also available which is a profile of SIRI to make it simpler to implement and deploy according to the usage of Representational state transfer (REST) than SIRI uses SOAP.</p>
-<p><a class="reference external" href="https://www.its-platform.eu/wp-content/uploads/ITS-Platform/AchievementsDocuments/NAP/EU%20EIP%20-%20National%20Access%20Points%20-%20annual%20report%202020.pdf">https://www.its-platform.eu/wp-content/uploads/ITS-Platform/AchievementsDocuments/NAP/EU EIP - National Access Points - annual report 2020.pdf</a></p>
+<div class="section" id="asinchroninis-duomenu-apsikeitimas">
+<h3>Asinchroninis duomenų apsikeitimas<a class="headerlink" href="#asinchroninis-duomenu-apsikeitimas" title="Nuoroda į šią antraštę">¶</a></h3>
+<p><em>Publish/Subscribe - Direct delivery</em> ir <em>Publish/Subscribe - Fetched delivery</em> asinchroniniai apsikeitimo būdai leidžia naudotojams nuolatos gauti duomenų pasikeitimus transporto sistemoje. Šis būdas užtikrina, kad  duomenų naudotoją greičiau pasiektų informaciją apie pasikeitimus bei yra labiau tinkamas dideliems duomenų kiekiams.</p>
+</div>
+<div class="section" id="sinchroninis-duomenu-apsikeitimas">
+<h3>Sinchroninis duomenų apsikeitimas<a class="headerlink" href="#sinchroninis-duomenu-apsikeitimas" title="Nuoroda į šią antraštę">¶</a></h3>
+<p>Sinchroninis duomenų apsikeitimas (<em>Request/response</em> metodu) yra gerokai paprastesnis ir buvo sukurtas palengvinti SIRI formato įgalinimą. Analogiškai kaip ir GTFS Realtime atveju, duomenų naudotojas periodiškai kreipiasi į nuorodą bei gauna reikalingus transporto sistemos duomenis. Taip pat dažnai suteikiama galimybė užklausos į serverį metu atlikti filtravimą. Šis būdas įprastai vadinamas <strong>SIRI Lite</strong>.</p>
+</div>
+</div>
+<div class="section" id="siri-ir-gtfs-realtime">
+<h2>SIRI ir GTFS Realtime<a class="headerlink" href="#siri-ir-gtfs-realtime" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Nors SIRI, palyginę su GTFS Realtime, SIRI formatą galime laikyti sudėtingesniu ir galinčiu perduoti daugiau informacijos, tačiau šie formatai neturėtų būti laikomi vienas kito pakaitalais. Vis dėlto, egzistuoja nemažai panašumų tarp šių formatų. Toliau lentelėje vaizduojami šių formatų panašumai.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipas</p></th>
+<th class="head"><p>GTFS Realtime atitikmuo</p></th>
+<th class="head"><p>SIRI atitikmuo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Kelionės eiga</strong></p></td>
+<td><p><a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/trip-updates">Trip updates</a></p></td>
+<td><p><a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370392/SIRI-ET">Estimated Timetable (ET)</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Transporto priemonės informacija</strong></p></td>
+<td><p><a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/vehicle-positions">Vehicle positions</a></p></td>
+<td><p><a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370425/SIRI-VM">Vehicle Monitoring (VM)</a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pranešimai keleiviams</strong></p></td>
+<td><p><a class="reference external" href="https://developers.google.com/transit/gtfs-realtime/guides/service-alerts">Service alerts</a></p></td>
+<td><p><a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370605/SIRI-SX">Situation Exchange (SX)</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="naudinga-informacija">
+<h2>Naudinga informacija<a class="headerlink" href="#naudinga-informacija" title="Nuoroda į šią antraštę">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.siri.org.uk/schema/1.3/doc/Handbook/Handbookv15.pdf">Trumpas SIRI standarto vadovas</a></p></li>
+<li><p><a class="reference external" href="https://www.its-platform.eu/wp-content/uploads/ITS-Platform/AchievementsDocuments/NAP/EU%20EIP%20-%20National%20Access%20Points%20-%20annual%20report%202020.pdf">Trumpas SIRI standarto pristatymas nacionaliniams prieigos punktams</a></p></li>
+</ul>
 </div>
 </div>
 
