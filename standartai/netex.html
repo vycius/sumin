@@ -58,7 +58,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
-    <link rel="next" title="Dinaminiai duomenys" href="viesasis-transportas-dinaminiai-duomenys.html" />
+    <link rel="next" title="Dinaminiai duomenys" href="dinaminiai-duomenys.html" />
     <link rel="prev" title="GTFS" href="gtfs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
@@ -126,7 +126,7 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul class="current">
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="viesasis-transportas-statiniai-duomenys.html">
+    <a class="reference internal" href="statiniai-duomenys.html">
      Statiniai duomenys
     </a>
     <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -148,7 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="viesasis-transportas-dinaminiai-duomenys.html">
+    <a class="reference internal" href="dinaminiai-duomenys.html">
      Dinaminiai duomenys
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -328,9 +328,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/standartai/netex.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/standartai/netex.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -348,7 +348,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
                     class="fab fa-github"></i>saugykla</button></a>
         
-        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/netex.ipynb"><button
+        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/netex.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
     </div>
@@ -434,23 +434,40 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="netex">
 <h1>NeTEx<a class="headerlink" href="#netex" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>NeTEx (angl. <em>Network Timetable Exchange</em>) - <a class="reference external" href="https://www.cencenelec.eu">Europos standartizacijos komiteto</a> sukurtas standartas skirtas viešojo transporto duomenų apsikeitimui. Šis formatas turi būti naudojamas visų Europos operatorių pagal direktyvą <a class="reference external" href="https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT">dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo (2010/40/ES)</a> siekiant integruoti skirtingas Europos Sąjungos transporto sistemas.</p>
+<p>NeTEx (angl. <em>Network Timetable Exchange</em>) - <a class="reference external" href="https://www.cencenelec.eu">Europos standartizacijos komiteto</a> sukurtas
+standartas skirtas viešojo transporto duomenų apsikeitimui. Šis formatas turi būti naudojamas visų Europos operatorių
+pagal
+direktyvą <a class="reference external" href="https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT">dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo (2010/40/ES)</a>
+siekiant integruoti skirtingas Europos Sąjungos transporto sistemas.</p>
 <div class="section" id="naudojimo-es-salyse-privalomumas">
 <h2>Naudojimo ES šalyse privalomumas<a class="headerlink" href="#naudojimo-es-salyse-privalomumas" title="Nuoroda į šią antraštę">¶</a></h2>
 <p>NeTEx formatas turi būti naudojamas visų ES šalių. Toliau pateikiama ištrauka iš 2010/40/ES direktyvos.</p>
 <blockquote>
-<div><p>(16) dėl keitimosi statiniais reguliariojo susisiekimo, pvz., viešojo transporto, tolimojo susisiekimo autobusų ir jūrlaivių, įskaitant keltus, duomenimis pasakytina, kad tokiems duomenims nacionaliniuose prieigos punktuose <strong>turėtų būti naudojamas Europos standartizacijos komiteto nustatytas keitimosi duomenimis standartas NeTEx CEN/TS 16614</strong>, grindžiamas koncepciniu transporto pamatinių duomenų modeliu EN 12896:2006 ir paskesnėmis atnaujintomis jo redakcijomis, arba kitoks kompiuterio skaitomas formatas, kurio visiškas suderinamumas būtų užtikrintas iki sutarto termino.</p>
-<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
+<div><p>(16) dėl keitimosi statiniais reguliariojo susisiekimo, pvz., viešojo transporto, tolimojo susisiekimo autobusų ir
+jūrlaivių, įskaitant keltus, duomenimis pasakytina, kad tokiems duomenims nacionaliniuose prieigos punktuose <strong>turėtų
+būti naudojamas Europos standartizacijos komiteto nustatytas keitimosi duomenimis standartas NeTEx CEN/TS 16614</strong>,
+grindžiamas koncepciniu transporto pamatinių duomenų modeliu EN 12896:2006 ir paskesnėmis atnaujintomis jo
+redakcijomis,
+arba kitoks kompiuterio skaitomas formatas, kurio visiškas suderinamumas būtų užtikrintas iki sutarto termino.</p>
+<p>– <cite>Europos Parlamento ir Tarybos direktyvos 2010/40/ES nuostatos dėl informacijos apie keliavimą daugiarūšiu
+transportu paslaugų teikimo<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">11</a></sup></span></cite></p>
 </div></blockquote>
 </div>
 <div class="section" id="skirtumai-lyginant-su-gtfs">
 <h2>Skirtumai lyginant su GTFS<a class="headerlink" href="#skirtumai-lyginant-su-gtfs" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>NeTEx ir GTFS formatus galime laikyti vienas kitą papildančiais ir apimančiais skirtingus duomenų valdymo proceso etapus. Lyginant su GTFS formatu NeTEx gali pateikti išsamesnę informaciją apie viešojo transporto sistemą pvz., platesnę informaciją apie infrastruktūrą, tvarkaraščius, kainodarą, persėdimus ir t.t. NeTEx naudoja XML (angl. <em>Extensible Markup Language</em>) formatą duomenims perduoti. Verta pastebėti, kad iš NeTEx formato automatiniu būdų galima sugeneruoti GTFS formatą (tačiau atvirkščia konversija nėra įmanoma)<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id24" title="CEN. Comparison with other standards. URL: https://netex-cen.eu/?page_id=192 (visited on 2021-04-27).">7</a></sup></span>.</p>
-<p>TODO: Factsheet <a class="reference external" href="https://www.transmodel-cen.eu/wp-content/uploads/2017/07/Mobility-Factsheet-Road-Initiatives_DIGITALISATION_v4-1.pdf">https://www.transmodel-cen.eu/wp-content/uploads/2017/07/Mobility-Factsheet-Road-Initiatives_DIGITALISATION_v4-1.pdf</a></p>
+<p>NeTEx ir GTFS formatus galime laikyti vienas kitą papildančiais ir apimančiais skirtingus duomenų valdymo proceso
+etapus. Lyginant su GTFS formatu NeTEx gali pateikti išsamesnę informaciją apie viešojo transporto sistemą pvz.,
+platesnę informaciją apie infrastruktūrą, tvarkaraščius, kainodarą, persėdimus ir t.t. NeTEx naudoja XML (angl. *
+Extensible Markup Language*) formatą duomenims perduoti. Verta pastebėti, kad iš NeTEx formato automatiniu būdų galima
+sugeneruoti GTFS formatą (tačiau atvirkščia konversija nėra įmanoma)<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id24" title="CEN. Comparison with other standards. URL: https://netex-cen.eu/?page_id=192 (visited on 2021-04-27).">7</a></sup></span>.</p>
+<p>TODO:
+Factsheet <a class="reference external" href="https://www.transmodel-cen.eu/wp-content/uploads/2017/07/Mobility-Factsheet-Road-Initiatives_DIGITALISATION_v4-1.pdf">https://www.transmodel-cen.eu/wp-content/uploads/2017/07/Mobility-Factsheet-Road-Initiatives_DIGITALISATION_v4-1.pdf</a></p>
 </div>
 <div class="section" id="pateikiama-informacija">
 <h2>Pateikiama informacija<a class="headerlink" href="#pateikiama-informacija" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>NeTEx yra ganėtinai sudėtingas formatas grįstas <a class="reference external" href="https://www.transmodel-cen.eu">koncepciniu transporto pamatinių duomenų modeliu (angl. <em>Transmodel</em>)</a>. Toliau pateikiama pagrindinė informacija, kuri gali būti perduodama naudojantis šiuo formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id25" title="MobiDatLab. D2.4 state-of-the-art on mobility data sharing standards. URL: https://mobidatalab.eu/wp-content/uploads/2022/01/MobiDataLab-D2.4-StateOfTheArtOnMobilityDataSharingStandards-v2.0DRAFT.pdf (visited on 2021-04-27).">19</a></sup></span>:</p>
+<p>NeTEx yra ganėtinai sudėtingas formatas grįstas <a class="reference external" href="https://www.transmodel-cen.eu">koncepciniu transporto pamatinių duomenų modeliu (angl. *
+Transmodel*)</a>. Toliau pateikiama pagrindinė informacija, kuri gali būti perduodama
+naudojantis šiuo formatu<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id25" title="MobiDatLab. D2.4 state-of-the-art on mobility data sharing standards. URL: https://mobidatalab.eu/wp-content/uploads/2022/01/MobiDataLab-D2.4-StateOfTheArtOnMobilityDataSharingStandards-v2.0DRAFT.pdf (visited on 2021-04-27).">19</a></sup></span>:</p>
 <ul class="simple">
 <li><p>Viešojo transporto tvarkaraščiai, stotelės, maršrutai;</p></li>
 <li><p>Transporto operatoriaus informacija;</p></li>
@@ -496,7 +513,7 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">GTFS</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="viesasis-transportas-dinaminiai-duomenys.html" title="kitas page">
+    <a class='right-next' id="next-link" href="dinaminiai-duomenys.html" title="kitas page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">kitas</p>
         <p class="prev-next-title">Dinaminiai duomenys</p>

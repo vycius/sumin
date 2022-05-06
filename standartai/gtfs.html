@@ -59,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
     <link rel="next" title="NeTEx" href="netex.html" />
-    <link rel="prev" title="Statiniai duomenys" href="viesasis-transportas-statiniai-duomenys.html" />
+    <link rel="prev" title="Statiniai duomenys" href="statiniai-duomenys.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -126,7 +126,7 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul class="current">
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="viesasis-transportas-statiniai-duomenys.html">
+    <a class="reference internal" href="statiniai-duomenys.html">
      Statiniai duomenys
     </a>
     <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -148,7 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
     </ul>
    </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="viesasis-transportas-dinaminiai-duomenys.html">
+    <a class="reference internal" href="dinaminiai-duomenys.html">
      Dinaminiai duomenys
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -328,9 +328,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/standartai/gtfs.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/standartai/gtfs.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -348,7 +348,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
                     class="fab fa-github"></i>saugykla</button></a>
         
-        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/gtfs.ipynb"><button
+        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/gtfs.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
     </div>
@@ -374,8 +374,8 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#struktrua">
-   Struktrūa
+  <a class="reference internal nav-link" href="#struktura">
+   Struktūra
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -406,8 +406,8 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#struktrua">
-   Struktrūa
+  <a class="reference internal nav-link" href="#struktura">
+   Struktūra
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -428,11 +428,15 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="gtfs">
 <h1>GTFS<a class="headerlink" href="#gtfs" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>GTFS (<em>General Transit Feed Specification</em>) yra ypač plačiai naudojamas standartas skirtas pateikti viešojo transporto statinę informaciją. Šis formatas yra naudojamas ne tik daugybės transporto paslaugų teikėjų visame pasaulyje, tačiau ir visų populiariausių kelionių planavimo priemonių (pvz., Google Maps Transit, Apple Maps Transit).</p>
-<div class="section" id="struktrua">
-<h2>Struktrūa<a class="headerlink" href="#struktrua" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>GTFS duomenų rinkinys būna suspaustas į <code class="docutils literal notranslate"><span class="pre">.zip</span></code> failą susidedantį iš keleto <code class="docutils literal notranslate"><span class="pre">.csv</span></code> kablelių atskirtų failų. Kiekviename iš failų saugoma informacija apie konkretų transporto sistemos elementą pvz., stoteles, maršrutus, reisus, tvarkaraštį ir pnš.</p>
-<p>Toliau detaliau aprašomas kiekvienas GTFS duomenų rinkinio failai<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id27" title="Google Developers. Static transit reference. URL: https://developers.google.com/transit/gtfs/reference (visited on 2022-04-20).">10</a></sup></span>.</p>
+<p>GTFS (<em>General Transit Feed Specification</em>) yra ypač plačiai naudojamas standartas skirtas pateikti viešojo transporto
+statinę informaciją. Šis formatas yra naudojamas ne tik daugybės transporto paslaugų teikėjų visame pasaulyje, tačiau ir
+visų populiariausių kelionių planavimo priemonių (pvz., Google Maps Transit, Apple Maps Transit).</p>
+<div class="section" id="struktura">
+<h2>Struktūra<a class="headerlink" href="#struktura" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>GTFS duomenų rinkinys būna suspaustas į <code class="docutils literal notranslate"><span class="pre">.zip</span></code> failą susidedantį iš keleto <code class="docutils literal notranslate"><span class="pre">.csv</span></code> kablelių atskirtų failų. Kiekviename
+iš failų saugoma informacija apie konkretų transporto sistemos elementą pvz., stoteles, maršrutus, reisus, tvarkaraštį
+ir pnš.</p>
+<p>Toliau detaliai aprašomas kiekvienas GTFS duomenų rinkinio failai<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id27" title="Google Developers. Static transit reference. URL: https://developers.google.com/transit/gtfs/reference (visited on 2022-04-20).">10</a></sup></span>.</p>
 <table class="colwidths-auto table" id="gtfs-files">
 <caption><span class="caption-number">Table 1 </span><span class="caption-text">GTFS duomenų rinkinio failai</span><a class="headerlink" href="#gtfs-files" title="Permalink to this table">¶</a></caption>
 <thead>
@@ -547,7 +551,7 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="viesasis-transportas-statiniai-duomenys.html" title="praeitas page">
+    <a class='left-prev' id="prev-link" href="statiniai-duomenys.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">praeitas</p>
