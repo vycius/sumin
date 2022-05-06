@@ -16,5 +16,6 @@ Europos Komisija yra išskyrusi 6 didelės vertės duomenų rinkinius, tarp kuri
 duomenys{cite}`eu_open_data_reuse_directive`. Šie duomenys turi būti pateikiami automatizuoto nuskaitymo formatais ir
 prieinami visiškai nemokamai.
 
-Šiame skyriuje bus aptarti populiariausi judumo duomenų standartai susiję su viešojo transporto statine ir dinamine
-informacija bei dalijimosi paslaugomis.
+Šiame skyriuje bus aptarti populiariausi judumo duomenų standartai susiję
+su [viešojo transporto statine](statiniai-duomenys) ir
+[dinamine](dinaminiai-duomenys) informacija bei [dalijimosi paslaugomis](dalijimosi-paslaugos).

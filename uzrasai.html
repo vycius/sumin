@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Užrašai &#8212; Judumo duomenų ekosistemos plėtra</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://judumas.vycius.lt/uzrasai.html" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Indeksas" href="genindex.html" />
+    <link rel="search" title="Paieška" href="search.html" />
+    <link rel="next" title="Apple Maps" href="apps/apple_maps.html" />
+    <link rel="prev" title="Šaltiniai" href="saltiniai.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="lt">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PSPT787FKK"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-PSPT787FKK');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Judumo duomenų ekosistemos plėtra</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Ieškoti šioje knygoje ..." aria-label="Ieškoti šioje knygoje ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projektas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="projektas.html">
+   Judumo duomenų ekosistemos plėtra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Judumo duomenų standartai
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="standartai/index.html">
+   Judumo duomenų standartai
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="standartai/viesasis-transportas.html">
+   Viešasis transportas
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="standartai/statiniai-duomenys.html">
+     Statiniai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="standartai/gtfs.html">
+       GTFS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="standartai/netex.html">
+       NeTEx
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="standartai/dinaminiai-duomenys.html">
+     Dinaminiai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="standartai/gtfs-realtime.html">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="standartai/siri.html">
+       SIRI
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="standartai/dalijimosi-paslaugos.html">
+   Dalijimosi paslaugos
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="standartai/gbfs.html">
+     GBFS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="standartai/mds.html">
+     MDS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Duomenų šaltiniai
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="saltiniai/vintra.html">
+   VINTRA
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="saltiniai/vintra-gtfs.html">
+     GTFS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="saltiniai/vintra-netex.html">
+     NeTEx
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="saltiniai/stops.html">
+   Stops.lt
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="saltiniai/transporto-priemoniu-pozicijos.html">
+     Transporto priemonių pozicijos
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sprendimas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="sprendimas/architektura.html">
+   Architektūra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literatūra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="saltiniai.html">
+   Šaltiniai
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Aplinka
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Užrašai
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="apps/apple_maps.html">
+   Apple Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="internal.html">
+   Aplinka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Autorius <a href="https://www.linkedin.com/in/vycius/" targer="_blank">Karolis Vyčius</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Perjungti naršymą" aria-controls="site-navigation"
+                title="Perjungti naršymą" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Atsisiųskite šį puslapį"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/uzrasai.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/vycius/judumas"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
+                    class="fab fa-github"></i>saugykla</button></a>
+        
+        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/uzrasai.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pilno ekrano režimas"
+        title="Pilno ekrano režimas"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Turinys
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pagrindiniai-faktai">
+   Pagrindiniai faktai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projekto-siekiai">
+   Projekto siekiai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nauda">
+   Nauda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuomenei">
+     Visuomenei:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#savivaldybems-ir-transporto-valdytojams">
+     Savivaldybėms ir transporto valdytojams:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#startuoliams-ir-akademijai">
+     Startuoliams ir akademijai:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Užrašai
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Užrašai</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Turinys </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pagrindiniai-faktai">
+   Pagrindiniai faktai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projekto-siekiai">
+   Projekto siekiai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nauda">
+   Nauda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuomenei">
+     Visuomenei:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#savivaldybems-ir-transporto-valdytojams">
+     Savivaldybėms ir transporto valdytojams:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#startuoliams-ir-akademijai">
+     Startuoliams ir akademijai:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Užrašai
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="uzrasai">
+<h1>Užrašai<a class="headerlink" href="#uzrasai" title="Nuoroda į šią antraštę">¶</a></h1>
+<div class="section" id="pagrindiniai-faktai">
+<h2>Pagrindiniai faktai<a class="headerlink" href="#pagrindiniai-faktai" title="Nuoroda į šią antraštę">¶</a></h2>
+<ul class="simple">
+<li><p>2019 m. Lietuva buvo <strong>pirma ES</strong> pagal kelionių atliktų automobiliu kiekį (90.6%)
+<span id="id1"><sup><a class="reference internal" href="saltiniai.html#id2" title="Eurostat. Modal split of passenger transport. URL: https://ec.europa.eu/eurostat/databrowser/bookmark/90c56a68-63d2-42dc-9318-d89219a00517?lang=en (visited on 2022-03-30).">13</a></sup></span>;</p></li>
+<li><p>2019 m. Lietuva pagal automobilių skaičiaus prieaugį 1000 gyv. buvo <strong>antra ES</strong> (24% prieaugis 2019 m. lyginant su
+2015 m.)<span id="id2"><sup><a class="reference internal" href="saltiniai.html#id3" title="Eurostat. Passenger cars per 1 000 inhabitants. URL: https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=road_eqs_carhab&amp;lang=en (visited on 2022-03-30).">14</a></sup></span>;</p></li>
+<li><p>Susisiekimo ministerija koordinuoja ir leidžia teisės aktus susijusius su intelektinių transporto sistemų diegimu ir
+naudojimu<span id="id3"><sup><a class="reference internal" href="saltiniai.html#id20" title="Seimas. Lietuvos respublikos transporto veiklos pagrindų įstatymas. URL: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.2971/oUwvjRFYmV (visited on 2022-04-05).">26</a></sup></span>;</p></li>
+<li><p>Statiniai viešojo transporto duomenys turi būti teikiami bent jau <code class="docutils literal notranslate"><span class="pre">NeTEx</span></code> formatu, o realaus laiko bent jau <code class="docutils literal notranslate"><span class="pre">SIRI</span></code>
+formatu pagal direktyvos 2010/40/ES nuostatas<span id="id4"><sup><a class="reference internal" href="saltiniai.html#id23" title="Directorate-General for Mobility European Commission and Transport. Europos parlamento ir tarybos direktyvos 2010/40/es nuostatos dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo. URL: https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&amp;from=LT (visited on 2017-05-31).">12</a></sup></span></cite>;</p></li>
+<li><p>VINTRA tvarkytojo LAKD (<em>VĮ Lietuvos automobilių kelių direkcija</em>) funkijų atlikimui nėra reikalingi viešojo
+transporto duomenys;</p></li>
+<li><p>Per dieną VINTRA (<a class="reference external" href="http://visimarsrutai.lt">visimarsrutai.lt</a>) aplanko <strong>apie 10 unikalių lankytojų</strong> (TODO patikrinti su LAKD);</p></li>
+<li><p>Dalis VINTRA skelbiamų <strong>statinių viešojo transporto duomenų yra pasenę</strong> (23 savivaldybių duomenys neturi nė vieno
+galiojančio reiso);</p></li>
+<li><p>Į VINTRA iš kitų sistemų automatiškai įkeliama 12 savivaldybių viešojo transporto statiniai duomenys;</p></li>
+<li><p>VINTRA <code class="docutils literal notranslate"><span class="pre">NeTEx</span></code> formatu pateikiami 8 Lietuvos savivaldybių viešojo transporto statiniai duomenys;</p></li>
+<li><p><strong>VINTRA neteikia jokių realaus laiko atvirų duomenų</strong>;</p></li>
+<li><p><strong>Nė viena Lietuvos savivaldybė</strong> neteikia viešojo transporto realaus laiko duomenų <code class="docutils literal notranslate"><span class="pre">SIRI</span></code> ar <code class="docutils literal notranslate"><span class="pre">GTFS-Realtime</span></code>
+formatais.</p></li>
+<li><p>11 savivaldybių naudojama <a class="reference external" href="http://Stops.lt">Stops.lt</a> sistema statiniams duomenims atiduoti palaiko tik <code class="docutils literal notranslate"><span class="pre">GTFS</span></code> formatą, o <strong>realaus laiko
+duomenims nepalaiko jokio standartizuoto formato</strong>;</p></li>
+<li><p>Apple Maps Transit <strong>neveikia Lietuvoje</strong> (veikia Estijoje ir 17 kitų ES šalių);</p></li>
+<li><p>Google Maps Transit Lietuvoje <strong>neturi realaus laiko atvykimų</strong> dėl duomenų <code class="docutils literal notranslate"><span class="pre">GTFS-Realtime</span></code> formato nebuvimo;</p></li>
+</ul>
+</div>
+<div class="section" id="projekto-siekiai">
+<h2>Projekto siekiai<a class="headerlink" href="#projekto-siekiai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Per standartizuotų judumo duomenų atvėrimą:</p>
+<ul class="simple">
+<li><p>Sudaryti sąlygas Lietuvos gyventojams mėgautis pačiomis patogiausiomis ir maloniausiomis kelionėmis bei keliavimo
+įrankiais;</p></li>
+<li><p>Įgalinti egzistuojančias kelionių planavimo programų pilnavertį veikimą Lietuvoje (pvz., Google Maps Transit, Apple
+Maps Transit);</p></li>
+<li><p>Patobulinti sąlygas Lietuvoje vystyti judumo startuolius;</p></li>
+<li><p>Sukurti sąlygas įgyvendinti visą Lietuvą apimančius judumo, kaip paslaugos (angl. <em>Mobility as a Service</em>) sprendimus;</p></li>
+<li><p>Užtikrinti darnią judumo paslaugų plėtrą Lietuvoje;</p></li>
+</ul>
+</div>
+<div class="section" id="nauda">
+<h2>Nauda<a class="headerlink" href="#nauda" title="Nuoroda į šią antraštę">¶</a></h2>
+<div class="section" id="visuomenei">
+<h3>Visuomenei:<a class="headerlink" href="#visuomenei" title="Nuoroda į šią antraštę">¶</a></h3>
+<ul class="simple">
+<li><p>Patogesnis ir prieinamesnis keliavimas viešioju transportu;</p></li>
+<li><p>Sumažintas kelionės laikas (pagal realią informaciją gali koreguoti planus);</p></li>
+<li><p>Mažesnis laukimo laikas;</p></li>
+</ul>
+</div>
+<div class="section" id="savivaldybems-ir-transporto-valdytojams">
+<h3>Savivaldybėms ir transporto valdytojams:<a class="headerlink" href="#savivaldybems-ir-transporto-valdytojams" title="Nuoroda į šią antraštę">¶</a></h3>
+<ul class="simple">
+<li><p>Išaugęs viešojo transporto naudojimas ir daugiau bilietų pardavimų;</p></li>
+<li><p>Lengvesnis viešojo transporto planavimas;</p></li>
+<li><p>Geresnis viešojo transporto vertinimas;</p></li>
+</ul>
+</div>
+<div class="section" id="startuoliams-ir-akademijai">
+<h3>Startuoliams ir akademijai:<a class="headerlink" href="#startuoliams-ir-akademijai" title="Nuoroda į šią antraštę">¶</a></h3>
+<ul class="simple">
+<li><p>Nauji startuoliai grįsti atvertais duomenimis;</p></li>
+<li><p>Daugiau mokslinių tyrimų susijusių su transporto tinklo optimizavimu ir kokybės gerinimu;</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Užrašai<a class="headerlink" href="#id5" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Be infrastruktūros trūkumų, judumo trukdžių taip pat kelia nepatogūs viešojo transporto maršrutai ir tvarkaraščiai,
+nesusietos savivaldybių viešojo transporto sistemos arba nepakankamos paskatos ar parama reguliariai į
+darbą <a class="reference external" href="https://ec.europa.eu/info/sites/default/files/file_import/2019-european-semester-country-report-lithuania_lt.pdf">https://ec.europa.eu/info/sites/default/files/file_import/2019-european-semester-country-report-lithuania_lt.pdf</a></p>
+<ul class="simple">
+<li><p>Data Management and Policy. Agencies must prioritize data. Just as dedicating staff and resources is crucial to the
+success of a large capital project, agency leadership must commit to and invest in the internal infrastructure that
+will support good data.</p></li>
+<li><p>Data Quality. No matter the quantity of available data, its usefulness ultimately hinges upon its quality. In other
+words, more is not necessarily better. The weather app on my phone shows me relative humidity, dew point, visibility,
+and pressure, but it’s of no use to me if it never accurately predicts the rain in Portland.</p></li>
+<li><p>Data Specifications. At the risk of sounding too “kumbaya,” we are all on the same team in the transit data world.
+That is, we all benefit when data is open and standardized. This enables industry growth and innovation. GTFS is a
+perfect example.
+<a class="reference external" href="https://trilliumtransit.com/2019/10/01/data-transit-riders-want/">https://trilliumtransit.com/2019/10/01/data-transit-riders-want/</a></p></li>
+<li><p>Viena pagrindinių priežasčių, kodėl žmonės nesinaudoja viešuoju transportu <strong>yra informacijos apie maršrutus ir
+planavimo priemonių stoka</strong>;</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="saltiniai.html" title="praeitas page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">praeitas</p>
+            <p class="prev-next-title">Šaltiniai</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="apps/apple_maps.html" title="kitas page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">kitas</p>
+        <p class="prev-next-title">Apple Maps</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Iki Karolis Vyčius<br/>
+    
+        &copy; Autorių teisės 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
