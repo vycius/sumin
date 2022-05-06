@@ -6,7 +6,7 @@ root: index
 parts:
   - caption: Judumo duomenų standartai
     chapters:
-      - file: standartai/duomenu-standartai
+      - file: standartai/index
       - file: standartai/viesasis-transportas
         sections:
           - file: standartai/viesasis-transportas-statiniai-duomenys
