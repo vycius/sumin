@@ -9,11 +9,11 @@ parts:
       - file: standartai/index
       - file: standartai/viesasis-transportas
         sections:
-          - file: standartai/viesasis-transportas-statiniai-duomenys
+          - file: standartai/statiniai-duomenys
             sections:
               - file: standartai/gtfs
               - file: standartai/netex
-          - file: standartai/viesasis-transportas-dinaminiai-duomenys
+          - file: standartai/dinaminiai-duomenys
             sections:
               - file: standartai/gtfs-realtime
               - file: standartai/siri
