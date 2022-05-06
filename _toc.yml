@@ -35,6 +35,10 @@ parts:
       - file: saltiniai/stops
         sections:
           - file: saltiniai/transporto-priemoniu-pozicijos
+  - caption: Gerosios praktikos
+    chapters:
+      - file: praktikos/index
+
   - caption: Sprendimas
     chapters:
       - file: sprendimas/architektura
