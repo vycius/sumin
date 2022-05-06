@@ -19,7 +19,7 @@ strateginiai dokumentai.
 
 ---
 
-**[Judumo duomenų standartai](standartai/index)** ✍
+**[Judumo duomenų standartų apžvalga](standartai/index)** ✍
 ^^^
 Pagrindiniai duomenų teikimo standartai susiję su viešojo transporto statine ir realaus
 laiko informacija bei dalijimosi paslaugomis.
