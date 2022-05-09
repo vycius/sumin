@@ -1,4 +1,4 @@
-# Šalys
+# Užsienio šalių gerosios praktikos
 
 Šioje dalyje bus aptariami atvirai prieinamų duomenų apie viešąjį transportą Europoje duomenų šaltiniai.
 
