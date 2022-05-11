@@ -1,6 +1,6 @@
 # NeTEx
 
-NeTEx (angl. *Network Timetable Exchange*) - [Europos standartizacijos komiteto](https://www.cencenelec.eu) sukurtas
+NeTEx (*Network Timetable Exchange*) - [Europos standartizacijos komiteto](https://www.cencenelec.eu) sukurtas
 standartas skirtas viešojo transporto duomenų apsikeitimui. Šis formatas turi būti naudojamas visų Europos operatorių
 pagal
 direktyvą [dėl informacijos apie keliavimą daugiarūšiu transportu paslaugų teikimo (2010/40/ES)](https://eur-lex.europa.eu/legal-content/LT/TXT/HTML/?uri=CELEX:32017R1926&from=LT)
@@ -28,9 +28,6 @@ etapus. Lyginant su GTFS formatu NeTEx gali pateikti išsamesnę informaciją ap
 platesnę informaciją apie infrastruktūrą, tvarkaraščius, kainodarą, persėdimus ir t.t. NeTEx naudoja XML (angl. *
 Extensible Markup Language*) formatą duomenims perduoti. Verta pastebėti, kad iš NeTEx formato automatiniu būdų galima
 sugeneruoti GTFS formatą (tačiau atvirkščia konversija nėra įmanoma){cite}`netex_comparison_to_other_formats`.
-
-TODO:
-Factsheet https://www.transmodel-cen.eu/wp-content/uploads/2017/07/Mobility-Factsheet-Road-Initiatives_DIGITALISATION_v4-1.pdf
 
 ## Pateikiama informacija
 
