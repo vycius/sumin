@@ -8,6 +8,3 @@ institucijoms ir vežėjams nustatytu būdu teikti viešojo transporto kelio
 >
 > -- <cite>Lietuvos Respublikos transporto veiklos pagrindų įstatymas{cite}`transporto_veiklos_pagrindu_istatymas`</cite> 
 
-
-```{tableofcontents}
-```
