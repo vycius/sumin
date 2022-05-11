@@ -26,15 +26,17 @@ parts:
           - file: standartai/mds
 
 
-  - caption: Duomenų šaltiniai
+  - caption: Viešojo transporto duomenys
     chapters:
-      - file: saltiniai/vintra
+      - file: saltiniai/statiniai
         sections:
+          - file: saltiniai/savivaldybes
+          - file: saltiniai/vintra
           - file: saltiniai/vintra-gtfs
           - file: saltiniai/vintra-netex
-      - file: saltiniai/stops
-        sections:
-          - file: saltiniai/transporto-priemoniu-pozicijos
+          - file: saltiniai/stops
+      - file: saltiniai/dinaminiai-duomenys
+
   - caption: Gerosios praktikos
     chapters:
       - file: praktikos/index
