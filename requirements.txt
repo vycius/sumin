@@ -4,7 +4,7 @@ plotly==5.7.0
 seaborn==0.11.2
 pandas==1.4.2
 geopandas==0.10.2
-itables==0.4.6
+itables==0.4.7
 keplergl==0.3.2
 gtfs-kit==5.2.2
 pyarrow==7.0.0
