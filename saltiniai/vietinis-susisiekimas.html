@@ -398,6 +398,11 @@ const thebe_selector_output = ".output, .cell_output"
    Duomenų failai pagal savivaldybes
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#privalomi-gtfs-duomenu-rinkinio-failai">
+   Privalomi GTFS duomenų rinkinio failai
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -423,6 +428,11 @@ const thebe_selector_output = ".output, .cell_output"
    Duomenų failai pagal savivaldybes
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#privalomi-gtfs-duomenu-rinkinio-failai">
+   Privalomi GTFS duomenų rinkinio failai
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -435,15 +445,23 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="vietinis-reguliarusis-susisiekimas">
 <h1>Vietinis reguliarusis susisiekimas<a class="headerlink" href="#vietinis-reguliarusis-susisiekimas" title="Nuoroda į šią antraštę">¶</a></h1>
 <p>Toliau pateikiami analizuoti viešojo transporto kelionių duomenys esantys VINTRA susiję su vietiniu reguliariuoju (miesto ir priemesčio) susisiekimu.</p>
+<div class="cell docutils container">
+</div>
+<div class="cell docutils container">
+</div>
 <div class="section" id="duomenu-failai-pagal-savivaldybes">
 <h2>Duomenų failai pagal savivaldybes<a class="headerlink" href="#duomenu-failai-pagal-savivaldybes" title="Nuoroda į šią antraštę">¶</a></h2>
 <div class="warning admonition">
-<p class="admonition-title">8 savivaldyvbių duomenys nėra pateikiami NeTEx formatu</p>
+<p class="admonition-title">8 savivaldybių duomenys nėra pateikiami NeTEx formatu</p>
 <p>NeTEx formatu nepateikiami 8 savivaldybių viešojo transporto kelionių duomenys (Alytaus, Biržų, Jurbarko, Kėdainių, Kelmės, Kupiškio, Mažeikių, Rokiškio, Vilniaus rajono savivaldybių). Dėl šios priežasties nėra galimybės naudoti šių savivaldybių viešojo transporto duomenų NeTEx formatu.</p>
 </div>
 <div class="warning admonition">
-<p class="admonition-title">3 savivaldyvbių duomenys nėra pateikiami GTFS formatu</p>
+<p class="admonition-title">3 savivaldybių duomenys nėra pateikiami GTFS formatu</p>
 <p>GTFS formatu nepateikiami 3 savivaldybių viešojo transporto kelionių duomenys (Šakių, Širvintų, Telšių rajono savivaldybių). Dėl šios priežasties nėra galimybės naudoti šių savivaldybių viešojo transporto duomenų GTFS formatu.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Nepateikiami GTFS ir NeTEx priklauso skirtingoms savivaldybėms</p>
+<p>Atsižvelgiant į tai, kad skirtingų savivaldybių viešojo transporto kelionių duomenys nėra pateikiami GTFS ir NeTEx formatais galima manyti, kad duomenų failai nėra pateikiami dėl VINTRA sisteminės klaidos.</p>
 </div>
 <table class="colwidths-auto table" id="data-files-municipalities-vintra">
 <caption><span class="caption-number">Table 3 </span><span class="caption-text">VINTRA duomenų failai pagal savivaldybes. Duomenys surinkti 2022 m. gegužės 12 d.</span><a class="headerlink" href="#data-files-municipalities-vintra" title="Permalink to this table">¶</a></caption>
@@ -698,8 +716,194 @@ const thebe_selector_output = ".output, .cell_output"
 </table>
 <div class="cell docutils container">
 </div>
-<div class="cell docutils container">
 </div>
+<div class="section" id="privalomi-gtfs-duomenu-rinkinio-failai">
+<h2>Privalomi GTFS duomenų rinkinio failai<a class="headerlink" href="#privalomi-gtfs-duomenu-rinkinio-failai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Pagal <a class="reference external" href="https://gtfs.org/schedule/reference/#dataset-files">specifikaciją</a> GTFS privalo sudaryti bent penki failai (<code class="docutils literal notranslate"><span class="pre">agency.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">stops.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">routes.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">trips.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">stop_times.txt</span></code>).</p>
+<p>Toliau esančioje lentelėje matomos savivaldybės, kurių GTFS duomenų rinkinyje trūksta bent vieno privalomo failo.</p>
+<div class="warning admonition">
+<p class="admonition-title">23 savivaldybių GTFS duomenų rinkiniams trūksta bent vieno privalomo failo</p>
+<p>23 savivaldybių GTFS duomenų rinkiniams trūksta bent vieno privalomo failo. Tai reiškia, kad 23 savivaldybės ilgą laiką neatnaujino duomenų ir nebėra pateikiama jokia keleiviams aktuali viešojo transporto informacija.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Birštono savivaldybės GTFS failas yra sugadintas</p>
+<p>Birštono savivaldybės GTFS failas yra sugadintas ir negali būti atidarytas. Bandymas naudoti tokį GTFS failą gali sukelti papildomų nepatogumų bandant nuskaityti failą automatiniu būdu.</p>
+</div>
+<table class="colwidths-auto table" id="data-files-municipalities-missing-required-file">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">VINTRA savivaldybių GTFS duomenų rinkiniai, kuriems trūksta bent vieno privalomo failą. Duomenys surinkti 2022 m. gegužės 12 d.</span><a class="headerlink" href="#data-files-municipalities-missing-required-file" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Savivaldybė</p></th>
+<th class="head"><p>agency.txt</p></th>
+<th class="head"><p>stops.txt</p></th>
+<th class="head"><p>routes.txt</p></th>
+<th class="head"><p>trips.txt</p></th>
+<th class="head"><p>stop_times.txt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Birštono savivaldybė</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Elektrėnų savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Joniškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kaišiadorių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kazlų Rūdos savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kėdainių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kelmės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kretingos rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kupiškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lazdijų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Molėtų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pagėgių savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Palangos miesto savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Panevėžio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Pasvalio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Plungės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Radviliškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Raseinių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Rietavo savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Šilalės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Skuodo rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Trakų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Vilkaviškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
