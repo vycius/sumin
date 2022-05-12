@@ -51,10 +51,11 @@ jobs:
         run: make build
 
       - uses: actions/upload-artifact@v3
+        if: always()
         name: Upload gtfs-reports
         with:
           name: build-report
-          path: _build/html/gtfs-reports
+          path: _build/html/reports
 
       - run: touch _build/html/.nojekyll
 
