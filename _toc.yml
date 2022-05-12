@@ -30,6 +30,7 @@ parts:
     chapters:
       - file: saltiniai/statiniai-duomenys
         sections:
+          - file: saltiniai/vietinis-susisiekimas
           - file: saltiniai/savivaldybes
           - file: saltiniai/vintra
           - file: saltiniai/vintra-gtfs
