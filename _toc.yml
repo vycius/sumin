@@ -31,9 +31,8 @@ parts:
       - file: saltiniai/statiniai-duomenys
         sections:
           - file: saltiniai/vietinis-susisiekimas
-          - file: saltiniai/vintra
+          - file: saltiniai/tolimasis-susisiekimas
           - file: saltiniai/vintra-gtfs
-          - file: saltiniai/vintra-netex
       - file: saltiniai/dinaminiai-duomenys
 
   - caption: Gerosios praktikos
