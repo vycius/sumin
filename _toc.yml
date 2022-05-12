@@ -28,13 +28,12 @@ parts:
 
   - caption: Viešojo transporto duomenys
     chapters:
-      - file: saltiniai/statiniai
+      - file: saltiniai/statiniai-duomenys
         sections:
           - file: saltiniai/savivaldybes
           - file: saltiniai/vintra
           - file: saltiniai/vintra-gtfs
           - file: saltiniai/vintra-netex
-          - file: saltiniai/stops
       - file: saltiniai/dinaminiai-duomenys
 
   - caption: Gerosios praktikos

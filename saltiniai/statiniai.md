@@ -1,5 +1,0 @@
-# Statiniai duomenys
-
-
-```{tableofcontents}
-```
