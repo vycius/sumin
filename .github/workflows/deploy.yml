@@ -12,14 +12,14 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: _build/.jupyter_cache
           key: ${{ runner.os }}-jupyter-cache
