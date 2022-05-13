@@ -28,14 +28,14 @@ parts:
 
   - caption: Viešojo keleivinio transporto duomenys
     chapters:
-      - file: saltiniai/statiniai-duomenys
+      - file: duomenys/statiniai-duomenys
         sections:
-          - file: saltiniai/vietinis-susisiekimas
+          - file: duomenys/vietinis-susisiekimas
             sections:
-              - file: saltiniai/palyginimas-su-stops-lt
-          - file: saltiniai/tolimasis-susisiekimas
-          - file: saltiniai/vintra-gtfs
-      - file: saltiniai/dinaminiai-duomenys
+              - file: duomenys/palyginimas-su-stops-lt
+          - file: duomenys/tolimasis-susisiekimas
+          - file: duomenys/vintra-gtfs
+      - file: duomenys/dinaminiai-duomenys
 
   - caption: Gerosios praktikos
     chapters:

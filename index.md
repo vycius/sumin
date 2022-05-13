@@ -29,7 +29,7 @@ paslaugomis.
 
 ---
 
-**[Viešojo keleivinio transporto duomenų situacijos apžvalga](saltiniai/statiniai-duomenys)** [Atliekama]💡
+**[Viešojo keleivinio transporto duomenų situacija Lietuvoje](duomenys/statiniai-duomenys)** [Atliekama]💡
 ^^^
 Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos 
 Lietuvoje. 
