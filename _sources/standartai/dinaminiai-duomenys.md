@@ -6,6 +6,7 @@ trumpalaikiais pokyčius transporto sistemoje būtini dinaminiai duomenys. Dažn
 viešajame transporte įrengta GPS įranga, keleivių skaičiavimo įranga, eismo stebėjimo sistemos.
 
 ## Panaudojimas
+
 Dinaminių duomenų pagalba viešojo transporto keleiviai gali realiu laiku matyti transporto priemonės poziciją, sužinoti
 kiek minučių transporto priemonė vėluos atvykti į stotelę, matyti realų transporto priemonėje esančių keleivių skaičių
 ir gauti informacinius pranešimus susietus su stotele, maršrutu ar visa transporto sistema.
@@ -19,7 +20,9 @@ Jungtinėje Karalystėje ir daugelyje kitų šalių.
 
 Dinaminiai viešojo transporto duomenys Google Maps{cite}`google_maps_dynamic_data`
 ```
+
 ## Nauda keleiviui
+
 Jei dinaminiai duomenys nepasiekia keleivio, tai keleivis gali:
 
 - **Pavėluoti į grafike skubantį autobusą**:  nors keleivis į stotelę ateina numatytu laiku, tačiau pavėluoja į
@@ -39,4 +42,5 @@ transportu bei rinksis alternatyvius keliavimo būdus.
 Dėl šių priežasčių būtina užtikrinti, kad keleivį pasiektų visi imanomi dinaminiai duomenys iš autobusuose įrengtų GPS
 imtyvų, keleivių skaičiavimo įrangos, eismo analizavimo ir keleivių informavimo sistemų.
 
-Toliau šiame skyriuje aprašomi pagrindiniai viešojo transporto dinaminių duomenų standartai.
+Toliau šiame skyriuje aprašomi pagrindiniai viešojo transporto dinaminių duomenų standartai: de facto pasaulinis
+standartas [GTFS Realtime](gtfs-realtime) ir Europos Sąjungos standartas [SIRI](siri).

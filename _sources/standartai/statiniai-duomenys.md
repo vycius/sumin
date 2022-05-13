@@ -7,5 +7,5 @@ Statiniai viešojo transporto duomenys keleiviams suteikia bazinę informaciją,
 - Kokiu maršrutu autobusas važiuos?
 - Kiek kainuos kelionė autobusu?
 
-Siekiant, kad ši informacija pasiektų keleivį toliau apžvelgsime pagrindinius viešojo transporto statinių duomenų
-standartus.
+Siekiant, kad ši informacija pasiektų keleivį toliau apžvelgsime du pagrindinius viešojo transporto statinių duomenų
+standartus: de facto pasaulinį standartą [GTFS](gtfs) ir Europos Sąjungos standartą [NeTEx](netex).
