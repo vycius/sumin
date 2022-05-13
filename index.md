@@ -1,11 +1,14 @@
 # Judumo duomenų ekosistemos plėtra
 
-Lietuvoje daugiau nei 90 proc. kelionės atstumo yra įveikiama automobiliu ir pagal šį rodiklį Lietuva užima pirmą vietą
-Europos Sąjungoje{cite}`eurostat_model_split_of_passenger_transport`. Siekiant paversti viešąjį transportą patrauklesniu
-ir patogesniu šis projektas sudarys sąlygas teikti atvirus, aukštos kokybės realaus laiko viešojo transporto duomenis
-standartizuotais formatais, kuriuos būtų galima integruoti į kelionių planavimo priemones, naudoti maršrutų
-tobulinimui, skatinti startuolius kurti inovatyvius sprendimus šių duomenų pavidalu ir kelti viešojo transporto keleivių
-skaičių.
+Lietuvoje daugiau nei 90 proc. kelionės atstumo yra įveikiama automobiliu ir pagal šį rodiklį Lietuva užima pirmą
+vietą Europos Sąjungoje{cite}`eurostat_model_split_of_passenger_transport`.💡🚘
+
+Kaip šioje srityje mums nebūti pirmūnams ir paskatinti žmones automobilį vis dažniau iškeisti automobilį į viešąjį 
+transportą Lietuvoje?🧐
+
+Į šį klausimą atsakys Kurk Lietuvai projektas „Judumuo duomenų ekosistemos plėtra“ vykdomas Susisiekimo
+Ministerijoje ir siekiantis, kad kelionės po Lietuvą viešuoju transportu būtų dar populiaresnės, patogesnės ir
+patrauklesnės.
 
 :::{panels}
 :container: text-center
@@ -21,7 +24,14 @@ strateginiai dokumentai.
 
 **[Judumo duomenų standartų apžvalga](standartai/index)** ✍
 ^^^
-Pagrindiniai duomenų teikimo standartai susiję su viešojo transporto statine ir realaus
-laiko informacija bei dalijimosi paslaugomis.
+Pagrindiniai duomenų teikimo standartai susiję su viešojo transporto statine ir dinamine informacija bei dalijimosi
+paslaugomis.
+
+---
+
+**[Viešojo keleivinio transporto duomenų situacijos apžvalga](saltiniai/statiniai-duomenys)** [Atliekama]💡
+^^^
+Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos 
+Lietuvoje. 
 
 :::

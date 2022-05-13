@@ -80,7 +80,7 @@ jobs:
         with:
           name: page-html
           path: _build/html/
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
