@@ -8,9 +8,10 @@ priemonėmis be jokių kliūčių?
 Paprasčiausias būdas tą pasiekti yra standartų, kurie leidžia skirtingoms sistemoms vieningai dalintis duomenimis ir
 integruotis tarpusavyje naudojimas. Europos Komisija yra išskyrusi 6 didelės
 vertės duomenų rinkinius, kurie turi būti pateikiami automatizuoto nuskaitymo formatais ir
-prieinami visiškai nemokamai. Tarp šių duomenų rinkinių patenka su judumu susiję duomenys{cite}
-`eu_open_data_reuse_directive`. Taip pat Europos Komisijos išleista ITS direktyva{cite}
-`directive_multimodal_travel_information_services` jau dabar reglamentuoja duomenų formatus, kuriais turi būti 
+prieinami visiškai nemokamai. Tarp šių duomenų rinkinių patenka su judumu susiję
+duomenys{cite}`eu_open_data_reuse_directive`. Taip pat Europos Komisijos išleista ITS
+direktyva{cite}`directive_multimodal_travel_information_services` jau dabar reglamentuoja duomenų formatus, kuriais turi
+būti
 atverti su judumu susiję duomenis.
 
 Turėdami standartizuotus, aukštos kokybės duomenis galime integruoti skirtingas sistemas tarpusavyje, įgyvendinti
