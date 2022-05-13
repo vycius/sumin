@@ -1,0 +1,1286 @@
+
+<!DOCTYPE html>
+
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietinis reguliarusis susisiekimas &#8212; Judumo duomenų ekosistemos plėtra</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://judumas.vycius.lt/duomenys/vietinis-susisiekimas.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Indeksas" href="../genindex.html" />
+    <link rel="search" title="Paieška" href="../search.html" />
+    <link rel="next" title="Palyginimas su pirminiu šaltiniu" href="palyginimas-su-stops-lt.html" />
+    <link rel="prev" title="Statiniai duomenys" href="statiniai-duomenys.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="lt">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PSPT787FKK"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-PSPT787FKK');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Judumo duomenų ekosistemos plėtra</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Ieškoti šioje knygoje ..." aria-label="Ieškoti šioje knygoje ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projektas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projektas.html">
+   Judumo duomenų ekosistemos plėtra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Judumo duomenų standartai
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../standartai/index.html">
+   Judumo duomenų standartai
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/viesasis-transportas.html">
+   Viešasis transportas
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/statiniai-duomenys.html">
+     Statiniai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs.html">
+       GTFS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/netex.html">
+       NeTEx
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/dinaminiai-duomenys.html">
+     Dinaminiai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs-realtime.html">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/siri.html">
+       SIRI
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/dalijimosi-paslaugos.html">
+   Dalijimosi paslaugos
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/gbfs.html">
+     GBFS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/mds.html">
+     MDS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Viešojo keleivinio transporto duomenys
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="statiniai-duomenys.html">
+   Statiniai duomenys
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     Vietinis reguliarusis susisiekimas
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="palyginimas-su-stops-lt.html">
+       Palyginimas su pirminiu šaltiniu
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tolimasis-susisiekimas.html">
+     Tolimasis ir tarptautinis reguliarusis susisiekimas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vintra-gtfs.html">
+     GTFS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dinaminiai-duomenys.html">
+   Dinaminiai duomenys
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Gerosios praktikos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/index.html">
+   Užsienio šalių gerosios praktikos
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sprendimas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/architektura.html">
+   Architektūra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literatūra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../saltiniai.html">
+   Šaltiniai
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Aplinka
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../uzrasai.html">
+   Užrašai
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apps/apple_maps.html">
+   Apple Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../internal.html">
+   Aplinka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Perjungti naršymą" aria-controls="site-navigation"
+                title="Perjungti naršymą" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Atsisiųskite šį puslapį"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/duomenys/vietinis-susisiekimas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/vycius/judumas"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
+                    class="fab fa-github"></i>saugykla</button></a>
+        
+        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/duomenys/vietinis-susisiekimas.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pilno ekrano režimas"
+        title="Pilno ekrano režimas"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Turinys
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-failai-pagal-savivaldybes">
+   Duomenų failai pagal savivaldybes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#privalomi-gtfs-duomenu-rinkinio-failai">
+   Privalomi GTFS duomenų rinkinio failai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#marsrutai">
+   Maršrutai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reisai">
+   Reisai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarifai-ir-kainorasciai">
+   Tarifai ir kainoraščiai
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Vietinis reguliarusis susisiekimas</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Turinys </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-failai-pagal-savivaldybes">
+   Duomenų failai pagal savivaldybes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#privalomi-gtfs-duomenu-rinkinio-failai">
+   Privalomi GTFS duomenų rinkinio failai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#marsrutai">
+   Maršrutai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reisai">
+   Reisai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tarifai-ir-kainorasciai">
+   Tarifai ir kainoraščiai
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="vietinis-reguliarusis-susisiekimas">
+<h1>Vietinis reguliarusis susisiekimas<a class="headerlink" href="#vietinis-reguliarusis-susisiekimas" title="Nuoroda į šią antraštę">¶</a></h1>
+<p>Toliau pateikiami analizuoti viešojo transporto kelionių duomenys esantys VINTRA susiję su vietiniu reguliariuoju (miesto ir priemesčio) susisiekimu.</p>
+<div class="cell docutils container">
+</div>
+<div class="cell docutils container">
+</div>
+<div class="section" id="duomenu-failai-pagal-savivaldybes">
+<h2>Duomenų failai pagal savivaldybes<a class="headerlink" href="#duomenu-failai-pagal-savivaldybes" title="Nuoroda į šią antraštę">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">8 savivaldybių duomenys nėra pateikiami NeTEx formatu</p>
+<p>NeTEx formatu nepateikiami 8 savivaldybių viešojo transporto kelionių duomenys (Alytaus, Biržų, Jurbarko, Kėdainių, Kelmės, Kupiškio, Mažeikių, Rokiškio, Vilniaus rajono savivaldybių). Dėl šios priežasties nėra galimybės naudoti šių savivaldybių viešojo transporto duomenų NeTEx formatu.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">3 savivaldybių duomenys nėra pateikiami GTFS formatu</p>
+<p>GTFS formatu nepateikiami 3 savivaldybių viešojo transporto kelionių duomenys (Šakių, Širvintų, Telšių rajono savivaldybių). Dėl šios priežasties nėra galimybės naudoti šių savivaldybių viešojo transporto duomenų GTFS formatu.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Nepateikiami GTFS ir NeTEx priklauso skirtingoms savivaldybėms</p>
+<p>Atsižvelgiant į tai, kad skirtingų savivaldybių viešojo transporto kelionių duomenys nėra pateikiami GTFS ir NeTEx formatais galima manyti, kad duomenų failai nėra pateikiami dėl VINTRA sisteminės klaidos.</p>
+</div>
+<table class="colwidths-auto table" id="data-files-municipalities-vintra">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">VINTRA duomenų failai pagal savivaldybes. Duomenys surinkti 2022 m. gegužės 12 d.</span><a class="headerlink" href="#data-files-municipalities-vintra" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Savivaldybė</p></th>
+<th class="head"><p>GTFS</p></th>
+<th class="head"><p>NeTEx</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Akmenės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/akmene.zip">akmene.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Akmenesraj.zip">Akmenesraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Alytaus miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/AlytausM.zip">AlytausM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Alytausm.zip">Alytausm.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Alytaus rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/AlytausR.zip">AlytausR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anykščių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/AnyksciuR.zip">AnyksciuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Anyksciuraj.zip">Anyksciuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Birštono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Birstono.zip">Birstono.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Birstonoraj.zip">Birstonoraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Biržų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/BirzuR.zip">BirzuR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Druskininkų savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Druskininku.zip">Druskininku.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Druskininkuraj.zip">Druskininkuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Elektrėnų savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Elektrenu.zip">Elektrenu.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Elektrenusav.zip">Elektrenusav.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Ignalinos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/IgnalinosR.zip">IgnalinosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Ignalinosraj.zip">Ignalinosraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Jonavos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/JonavosR.zip">JonavosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Jonavosraj.zip">Jonavosraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Joniškio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/JoniskioR.zip">JoniskioR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Joniskioraj.zip">Joniskioraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Jurbarko rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/JurbarkoR.zip">JurbarkoR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kaišiadorių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KiasiadoriuR.zip">KiasiadoriuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kaisiadoriuraj.zip">Kaisiadoriuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Kalvarijos savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Kalvarijos.zip">Kalvarijos.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kalvarijosraj.zip">Kalvarijosraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Kauno miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KaunoM.zip">KaunoM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kaunom.zip">Kaunom.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Kauno rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KaunoR.zip">KaunoR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kaunoraj.zip">Kaunoraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Kazlų Rūdos savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Kazlurudos.zip">Kazlurudos.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kazlurudosraj.zip">Kazlurudosraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Kėdainių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KedainiuR.zip">KedainiuR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kelmės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KelmesR.zip">KelmesR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Klaipėdos miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KlaipedosM.zip">KlaipedosM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Klaipedosm.zip">Klaipedosm.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Klaipėdos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KlaipedosR.zip">KlaipedosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Klaipedosraj.zip">Klaipedosraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Kretingos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KretingosR.zip">KretingosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Kretingosraj.zip">Kretingosraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Kupiškio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/KupiskioR.zip">KupiskioR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lazdijų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/LazdijuR.zip">LazdijuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Lazdijuraj.zip">Lazdijuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Marijampolės savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Marijampoles.zip">Marijampoles.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Marijampolesraj.zip">Marijampolesraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Mažeikių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/MazeikiuR.zip">MazeikiuR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Molėtų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/MoletuR.zip">MoletuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Moleturaj.zip">Moleturaj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Neringos savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/neringa.zip">neringa.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Neringosraj.zip">Neringosraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Pagėgių savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PagegiuR.zip">PagegiuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Pagegiuraj.zip">Pagegiuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Pakruojo rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PakruojoR.zip">PakruojoR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Pakruojoraj.zip">Pakruojoraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Palangos miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PalangosM.zip">PalangosM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Palangosm.zip">Palangosm.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Panevėžio miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PanevezioM.zip">PanevezioM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Paneveziom.zip">Paneveziom.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Panevėžio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PanevezioR.zip">PanevezioR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Panevezioraj.zip">Panevezioraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Pasvalio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PasvalioR.zip">PasvalioR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Pasvalioraj.zip">Pasvalioraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Plungės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PlungesR.zip">PlungesR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Plungesraj.zip">Plungesraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Prienų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/PrienuR.zip">PrienuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Prienuraj.zip">Prienuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Radviliškio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/RadviliskioR.zip">RadviliskioR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Radviliskioraj.zip">Radviliskioraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Raseinių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/RaseiniuR.zip">RaseiniuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Raseiniuraj.zip">Raseiniuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Rietavo savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/Rietavo.zip">Rietavo.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Rietavoraj.zip">Rietavoraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Rokiškio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/RokiskioR.zip">RokiskioR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Šakių rajono savivaldybė</p></td>
+<td><p>❌</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Sakiuraj.zip">Sakiuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Šalčininkų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SalcininkuR.zip">SalcininkuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Salcininkuraj.zip">Salcininkuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Šiaulių miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SiauliuM.zip">SiauliuM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Siaulium.zip">Siaulium.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Šiaulių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SiauliuR.zip">SiauliuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Siauliuraj.zip">Siauliuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Šilalės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SilalesR.zip">SilalesR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Silalesraj.zip">Silalesraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Šilutės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SilutesR.zip">SilutesR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Silutesraj.zip">Silutesraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Širvintų rajono savivaldybė</p></td>
+<td><p>❌</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Sirvinturaj.zip">Sirvinturaj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Skuodo rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SkuodoR.zip">SkuodoR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Skuodoraj.zip">Skuodoraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Švenčionių rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/SvencioniuR.zip">SvencioniuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Svencioniuraj.zip">Svencioniuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tauragės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/TauragesR.zip">TauragesR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Tauragesraj.zip">Tauragesraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Telšių rajono savivaldybė</p></td>
+<td><p>❌</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Telsiuraj.zip">Telsiuraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Trakų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/TrakuR.zip">TrakuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Trakuraj.zip">Trakuraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Ukmergės rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/UkmergesR.zip">UkmergesR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Ukmergesraj.zip">Ukmergesraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Utenos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/UtenosR.zip">UtenosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Utenosraj.zip">Utenosraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Varėnos rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/VarenosR.zip">VarenosR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Varenosraj.zip">Varenosraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Vilkaviškio rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/VilkaviskioR.zip">VilkaviskioR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Vilkaviskioraj.zip">Vilkaviskioraj.zip</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Vilniaus miesto savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/VilniausM.zip">VilniausM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Vilniausm.zip">Vilniausm.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Vilniaus rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/VilniausR.zip">VilniausR.zip</a></p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Visagino savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/VisaginoM.zip">VisaginoM.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Visaginoraj.zip">Visaginoraj.zip</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Zarasų rajono savivaldybė</p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/gtfs/ZarasuR.zip">ZarasuR.zip</a></p></td>
+<td><p><a class="reference external" href="https://www.visimarsrutai.lt/netex/Zarasuraj.zip">Zarasuraj.zip</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+</div>
+</div>
+<div class="section" id="privalomi-gtfs-duomenu-rinkinio-failai">
+<h2>Privalomi GTFS duomenų rinkinio failai<a class="headerlink" href="#privalomi-gtfs-duomenu-rinkinio-failai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Pagal <a class="reference external" href="https://gtfs.org/schedule/reference/#dataset-files">specifikaciją</a> GTFS privalo sudaryti bent penki failai (<code class="docutils literal notranslate"><span class="pre">agency.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">stops.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">routes.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">trips.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">stop_times.txt</span></code>).</p>
+<p>Toliau esančioje lentelėje matomos savivaldybės, kurių GTFS duomenų rinkinyje trūksta bent vieno privalomo failo.</p>
+<div class="warning admonition">
+<p class="admonition-title">23 savivaldybių GTFS duomenų rinkiniams trūksta bent vieno privalomo failo</p>
+<p>23 savivaldybių GTFS duomenų rinkiniams trūksta bent vieno privalomo failo. Tai reiškia, kad 23 savivaldybės ilgą laiką neatnaujino duomenų ir nebėra pateikiama jokia keleiviams aktuali viešojo transporto informacija.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Birštono savivaldybės GTFS failas yra sugadintas</p>
+<p>Birštono savivaldybės GTFS failas yra sugadintas ir negali būti atidarytas. Bandymas naudoti tokį GTFS failą gali sukelti papildomų nepatogumų bandant nuskaityti failą automatiniu būdu.</p>
+</div>
+<table class="colwidths-auto table" id="data-files-municipalities-missing-required-file">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">VINTRA savivaldybių GTFS duomenų rinkiniai, kuriems trūksta bent vieno privalomo failą. Duomenys surinkti 2022 m. gegužės 12 d.</span><a class="headerlink" href="#data-files-municipalities-missing-required-file" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Savivaldybė</p></th>
+<th class="head"><p>agency.txt</p></th>
+<th class="head"><p>stops.txt</p></th>
+<th class="head"><p>routes.txt</p></th>
+<th class="head"><p>trips.txt</p></th>
+<th class="head"><p>stop_times.txt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Birštono savivaldybė</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Elektrėnų savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Joniškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kaišiadorių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kazlų Rūdos savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kėdainių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kelmės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kretingos rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Kupiškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lazdijų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Molėtų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pagėgių savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Palangos miesto savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Panevėžio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Pasvalio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Plungės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Radviliškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Raseinių rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Rietavo savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Šilalės rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Skuodo rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Trakų rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Vilkaviškio rajono savivaldybė</p></td>
+<td><p>✔️</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+</div>
+</div>
+<div class="section" id="marsrutai">
+<h2>Maršrutai<a class="headerlink" href="#marsrutai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Kiekvienas maršrutas susideda ir vieno ar keleto reisų, kurie turi galiojimo laiką. Kai duomenys ilgą laiką nėra atnaujinami reisai nustoja galioti, ir maršrutai lieka be jokių galiojančių reisų. Toliau pateikiamos savivaldybės, kuriose dalis maršrutų liko be galiojančių reisų.</p>
+<div class="warning admonition">
+<p class="admonition-title">2 savivaldybėse dalis maršrutų neturi galiojančių reisų</p>
+<p>Jovanos ir Klaipėdos rajono savivaldybių viešojo transporto kelionių duomenyse dalis maršrutų nebeturi nė vieno galiojančio reiso. Tai indikacija, kad duomenys šiose savivaldybėse nėra atnaujinami reguliariai.</p>
+</div>
+<table class="colwidths-auto table" id="municipalities-valid-routes">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">GTFS savivaldybių failai, kurių bent vienas maršrutas neturi nė vieno galiojančio reiso</span><a class="headerlink" href="#municipalities-valid-routes" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Savivaldybė</p></th>
+<th class="head"><p>Maršrutai</p></th>
+<th class="head"><p>Reisai</p></th>
+<th class="head"><p>Maršrutų su galiojančiais reisais dalis</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jonavos rajono savivaldybė</p></td>
+<td><p>3</p></td>
+<td><p>8</p></td>
+<td><p>67%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Klaipėdos rajono savivaldybė</p></td>
+<td><p>2</p></td>
+<td><p>6</p></td>
+<td><p>50%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="reisai">
+<h2>Reisai<a class="headerlink" href="#reisai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>Įprastai vietinis reguliarusis susisiekimas turi vasaros ir žiemos arba visus metus galiojančius tvarkaraščius. Tvarkaraščio galiojimo laikui nustatyti duomenų teikėjas reisui priskiria galiojimo laiką. Galiojimo trukmė turėtų būti atitikti tvarkaraščio galiojimo trukmę pvz., tvarkaraštis turėtų galioji ne daugiau nei 2-3 metus. Vis dėlto ilgas reiso galiojimo laikas nebūtinai reiškia nepatikimus duomenis.</p>
+<div class="info admonition">
+<p class="admonition-title">13 savivaldybių reisų vidutinė galiojimo trukmė ilgesnė nei 100 menėsių</p>
+<p>13 savivaldybių reisų galiojimo trukmės mediana didesnė nei 100 menėsių. Tai indikacija, kad duomenys šiose savivaldybėse galimai nėra atnaujinami reguliariai.</p>
+</div>
+<table class="colwidths-auto table" id="municipalities-trips">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">Savivaldybių vietinio reguliariojo susisiekimo informacija apie reisus</span><a class="headerlink" href="#municipalities-trips" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Savivaldybė</p></th>
+<th class="head"><p>Maršrutai</p></th>
+<th class="head"><p>Reisai</p></th>
+<th class="head"><p>Didžiausia reiso galiojimo data</p></th>
+<th class="head"><p>Reisų galiojimo trukmės mediana (mėnesiais)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Akmenės rajono savivaldybė</p></td>
+<td><p>44</p></td>
+<td><p>97</p></td>
+<td><p>2055-06-17</p></td>
+<td><p>297</p></td>
+</tr>
+<tr class="row-odd"><td><p>Alytaus miesto savivaldybė</p></td>
+<td><p>19</p></td>
+<td><p>955</p></td>
+<td><p>2022-12-31</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>Alytaus rajono savivaldybė</p></td>
+<td><p>11</p></td>
+<td><p>99</p></td>
+<td><p>2022-10-01</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anykščių rajono savivaldybė</p></td>
+<td><p>31</p></td>
+<td><p>184</p></td>
+<td><p>2024-12-31</p></td>
+<td><p>83</p></td>
+</tr>
+<tr class="row-even"><td><p>Biržų rajono savivaldybė</p></td>
+<td><p>33</p></td>
+<td><p>141</p></td>
+<td><p>2022-10-11</p></td>
+<td><p>120</p></td>
+</tr>
+<tr class="row-odd"><td><p>Druskininkų savivaldybė</p></td>
+<td><p>27</p></td>
+<td><p>709</p></td>
+<td><p>2022-10-01</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>Ignalinos rajono savivaldybė</p></td>
+<td><p>35</p></td>
+<td><p>100</p></td>
+<td><p>2025-08-30</p></td>
+<td><p>118</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jonavos rajono savivaldybė</p></td>
+<td><p>3</p></td>
+<td><p>8</p></td>
+<td><p>2022-12-31</p></td>
+<td><p>107</p></td>
+</tr>
+<tr class="row-even"><td><p>Jurbarko rajono savivaldybė</p></td>
+<td><p>15</p></td>
+<td><p>64</p></td>
+<td><p>2026-12-30</p></td>
+<td><p>137</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kalvarijos savivaldybė</p></td>
+<td><p>3</p></td>
+<td><p>28</p></td>
+<td><p>2022-07-03</p></td>
+<td><p>85</p></td>
+</tr>
+<tr class="row-even"><td><p>Kauno miesto savivaldybė</p></td>
+<td><p>63</p></td>
+<td><p>7320</p></td>
+<td><p>2023-05-01</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kauno rajono savivaldybė</p></td>
+<td><p>7</p></td>
+<td><p>769</p></td>
+<td><p>2099-12-31</p></td>
+<td><p>422</p></td>
+</tr>
+<tr class="row-even"><td><p>Klaipėdos miesto savivaldybė</p></td>
+<td><p>55</p></td>
+<td><p>6986</p></td>
+<td><p>2023-04-22</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Klaipėdos rajono savivaldybė</p></td>
+<td><p>2</p></td>
+<td><p>6</p></td>
+<td><p>2024-03-01</p></td>
+<td><p>78.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Marijampolės savivaldybė</p></td>
+<td><p>18</p></td>
+<td><p>323</p></td>
+<td><p>2030-12-31</p></td>
+<td><p>191</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mažeikių rajono savivaldybė</p></td>
+<td><p>37</p></td>
+<td><p>191</p></td>
+<td><p>2024-07-22</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>Neringos savivaldybė</p></td>
+<td><p>1</p></td>
+<td><p>26</p></td>
+<td><p>2023-01-01</p></td>
+<td><p>86</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pakruojo rajono savivaldybė</p></td>
+<td><p>46</p></td>
+<td><p>125</p></td>
+<td><p>2037-08-31</p></td>
+<td><p>181</p></td>
+</tr>
+<tr class="row-even"><td><p>Panevėžio miesto savivaldybė</p></td>
+<td><p>20</p></td>
+<td><p>1694</p></td>
+<td><p>2023-04-01</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prienų rajono savivaldybė</p></td>
+<td><p>12</p></td>
+<td><p>173</p></td>
+<td><p>2022-10-01</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-even"><td><p>Rokiškio rajono savivaldybė</p></td>
+<td><p>29</p></td>
+<td><p>185</p></td>
+<td><p>2024-10-24</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Šalčininkų rajono savivaldybė</p></td>
+<td><p>2</p></td>
+<td><p>31</p></td>
+<td><p>2099-12-31</p></td>
+<td><p>1169</p></td>
+</tr>
+<tr class="row-even"><td><p>Šiaulių miesto savivaldybė</p></td>
+<td><p>45</p></td>
+<td><p>3089</p></td>
+<td><p>2023-04-01</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-odd"><td><p>Šiaulių rajono savivaldybė</p></td>
+<td><p>87</p></td>
+<td><p>1779</p></td>
+<td><p>2026-11-01</p></td>
+<td><p>52</p></td>
+</tr>
+<tr class="row-even"><td><p>Šilutės rajono savivaldybė</p></td>
+<td><p>2</p></td>
+<td><p>10</p></td>
+<td><p>2099-01-01</p></td>
+<td><p>1008</p></td>
+</tr>
+<tr class="row-odd"><td><p>Švenčionių rajono savivaldybė</p></td>
+<td><p>12</p></td>
+<td><p>138</p></td>
+<td><p>2023-10-03</p></td>
+<td><p>46</p></td>
+</tr>
+<tr class="row-even"><td><p>Tauragės rajono savivaldybė</p></td>
+<td><p>45</p></td>
+<td><p>185</p></td>
+<td><p>2022-09-07</p></td>
+<td><p>74</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ukmergės rajono savivaldybė</p></td>
+<td><p>27</p></td>
+<td><p>410</p></td>
+<td><p>2055-05-01</p></td>
+<td><p>121</p></td>
+</tr>
+<tr class="row-even"><td><p>Utenos rajono savivaldybė</p></td>
+<td><p>54</p></td>
+<td><p>286</p></td>
+<td><p>2033-03-23</p></td>
+<td><p>90</p></td>
+</tr>
+<tr class="row-odd"><td><p>Varėnos rajono savivaldybė</p></td>
+<td><p>15</p></td>
+<td><p>104</p></td>
+<td><p>2030-12-31</p></td>
+<td><p>191</p></td>
+</tr>
+<tr class="row-even"><td><p>Vilniaus miesto savivaldybė</p></td>
+<td><p>99</p></td>
+<td><p>25307</p></td>
+<td><p>2023-04-01</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vilniaus rajono savivaldybė</p></td>
+<td><p>80</p></td>
+<td><p>1010</p></td>
+<td><p>2026-08-01</p></td>
+<td><p>119</p></td>
+</tr>
+<tr class="row-even"><td><p>Visagino savivaldybė</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>2022-06-01</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zarasų rajono savivaldybė</p></td>
+<td><p>16</p></td>
+<td><p>88</p></td>
+<td><p>2022-06-30</p></td>
+<td><p>76</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tarifai-ir-kainorasciai">
+<h2>Tarifai ir kainoraščiai<a class="headerlink" href="#tarifai-ir-kainorasciai" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>GTFS duomenų rinkinio failuose <code class="docutils literal notranslate"><span class="pre">fare_attributes.txt</span></code> ir <code class="docutils literal notranslate"><span class="pre">fare_rules.txt</span></code> turėtų būti pateikta su tarifais ir kainoraščiais susijusi informacija. Visgi, nė vienas VINTRA pateiktas savivaldybės failas neturi informacijos apie kainodarą. Ši informacija pateikiama tik visos šalies viešojo transporto kelionių duomenų GTFS faile.</p>
+<div class="warning admonition">
+<p class="admonition-title">Tarifai ir kainoraščiai nėra pateikiami savivaldybių VINTRA GTFS failuose</p>
+<p>Nė vienas VINTRA skelbiamas atskirų savivaldybių failas neturi tarifų ir kainoraščių informacijos. Dėl šios priežasties atskirų savivaldybių duomenų failų naudotojas negali gauti informacijos apie tarifus ir kainoraščius. Tai galimai yra VINTRA trūkumas.</p>
+</div>
+<div class="cell docutils container">
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./duomenys"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="statiniai-duomenys.html" title="praeitas page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">praeitas</p>
+            <p class="prev-next-title">Statiniai duomenys</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="palyginimas-su-stops-lt.html" title="kitas page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">kitas</p>
+        <p class="prev-next-title">Palyginimas su pirminiu šaltiniu</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      <div class="extra_footer">
+        <p>
+  Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
+  
+  El. paštas: <a href="mailto:karolis.vycius@kurklt.lt" target="_blank">karolis.vycius@kurklt.lt</a>
+</p>
+<div>
+</div>
+<p>
+  © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
+</p>
+
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
