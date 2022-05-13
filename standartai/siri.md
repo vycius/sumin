@@ -85,18 +85,15 @@ SIRI duomenų apsikeitimo procesas ir funkcinės dalys{cite}`siri_overview`
 
 Nors SIRI, palyginę su GTFS Realtime, SIRI formatą galime laikyti sudėtingesniu ir galinčiu perduoti daugiau
 informacijos, tačiau šie formatai neturėtų būti laikomi vienas kito pakaitalais. Vis dėlto, egzistuoja nemažai panašumų
-tarp šių formatų. Toliau lentelėje vaizduojami šių formatų panašumai.
-
-| Tipas | GTFS Realtime atitikmuo | SIRI atitikmuo |
-|-|-|-|
-| **Kelionės eiga** | [Trip updates](https://developers.google.com/transit/gtfs-realtime/guides/trip-updates)
-| [Estimated Timetable (ET)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370392/SIRI-ET) |
-| **Transporto priemonės informacija**
-| [Vehicle positions](https://developers.google.com/transit/gtfs-realtime/guides/vehicle-positions)
-| [Vehicle Monitoring (VM)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370425/SIRI-VM) |
-| **Pranešimai keleiviams**
-| [Service alerts](https://developers.google.com/transit/gtfs-realtime/guides/service-alerts)
-| [Situation Exchange (SX)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370605/SIRI-SX) |
+tarp šių formatų. Toliau lentelėje vaizduojami šių formatų atitikmenys.
+```{table} GTFS Realtime ir SIRI formatų atitikmenys
+:name: gtfs-realtime-and-siri-similarities
+| Tipas                                | GTFS Realtime atitikmuo                                                                           | SIRI atitikmuo                                                                                       |
+|--------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **Kelionės eiga**                    | [Trip updates](https://developers.google.com/transit/gtfs-realtime/guides/trip-updates)           | [Estimated Timetable (ET)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370392/SIRI-ET) |
+| **Transporto priemonės informacija** | [Vehicle positions](https://developers.google.com/transit/gtfs-realtime/guides/vehicle-positions) | [Vehicle Monitoring (VM)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370425/SIRI-VM)  |
+| **Pranešimai keleiviams**            | [Service alerts](https://developers.google.com/transit/gtfs-realtime/guides/service-alerts)       | [Situation Exchange (SX)](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370605/SIRI-SX)  |
+```
 
 ## Naudinga informacija
 
