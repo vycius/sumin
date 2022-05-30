@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb"
+      xmlns:ns3="http://www.ifopt.org.uk/ifopt" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+    <ServiceDelivery>
+        <ResponseTimestamp>2022-05-13T13:51:12.156961772+02:00</ResponseTimestamp>
+        <ProducerRef>ENT</ProducerRef>
+        <RequestMessageRef>757c9284-0f12-4a46-a557-33a19e80119b</RequestMessageRef>
+        <MoreData>false</MoreData>
+        <SituationExchangeDelivery>
+            <ResponseTimestamp>2022-05-13T13:51:12.156974389+02:00</ResponseTimestamp>
+            <Situations>
+                <PtSituationElement>
+                    <CreationTime>2022-05-13T13:48:46.955+02:00</CreationTime>
+                    <ParticipantRef>RUT</ParticipantRef>
+                    <SituationNumber>RUT:SituationNumber:533766</SituationNumber>
+                    <Source>
+                        <SourceType>directReport</SourceType>
+                    </Source>
+                    <Progress>open</Progress>
+                    <ValidityPeriod>
+                        <StartTime>2022-05-13T13:38:00+02:00</StartTime>
+                        <EndTime>2022-05-13T14:34:00+02:00</EndTime>
+                    </ValidityPeriod>
+                    <UndefinedReason></UndefinedReason>
+                    <Severity>normal</Severity>
+                    <ReportType>incident</ReportType>
+                    <Keywords></Keywords>
+                    <Summary xml:lang="NO">Forsinket ca. 10 minutter</Summary>
+                    <Summary xml:lang="EN">Delayed</Summary>
+                    <Description xml:lang="NO">Forsinkelsen skyldes mye trafikk og kø.</Description>
+                    <Description xml:lang="EN">The departure from Voksen skog at 13:38 towards Kværnerbyen is about 10
+                        minutes delayed.
+                    </Description>
+                    <Affects>
+                        <VehicleJourneys>
+                            <AffectedVehicleJourney>
+                                <VehicleJourneyRef>RUT:ServiceJourney:32-163399-21485514</VehicleJourneyRef>
+                            </AffectedVehicleJourney>
+                        </VehicleJourneys>
+                    </Affects>
+                </PtSituationElement>
+                <PtSituationElement>
+                    <CreationTime>2022-05-13T13:49:26.054+02:00</CreationTime>
+                    <ParticipantRef>RUT</ParticipantRef>
+                    <SituationNumber>RUT:SituationNumber:533767</SituationNumber>
+                    <Source>
+                        <SourceType>directReport</SourceType>
+                    </Source>
+                    <Progress>open</Progress>
+                    <ValidityPeriod>
+                        <StartTime>2022-05-13T13:45:00+02:00</StartTime>
+                        <EndTime>2022-05-13T14:13:00+02:00</EndTime>
+                    </ValidityPeriod>
+                    <UndefinedReason></UndefinedReason>
+                    <Severity>normal</Severity>
+                    <ReportType>incident</ReportType>
+                    <Keywords></Keywords>
+                    <Summary xml:lang="NO">Forsinket ca. 5 minutter</Summary>
+                    <Summary xml:lang="EN">Delayed</Summary>
+                    <Description xml:lang="NO">Forsinkelsen skyldes mye trafikk og kø.</Description>
+                    <Description xml:lang="EN">The departure from Ullerntoppen at 13:45 towards Majorstuen is about 5
+                        minutes delayed.
+                    </Description>
+                    <Affects>
+                        <VehicleJourneys>
+                            <AffectedVehicleJourney>
+                                <VehicleJourneyRef>RUT:ServiceJourney:46-164389-22218648</VehicleJourneyRef>
+                            </AffectedVehicleJourney>
+                        </VehicleJourneys>
+                    </Affects>
+                </PtSituationElement>
+            </Situations>
+        </SituationExchangeDelivery>
+    </ServiceDelivery>
+</Siri>

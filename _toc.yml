@@ -31,6 +31,7 @@ parts:
       - file: duomenys/statiniai-duomenys
         sections:
           - file: duomenys/vietinis-susisiekimas
+          - file: duomenys/visa-lietuva
             sections:
               - file: duomenys/palyginimas-su-stops-lt
           - file: duomenys/tolimasis-susisiekimas
@@ -40,6 +41,8 @@ parts:
   - caption: Gerosios praktikos
     chapters:
       - file: praktikos/index
+        sections:
+          - file: praktikos/norvegija
 
   - caption: Sprendimas
     chapters:

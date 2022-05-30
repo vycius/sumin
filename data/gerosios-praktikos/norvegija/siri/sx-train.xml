@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:ns2="http://www.ifopt.org.uk/acsb"
+      xmlns:ns3="http://www.ifopt.org.uk/ifopt" xmlns:ns4="http://datex2.eu/schema/2_0RC1/2_0" version="2.0">
+    <ServiceDelivery>
+        <ResponseTimestamp>2022-05-11T15:35:27.173384504+02:00</ResponseTimestamp>
+        <ProducerRef>ENT</ProducerRef>
+        <RequestMessageRef>757c9284-0f12-4a46-a557-33a19e80119b</RequestMessageRef>
+        <MoreData>false</MoreData>
+        <SituationExchangeDelivery>
+            <ResponseTimestamp>2022-05-11T15:35:27.173388791+02:00</ResponseTimestamp>
+            <Situations>
+                <PtSituationElement>
+                    <CreationTime>2022-05-11T15:35:07+02:00</CreationTime>
+                    <ParticipantRef>NSB</ParticipantRef>
+                    <SituationNumber>NSB:SituationNumber:status-206718780</SituationNumber>
+                    <Version>1</Version>
+                    <Source>
+                        <SourceType>directReport</SourceType>
+                    </Source>
+                    <Progress>open</Progress>
+                    <ValidityPeriod>
+                        <StartTime>2022-05-11T00:00:00+02:00</StartTime>
+                        <EndTime>2022-05-12T00:03:00+02:00</EndTime>
+                    </ValidityPeriod>
+                    <UndefinedReason></UndefinedReason>
+                    <Priority>7</Priority>
+                    <ReportType>general</ReportType>
+                    <Keywords></Keywords>
+                    <Summary xml:lang="NO">Toget kjører med 3 i stedet for 6 vogner. Derfor er det mindre plass enn
+                        vanlig.
+                    </Summary>
+                    <Summary xml:lang="EN">The train is running with 3 of 6 coaches. It will therefore be more crowded
+                        than usual.
+                    </Summary>
+                    <Description xml:lang="NO">Toget kjører med 3 i stedet for 6 vogner. Derfor er det mindre plass enn
+                        vanlig.
+                    </Description>
+                    <Description xml:lang="EN">The train is running with 3 of 6 coaches. It will therefore be more
+                        crowded than usual.
+                    </Description>
+                    <Affects>
+                        <VehicleJourneys>
+                            <AffectedVehicleJourney>
+                                <VehicleJourneyRef>NSB:ServiceJourney:1-645-1164-202205071009</VehicleJourneyRef>
+                                <Route/>
+                                <OriginAimedDepartureTime>2022-05-11T00:00:00+02:00</OriginAimedDepartureTime>
+                            </AffectedVehicleJourney>
+                        </VehicleJourneys>
+                    </Affects>
+                </PtSituationElement>
+            </Situations>
+        </SituationExchangeDelivery>
+    </ServiceDelivery>
+</Siri>

@@ -1,0 +1,61 @@
+ID,Savivaldybė,Statusas,Komentaras,Galiojančių maršrutų,Iš viso maršrutų,Galiojančių reisų,Iš viso reisų,Minimali reiso pabaigos data,Maksimali reiso pradžios data,Reisų galiojimo mediana mėnesiais
+47,Akmenės rajono savivaldybė,Reikia atnaujinti,Labai ilgi reisų galiojimo laikai,93,93,97,97,2040-01-01,2055-06-17,300
+45,Alytaus miesto savivaldybė,Įkeliama automatiškai,,19,19,955,955,2022-05-31,2022-12-31,8
+48,Alytaus rajono savivaldybė,Duomenys prieinami,,11,11,99,99,2022-10-01,2022-10-01,13
+49,Anykščių rajono savivaldybė,Duomenys prieinami,,78,78,184,184,2024-12-31,2024-12-31,83
+,Birštono savivaldybė,Nėra suvestų duomenų,VINTRA nėra šios savivaldybės GTFS failo,,,,,,,
+50,Biržų rajono savivaldybė,Duomenys prieinami,,84,84,141,141,2022-10-11,2022-10-11,120
+60,Druskininkų savivaldybė,Įkeliama automatiškai,,27,27,709,709,2022-10-01,2022-10-01,15
+54,Elektrėnų savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+56,Ignalinos rajono savivaldybė,Duomenys prieinami,,93,93,100,100,2023-05-31,2025-08-30,118
+57,Jonavos rajono savivaldybė,Reikia atnaujinti,Yra nebegaliojančių maršrutų,4,5,4,8,2022-02-22,2022-12-31,77
+11,Joniškio rajono savivaldybė,Duomenys prieinami,"Teikiama pavadinimu UAB ""Joniškio autobusų parkas""",4,4,15,15,2023-05-26,2024-12-22,79
+42,Jurbarko rajono savivaldybė,Įkeliama automatiškai,Teikia GTFS viso Tauragės regiono. Nėra įkeliama į VINTRA. ,63,63,64,64,2026-12-30,2026-12-30,137
+13,Kaišiadorių rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+12,Kalvarijos savivaldybė,Reikia atnaujinti,Liepą baigia galioti reisai. Tegul atsinaujina. ,27,27,28,28,2022-07-03,2022-07-03,85
+62,Kauno miesto savivaldybė,Įkeliama automatiškai,,63,63,7320,7320,2023-05-01,2023-05-01,19
+14,Kauno rajono savivaldybė,Duomenys prieinami,,7,7,769,769,2022-10-01,2022-10-01,24
+67,Kazlų Rūdos savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+15,Kėdainių rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+16,Kelmės rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+63,Klaipėdos miesto savivaldybė,Įkeliama automatiškai,,55,55,6976,6976,2023-05-01,2023-05-01,18
+17,Klaipėdos rajono savivaldybė,Reikia atnaujinti,Dalis maršrutų nebegalioja,1,2,5,6,2022-01-01,2024-03-01,73
+18,Kretingos rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+66,Kupiškio rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+7,Lazdijų rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+61,Marijampolės savivaldybė,Reikia atnaujinti,"Ilgas reisų galiojimo laikas, bet turbūt viskas gerai",197,197,323,323,2030-12-31,2030-12-31,191
+8,Mažeikių rajono savivaldybė,Duomenys prieinami,,41,41,191,191,2024-07-22,2024-07-22,36
+9,Molėtų rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+64,Neringos savivaldybė,Duomenys prieinami,,1,1,26,26,2023-01-01,2023-01-01,86
+10,Pagėgių savivaldybė,Įkeliama automatiškai,Teikia GTFS viso Tauragės regiono. Nėra įkeliama į VINTRA. ,0,0,0,0,,,
+20,Pakruojo rajono savivaldybė,Reikia atnaujinti,Įtartina dėl ilgo reisų galiojimo. ,119,119,125,125,2030-08-31,2037-08-31,181
+65,Palangos miesto savivaldybė,Duomenys prieinami,,0,0,0,0,,,
+43,Panevėžio miesto savivaldybė,Įkeliama automatiškai,,20,20,1687,1687,2022-06-01,2023-05-01,19
+21,Panevėžio rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+25,Pasvalio rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+26,Plungės rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+27,Prienų rajono savivaldybė,Duomenys prieinami,,12,12,173,173,2022-10-01,2022-10-01,13
+22,Radviliškio rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+23,Raseinių rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+28,Rietavo savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+24,Rokiškio rajono savivaldybė,Duomenys prieinami,,180,180,187,187,2022-06-24,2024-10-23,9
+35,Šakių rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+36,Šalčininkų rajono savivaldybė,Reikia atnaujinti,Įtartina dėl iki 2099 m. galiojaničų reisų. ,29,29,31,31,2099-12-31,2099-12-31,1169
+44,Šiaulių miesto savivaldybė,Įkeliama automatiškai,,45,45,3031,3031,2022-05-31,2023-05-01,3
+41,Šiaulių rajono savivaldybė,Duomenys prieinami,,88,88,1779,1779,2022-10-01,2025-11-10,60
+38,Šilalės rajono savivaldybė,Įkeliama automatiškai,Teikia GTFS viso Tauragės regiono. Nėra įkeliama į VINTRA. ,0,0,0,0,,,
+39,Šilutės rajono savivaldybė,Reikia atnaujinti,Įtartina dėl iki 2099 m. galiojaničų reisų. ,10,10,10,10,2099-01-01,2099-01-01,1008
+40,Širvintų rajono savivaldybė,Reikia atnaujinti,Įtartina dėl ilgo reisų galiojimo. ,17,17,17,17,2030-12-31,2030-12-31,147
+29,Skuodo rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+37,Švenčionių rajono savivaldybė,Duomenys prieinami,,114,114,138,138,2023-10-03,2023-10-03,46
+30,Tauragės rajono savivaldybė,Įkeliama automatiškai,Teikia GTFS viso Tauragės regiono. Nėra įkeliama į VINTRA. ,144,144,185,185,2022-09-07,2022-09-07,74
+31,Telšių rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+32,Trakų rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+33,Ukmergės rajono savivaldybė,Reikia atnaujinti,Yra ilgai galiojančių reisų,125,125,410,410,2023-03-01,2055-05-01,119
+34,Utenos rajono savivaldybė,Reikia atnaujinti,Yra ilgai galiojančių reisų,135,135,286,286,2022-11-01,2033-03-03,185
+51,Varėnos rajono savivaldybė,Reikia atnaujinti,Yra ilgai galiojančių reisų,104,104,104,104,2030-12-13,2030-12-31,191
+52,Vilkaviškio rajono savivaldybė,Nėra suvestų duomenų,,0,0,0,0,,,
+59,Vilniaus miesto savivaldybė,Įkeliama automatiškai,,99,99,25290,25290,2023-05-01,2023-05-01,14
+53,Vilniaus rajono savivaldybė,Duomenys prieinami,,226,226,1010,1010,2023-04-01,2025-12-31,119
+46,Visagino savivaldybė,Reikia atnaujinti,Birželio 1 d. baigiasi visų reisų galiojimas,1,1,4,4,2022-06-01,2022-06-01,24
+55,Zarasų rajono savivaldybė,Reikia atnaujinti,Yra nebegaliojančių maršrutų,83,85,86,88,2021-11-07,2022-06-30,76

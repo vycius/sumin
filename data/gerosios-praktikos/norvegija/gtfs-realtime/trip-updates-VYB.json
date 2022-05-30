@@ -1,0 +1,584 @@
+{
+  "header": {
+    "gtfs_realtime_version": "1.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1652696355"
+  },
+  "entity": [
+    {
+      "id": "VYB:ServiceJourney:a743888f8852ea12a49e41c7801854237e703b74-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:a743888f8852ea12a49e41c7801854237e703b74",
+          "route_id": "VYB:Line:22"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99391"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101311"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99400"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101350"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99397"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:6fd58dc955400980f8f6d3b32e0a6490786b8c10-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:6fd58dc955400980f8f6d3b32e0a6490786b8c10",
+          "route_id": "VYB:Line:23"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101309"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101310"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:102586"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:102581"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:102582"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99386"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:f6632154528646e91f1bc1b00f7e329bc8ae66f1-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:f6632154528646e91f1bc1b00f7e329bc8ae66f1",
+          "route_id": "VYB:Line:22"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99391"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101311"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99400"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101350"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99397"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:47ef92b5b6c24e959670f6c3918e4b36cce1e852-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:47ef92b5b6c24e959670f6c3918e4b36cce1e852",
+          "route_id": "VYB:Line:22"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99395"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:102593"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99391"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99400"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101350"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99397"
+          },
+          {
+            "stop_sequence": 7,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:5311"
+          },
+          {
+            "stop_sequence": 8,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:4683"
+          },
+          {
+            "stop_sequence": 9,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:7ac1b4332a346ac92ee53f54482c661dbcf65a8d-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:7ac1b4332a346ac92ee53f54482c661dbcf65a8d",
+          "route_id": "VYB:Line:26"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": -86
+            },
+            "departure": {
+              "delay": 221
+            },
+            "stop_id": "NSR:Quay:99383"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 118
+            },
+            "departure": {
+              "delay": 121
+            },
+            "stop_id": "NSR:Quay:99390"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": -199
+            },
+            "departure": {
+              "delay": 960
+            },
+            "stop_id": "NSR:Quay:1022"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 505
+            },
+            "departure": {
+              "delay": 239
+            },
+            "stop_id": "NSR:Quay:102592"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99388"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99384"
+          },
+          {
+            "stop_sequence": 7,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99385"
+          },
+          {
+            "stop_sequence": 8,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99386"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:dd7a4b50574b6bdf4cd5b3045cdc0ca089183c66-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:dd7a4b50574b6bdf4cd5b3045cdc0ca089183c66",
+          "route_id": "VYB:Line:21"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101350"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99397"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          }
+        ]
+      }
+    },
+    {
+      "id": "VYB:ServiceJourney:069c38ec4249c5bc0baeb98be7d0f50238c4ce87-2022-05-16",
+      "trip_update": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:069c38ec4249c5bc0baeb98be7d0f50238c4ce87",
+          "route_id": "VYB:Line:22"
+        },
+        "stop_time_update": [
+          {
+            "stop_sequence": 0,
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99395"
+          },
+          {
+            "stop_sequence": 1,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:102593"
+          },
+          {
+            "stop_sequence": 2,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99391"
+          },
+          {
+            "stop_sequence": 3,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99400"
+          },
+          {
+            "stop_sequence": 4,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99392"
+          },
+          {
+            "stop_sequence": 5,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:101350"
+          },
+          {
+            "stop_sequence": 6,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99397"
+          },
+          {
+            "stop_sequence": 7,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:5312"
+          },
+          {
+            "stop_sequence": 8,
+            "arrival": {
+              "delay": 0
+            },
+            "departure": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:4683"
+          },
+          {
+            "stop_sequence": 9,
+            "arrival": {
+              "delay": 0
+            },
+            "stop_id": "NSR:Quay:99376"
+          }
+        ]
+      }
+    }
+  ]
+}

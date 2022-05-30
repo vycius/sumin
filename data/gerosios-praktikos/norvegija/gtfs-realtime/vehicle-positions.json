@@ -1,0 +1,723 @@
+{
+  "header": {
+    "gtfs_realtime_version": "1.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": "1652695735"
+  },
+  "entity": [
+    {
+      "id": "VYB:VehicleRef:1950290",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:a3a92fe030416ab91414e80dbf9c406e9222768d",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.391876,
+          "longitude": 16.471745,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1950290"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1812680",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:d7cec1038f086387828200d740be831de4723c41",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 59.11046,
+          "longitude": 11.260838,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1812680"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1822897",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:7ac1b4332a346ac92ee53f54482c661dbcf65a8d",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.311028,
+          "longitude": 14.210649,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1822897"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1820594",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:938fd031c2516a2c913f2e20a4feb228ea7da566",
+          "route_id": "VYB:Line:23"
+        },
+        "position": {
+          "latitude": 58.285877,
+          "longitude": 14.877061,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1820594"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1950316",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:634e6b413d35c38c11cfba0f71a92aca43a4286c",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.64826,
+          "longitude": 17.928997,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1950316"
+        }
+      }
+    },
+    {
+      "id": "21713",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:710_365-R",
+          "route_id": "GOA:Line:50"
+        },
+        "position": {
+          "latitude": 58.41637,
+          "longitude": 6.672588,
+          "bearing": 18.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "21713"
+        }
+      }
+    },
+    {
+      "id": "72-04",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:3129_877-R",
+          "route_id": "GOA:Line:59"
+        },
+        "position": {
+          "latitude": 58.92317,
+          "longitude": 5.736598,
+          "bearing": 67.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "72-04"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1812619",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:7781a4e47c9f107aa34ef580c2fd2ecb56f20daa",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 59.86004,
+          "longitude": 10.785791,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1812619"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1820620",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:d13d6d8e998ca325be364eade7fd066a7de078e9",
+          "route_id": "VYB:Line:23"
+        },
+        "position": {
+          "latitude": 58.742485,
+          "longitude": 16.464472,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1820620"
+        }
+      }
+    },
+    {
+      "id": "73-08",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:711_382-R",
+          "route_id": "GOA:Line:50"
+        },
+        "position": {
+          "latitude": 59.74817,
+          "longitude": 10.078705,
+          "bearing": -1.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "73-08"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1820709",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:6fd58dc955400980f8f6d3b32e0a6490786b8c10",
+          "route_id": "VYB:Line:23"
+        },
+        "position": {
+          "latitude": 58.790184,
+          "longitude": 17.080116,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1820709"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1823661",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:89252f294df6d144a563ef130c3bafee0b6a6165",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.608418,
+          "longitude": 16.553535,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1823661"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1823037",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:082f025116bca1c92c84518597bca942331115e7",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.863213,
+          "longitude": 10.784072,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1823037"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1820742",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:a4ccd9494b1f403805cd0d28a13135f215480bb9",
+          "route_id": "VYB:Line:23"
+        },
+        "position": {
+          "latitude": 58.084347,
+          "longitude": 14.542727,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1820742"
+        }
+      }
+    },
+    {
+      "id": "73-04",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:706-STV_3815-R",
+          "route_id": "GOA:Line:50"
+        },
+        "position": {
+          "latitude": 59.188583,
+          "longitude": 9.090117,
+          "bearing": 7.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "73-04"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1816582",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:a743888f8852ea12a49e41c7801854237e703b74",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 55.665207,
+          "longitude": 13.161716,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1816582"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1821770",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:1278bad8c0948f18f03c00d7539fba1898dde6c8",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.33244,
+          "longitude": 18.055098,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1821770"
+        }
+      }
+    },
+    {
+      "id": "72-02",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:3030_629-R",
+          "route_id": "GOA:Line:59"
+        },
+        "position": {
+          "latitude": 58.6664,
+          "longitude": 5.64098,
+          "bearing": -1.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "72-02"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1811531",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:5988f3f7d3fc517bd502ee3e0e44630074cefdbd",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 57.710464,
+          "longitude": 11.971871,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1811531"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1811607",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:f9b272e9e382a829705bf09297e4c65eddedd3a6",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 57.710423,
+          "longitude": 11.971705,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1811607"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1812757",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:f6632154528646e91f1bc1b00f7e329bc8ae66f1",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 58.02842,
+          "longitude": 11.847029,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1812757"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1941736",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:1dab72e7b410d58470aafe26f7946eb4bab7bab2",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.645638,
+          "longitude": 17.930532,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1941736"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1941861",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:fb27af2eaab8aa679d0975ce199610e5404b8a57",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.595005,
+          "longitude": 17.459827,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1941861"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1823523",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:afbb06162343d29f273520f5446eba949b183ace",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.398808,
+          "longitude": 13.528298,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1823523"
+        }
+      }
+    },
+    {
+      "id": "73-02",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:704-STV_1659-R",
+          "route_id": "GOA:Line:50"
+        },
+        "position": {
+          "latitude": 59.89699,
+          "longitude": 10.53957,
+          "bearing": 63.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695680",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "73-02"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1822995",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:a781891f82edb1790227a9327c6f12ef8a309e83",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.25392,
+          "longitude": 12.953608,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1822995"
+        }
+      }
+    },
+    {
+      "id": "72-05",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:3029_628-R",
+          "route_id": "GOA:Line:59"
+        },
+        "position": {
+          "latitude": 58.792046,
+          "longitude": 5.706883,
+          "bearing": 26.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "72-05"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1812868",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:47ef92b5b6c24e959670f6c3918e4b36cce1e852",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 57.18787,
+          "longitude": 12.258611,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1812868"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1811680",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:5ed9d6a4f1dd35f2440c9c1bee738b15d34cd8a3",
+          "route_id": "VYB:Line:22"
+        },
+        "position": {
+          "latitude": 58.339317,
+          "longitude": 11.825744,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1811680"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1821702",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:0cb5548613274c7fe6e8902c6e30db18d8560f78",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.593784,
+          "longitude": 17.466047,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1821702"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1821952",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:73cb8d925eadadee638dff80709df3749546a0d1",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.42185,
+          "longitude": 15.786577,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1821952"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1821896",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:df061dd2d04e7673a7e273e57093002bf2dbc328",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.634457,
+          "longitude": 16.858969,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1821896"
+        }
+      }
+    },
+    {
+      "id": "73-05",
+      "vehicle": {
+        "trip": {
+          "trip_id": "GOA:ServiceJourney:707_287-R",
+          "route_id": "GOA:Line:50"
+        },
+        "position": {
+          "latitude": 58.145706,
+          "longitude": 7.984318,
+          "bearing": 93.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695710",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "73-05"
+        }
+      }
+    },
+    {
+      "id": "VYB:VehicleRef:1823389",
+      "vehicle": {
+        "trip": {
+          "trip_id": "VYB:ServiceJourney:de56d7ee8dab2376d6a988c947dae1fe009060bf",
+          "route_id": "VYB:Line:26"
+        },
+        "position": {
+          "latitude": 59.401558,
+          "longitude": 12.126048,
+          "bearing": 0.0,
+          "odometer": 0.0,
+          "speed": 0.0
+        },
+        "timestamp": "1652695730",
+        "congestion_level": "RUNNING_SMOOTHLY",
+        "vehicle": {
+          "id": "VYB:VehicleRef:1823389"
+        }
+      }
+    }
+  ]
+}
