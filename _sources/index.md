@@ -3,7 +3,7 @@
 Lietuvoje daugiau nei 90 proc. kelionės atstumo yra įveikiama automobiliu ir pagal šį rodiklį Lietuva užima pirmą
 vietą Europos Sąjungoje{cite}`eurostat_model_split_of_passenger_transport`.💡🚘
 
-Kaip šioje srityje mums nebūti pirmūnams ir paskatinti žmones automobilį vis dažniau iškeisti automobilį į viešąjį 
+Kaip šioje srityje mums nebūti pirmūnams ir paskatinti žmones automobilį vis dažniau iškeisti automobilį į viešąjį
 transportą Lietuvoje?🧐
 
 Į šį klausimą atsakys Kurk Lietuvai projektas „Judumuo duomenų ekosistemos plėtra“ vykdomas Susisiekimo
@@ -31,7 +31,7 @@ paslaugomis.
 
 **[Viešojo keleivinio transporto duomenų situacija Lietuvoje](duomenys/statiniai-duomenys)** [Atliekama]💡
 ^^^
-Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos 
-Lietuvoje. 
+Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos
+Lietuvoje.
 
 :::

@@ -28,18 +28,27 @@ paslaugų teikimo ([2010/40/ES](https://eur-lex.europa.eu/legal-content/LT/TXT/H
 pasaulinio de facto standarto [GTFS Realtime](https://gtfs.org/realtime/), skirto realaus laiko duomenims perduoti. Dėl
 šios priežasties, nėra galimybės integruoti realaus laiko duomenų į jau egzistuojančias kelionių planavimo priemones.
 
-## Projekto tikslas
+## Vizija
 
-Sudaryti sąlygas teikti atvirus, aukštos kokybės realaus laiko viešojo transporto duomenis standartizuotais
-formatais,
-kuriuos būtų galima integruoti į kelionių planavimo priemones, naudoti maršrutų tobulinimui, skatinti startuolius kurti
-inovatyvius sprendimus šių duomenų pavidalu ir kelti viešojo transporto keleivių skaičių.
+Keleiviai stovėdami bet kurioje Lietuvoje esančioje viešojo transporto stotelėje ne tik gautų patikimą informaciją apie
+transporto maršrutus, tvarkaraščius, tarifus, tačiau ir realiu laiku telefone matytų atvykstančias transporto priemones
+bei žinotų kiek faktiškai jos vėluos.
 
-## Projekto nauda
+Visą tai keleiviai galėtų padaryti telefone esančiomis kelionių planavimo priemonėmis (pvz., Google Maps, Apple Maps).
+
+## Tikslas
+
+Užtikrinti, kad keleivius pasiekianti statinė viešojo keleivinio transporto informacija būtų patikima, aukštos kokybės
+ir neklaidintų keleivių.
+
+Pašalinti kliūtis trukdančias keleiviams gauti visą Lietuvą apimančią viešojo transporto dinaminę informaciją,
+reikalingą sklandžiai keliauti po Lietuvą, verslui ir akademijai kurti inovacijas šių duomenų pagrindu.
+
+## Nauda
 
 ### Nauda keleiviui
 
-#### Kelionės po Lietuvą su mažiau nepatogumų
+#### Kelionės po Lietuvą viešuoju transportu be kliūčių
 
 Pačią didžiausią visą Lietuvą apimančių atvirų viešojo transporto duomenų naudą patirtų keleiviai. Tai padėtų ne tik
 išvengti daugybės nepatogumų, suteiktų galimybę lengviau keliauti po Lietuvą viešuoju transportu, tačiau ir padidintų
@@ -56,9 +65,14 @@ Kaupiamų dinaminių viešojo transporto duomenų pagrindu būtų galima kurti t
 modelius, tobulinti egzistuojančius tvarkaraščius ir paversti viešąjį transportą dar punktualesniu. Taip pat
 susisiekimo ministerija
 
-### Nauda verslui
+### Nauda Lietuvai
 
-#### Didesnės pajamos ir išaugęs viešojo transporto keleivių skaičius
+#### Regioninio turizmo skatinimas
+
+Turistai ir Lietuvos gyventojai galėtų lengviau keliauti viešuoju transportu po Lietuvą. Taip būtų skatinamas
+regioninis turizmas ir gaunamos papildomos pajamos.
+
+#### Didesnės vežėjų pajamos ir išaugęs viešojo transporto keleivių skaičius
 
 Moksliniai tyrimai rodo, kad aukštos kokybės atviri statiniai viešojo transporto duomenys gali keleivių skaičių
 padidinti, net iki 3 proc.{cite}`transit_data_interoperability_study`. Atviri standartizuoti dinaminiai
@@ -71,18 +85,22 @@ proc.{cite}`transit_data_interoperability_study`.
 skaičius padidėtų 1 proc. būtų sugeneruoja daugiau nei trečdalis milijono eurų papildomų pajamų per
 metus{cite}`judu_2020_report`.
 
+#### Žalesnė Lietuva
+Daugiau žmonių iškeistų savo asmeninį automobilį į kelionę viešuoju transportu. Dėl šios priežasties sumažėtų 
+automobilių skaičius keliuose ir būtų išmetama mažiau CO<sub>2</sub>.
+
 #### Duomenimis grįsti sprendimai
 
 Turint visą Lietuvą apimančius dinaminius duomenis būtų galima priimti duomenimis grįstus sprendimus siekiant geriau
 derinti skirtingų transporto priemonių tvarkaraščius užtikrinant tinkamą laiką reikalingą persėsti ar optimizuojant
 transporto tinklą.
 
-#### Naujos galimybės
+#### Naujos galimybės verslui ir akademijai
 
-Verslas galėtų vystyti naujus, inovatyvius sprendimus remdamasis atvertais judumo duomenimis. Tai galėtų būti dirbtiniu
-intelektu ir istoriniais duomenimis paremtos atvykimo laikų prognozės, transporto tinklo ar maršrutų optimizavimas,
-naujos
-kelionių planavimo priemonės ir t.t.
+Verslas ir akademija galėtų vystyti naujus, inovatyvius sprendimus remadiemisi viešojo transporto duomenimis.
+Tai galėtų būti dirbtiniu intelektu ir istoriniais duomenimis paremtos atvykimo laikų prognozės, transporto tinklo ar
+maršrutų optimizavimas,
+naujos kelionių planavimo priemonės ir t.t.
 
 ## Strateginiai dokumentai
 
@@ -99,7 +117,7 @@ sistemos{cite}`directive_multimodal_travel_information_services_main`
 > — I. Optimalus kelių, eismo ir kelionės duomenų naudojimas,
 >
 > [...]
-> 
+>
 > — IV. Transporto priemonių susiejimas su transporto infrastruktūra.
 
 > 3 straipsnis
