@@ -28,6 +28,7 @@ parts:
 
   - caption: Viešojo keleivinio transporto duomenys
     chapters:
+      - file: duomenys/index
       - file: duomenys/statiniai-duomenys
         sections:
           - file: duomenys/vietinis-susisiekimas
