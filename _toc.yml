@@ -42,8 +42,7 @@ parts:
   - caption: Gerosios praktikos
     chapters:
       - file: praktikos/index
-        sections:
-          - file: praktikos/norvegija
+      - file: praktikos/norvegija
 
   - caption: Sprendimas
     chapters:
