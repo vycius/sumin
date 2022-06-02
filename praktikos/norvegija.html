@@ -261,22 +261,15 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="index.html">
    Užsienio šalių gerosios praktikos
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Norvegija
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Norvegija
+  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -365,9 +358,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/praktikos/norvegija.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/praktikos/norvegija.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -385,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
                     class="fab fa-github"></i>saugykla</button></a>
         
-        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/praktikos/norvegija.ipynb"><button
+        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/praktikos/norvegija.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
     </div>
@@ -416,13 +409,69 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#novergijos-stoteliu-registras">
-   Novergijos stotelių registras
+  <a class="reference internal nav-link" href="#nacionalinis-stoteliu-registras">
+   Nacionalinis stotelių registras
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#statiniai-duomenys">
    Statiniai duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dinaminiai-duomenys">
+   Dinaminiai duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#siri">
+     SIRI
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#et-estimated-timetable">
+       ET – Estimated Timetable
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vm-vehicle-monitoring">
+       VM – Vehicle Monitoring
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sx-situation-exchange">
+       SX – Situation Exchange
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gtfs-realtime">
+     GTFS Realtime
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#trip-updates">
+       Trip updates
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vehicle-positions">
+       Vehicle positions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#service-alerts">
+       Service alerts
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudingos-nuorodos">
+   Naudingos nuorodos
   </a>
  </li>
 </ul>
@@ -451,13 +500,69 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#novergijos-stoteliu-registras">
-   Novergijos stotelių registras
+  <a class="reference internal nav-link" href="#nacionalinis-stoteliu-registras">
+   Nacionalinis stotelių registras
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#statiniai-duomenys">
    Statiniai duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dinaminiai-duomenys">
+   Dinaminiai duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#siri">
+     SIRI
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#et-estimated-timetable">
+       ET – Estimated Timetable
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vm-vehicle-monitoring">
+       VM – Vehicle Monitoring
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sx-situation-exchange">
+       SX – Situation Exchange
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gtfs-realtime">
+     GTFS Realtime
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#trip-updates">
+       Trip updates
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vehicle-positions">
+       Vehicle positions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#service-alerts">
+       Service alerts
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naudingos-nuorodos">
+   Naudingos nuorodos
   </a>
  </li>
 </ul>
@@ -471,27 +576,1319 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="norvegija">
 <h1>Norvegija<a class="headerlink" href="#norvegija" title="Nuoroda į šią antraštę">¶</a></h1>
-<p>Nacionalinis Novergijos viešojo transporto duomenų registras (<a class="reference external" href="https://developer.entur.org/pages-intro-overview">ENTUR</a>) susideda iš daugiau nei 60 transporto operatorių, beveik 60 000 stotelių ir informacijos apie daugiau nei 3 tūkst. maršrutų su daugiau nei 21 tūkst. kasdienių išvykimų<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id38" title="Om Entur. Om entur. URL: https://om.entur.no/bedrift/om-entur (visited on 2022-06-02).">11</a></sup></span>. Šis registras yra valdomas „Entur AS“ bendrovės, kuri yra įkurta 2016 m. Norvegijos transporto ir ryšių ministerijos. ENTUR ne tik atsakinga už viešojo transporto duomenis, tačiau ir valdo traukinių bilietų pardavimo sistemą bei kuria skaitmeninius produktus lengvesniam kelionių planavimui.</p>
+<p>Nacionalinis Novergijos viešojo transporto duomenų registras (<a class="reference external" href="https://developer.entur.org/pages-intro-overview">ENTUR</a>)
+susideda iš daugiau nei 60 transporto operatorių, beveik 60 000 stotelių ir informacijos apie daugiau nei 3 tūkst.
+maršrutų su daugiau nei 21 tūkst. kasdienių išvykimų<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id38" title="Om Entur. Om entur. URL: https://om.entur.no/bedrift/om-entur (visited on 2022-06-02).">11</a></sup></span>. Šis registras yra valdomas „Entur AS“
+bendrovės, kuri yra įkurta 2016 m. Norvegijos transporto ir ryšių ministerijos. ENTUR ne tik atsakinga už viešojo
+transporto duomenis, tačiau ir valdo traukinių bilietų pardavimo sistemą bei kuria skaitmeninius produktus lengvesniam
+kelionių planavimui.</p>
 <div class="section" id="duomenu-prieinamumas">
 <h2>Duomenų prieinamumas<a class="headerlink" href="#duomenu-prieinamumas" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>Visi duomenys yra prieinami visiškai nemokamai pagal <a class="reference external" href="https://data.norge.no/nlod/en/2.0/">Norvegijos atvirosios vyriausybės duomenų licenciją</a> (angl. Norwegian Licence for Open Government Data).</p>
+<p>Visi duomenys yra prieinami visiškai nemokamai
+pagal <a class="reference external" href="https://data.norge.no/nlod/en/2.0/">Norvegijos atvirosios vyriausybės duomenų licenciją</a> (angl. <em>Norwegian
+Licence for Open Government Data</em>).</p>
 </div>
-<div class="section" id="novergijos-stoteliu-registras">
-<h2>Novergijos stotelių registras<a class="headerlink" href="#novergijos-stoteliu-registras" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>ENTUR taip pat valdo <a class="reference external" href="https://stoppested.entur.org">nacionalinį stotelių registrą</a>, kuriame yra apibrėžiama pagrindinė su stotele susijusi informacija, o duomenų teikėjai naudoja nacionaliniame stotelių registre esančius identifikatorius duomenų integralumui užtikrinti.</p>
+<div class="section" id="nacionalinis-stoteliu-registras">
+<h2>Nacionalinis stotelių registras<a class="headerlink" href="#nacionalinis-stoteliu-registras" title="Nuoroda į šią antraštę">¶</a></h2>
+<p><a class="reference external" href="https://stoppested.entur.org">Nacionalinis stotelių registras</a> yra centrinė duomenų bazė, kurioje yra saugoma su
+stotelėmis susijusi informacija. Šiuos duomenis valdo savivaldybės (norv. <em>fylkeskommune</em>), o visą informaciją
+administruoja ENTUR.</p>
+<p>Pagrindinis nacionlinio stotelių registro tikslas yra išvengti stotelių duplikavimo tarp transporto paslaugų teikėjų ir
+padėti naujiems operatoriams lengviau planuoti bei nustatyti maršrutus. Tai užtikrina, kad visi duomenų teikėjai ir
+transporto operatoriai į ENTUR teikia duomenis su tais pačiais stotelių identifikatoriais. Pagrindinė registre saugoma
+informacija yra stotelės identifikatorius, pavadinimas, geografinė padėtis, tačiau taip pat tvarkomi ir kiti duomenys,
+pvz., stotelės prieinamumas asmeniui turinčiam judėjimo negalią.</p>
 <div class="figure align-default" id="entur-stop-registry">
 <img alt="../_images/entur-stop-registry.png" src="../_images/entur-stop-registry.png" />
-<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Novergijos nacionalinis stotelių registras</span><a class="headerlink" href="#entur-stop-registry" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Novergijos nacionalinis stotelių registras.</span><a class="headerlink" href="#entur-stop-registry" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="statiniai-duomenys">
 <h2>Statiniai duomenys<a class="headerlink" href="#statiniai-duomenys" title="Nuoroda į šią antraštę">¶</a></h2>
-<p>Statiniai duomenys yra prieinami tiek NeTEx, tiek GTFS formatais. GTFS formatas turi du tipus: „pilną“ (angl. <em>extended</em>) ir pagrindinį (angl. <em>basic</em>). Visi duomenų teikėjai privalo teikti statinius duomenis NeTEx formatu pagal <a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/728891481/Nordic+NeTEx+Profile">Norvegišką NeTEX profilį</a>.</p>
-<p><a class="reference external" href="https://developer.entur.org/stops-and-timetable-data">ENTUR</a> yra prieinami tiek atskirų duomenų teikėjų, tiek visos šalies viešojo transporto statiniai duomenų rinkinio failai.</p>
+<p>Statiniai duomenys yra prieinami tiek NeTEx, tiek GTFS formatais. GTFS formatas turi du tipus: „pilną“ (angl. *
+extended*) ir pagrindinį (angl. <em>basic</em>). Visi duomenų teikėjai privalo teikti statinius duomenis NeTEx formatu
+pagal <a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/728891481/Nordic+NeTEx+Profile">Norvegišką NeTEX profilį</a>.</p>
+<p><a class="reference external" href="https://developer.entur.org/stops-and-timetable-data">ENTUR</a> yra prieinami tiek atskirų duomenų teikėjų, tiek visos
+šalies viešojo transporto statiniai duomenų rinkinio failai.</p>
 <div class="figure align-default" id="entur-static-data-files">
 <img alt="../_images/entur-static-files.png" src="../_images/entur-static-files.png" />
-<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">ENTUR statiniai viešojo transporto duomenų rinkiniai</span><a class="headerlink" href="#entur-static-data-files" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">ENTUR statiniai viešojo transporto duomenų rinkiniai.</span><a class="headerlink" href="#entur-static-data-files" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="dinaminiai-duomenys">
+<h2>Dinaminiai duomenys<a class="headerlink" href="#dinaminiai-duomenys" title="Nuoroda į šią antraštę">¶</a></h2>
+<p>ENTUR taip pat teikia visą Novegijos apimančius viešojo transporto dinaminius
+duomenis. <a class="reference external" href="https://developer.entur.org/pages-real-time-intro">Dinaminiai duomenys</a> yra prieinami SIRI XML, SIRI Lite (
+REST) ir GTFS Realtime formatais.</p>
+<div class="section" id="siri">
+<h3>SIRI<a class="headerlink" href="#siri" title="Nuoroda į šią antraštę">¶</a></h3>
+<p>Norvegijos dinaminiai duomenys
+atitinka <a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370420/Norwegian+SIRI+profile">Norvegišką SIRI profilį</a></p>
+<div class="section" id="et-estimated-timetable">
+<h4>ET – Estimated Timetable<a class="headerlink" href="#et-estimated-timetable" title="Nuoroda į šią antraštę">¶</a></h4>
+<p>Kiekvienos viešojo transporto kelionės suplanuoti, faktiniai ir prognozuojami išvykimo laikai, atšaukimai.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Novergijos SIRI Estimated Timetable (ET) duomenų kontrakto pavyzdys</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;</span>
+<span class="nt">&lt;Siri</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.siri.org.uk/siri&quot;</span> <span class="na">xmlns:ns2=</span><span class="s">&quot;http://www.ifopt.org.uk/acsb&quot;</span>
+      <span class="na">xmlns:ns3=</span><span class="s">&quot;http://www.ifopt.org.uk/ifopt&quot;</span> <span class="na">xmlns:ns4=</span><span class="s">&quot;http://datex2.eu/schema/2_0RC1/2_0&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ServiceDelivery&gt;</span>
+        <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-06-01T17:45:04.47352847+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+        <span class="nt">&lt;ProducerRef&gt;</span>ENT<span class="nt">&lt;/ProducerRef&gt;</span>
+        <span class="nt">&lt;EstimatedTimetableDelivery</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-06-01T17:45:04.473537687+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+            <span class="nt">&lt;EstimatedJourneyVersionFrame&gt;</span>
+                <span class="nt">&lt;RecordedAtTime&gt;</span>2022-06-01T17:45:04.473531413+02:00<span class="nt">&lt;/RecordedAtTime&gt;</span>
+                <span class="nt">&lt;EstimatedVehicleJourney&gt;</span>
+                    <span class="nt">&lt;RecordedAtTime&gt;</span>2022-06-01T16:13:54.653+02:00<span class="nt">&lt;/RecordedAtTime&gt;</span>
+                    <span class="nt">&lt;LineRef&gt;</span>RUT:Line:310<span class="nt">&lt;/LineRef&gt;</span>
+                    <span class="nt">&lt;DirectionRef&gt;</span>2<span class="nt">&lt;/DirectionRef&gt;</span>
+                    <span class="nt">&lt;FramedVehicleJourneyRef&gt;</span>
+                        <span class="nt">&lt;DataFrameRef&gt;</span>2022-06-01<span class="nt">&lt;/DataFrameRef&gt;</span>
+                        <span class="nt">&lt;DatedVehicleJourneyRef&gt;</span>RUT:ServiceJourney:310-166441-22091263<span class="nt">&lt;/DatedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;/FramedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;OperatorRef&gt;</span>norgesbuss<span class="nt">&lt;/OperatorRef&gt;</span>
+                    <span class="nt">&lt;Monitored&gt;</span>true<span class="nt">&lt;/Monitored&gt;</span>
+                    <span class="nt">&lt;DataSource&gt;</span>RUT<span class="nt">&lt;/DataSource&gt;</span>
+                    <span class="nt">&lt;BlockRef&gt;</span>12005-2022-06-01<span class="nt">&lt;/BlockRef&gt;</span>
+                    <span class="nt">&lt;VehicleRef&gt;</span>YV3U1W12XK1197095<span class="nt">&lt;/VehicleRef&gt;</span>
+                    <span class="nt">&lt;EstimatedCalls&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9910<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>1<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Vallerudtoppen<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;DestinationDisplay&gt;</span>Fjerdingby<span class="nt">&lt;/DestinationDisplay&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T18:56:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T18:56:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9897<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>2<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Vallerudlia<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T18:57:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T18:57:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T18:57:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T18:57:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9891<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>3<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Rasta skole<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T18:58:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T18:58:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T18:58:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T18:58:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:10005<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>4<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Glenneveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T18:59:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T18:59:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T18:59:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T18:59:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9811<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>5<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Lørenskog sentrum<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:05:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:05:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:05:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:05:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9870<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>6<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Knatten<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:06:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:06:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:06:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:06:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9944<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>7<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Kloppaveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:08:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:08:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:08:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:08:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9840<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>8<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Ahus<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:09:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:09:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:10:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:10:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9928<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>9<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Vittenberg<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:13:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:13:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:13:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:13:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:10058<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>10<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Strømsbergveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:14:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:14:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:14:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:14:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:10061<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>11<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Stasjonsveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:15:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:15:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:15:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:15:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:10072<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>12<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Frydenbergveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:16:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:16:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:16:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:16:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9422<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>13<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Kurlandsveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:17:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:17:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:17:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:17:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9419<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>14<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Torgenholtet<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:18:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:18:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:18:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:18:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9394<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>15<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Løvenstad senter<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:19:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:19:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:19:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:19:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9391<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>16<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Skytilveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:20:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:20:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:20:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:20:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9388<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>17<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Sæterveien<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:21:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:21:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:21:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:21:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9289<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>18<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Furukollen<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:22:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:22:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:22:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:22:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9352<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>19<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Petrinehøy<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:23:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:23:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:23:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:23:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9348<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>20<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Rud skole<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:24:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:24:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:24:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:24:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9328<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>21<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Hagastubakken<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:26:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:26:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:26:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:26:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9335<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>22<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Øgardshøgda<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:27:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:27:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:27:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:27:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9339<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>23<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Norum<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:28:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:28:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:28:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:28:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9343<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>24<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Dovre fabrikker<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:29:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:29:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:29:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:29:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9313<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>25<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Rælingen rådhus<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:31:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:31:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:31:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:31:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9306<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>26<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Marikollen<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:32:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:32:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-06-01T19:32:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;ExpectedDepartureTime&gt;</span>2022-06-01T19:32:00+02:00<span class="nt">&lt;/ExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DepartureStatus&gt;</span>onTime<span class="nt">&lt;/DepartureStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                        <span class="nt">&lt;EstimatedCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:9298<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>27<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName&gt;</span>Fjerdingby<span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-06-01T19:35:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-06-01T19:35:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                        <span class="nt">&lt;/EstimatedCall&gt;</span>
+                    <span class="nt">&lt;/EstimatedCalls&gt;</span>
+                    <span class="nt">&lt;IsCompleteStopSequence&gt;</span>true<span class="nt">&lt;/IsCompleteStopSequence&gt;</span>
+                <span class="nt">&lt;/EstimatedVehicleJourney&gt;</span>
+            <span class="nt">&lt;/EstimatedJourneyVersionFrame&gt;</span>
+        <span class="nt">&lt;/EstimatedTimetableDelivery&gt;</span>
+    <span class="nt">&lt;/ServiceDelivery&gt;</span>
+<span class="nt">&lt;/Siri&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="vm-vehicle-monitoring">
+<h4>VM – Vehicle Monitoring<a class="headerlink" href="#vm-vehicle-monitoring" title="Nuoroda į šią antraštę">¶</a></h4>
+<p>Realaus laiko transporto priemonės pozicijos duomenys su nukrypimas nuo tvarkaraščio.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Novergijos SIRI Vehicle Monitoring (VM) duomenų kontrakto pavyzdys</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;</span>
+<span class="nt">&lt;Siri</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.siri.org.uk/siri&quot;</span> <span class="na">xmlns:ns2=</span><span class="s">&quot;http://www.ifopt.org.uk/acsb&quot;</span>
+      <span class="na">xmlns:ns3=</span><span class="s">&quot;http://www.ifopt.org.uk/ifopt&quot;</span> <span class="na">xmlns:ns4=</span><span class="s">&quot;http://datex2.eu/schema/2_0RC1/2_0&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ServiceDelivery&gt;</span>
+        <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-05-13T13:52:40.491112194+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+        <span class="nt">&lt;ProducerRef&gt;</span>ENT<span class="nt">&lt;/ProducerRef&gt;</span>
+        <span class="nt">&lt;RequestMessageRef&gt;</span>757c9284-0f12-4a46-a557-33a19e80119b<span class="nt">&lt;/RequestMessageRef&gt;</span>
+        <span class="nt">&lt;MoreData&gt;</span>true<span class="nt">&lt;/MoreData&gt;</span>
+        <span class="nt">&lt;VehicleMonitoringDelivery</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-05-13T13:52:40.49125405+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+            <span class="nt">&lt;VehicleActivity&gt;</span>
+                <span class="nt">&lt;RecordedAtTime&gt;</span>2022-05-13T13:52:17.047+02:00<span class="nt">&lt;/RecordedAtTime&gt;</span>
+                <span class="nt">&lt;ValidUntilTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/ValidUntilTime&gt;</span>
+                <span class="nt">&lt;VehicleMonitoringRef&gt;</span>753233<span class="nt">&lt;/VehicleMonitoringRef&gt;</span>
+                <span class="nt">&lt;ProgressBetweenStops/&gt;</span>
+                <span class="nt">&lt;MonitoredVehicleJourney&gt;</span>
+                    <span class="nt">&lt;LineRef&gt;</span>VKT:Line:701328<span class="nt">&lt;/LineRef&gt;</span>
+                    <span class="nt">&lt;DirectionRef&gt;</span>Inbound<span class="nt">&lt;/DirectionRef&gt;</span>
+                    <span class="nt">&lt;FramedVehicleJourneyRef&gt;</span>
+                        <span class="nt">&lt;DataFrameRef&gt;</span>2022-05-13<span class="nt">&lt;/DataFrameRef&gt;</span>
+                        <span class="nt">&lt;DatedVehicleJourneyRef&gt;</span>572-13281328-75-1254-20220513-2171<span class="nt">&lt;/DatedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;/FramedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;JourneyPatternRef&gt;</span>572-1254-505<span class="nt">&lt;/JourneyPatternRef&gt;</span>
+                    <span class="nt">&lt;JourneyPatternName&gt;</span>505<span class="nt">&lt;/JourneyPatternName&gt;</span>
+                    <span class="nt">&lt;VehicleMode&gt;</span>bus<span class="nt">&lt;/VehicleMode&gt;</span>
+                    <span class="nt">&lt;PublishedLineName&gt;</span>1328<span class="nt">&lt;/PublishedLineName&gt;</span>
+                    <span class="nt">&lt;DirectionName&gt;</span>Inbound<span class="nt">&lt;/DirectionName&gt;</span>
+                    <span class="nt">&lt;OperatorRef</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                 <span class="na">xsi:type=</span><span class="s">&quot;OperationalUnitRefStructure&quot;</span><span class="nt">&gt;</span>70
+                    <span class="nt">&lt;/OperatorRef&gt;</span>
+                    <span class="nt">&lt;OriginRef&gt;</span>NSR:StopPlace:17977<span class="nt">&lt;/OriginRef&gt;</span>
+                    <span class="nt">&lt;OriginName&gt;</span>Lardal skole<span class="nt">&lt;/OriginName&gt;</span>
+                    <span class="nt">&lt;DestinationRef&gt;</span>NSR:StopPlace:17446<span class="nt">&lt;/DestinationRef&gt;</span>
+                    <span class="nt">&lt;DestinationName&gt;</span>Helgeland-Steinsholt<span class="nt">&lt;/DestinationName&gt;</span>
+                    <span class="nt">&lt;Monitored&gt;</span>true<span class="nt">&lt;/Monitored&gt;</span>
+                    <span class="nt">&lt;DataSource&gt;</span>VKT<span class="nt">&lt;/DataSource&gt;</span>
+                    <span class="nt">&lt;VehicleLocation&gt;</span>
+                        <span class="nt">&lt;Longitude&gt;</span>9.9569589<span class="nt">&lt;/Longitude&gt;</span>
+                        <span class="nt">&lt;Latitude&gt;</span>59.4009118<span class="nt">&lt;/Latitude&gt;</span>
+                    <span class="nt">&lt;/VehicleLocation&gt;</span>
+                    <span class="nt">&lt;LocationRecordedAtTime&gt;</span>2022-05-13T13:52:17.047+02:00<span class="nt">&lt;/LocationRecordedAtTime&gt;</span>
+                    <span class="nt">&lt;Bearing&gt;</span>273.0<span class="nt">&lt;/Bearing&gt;</span>
+                    <span class="nt">&lt;Delay&gt;</span>PT0S<span class="nt">&lt;/Delay&gt;</span>
+                    <span class="nt">&lt;VehicleStatus&gt;</span>inProgress<span class="nt">&lt;/VehicleStatus&gt;</span>
+                    <span class="nt">&lt;VehicleJourneyRef&gt;</span>13281328<span class="nt">&lt;/VehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;VehicleRef&gt;</span>753233<span class="nt">&lt;/VehicleRef&gt;</span>
+                    <span class="nt">&lt;OnwardCalls&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31438<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>1<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>1<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Lardal skole
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>noAlighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:15:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:15:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>0
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31441<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>2<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>2<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Lardal ungdomsskole
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:18:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:18:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:18:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:18:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>1
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>0728004001<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>3<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>3<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Hukstrøm bru
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:20:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:20:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:20:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:20:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>1
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33650<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>4<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>4<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Berg Svarstad
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:21:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:21:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:21:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:21:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33713<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>5<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>5<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Gavelstad
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32887<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>6<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>6<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Hvaal nord
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:23:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32880<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>7<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>7<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Hvaal
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:24:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:24:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:24:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:24:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33811<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>8<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>8<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Bjærtnes
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:25:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:25:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:25:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:25:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33874<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>9<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>9<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Glenne Østsideveien
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:26:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:26:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:26:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:26:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31975<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>10<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>10<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Holtan
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:27:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:27:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:27:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:27:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32407<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>11<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>11<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Kongelf
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:28:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:28:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:28:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:28:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31488<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>12<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>12<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Helgeland
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:30:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:30:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:30:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:30:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:34047<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>13<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>13<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Brekka snuplass
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:33:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:33:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:33:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:33:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>0
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31487<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>14<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>14<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Helgeland
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:36:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:36:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:36:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:36:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>1
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31004<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>15<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>15<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Gåserud
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:39:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:39:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:39:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:39:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33538<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>16<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>16<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Eide
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:40:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:40:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:40:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:40:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32740<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>17<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>17<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Styrvoll
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32832<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>18<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>18<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Svartangveien
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:41:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33202<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>19<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>19<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Dalen Hanevoll
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:42:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:42:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:42:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:42:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33400<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>20<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>20<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Duvholt
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:43:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:43:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:43:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:43:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>1
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31197<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>21<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>21<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Hanevoll
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:45:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:45:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:45:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:45:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:34037<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>22<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>22<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Breidablikk Steinsholt
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:46:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:46:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:46:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:46:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>0
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32517<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>23<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>23<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Steinsholt
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:48:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:48:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:48:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:48:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33157<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>24<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>24<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Thyge
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:51:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:51:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:51:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:51:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>1
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32527<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>25<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>25<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Steinsholt Stranda
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:52:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:52:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:52:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:52:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:32541<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>26<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>26<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Steinsholtmoen
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:30836<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>27<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>27<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Røsholtmoen
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:53:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33710<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>28<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>28<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Berganmoen
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:33714<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>29<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>29<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Berganmoen industri
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:54:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:31496<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>30<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>30<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Virgenes
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:55:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:55:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;AimedDepartureTime&gt;</span>2022-05-13T14:55:00+02:00<span class="nt">&lt;/AimedDepartureTime&gt;</span>
+                            <span class="nt">&lt;EarliestExpectedDepartureTime&gt;</span>2022-05-13T14:55:00+02:00<span class="nt">&lt;/EarliestExpectedDepartureTime&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>boarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                        <span class="nt">&lt;OnwardCall&gt;</span>
+                            <span class="nt">&lt;StopPointRef&gt;</span>NSR:Quay:30493<span class="nt">&lt;/StopPointRef&gt;</span>
+                            <span class="nt">&lt;VisitNumber&gt;</span>31<span class="nt">&lt;/VisitNumber&gt;</span>
+                            <span class="nt">&lt;Order&gt;</span>31<span class="nt">&lt;/Order&gt;</span>
+                            <span class="nt">&lt;StopPointName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                           <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>Rambo
+                            <span class="nt">&lt;/StopPointName&gt;</span>
+                            <span class="nt">&lt;VehicleAtStop&gt;</span>false<span class="nt">&lt;/VehicleAtStop&gt;</span>
+                            <span class="nt">&lt;AimedArrivalTime&gt;</span>2022-05-13T14:56:00+02:00<span class="nt">&lt;/AimedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ExpectedArrivalTime&gt;</span>2022-05-13T14:56:00+02:00<span class="nt">&lt;/ExpectedArrivalTime&gt;</span>
+                            <span class="nt">&lt;ArrivalStatus&gt;</span>onTime<span class="nt">&lt;/ArrivalStatus&gt;</span>
+                            <span class="nt">&lt;ArrivalBoardingActivity&gt;</span>alighting<span class="nt">&lt;/ArrivalBoardingActivity&gt;</span>
+                            <span class="nt">&lt;DeparturePlatformName</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+                                                   <span class="na">xsi:type=</span><span class="s">&quot;DefaultedTextStructure&quot;</span><span class="nt">&gt;</span>2
+                            <span class="nt">&lt;/DeparturePlatformName&gt;</span>
+                            <span class="nt">&lt;DepartureBoardingActivity&gt;</span>noBoarding<span class="nt">&lt;/DepartureBoardingActivity&gt;</span>
+                        <span class="nt">&lt;/OnwardCall&gt;</span>
+                    <span class="nt">&lt;/OnwardCalls&gt;</span>
+                <span class="nt">&lt;/MonitoredVehicleJourney&gt;</span>
+            <span class="nt">&lt;/VehicleActivity&gt;</span>
+        <span class="nt">&lt;/VehicleMonitoringDelivery&gt;</span>
+    <span class="nt">&lt;/ServiceDelivery&gt;</span>
+<span class="nt">&lt;/Siri&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sx-situation-exchange">
+<h4>SX – Situation Exchange<a class="headerlink" href="#sx-situation-exchange" title="Nuoroda į šią antraštę">¶</a></h4>
+<p>Tekstiniai pranešimai susieti su maršrutais, reisais, stotelėmis rodomi keleiviams.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Norvegijos SIRI Situation Exchange (SX) duomenų kontrakto pavyzdys</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;</span>
+<span class="nt">&lt;Siri</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.siri.org.uk/siri&quot;</span> <span class="na">xmlns:ns2=</span><span class="s">&quot;http://www.ifopt.org.uk/acsb&quot;</span>
+      <span class="na">xmlns:ns3=</span><span class="s">&quot;http://www.ifopt.org.uk/ifopt&quot;</span> <span class="na">xmlns:ns4=</span><span class="s">&quot;http://datex2.eu/schema/2_0RC1/2_0&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ServiceDelivery&gt;</span>
+        <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-05-13T13:51:12.156961772+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+        <span class="nt">&lt;ProducerRef&gt;</span>ENT<span class="nt">&lt;/ProducerRef&gt;</span>
+        <span class="nt">&lt;RequestMessageRef&gt;</span>757c9284-0f12-4a46-a557-33a19e80119b<span class="nt">&lt;/RequestMessageRef&gt;</span>
+        <span class="nt">&lt;MoreData&gt;</span>false<span class="nt">&lt;/MoreData&gt;</span>
+        <span class="nt">&lt;SituationExchangeDelivery&gt;</span>
+            <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-05-13T13:51:12.156974389+02:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+            <span class="nt">&lt;Situations&gt;</span>
+                <span class="nt">&lt;PtSituationElement&gt;</span>
+                    <span class="nt">&lt;CreationTime&gt;</span>2022-05-13T13:48:46.955+02:00<span class="nt">&lt;/CreationTime&gt;</span>
+                    <span class="nt">&lt;ParticipantRef&gt;</span>RUT<span class="nt">&lt;/ParticipantRef&gt;</span>
+                    <span class="nt">&lt;SituationNumber&gt;</span>RUT:SituationNumber:533766<span class="nt">&lt;/SituationNumber&gt;</span>
+                    <span class="nt">&lt;Source&gt;</span>
+                        <span class="nt">&lt;SourceType&gt;</span>directReport<span class="nt">&lt;/SourceType&gt;</span>
+                    <span class="nt">&lt;/Source&gt;</span>
+                    <span class="nt">&lt;Progress&gt;</span>open<span class="nt">&lt;/Progress&gt;</span>
+                    <span class="nt">&lt;ValidityPeriod&gt;</span>
+                        <span class="nt">&lt;StartTime&gt;</span>2022-05-13T13:38:00+02:00<span class="nt">&lt;/StartTime&gt;</span>
+                        <span class="nt">&lt;EndTime&gt;</span>2022-05-13T14:34:00+02:00<span class="nt">&lt;/EndTime&gt;</span>
+                    <span class="nt">&lt;/ValidityPeriod&gt;</span>
+                    <span class="nt">&lt;UndefinedReason&gt;&lt;/UndefinedReason&gt;</span>
+                    <span class="nt">&lt;Severity&gt;</span>normal<span class="nt">&lt;/Severity&gt;</span>
+                    <span class="nt">&lt;ReportType&gt;</span>incident<span class="nt">&lt;/ReportType&gt;</span>
+                    <span class="nt">&lt;Keywords&gt;&lt;/Keywords&gt;</span>
+                    <span class="nt">&lt;Summary</span> <span class="na">xml:lang=</span><span class="s">&quot;NO&quot;</span><span class="nt">&gt;</span>Forsinket ca. 10 minutter<span class="nt">&lt;/Summary&gt;</span>
+                    <span class="nt">&lt;Summary</span> <span class="na">xml:lang=</span><span class="s">&quot;EN&quot;</span><span class="nt">&gt;</span>Delayed<span class="nt">&lt;/Summary&gt;</span>
+                    <span class="nt">&lt;Description</span> <span class="na">xml:lang=</span><span class="s">&quot;NO&quot;</span><span class="nt">&gt;</span>Forsinkelsen skyldes mye trafikk og kø.<span class="nt">&lt;/Description&gt;</span>
+                    <span class="nt">&lt;Description</span> <span class="na">xml:lang=</span><span class="s">&quot;EN&quot;</span><span class="nt">&gt;</span>The departure from Voksen skog at 13:38 towards Kværnerbyen is about 10
+                        minutes delayed.
+                    <span class="nt">&lt;/Description&gt;</span>
+                    <span class="nt">&lt;Affects&gt;</span>
+                        <span class="nt">&lt;VehicleJourneys&gt;</span>
+                            <span class="nt">&lt;AffectedVehicleJourney&gt;</span>
+                                <span class="nt">&lt;VehicleJourneyRef&gt;</span>RUT:ServiceJourney:32-163399-21485514<span class="nt">&lt;/VehicleJourneyRef&gt;</span>
+                            <span class="nt">&lt;/AffectedVehicleJourney&gt;</span>
+                        <span class="nt">&lt;/VehicleJourneys&gt;</span>
+                    <span class="nt">&lt;/Affects&gt;</span>
+                <span class="nt">&lt;/PtSituationElement&gt;</span>
+                <span class="nt">&lt;PtSituationElement&gt;</span>
+                    <span class="nt">&lt;CreationTime&gt;</span>2022-05-13T13:49:26.054+02:00<span class="nt">&lt;/CreationTime&gt;</span>
+                    <span class="nt">&lt;ParticipantRef&gt;</span>RUT<span class="nt">&lt;/ParticipantRef&gt;</span>
+                    <span class="nt">&lt;SituationNumber&gt;</span>RUT:SituationNumber:533767<span class="nt">&lt;/SituationNumber&gt;</span>
+                    <span class="nt">&lt;Source&gt;</span>
+                        <span class="nt">&lt;SourceType&gt;</span>directReport<span class="nt">&lt;/SourceType&gt;</span>
+                    <span class="nt">&lt;/Source&gt;</span>
+                    <span class="nt">&lt;Progress&gt;</span>open<span class="nt">&lt;/Progress&gt;</span>
+                    <span class="nt">&lt;ValidityPeriod&gt;</span>
+                        <span class="nt">&lt;StartTime&gt;</span>2022-05-13T13:45:00+02:00<span class="nt">&lt;/StartTime&gt;</span>
+                        <span class="nt">&lt;EndTime&gt;</span>2022-05-13T14:13:00+02:00<span class="nt">&lt;/EndTime&gt;</span>
+                    <span class="nt">&lt;/ValidityPeriod&gt;</span>
+                    <span class="nt">&lt;UndefinedReason&gt;&lt;/UndefinedReason&gt;</span>
+                    <span class="nt">&lt;Severity&gt;</span>normal<span class="nt">&lt;/Severity&gt;</span>
+                    <span class="nt">&lt;ReportType&gt;</span>incident<span class="nt">&lt;/ReportType&gt;</span>
+                    <span class="nt">&lt;Keywords&gt;&lt;/Keywords&gt;</span>
+                    <span class="nt">&lt;Summary</span> <span class="na">xml:lang=</span><span class="s">&quot;NO&quot;</span><span class="nt">&gt;</span>Forsinket ca. 5 minutter<span class="nt">&lt;/Summary&gt;</span>
+                    <span class="nt">&lt;Summary</span> <span class="na">xml:lang=</span><span class="s">&quot;EN&quot;</span><span class="nt">&gt;</span>Delayed<span class="nt">&lt;/Summary&gt;</span>
+                    <span class="nt">&lt;Description</span> <span class="na">xml:lang=</span><span class="s">&quot;NO&quot;</span><span class="nt">&gt;</span>Forsinkelsen skyldes mye trafikk og kø.<span class="nt">&lt;/Description&gt;</span>
+                    <span class="nt">&lt;Description</span> <span class="na">xml:lang=</span><span class="s">&quot;EN&quot;</span><span class="nt">&gt;</span>The departure from Ullerntoppen at 13:45 towards Majorstuen is about 5
+                        minutes delayed.
+                    <span class="nt">&lt;/Description&gt;</span>
+                    <span class="nt">&lt;Affects&gt;</span>
+                        <span class="nt">&lt;VehicleJourneys&gt;</span>
+                            <span class="nt">&lt;AffectedVehicleJourney&gt;</span>
+                                <span class="nt">&lt;VehicleJourneyRef&gt;</span>RUT:ServiceJourney:46-164389-22218648<span class="nt">&lt;/VehicleJourneyRef&gt;</span>
+                            <span class="nt">&lt;/AffectedVehicleJourney&gt;</span>
+                        <span class="nt">&lt;/VehicleJourneys&gt;</span>
+                    <span class="nt">&lt;/Affects&gt;</span>
+                <span class="nt">&lt;/PtSituationElement&gt;</span>
+            <span class="nt">&lt;/Situations&gt;</span>
+        <span class="nt">&lt;/SituationExchangeDelivery&gt;</span>
+    <span class="nt">&lt;/ServiceDelivery&gt;</span>
+<span class="nt">&lt;/Siri&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="gtfs-realtime">
+<h3>GTFS Realtime<a class="headerlink" href="#gtfs-realtime" title="Nuoroda į šią antraštę">¶</a></h3>
+<div class="section" id="trip-updates">
+<h4>Trip updates<a class="headerlink" href="#trip-updates" title="Nuoroda į šią antraštę">¶</a></h4>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Novergijos GTFS Realtime Trip updates duomenų kontrakto pavyzdys</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;header&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;gtfs_realtime_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;incrementality&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FULL_DATASET&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1652696355&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;entity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:ServiceJourney:a743888f8852ea12a49e41c7801854237e703b74-2022-05-16&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;trip_update&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;trip&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;trip_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:ServiceJourney:a743888f8852ea12a49e41c7801854237e703b74&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;route_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:Line:22&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;stop_time_update&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:99391&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:101311&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:99400&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:99392&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:101350&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;departure&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:99397&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;arrival&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:99376&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="vehicle-positions">
+<h4>Vehicle positions<a class="headerlink" href="#vehicle-positions" title="Nuoroda į šią antraštę">¶</a></h4>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Novergijos GTFS Realtime Vehicle positions duomenų kontrakto pavyzdys</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;header&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;gtfs_realtime_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;incrementality&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FULL_DATASET&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1652695735&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;entity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:VehicleRef:1950290&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;vehicle&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;trip&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;trip_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:ServiceJourney:a3a92fe030416ab91414e80dbf9c406e9222768d&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;route_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:Line:26&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;position&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;latitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">59.391876</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;longitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">16.471745</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;bearing&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;odometer&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;speed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1652695730&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;congestion_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RUNNING_SMOOTHLY&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;vehicle&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VYB:VehicleRef:1950290&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="service-alerts">
+<h4>Service alerts<a class="headerlink" href="#service-alerts" title="Nuoroda į šią antraštę">¶</a></h4>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Novergijos GTFS Realtime Service alerts duomenų kontrakto pavyzdys</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;header&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;gtfs_realtime_version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;incrementality&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FULL_DATASET&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1652696516&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;entity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RUT:SituationNumber:504908&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;alert&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;active_period&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1620784800&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;end&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1683928740&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;informed_entity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;route_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RUT:Line:23&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:11067&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">},</span><span class="w"></span>
+<span class="w">          </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;route_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RUT:Line:24&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;stop_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSR:Quay:11067&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;header_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;translation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Holdeplass Sinsenveien \u00f8stg\u00e5ende er flyttet&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;no&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Stop Sinsenveien eastbound is moved&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">          </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;description_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;translation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Fra 12 mai: Holdeplass Sinsenveien retning \u00f8st er flyttet ca. 150 meter tilbake. Avviket er planlagt \u00e5 vare i ca. 2 \u00e5r.&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;no&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;From 12 May. Stop Sinsenveien direction east is moved approx. 150 backwards. The discrepancy is scheduled to end approx. 2 years.&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">          </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="naudingos-nuorodos">
+<h2>Naudingos nuorodos<a class="headerlink" href="#naudingos-nuorodos" title="Nuoroda į šią antraštę">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/entur/profile-norway-examples/tree/master/siri/">Novegiško SIRI profilio formato pavydžiai</a></p></li>
+</ul>
 </div>
 </div>
 
