@@ -4,11 +4,13 @@
 <html lang="lt">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>MDS &#8212; Judumo duomenų ekosistemos plėtra</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,21 +37,22 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://judumas.vycius.lt/standartai/mds.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Indeksas" href="../genindex.html" />
@@ -75,7 +74,21 @@ const thebe_selector_output = ".output, .cell_output"
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,9 +97,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -101,7 +115,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Ieškoti šioje knygoje ..." aria-label="Ieškoti šioje knygoje ..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
@@ -271,6 +285,11 @@ const thebe_selector_output = ".output, .cell_output"
    Norvegija
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/svedija.html">
+   Švedija
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -320,89 +339,191 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Perjungti naršymą" aria-controls="site-navigation"
-                title="Perjungti naršymą" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Atsisiųskite šį puslapį"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/standartai/mds.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Atsisiųsti šaltinio failą" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Spausdinti į PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/vycius/judumas"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Šaltinio saugykla"><i
-                    class="fab fa-github"></i>saugykla</button></a>
-        
-        <a class="edit-button" href="https://github.com/vycius/judumas/edit/main/standartai/mds.ipynb"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Redaguoti šį puslapį"><i class="fas fa-pencil-alt"></i>pasiūlyti redaguoti</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Pilno ekrano režimas"
-        title="Pilno ekrano režimas"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Turinys
+            <div class="navbar_extra_footer">
+            Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/vycius/judumas"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/vycius/judumas/edit/main/standartai/mds.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/standartai/mds.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#nauda">
    Nauda:
@@ -449,12 +570,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>MDS</h1>
@@ -463,7 +583,7 @@ const thebe_selector_output = ".output, .cell_output"
                     <div id="jb-print-toc">
                         
                         <div>
-                            <h2> Turinys </h2>
+                            <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
@@ -517,16 +637,17 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="mds">
-<h1>MDS<a class="headerlink" href="#mds" title="Nuoroda į šią antraštę">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="mds">
+<h1>MDS<a class="headerlink" href="#mds" title="Nuoroda į šią antraštę">#</a></h1>
 <p>MDS (<em>Mobility Data Specification</em>) yra duomenų standartas, padedantis miestams valdyti dalijimosi paslaugas (dažniausiai el. paspirtukus, mopedus) realiu laiku.</p>
-<div class="section" id="nauda">
-<h2>Nauda:<a class="headerlink" href="#nauda" title="Nuoroda į šią antraštę">¶</a></h2>
-<div class="section" id="miestui">
-<h3>Miestui<a class="headerlink" href="#miestui" title="Nuoroda į šią antraštę">¶</a></h3>
+<section id="nauda">
+<h2>Nauda:<a class="headerlink" href="#nauda" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="miestui">
+<h3>Miestui<a class="headerlink" href="#miestui" title="Nuoroda į šią antraštę">#</a></h3>
 <p>MDS suteikia galimybę miestams sužinoti, kaip gyventojai juda po miestą ir įrankius reikalingus pagerinti tokių kelionių patirtį.</p>
 <ul class="simple">
 <li><p>Sumažinami veiklos ir darbuotojų laiko kąštus, nes stebėjimas atliekamas automatiškai;</p></li>
@@ -535,19 +656,19 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Mažiau konfliktų su operatoriaus nagrinėjant skundus (paspirtukų palikimą neleistinose vietose, važiavimo greitį ir pnš.).</p></li>
 </ul>
 <p>Daugiau naudų miestų galima rasti <a class="reference external" href="https://github.com/openmobilityfoundation/governance/wiki/MDS-Use-Cases#extracted-list">čia</a></p>
-</div>
-<div class="section" id="privatiems-transporto-operatoriams">
-<h3>Privatiems transporto operatoriams<a class="headerlink" href="#privatiems-transporto-operatoriams" title="Nuoroda į šią antraštę">¶</a></h3>
+</section>
+<section id="privatiems-transporto-operatoriams">
+<h3>Privatiems transporto operatoriams<a class="headerlink" href="#privatiems-transporto-operatoriams" title="Nuoroda į šią antraštę">#</a></h3>
 <ul class="simple">
 <li><p>Leidžia sutaupyti žmogiškųjų resursų ir laiko (miesto skundų nagrinėjimas, ribojimų valdymas);</p></li>
 <li><p>Pasitikėjimas, bendradarbiavimas tarp miesto ir operatoriaus (mažiau konfliktų);</p></li>
 <li><p>Vieningas duomenų teikimo standartas visiems MDS naudojantiems miestams;</p></li>
 <li><p>Lengva integracija su kelionių planavimo programomis.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="paplitimas">
-<h2>Paplitimas<a class="headerlink" href="#paplitimas" title="Nuoroda į šią antraštę">¶</a></h2>
+</section>
+</section>
+<section id="paplitimas">
+<h2>Paplitimas<a class="headerlink" href="#paplitimas" title="Nuoroda į šią antraštę">#</a></h2>
 <p>MDS standartas naudojamas daugiau nei 130 miestų<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id10" title="Open Mobility Foundation. Who is using mds? | open mobility foundation. 3 2022. URL: https://www.openmobilityfoundation.org/mds-users/.">16</a></sup></span> (žr. žemėlapį).</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_output docutils container">
@@ -628,9 +749,9 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
         });
         }
         </script>
-</div><div class="output text_html"><div>                            <div id="fcd1ee3a-1ad8-4c7d-828e-d7f3a510ea16" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("fcd1ee3a-1ad8-4c7d-828e-d7f3a510ea16")) {                    Plotly.newPlot(                        "fcd1ee3a-1ad8-4c7d-828e-d7f3a510ea16",                        [{"hovertemplate":"<b>%{hovertext}</b><br><br>Latitude=%{lat}<br>Longitude=%{lon}<extra></extra>","hovertext":["Austin, TX","Bergen, Norway","Bogot\u00e1, Columbia","Chicago, IL","Denver, CO","Detroit, MI","Kelowna, Canada","Long Beach, CA","Los Angeles, CA","Louisville, KY","Miami, FL","Minneapolis, MN","Philadelphia, PA","Pittsburgh, PA","Portland, OR","San Francisco, CA","San Jose, CA","Santa Monica, CA","Seattle, WA","Ulm, Germany","Washington, DC","Arlington, VA","Atlanta, GA","Auckland, New Zealand","Baltimore, MD","Brisbane, Australia","Calgary, Canada","Canberra, Australia","Charlotte, NC","Charlottesville, VA","Cleveland, OH","Dayton, OH","El Paso, TX","Edmonton, Canada","Hamburg, Germany","Indianapolis, IN","Kansas City, MO","Nashville, TN","Newark, NJ","Milwaukee, WI","Montgomery County, MD","Oakland, CA","Omaha, NE","Providence, RI","Sacramento, CA","San Diego, CA","Wellington, New Zealand","Zapopan, Mexico","Bellevue, WA"],"lat":[30.267153,60.3912628,4.7109886,41.8781136,39.7392358,42.331427,49.8879519,33.7700504,34.0522342,38.2526647,25.7616798,44.977753,39.9525839,40.4406248,45.515232,37.7749295,37.3382082,34.0194543,47.6062095,48.4010822,38.9071923,38.8799697,33.7489954,-36.8508827,39.2903848,-27.4704528,51.0447331,-35.2801903,35.2270869,38.0293059,41.49932,39.7589478,31.7618778,53.5461245,53.5510846,39.768403,39.0997265,36.1626638,40.735657,43.0389025,39.1547426,37.8043514,41.2565369,41.8239891,38.5815719,32.715738,-41.2923814,20.6719563,47.6101497],"legendgroup":"","lon":[-97.7430608,5.3220544,-74.072092,-87.6297982,-104.990251,-83.0457538,-119.4960106,-118.1937395,-118.2436849,-85.7584557,-80.1917902,-93.2650108,-75.1652215,-79.9958864,-122.6783853,-122.4194155,-121.8863286,-118.4911912,-122.3320708,9.9876076,-77.0368707,-77.1067698,-84.3879824,174.7644881,-76.6121893,153.0260341,-114.0718831,149.1310038,-80.8431267,-78.4766781,-81.6943605,-84.1916069,-106.4850217,-113.4938229,9.9936818,-86.158068,-94.5785667,-86.7816016,-74.1723667,-87.9064736,-77.2405153,-122.2711639,-95.9345034,-71.4128343,-121.4943996,-117.1610838,174.7787463,-103.416501,-122.2015159],"marker":{"color":"#636efa"},"mode":"markers","name":"","showlegend":false,"subplot":"mapbox","type":"scattermapbox"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"mapbox":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{"lat":55,"lon":10},"accesstoken":"pk.eyJ1IjoidnljaXVzIiwiYSI6ImNsMTNscmN1azA2aWMzZHFhM3NmOHNuNncifQ.a1R_NwRV80nDj8gIiUdrWg\n","zoom":1,"style":"light","layers":[{"sourceattribution":"\u00a9 <a href=\"https://judumas.vycius.lt\" target=\"_blank\">Karolis Vy\u010dius</a> \u00a9 <a href=\"https://www.openmobilityfoundation.org/mds-users/\" target=\"_blank\">Open Mobility Foundation</a>"}]},"legend":{"tracegroupgap":0},"title":{"text":"Mobility Data Specification palaikymas"},"margin":{"r":0,"l":0,"b":0}},                        {"responsive": true}                    ).then(function(){
+</div><div class="output text_html"><div>                            <div id="65773752-9e98-47d7-91c7-0f0e409e2f96" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("65773752-9e98-47d7-91c7-0f0e409e2f96")) {                    Plotly.newPlot(                        "65773752-9e98-47d7-91c7-0f0e409e2f96",                        [{"hovertemplate":"<b>%{hovertext}</b><br><br>Latitude=%{lat}<br>Longitude=%{lon}<extra></extra>","hovertext":["Austin, TX","Bergen, Norway","Bogot\u00e1, Columbia","Chicago, IL","Denver, CO","Detroit, MI","Kelowna, Canada","Long Beach, CA","Los Angeles, CA","Louisville, KY","Miami, FL","Minneapolis, MN","Philadelphia, PA","Pittsburgh, PA","Portland, OR","San Francisco, CA","San Jose, CA","Santa Monica, CA","Seattle, WA","Ulm, Germany","Washington, DC","Arlington, VA","Atlanta, GA","Auckland, New Zealand","Baltimore, MD","Brisbane, Australia","Calgary, Canada","Canberra, Australia","Charlotte, NC","Charlottesville, VA","Cleveland, OH","Dayton, OH","El Paso, TX","Edmonton, Canada","Hamburg, Germany","Indianapolis, IN","Kansas City, MO","Nashville, TN","Newark, NJ","Milwaukee, WI","Montgomery County, MD","Oakland, CA","Omaha, NE","Providence, RI","Sacramento, CA","San Diego, CA","Wellington, New Zealand","Zapopan, Mexico","Bellevue, WA"],"lat":[30.267153,60.3912628,4.7109886,41.8781136,39.7392358,42.331427,49.8879519,33.7700504,34.0522342,38.2526647,25.7616798,44.977753,39.9525839,40.4406248,45.515232,37.7749295,37.3382082,34.0194543,47.6062095,48.4010822,38.9071923,38.8799697,33.7489954,-36.8508827,39.2903848,-27.4704528,51.0447331,-35.2801903,35.2270869,38.0293059,41.49932,39.7589478,31.7618778,53.5461245,53.5510846,39.768403,39.0997265,36.1626638,40.735657,43.0389025,39.1547426,37.8043514,41.2565369,41.8239891,38.5815719,32.715738,-41.2923814,20.6719563,47.6101497],"legendgroup":"","lon":[-97.7430608,5.3220544,-74.072092,-87.6297982,-104.990251,-83.0457538,-119.4960106,-118.1937395,-118.2436849,-85.7584557,-80.1917902,-93.2650108,-75.1652215,-79.9958864,-122.6783853,-122.4194155,-121.8863286,-118.4911912,-122.3320708,9.9876076,-77.0368707,-77.1067698,-84.3879824,174.7644881,-76.6121893,153.0260341,-114.0718831,149.1310038,-80.8431267,-78.4766781,-81.6943605,-84.1916069,-106.4850217,-113.4938229,9.9936818,-86.158068,-94.5785667,-86.7816016,-74.1723667,-87.9064736,-77.2405153,-122.2711639,-95.9345034,-71.4128343,-121.4943996,-117.1610838,174.7787463,-103.416501,-122.2015159],"marker":{"color":"#636efa"},"mode":"markers","name":"","showlegend":false,"subplot":"mapbox","type":"scattermapbox"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"mapbox":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{"lat":55,"lon":10},"accesstoken":"pk.eyJ1IjoidnljaXVzIiwiYSI6ImNsMTNscmN1azA2aWMzZHFhM3NmOHNuNncifQ.a1R_NwRV80nDj8gIiUdrWg\n","zoom":1,"style":"light","layers":[{"sourceattribution":"\u00a9 <a href=\"https://judumas.vycius.lt\" target=\"_blank\">Karolis Vy\u010dius</a> \u00a9 <a href=\"https://www.openmobilityfoundation.org/mds-users/\" target=\"_blank\">Open Mobility Foundation</a>"}]},"legend":{"tracegroupgap":0},"title":{"text":"Mobility Data Specification palaikymas"},"margin":{"r":0,"l":0,"b":0}},                        {"responsive": true}                    ).then(function(){
 
-var gd = document.getElementById('fcd1ee3a-1ad8-4c7d-828e-d7f3a510ea16');
+var gd = document.getElementById('65773752-9e98-47d7-91c7-0f0e409e2f96');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -655,40 +776,46 @@ if (outputEl) {{
                         })                };                });            </script>        </div></div></div>
 </div>
 <p>Taip pat šis standartas palaikomas tokių judumo paslaugų operatorių, kaip: Bolt, Bird, Lime, WIND ir kt. (žr. <a class="reference external" href="https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/providers.csv">daugiau operatorių</a>).</p>
-</div>
-<div class="section" id="realus-panaudojimo-pazydziai">
-<h2>Realūs panaudojimo pazydžiai<a class="headerlink" href="#realus-panaudojimo-pazydziai" title="Nuoroda į šią antraštę">¶</a></h2>
-<div class="section" id="cikaga-paspirtuku-ribojimai-festivalio-metu">
-<h3>Čikaga: paspirtukų ribojimai festivalio metu<a class="headerlink" href="#cikaga-paspirtuku-ribojimai-festivalio-metu" title="Nuoroda į šią antraštę">¶</a></h3>
+</section>
+<section id="realus-panaudojimo-pazydziai">
+<h2>Realūs panaudojimo pazydžiai<a class="headerlink" href="#realus-panaudojimo-pazydziai" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="cikaga-paspirtuku-ribojimai-festivalio-metu">
+<h3>Čikaga: paspirtukų ribojimai festivalio metu<a class="headerlink" href="#cikaga-paspirtuku-ribojimai-festivalio-metu" title="Nuoroda į šią antraštę">#</a></h3>
 <p>Nepriklausomai ar miestas susiduria su neplanuotomis situacijomis ar kelių uždarymais, šventėmis, protestais MDS suteikia galimybe realiu laiku keisti zonas, kuriose draudžiama palikti transporto priemones bei įvertinti ar transporto nuomos kompanijos laikosi reguliatoriaus nustatytų taisyklių.</p>
 <p>Čikagoje 2019 m. vykdant MDS pilotą<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id17" title="MobilityData. Case study: how chicago used mds for special events. URL: https://www.openmobilityfoundation.org/case-study-how-chicago-used-mds-to-manage-compliance/ (visited on 2022-04-05).">21</a></sup></span> paspirtukų kompanijoms buvo duoti nurodymai, kad kiekvienas paspirtukas galėtų sulėtinti greitį ir galiausiai sustoti per ketvirtį mylios už miesto nurodytos bandomosios zonos. Šį sprendimą jie išbandė per du renginius: „Pitchfork“ muzikos festivalį ir „Riot Fest“.</p>
 <p><a class="reference internal" href="#mds-chicago-pitchfork-festival"><span class="std std-numref">Fig. 6</span></a> matome piloto metu miesto nustatytas zonas paspirtukų kompanijoms per MDS ir paspirtukų palikimo vietas, o <a class="reference internal" href="#mds-chicago-after-pitchfork-festival"><span class="std std-numref">Fig. 7</span></a> rodo tą patį jau pasibaigus festivaliui. Galime matyti, kad dalis festivalio dalyvių į renginį atvykdavo su paspirtuku, o didelė paspirtukų koncentracija ties savivaldybės nustatyomis ribomis užtikrino renginio tvarką.</p>
-<div class="figure align-default" id="mds-chicago-pitchfork-festival">
+<figure class="align-default" id="mds-chicago-pitchfork-festival">
 <img alt="../_images/mds-chicago-pitchfork-festival-weekend.png" src="../_images/mds-chicago-pitchfork-festival-weekend.png" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Čikagos per „Pitchfork“ muzikos festivalį nustatytas ribojimas ir paspirtukų palikimas <span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id17" title="MobilityData. Case study: how chicago used mds for special events. URL: https://www.openmobilityfoundation.org/case-study-how-chicago-used-mds-to-manage-compliance/ (visited on 2022-04-05).">21</a></sup></span></span><a class="headerlink" href="#mds-chicago-pitchfork-festival" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="mds-chicago-after-pitchfork-festival">
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Čikagos per „Pitchfork“ muzikos festivalį nustatytas ribojimas ir paspirtukų palikimas <span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id17" title="MobilityData. Case study: how chicago used mds for special events. URL: https://www.openmobilityfoundation.org/case-study-how-chicago-used-mds-to-manage-compliance/ (visited on 2022-04-05).">21</a></sup></span></span><a class="headerlink" href="#mds-chicago-pitchfork-festival" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="mds-chicago-after-pitchfork-festival">
 <img alt="../_images/mds-chicago-after-pitchfork-festival-weekend.png" src="../_images/mds-chicago-after-pitchfork-festival-weekend.png" />
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Čikagos po „Pitchfork“ muzikos festivalio paliekami paspirtukai savivaldybei išjungus ribojimą <span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id17" title="MobilityData. Case study: how chicago used mds for special events. URL: https://www.openmobilityfoundation.org/case-study-how-chicago-used-mds-to-manage-compliance/ (visited on 2022-04-05).">21</a></sup></span></span><a class="headerlink" href="#mds-chicago-after-pitchfork-festival" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Čikagos po „Pitchfork“ muzikos festivalio paliekami paspirtukai savivaldybei išjungus ribojimą <span id="id4"><sup><a class="reference internal" href="../saltiniai.html#id17" title="MobilityData. Case study: how chicago used mds for special events. URL: https://www.openmobilityfoundation.org/case-study-how-chicago-used-mds-to-manage-compliance/ (visited on 2022-04-05).">21</a></sup></span></span><a class="headerlink" href="#mds-chicago-after-pitchfork-festival" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Čikaga naudodama MDS per <code class="docutils literal notranslate"><span class="pre">Policy</span> <span class="pre">API</span></code> galėjo perduoti ribojimus paspirtukų paslaugų teikėjams. Vietoj to, kad miestas siųstų el. laiškus kiekvienam paslaugų teikėjui, pakako nustatyti ribojimų zoną sistemoje, kuri automatiškai pasiekė kiekvieną paslaugų teikėją ir miestui suteikė monitoringo mechanzimą.</p>
-</div>
-<div class="section" id="luisvilis-infrastrukturos-planavimas">
-<h3>Luisvilis: infrastruktūros planavimas<a class="headerlink" href="#luisvilis-infrastrukturos-planavimas" title="Nuoroda į šią antraštę">¶</a></h3>
+</section>
+<section id="luisvilis-infrastrukturos-planavimas">
+<h3>Luisvilis: infrastruktūros planavimas<a class="headerlink" href="#luisvilis-infrastrukturos-planavimas" title="Nuoroda į šią antraštę">#</a></h3>
 <p>Luisvilyje (Kentukis, JAV) buvo planuojamas naujas kelias. Siekiant sužinoti, kokiai daliai paspirtukų naudotojų šis kelias būtų naudingas buvo <a class="reference internal" href="#mds-louisville-major-infrastructure-project-planing"><span class="std std-ref">vizualizuotos per MDS gautos paspirtukų kelionės</span></a> bei vertinama kaip toks kelias įsilietų į jau egzistuojančią miesto infrastruktūrą.</p>
-<div class="figure align-default" id="mds-louisville-major-infrastructure-project-planing">
+<figure class="align-default" id="mds-louisville-major-infrastructure-project-planing">
 <img alt="../_images/mds-louisville-major-infrastructure-project-planing.png" src="../_images/mds-louisville-major-infrastructure-project-planing.png" />
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Paspirtukų kelionės Luisvilyje, kurios gautų naudą iš naujo kelio<span id="id5"><sup><a class="reference internal" href="../saltiniai.html#id18" title="MobilityData. Intro to the open mobility foundation and mobility data specification (webinar). URL: https://www.youtube.com/watch?v=oUDjXvT06jQ (visited on 2022-04-05).">22</a></sup></span></span><a class="headerlink" href="#mds-louisville-major-infrastructure-project-planing" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="naudinga-informacija">
-<h2>Naudinga informacija<a class="headerlink" href="#naudinga-informacija" title="Nuoroda į šią antraštę">¶</a></h2>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Paspirtukų kelionės Luisvilyje, kurios gautų naudą iš naujo kelio<span id="id5"><sup><a class="reference internal" href="../saltiniai.html#id18" title="MobilityData. Intro to the open mobility foundation and mobility data specification (webinar). URL: https://www.youtube.com/watch?v=oUDjXvT06jQ (visited on 2022-04-05).">22</a></sup></span></span><a class="headerlink" href="#mds-louisville-major-infrastructure-project-planing" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="naudinga-informacija">
+<h2>Naudinga informacija<a class="headerlink" href="#naudinga-informacija" title="Nuoroda į šią antraštę">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.youtube.com/watch?v=oUDjXvT06jQ">Įvadinis video į MDS bei jo panaudojimo galimybes</a></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -712,9 +839,11 @@ if (outputEl) {{
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="gbfs.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -730,14 +859,14 @@ if (outputEl) {{
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>
   Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
   
   El. paštas: <a href="mailto:karolis.vycius@kurklt.lt" target="_blank">karolis.vycius@kurklt.lt</a>
@@ -748,16 +877,20 @@ if (outputEl) {{
   © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

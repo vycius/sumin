@@ -10,28 +10,46 @@ transportą Lietuvoje?🧐
 Ministerijoje ir siekiantis, kad kelionės po Lietuvą viešuoju transportu būtų dar populiaresnės, patogesnės ir
 patrauklesnės.
 
-:::{panels}
-:container: text-center
-:column: col-lg-6 px-2 py-2
-:card:
+::::{grid} 1 1 2 2
+:class-container: text-center
+:gutter: 3
 
-**[Kurk Lietuvai projektas](projektas)** ✨
+:::{grid-item-card}
+:link: https://judumas.vycius.lt/projektas
+:columns: 12
+:class-header: bg-light
+
+Kurk Lietuvai projektas ✨
 ^^^
+
 Platesnė informacija apie Kurk Lietuvai projektą „Judumo duomenų ekosistemos plėtra“, projekto naudos, susiję
 strateginiai dokumentai.
 
----
+:::
 
-**[Judumo duomenų standartų apžvalga](standartai/index)** ✍
+:::{grid-item-card}
+:link: https://judumas.vycius.lt/standartai/
+:class-header: bg-light
+
+Judumo duomenų standartų apžvalga ✍
 ^^^
+
 Pagrindiniai duomenų teikimo standartai susiję su viešojo transporto statine ir dinamine informacija bei dalijimosi
 paslaugomis.
 
----
+:::
 
-**[Viešojo keleivinio transporto duomenų situacija Lietuvoje](duomenys/statiniai-duomenys)** [Atliekama]💡
+
+:::{grid-item-card}
+:link: https://judumas.vycius.lt/duomenys/
+:class-header: bg-light
+
+Viešojo keleivinio transporto duomenų situacija Lietuvoje 💡
 ^^^
+
 Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos
 Lietuvoje.
 
 :::
+
+::::
