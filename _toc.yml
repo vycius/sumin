@@ -43,6 +43,7 @@ parts:
     chapters:
       - file: praktikos/index
       - file: praktikos/norvegija
+      - file: praktikos/svedija
 
   - caption: Sprendimas
     chapters:
