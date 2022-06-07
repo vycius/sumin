@@ -1,0 +1,873 @@
+
+<!DOCTYPE html>
+
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Jungtinė Karalystė &#8212; Judumo duomenų ekosistemos plėtra</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://judumas.vycius.lt/praktikos/jungtine-karalyste.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Indeksas" href="../genindex.html" />
+    <link rel="search" title="Paieška" href="../search.html" />
+    <link rel="next" title="Architektūra" href="../sprendimas/architektura.html" />
+    <link rel="prev" title="Švedija" href="svedija.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="lt">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PSPT787FKK"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-PSPT787FKK');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Judumo duomenų ekosistemos plėtra</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projektas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projektas.html">
+   Judumo duomenų ekosistemos plėtra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Judumo duomenų standartai
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../standartai/index.html">
+   Judumo duomenų standartai
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/viesasis-transportas.html">
+   Viešasis transportas
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/statiniai-duomenys.html">
+     Statiniai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs.html">
+       GTFS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/netex.html">
+       NeTEx
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/dinaminiai-duomenys.html">
+     Dinaminiai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs-realtime.html">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/siri.html">
+       SIRI
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/dalijimosi-paslaugos.html">
+   Dalijimosi paslaugos
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/gbfs.html">
+     GBFS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/mds.html">
+     MDS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Viešojo keleivinio transporto duomenys
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../duomenys/index.html">
+   Duomenų teikimas
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../duomenys/statiniai-duomenys.html">
+   Statiniai duomenys
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/vietinis-susisiekimas.html">
+     Vietinis reguliarusis susisiekimas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/palyginimas-su-stops-lt.html">
+     Palyginimas su pirminiu šaltiniu
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/tolimasis-susisiekimas.html">
+     Tolimasis ir tarptautinis reguliarusis susisiekimas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/vintra-gtfs.html">
+     GTFS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../duomenys/dinaminiai-duomenys.html">
+   Dinaminiai duomenys
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Gerosios praktikos
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Užsienio šalių gerosios praktikos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="norvegija.html">
+   Norvegija
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="svedija.html">
+   Švedija
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Jungtinė Karalystė
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sprendimas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/architektura.html">
+   Architektūra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literatūra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../saltiniai.html">
+   Šaltiniai
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Aplinka
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../uzrasai.html">
+   Užrašai
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apps/apple_maps.html">
+   Apple Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../internal.html">
+   Aplinka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/vycius/judumas"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/vycius/judumas/edit/main/praktikos/jungtine-karalyste.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/praktikos/jungtine-karalyste.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informacija-apie-transporto-operatorius">
+   Informacija apie transporto operatorius
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statiniai-duomenys">
+   Statiniai duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dinaminiai-duomenys">
+   Dinaminiai duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ativiri-duomenys">
+     Ativiri duomenys
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Jungtinė Karalystė</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#informacija-apie-transporto-operatorius">
+   Informacija apie transporto operatorius
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statiniai-duomenys">
+   Statiniai duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dinaminiai-duomenys">
+   Dinaminiai duomenys
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ativiri-duomenys">
+     Ativiri duomenys
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="jungtine-karalyste">
+<h1>Jungtinė Karalystė<a class="headerlink" href="#jungtine-karalyste" title="Nuoroda į šią antraštę">#</a></h1>
+<p>2017 m. išleistas autobusų paslaugų teikimo įstatymas (
+angl. <em><a class="reference external" href="https://www.legislation.gov.uk/ukpga/2017/21/contents">Bus Services Act</a></em>) reikalauja, kad visi
+vietinių autobusų operatoriai teiktų tvarkraščių, tarifų ir transporto priemonės buvimo vietos informaciją į
+centrinę
+sistemą (angl. <em><a class="reference external" href="https://data.bus-data.dft.gov.uk/guidance/requirements/?section=overview">Bus Open Data Service</a></em>).</p>
+<p>Šių duomenų teikimui buvo numatyti pereinamieji laikotarpiai, kurie vaizduojami toliau esančioje
+lentelėje<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id39" title="Gov.uk. Developer documentation. URL: https://data.bus-data.dft.gov.uk/guidance/requirements/?section=overview (visited on 2022-06-07).">18</a></sup></span>.</p>
+<table class="colwidths-auto table" id="id4">
+<caption><span class="caption-number">Table 15 </span><span class="caption-text">Duomenų teikimo pereinamsis laikotarpis visiems vietinių autobusų operatoriams</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Data</p></th>
+<th class="head"><p>Aprašymas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2020 m. gruodžio 31 d.</p></td>
+<td><p>Privaloma teikti tvarkaraščių informaciją</p></td>
+</tr>
+<tr class="row-odd"><td><p>2021 m. sausio 7 d.</p></td>
+<td><p>Privaloma teikti transporto priemonės buvimo vietos ir pagrindius tarifų bei bilietų duomenis.</p></td>
+</tr>
+<tr class="row-even"><td><p>2023 m. sausio 7 d.</p></td>
+<td><p>Privaloma teikti išplėstinius bilietų kainų ir bilietų duomenis.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="informacija-apie-transporto-operatorius">
+<h2>Informacija apie transporto operatorius<a class="headerlink" href="#informacija-apie-transporto-operatorius" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Juntinė Karalystė <a class="reference external" href="https://data.bus-data.dft.gov.uk/operators/">specialiame puslapyje</a> pateikia informaciją apie
+kiekvieną šalyje veikiantį transporto operatorių, jo licenzijos numerį bei atvirų duomenų nuorodos susijusios
+su tvarkaraščiais, transporto priemonės buvimo vieta bei tarifais.</p>
+<figure class="align-default" id="id5">
+<img alt="../_images/operator-profiles.png" src="../_images/operator-profiles.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Informacija apie transporto operatorius.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="statiniai-duomenys">
+<h2>Statiniai duomenys<a class="headerlink" href="#statiniai-duomenys" title="Nuoroda į šią antraštę">#</a></h2>
+<table class="colwidths-auto table" id="id6">
+<caption><span class="caption-number">Table 16 </span><span class="caption-text">Statinių duomenų teikimas ir atviri duomenys</span><a class="headerlink" href="#id6" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipas</p></th>
+<th class="head"><p>Duomenų teikimo formatas</p></th>
+<th class="head"><p>Atvirų duomenų formatas</p></th>
+<th class="head"><p>Atnaujinimo dažnumas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tvarkaraščiai</p></td>
+<td><p>TransXChange</p></td>
+<td><p>GTFS ir TransXChange</p></td>
+<td><p>Kartą per 24 val.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tarifai</p></td>
+<td><p>NeTEx</p></td>
+<td><p>NeTEx</p></td>
+<td><p>Kartą per 24 val.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Verta pastebėti, kad transporto operatoriai tvarkaraščių duomenis
+teikia <a class="reference external" href="https://www.gov.uk/government/collections/transxchange">TransXChange</a> formatu. Šis formatas yra būdingas tik
+Jungtinei Karalystei bei yra ypač panašus į NeTEx ir paremtas Transmodel.</p>
+</section>
+<section id="dinaminiai-duomenys">
+<h2>Dinaminiai duomenys<a class="headerlink" href="#dinaminiai-duomenys" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Transporto operatoriai informaciją apie transporto priemonių buvimo vietos teikia SIRI-VM
+formatu<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id39" title="Gov.uk. Developer documentation. URL: https://data.bus-data.dft.gov.uk/guidance/requirements/?section=overview (visited on 2022-06-07).">18</a></sup></span>. Toliau pateikiama lentelė kokie duomenys
+privalo būti teikiami<span id="id3"><sup><a class="reference internal" href="../saltiniai.html#id40" title="Gov.uk. Bus operator requirements. URL: https://publish.bus-data.dft.gov.uk/guidance/operator-requirements/?section=dataquality (visited on 2022-06-07).">17</a></sup></span>.</p>
+<table class="colwidths-auto table" id="id7">
+<caption><span class="caption-number">Table 17 </span><span class="caption-text">Dinaminių duomenų teikimo privalomumas transporto operatoriams (SIRI-VM)</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>SIRI-VM profilio laukelis</p></th>
+<th class="head"><p>Aprašymas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bearing</p></td>
+<td><p>Azimutas</p></td>
+</tr>
+<tr class="row-odd"><td><p>BlockRef</p></td>
+<td><p>Bloko identifikatorius</p></td>
+</tr>
+<tr class="row-even"><td><p>DestinationRef</p></td>
+<td><p>Paskirties stotelės identifikatorius</p></td>
+</tr>
+<tr class="row-odd"><td><p>DirectionRef</p></td>
+<td><p>Reiso kryptis</p></td>
+</tr>
+<tr class="row-even"><td><p>LineRef</p></td>
+<td><p>Maršruto identifikatorius</p></td>
+</tr>
+<tr class="row-odd"><td><p>OperatorRef</p></td>
+<td><p>Operatoriaus identifikatorius</p></td>
+</tr>
+<tr class="row-even"><td><p>OriginName</p></td>
+<td><p>Pirmosios stotelės pavadinimas</p></td>
+</tr>
+<tr class="row-odd"><td><p>OriginRef</p></td>
+<td><p>Pirmosios reiso stotelės identifikatorius</p></td>
+</tr>
+<tr class="row-even"><td><p>ProducerRef</p></td>
+<td><p>Duomenų rinkinio generatoriaus identifikatorius</p></td>
+</tr>
+<tr class="row-odd"><td><p>PublishedLineName</p></td>
+<td><p>Maršruto pavadinimas</p></td>
+</tr>
+<tr class="row-even"><td><p>RecordedAtTime</p></td>
+<td><p>Pozicijos gavimo data ir laikas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Speed</p></td>
+<td><p>Transporto priemonės greitis</p></td>
+</tr>
+<tr class="row-even"><td><p>ValidUntilTime</p></td>
+<td><p>Pozicijos galiojimo data ir laikas</p></td>
+</tr>
+<tr class="row-odd"><td><p>VehicleJourneyRef</p></td>
+<td><p>Reiso identifikatorius</p></td>
+</tr>
+<tr class="row-even"><td><p>VehicleLocation (Lat, Long)</p></td>
+<td><p>Transporto priemonės pozicija</p></td>
+</tr>
+<tr class="row-odd"><td><p>VehicleRef</p></td>
+<td><p>Transporto priemonės identifikatorius.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="ativiri-duomenys">
+<h3>Ativiri duomenys<a class="headerlink" href="#ativiri-duomenys" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Visi dinaminiai viešojo transporto duomenys yra atviri ir prieinami
+per <em><a class="reference external" href="https://data.bus-data.dft.gov.uk/avl/download/">Bus Open Data Service</a></em> dviem formatais: SIRI-Lite ir GTFS
+Realtime.</p>
+<figure class="align-default" id="id8">
+<img alt="../_images/location-data.png" src="../_images/location-data.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Atvirai prieinami dinaminiai viešojo transporto duomenys.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip dropdown admonition">
+<p class="admonition-title">SIRI VM (Vehicle Monitoring) gražinamų duomenų pavzydys</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Siri</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.siri.org.uk/siri&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+      <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://www.siri.org.uk/siri http://www.siri.org.uk/schema/2.0/xsd/siri.xsd&quot;</span> <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ServiceDelivery&gt;</span>
+        <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-06-07T08:51:02.550066+00:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+        <span class="nt">&lt;ProducerRef&gt;</span>ItoWorld<span class="nt">&lt;/ProducerRef&gt;</span>
+        <span class="nt">&lt;VehicleMonitoringDelivery&gt;</span>
+            <span class="nt">&lt;ResponseTimestamp&gt;</span>2022-06-07T08:51:02.550066+00:00<span class="nt">&lt;/ResponseTimestamp&gt;</span>
+            <span class="nt">&lt;RequestMessageRef&gt;</span>1a4d0e6a-23a3-4a30-a582-47e5e2a664da<span class="nt">&lt;/RequestMessageRef&gt;</span>
+            <span class="nt">&lt;ValidUntil&gt;</span>2022-06-07T08:56:02.550066+00:00<span class="nt">&lt;/ValidUntil&gt;</span>
+            <span class="nt">&lt;ShortestPossibleCycle&gt;</span>PT5S<span class="nt">&lt;/ShortestPossibleCycle&gt;</span>
+            <span class="nt">&lt;VehicleActivity&gt;</span>
+                <span class="nt">&lt;RecordedAtTime&gt;</span>2022-06-07T08:50:39+00:00<span class="nt">&lt;/RecordedAtTime&gt;</span>
+                <span class="nt">&lt;ItemIdentifier&gt;</span>de1f2149-64f0-4ce0-9174-fb89379272bb<span class="nt">&lt;/ItemIdentifier&gt;</span>
+                <span class="nt">&lt;ValidUntilTime&gt;</span>2022-06-07T08:56:02.550587<span class="nt">&lt;/ValidUntilTime&gt;</span>
+                <span class="nt">&lt;MonitoredVehicleJourney&gt;</span>
+                    <span class="nt">&lt;LineRef&gt;</span>891<span class="nt">&lt;/LineRef&gt;</span>
+                    <span class="nt">&lt;DirectionRef&gt;</span>outbound<span class="nt">&lt;/DirectionRef&gt;</span>
+                    <span class="nt">&lt;FramedVehicleJourneyRef&gt;</span>
+                        <span class="nt">&lt;DataFrameRef&gt;</span>2022-06-07<span class="nt">&lt;/DataFrameRef&gt;</span>
+                        <span class="nt">&lt;DatedVehicleJourneyRef&gt;</span>0925<span class="nt">&lt;/DatedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;/FramedVehicleJourneyRef&gt;</span>
+                    <span class="nt">&lt;PublishedLineName&gt;</span>891<span class="nt">&lt;/PublishedLineName&gt;</span>
+                    <span class="nt">&lt;OperatorRef&gt;</span>BANG<span class="nt">&lt;/OperatorRef&gt;</span>
+                    <span class="nt">&lt;OriginRef&gt;</span>43000700104<span class="nt">&lt;/OriginRef&gt;</span>
+                    <span class="nt">&lt;OriginName&gt;</span>Wolverhampton_Bus_Station<span class="nt">&lt;/OriginName&gt;</span>
+                    <span class="nt">&lt;DestinationRef&gt;</span>3590E106500<span class="nt">&lt;/DestinationRef&gt;</span>
+                    <span class="nt">&lt;DestinationName&gt;</span>TELFORD_Bus_Station<span class="nt">&lt;/DestinationName&gt;</span>
+                    <span class="nt">&lt;OriginAimedDepartureTime&gt;</span>2022-06-07T09:25:00+00:00<span class="nt">&lt;/OriginAimedDepartureTime&gt;</span>
+                    <span class="nt">&lt;DestinationAimedArrivalTime&gt;</span>2022-06-07T10:22:00+00:00<span class="nt">&lt;/DestinationAimedArrivalTime&gt;</span>
+                    <span class="nt">&lt;VehicleLocation&gt;</span>
+                        <span class="nt">&lt;Longitude&gt;</span>-2.209715<span class="nt">&lt;/Longitude&gt;</span>
+                        <span class="nt">&lt;Latitude&gt;</span>52.614723<span class="nt">&lt;/Latitude&gt;</span>
+                    <span class="nt">&lt;/VehicleLocation&gt;</span>
+                    <span class="nt">&lt;Bearing&gt;</span>312.0<span class="nt">&lt;/Bearing&gt;</span>
+                    <span class="nt">&lt;BlockRef&gt;</span>8912<span class="nt">&lt;/BlockRef&gt;</span>
+                    <span class="nt">&lt;VehicleRef&gt;</span>YX60FUE<span class="nt">&lt;/VehicleRef&gt;</span>
+                <span class="nt">&lt;/MonitoredVehicleJourney&gt;</span>
+                <span class="nt">&lt;Extensions&gt;</span>
+                    <span class="nt">&lt;VehicleJourney&gt;</span>
+                        <span class="nt">&lt;Operational&gt;</span>
+                            <span class="nt">&lt;TicketMachine&gt;</span>
+                                <span class="nt">&lt;TicketMachineServiceCode&gt;</span>891<span class="nt">&lt;/TicketMachineServiceCode&gt;</span>
+                                <span class="nt">&lt;JourneyCode&gt;</span>0925<span class="nt">&lt;/JourneyCode&gt;</span>
+                            <span class="nt">&lt;/TicketMachine&gt;</span>
+                        <span class="nt">&lt;/Operational&gt;</span>
+                        <span class="nt">&lt;VehicleUniqueId&gt;</span>14<span class="nt">&lt;/VehicleUniqueId&gt;</span>
+                    <span class="nt">&lt;/VehicleJourney&gt;</span>
+                <span class="nt">&lt;/Extensions&gt;</span>
+            <span class="nt">&lt;/VehicleActivity&gt;</span>
+        <span class="nt">&lt;/VehicleMonitoringDelivery&gt;</span>
+    <span class="nt">&lt;/ServiceDelivery&gt;</span>
+<span class="nt">&lt;/Siri&gt;</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./praktikos"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="svedija.html" title="praeitas page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">praeitas</p>
+            <p class="prev-next-title">Švedija</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../sprendimas/architektura.html" title="kitas page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">kitas</p>
+        <p class="prev-next-title">Architektūra</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>
+  Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
+  
+  El. paštas: <a href="mailto:karolis.vycius@kurklt.lt" target="_blank">karolis.vycius@kurklt.lt</a>
+</p>
+<div>
+</div>
+<p>
+  © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
+</p>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
