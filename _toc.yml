@@ -44,6 +44,7 @@ parts:
       - file: praktikos/index
       - file: praktikos/norvegija
       - file: praktikos/svedija
+      - file: praktikos/jungtine-karalyste
 
   - caption: Sprendimas
     chapters:
