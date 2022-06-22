@@ -29,8 +29,8 @@ Google Maps pranešimai keleiviams (žr. *Modified Service* ir *Information*).
 
 Pranešimas keleiviui susideda iš:
 
-- Pranešimo antraštės, teksto ir nuorodos, kurioje pateikiama papildoma informacija (gali būti pateikiama ¬keliomis
-  kalbomis);
+- Pranešimo antraštės, teksto ir nuorodos, kurioje pateikiama papildoma informacija (gali būti pateikiama keletu
+  kalbų);
 - Galiojimo laiko (pradžios ir pabaigos data bei laikas);
 - Priežasties (pvz., renginys, avarija, streikas);
 - Poveikis keleiviui (pvz., papildomi autobusai, maršruto pakeitimai);
