@@ -1,0 +1,734 @@
+
+<!DOCTYPE html>
+
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Pranešimai keleiviams &#8212; Judumo duomenų ekosistemos plėtra</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://judumas.vycius.lt/sprendimas/pranesimai-keleiviams.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Indeksas" href="../genindex.html" />
+    <link rel="search" title="Paieška" href="../search.html" />
+    <link rel="next" title="Šaltiniai" href="../saltiniai.html" />
+    <link rel="prev" title="Architektūra" href="architektura.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="lt">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PSPT787FKK"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-PSPT787FKK');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Judumo duomenų ekosistemos plėtra</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projektas
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projektas.html">
+   Judumo duomenų ekosistemos plėtra
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Judumo duomenų standartai
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../standartai/index.html">
+   Judumo duomenų standartai
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/viesasis-transportas.html">
+   Viešasis transportas
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/statiniai-duomenys.html">
+     Statiniai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs.html">
+       GTFS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/netex.html">
+       NeTEx
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../standartai/dinaminiai-duomenys.html">
+     Dinaminiai duomenys
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/gtfs-realtime.html">
+       GTFS Realtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../standartai/siri.html">
+       SIRI
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../standartai/dalijimosi-paslaugos.html">
+   Dalijimosi paslaugos
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/gbfs.html">
+     GBFS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../standartai/mds.html">
+     MDS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Viešojo keleivinio transporto duomenys
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../duomenys/index.html">
+   Duomenų teikimas
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../duomenys/statiniai-duomenys.html">
+   Statiniai duomenys
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/vietinis-susisiekimas.html">
+     Vietinis reguliarusis susisiekimas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/palyginimas-su-stops-lt.html">
+     Palyginimas su pirminiu šaltiniu
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/tolimasis-susisiekimas.html">
+     Tolimasis ir tarptautinis reguliarusis susisiekimas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../duomenys/vintra-gtfs.html">
+     GTFS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../duomenys/dinaminiai-duomenys.html">
+   Dinaminiai duomenys
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Gerosios praktikos
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/index.html">
+   Užsienio šalių gerosios praktikos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/norvegija.html">
+   Norvegija
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/svedija.html">
+   Švedija
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../praktikos/jungtine-karalyste.html">
+   Jungtinė Karalystė
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sprendimas
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="architektura.html">
+   Architektūra
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pranešimai keleiviams
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Literatūra
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../saltiniai.html">
+   Šaltiniai
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Aplinka
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../uzrasai.html">
+   Užrašai
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apps/apple_maps.html">
+   Apple Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../internal.html">
+   Aplinka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/vycius/judumas"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/vycius/judumas/edit/main/sprendimas/pranesimai-keleiviams.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/sprendimas/pranesimai-keleiviams.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esama-situacija">
+   Esama situacija
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#standartizuoti-pranesimai-keleiviams">
+   Standartizuoti pranešimai keleiviams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
+   Pranešimų keleiviams valdymas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#valdymo-budai">
+     Valdymo būdai
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Pranešimai keleiviams</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esama-situacija">
+   Esama situacija
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#standartizuoti-pranesimai-keleiviams">
+   Standartizuoti pranešimai keleiviams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
+   Pranešimų keleiviams valdymas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#valdymo-budai">
+     Valdymo būdai
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="pranesimai-keleiviams">
+<h1>Pranešimai keleiviams<a class="headerlink" href="#pranesimai-keleiviams" title="Nuoroda į šią antraštę">#</a></h1>
+<p>Keleivis stovi stotelėje ir laukia atvykstančios transporto priemones, tačiau dėl įvykusios didelės avarijos ar
+mieste vykstančio renginio buvo laikinai pakeistas maršrutas. Kaip apie tokius įvykius informuoti stotelėje
+laukiantį ar kelionę planuojantį keleivį?</p>
+<section id="esama-situacija">
+<h2>Esama situacija<a class="headerlink" href="#esama-situacija" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Šiuo metu Lietuvoje dažniausiai tokia informacija keleiviams teikiama per socialinius tinklus ar vežėjų interneto
+svetaines. Teiakint pranešimus tokiais būdais ypač sunku užtikrinti, kad keleiviai pamatys pranešimus tuomet kada to
+reikia. Taip keleiviai matys informacinius pranešimus nebūtinai susijusius su jų kelione.</p>
+<figure class="align-default" id="id1">
+<img alt="../_images/73-autobusas-pasikeitimai.png" src="../_images/73-autobusas-pasikeitimai.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">JUDU skelbiami informaciniai pranešimai <a class="reference external" href="https://www.facebook.com/susisiekimo.paslaugos">Facebook paskyroje</a>.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="standartizuoti-pranesimai-keleiviams">
+<h2>Standartizuoti pranešimai keleiviams<a class="headerlink" href="#standartizuoti-pranesimai-keleiviams" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Kitose šalyse pranešimai keleiviams yra susiejami su stotele, maršrutu, reisu, vežėju ir perduodami
+standartizuotais formatais verslui, akademijai ir visuomenei per kelionių planavimo priemones.</p>
+<figure class="align-default" id="id2">
+<img alt="../_images/google-maps-service-alerts.jpg" src="../_images/google-maps-service-alerts.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Google Maps pranešimai keleiviams (žr. <em>Modified Service</em> ir <em>Information</em>).</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="pranesimu-keleiviams-valdymas">
+<h2>Pranešimų keleiviams valdymas<a class="headerlink" href="#pranesimu-keleiviams-valdymas" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Pranešimas keleiviui susideda iš:</p>
+<ul class="simple">
+<li><p>Pranešimo antraštės, teksto ir nuorodos, kurioje pateikiama papildoma informacija (gali būti pateikiama ¬keliomis
+kalbomis);</p></li>
+<li><p>Galiojimo laiko (pradžios ir pabaigos data bei laikas);</p></li>
+<li><p>Priežasties (pvz., renginys, avarija, streikas);</p></li>
+<li><p>Poveikis keleiviui (pvz., papildomi autobusai, maršruto pakeitimai);</p></li>
+<li><p>Susiejimas su stotelėmis, reisais, maršrutais, maršruto tipais ar agentūromis;</p></li>
+</ul>
+<p>Taip pat galima pridėti papildomą informaciją (
+žr. <a class="reference external" href="https://www.rtig.org.uk/system/files/documents/RTIG-PR015-D003-0.2%20SIRI-SX%20Best%20Practice.pdf">SIRI-SX gerasias praktikas</a>)</p>
+<section id="valdymo-budai">
+<h3>Valdymo būdai<a class="headerlink" href="#valdymo-budai" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Pranešimams sukurti turėtų būti naudojamas pranešimų redaktorius. Paprasčiausias ir visiškai nemokamas būdas pridėti
+pranešimus keleiviams yra naudojantis [Google Transit redaktoriumi](<a class="reference external" href="https://support.google">https://support.google</a>.
+com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208).</p>
+<figure class="align-default" id="id3">
+<img alt="../_images/google-transit-service-alerts-editor.png" src="../_images/google-transit-service-alerts-editor.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Google Transit <a class="reference external" href="https://support.google.com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208">pranešimų valdymo redaktorius</a>.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Vis dėlto, pridėjus pranešimus per Google Transit redaktorių jie bus matomi tik Google Maps. Taip prarasime galimybę<br />
+pranešimus perduoti verslui, akademijai ar kitoms kelionių planavimo priemonėms. Dėl šios priežasties pranešimų
+valdymas turėtų būti viešojo transporto koordinavimo sistemos dalis.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sprendimas"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="architektura.html" title="praeitas page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">praeitas</p>
+            <p class="prev-next-title">Architektūra</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../saltiniai.html" title="kitas page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">kitas</p>
+        <p class="prev-next-title">Šaltiniai</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>
+  Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
+  
+  El. paštas: <a href="mailto:karolis.vycius@kurklt.lt" target="_blank">karolis.vycius@kurklt.lt</a>
+</p>
+<div>
+</div>
+<p>
+  © 2022 Visas turinys (jei nenurodyta kitaip) yra licencijuotas pagal <a href="https://creativecommons.org/licenses/by/4.0//deed.lt">CC BY 4.0</a>
+</p>
+
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
