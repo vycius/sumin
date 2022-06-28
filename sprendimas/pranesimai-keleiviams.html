@@ -537,10 +537,49 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
    Pranešimų keleiviams valdymas
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rinkoje-siulomi-produktai">
+   Rinkoje siūlomi produktai
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#valdymo-budai">
-     Valdymo būdai
+    <a class="reference internal nav-link" href="#google-transit">
+     Google Transit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trillium-transit-alerts">
+     Trillium Transit Alerts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pranesimo-informacija">
+       Pranešimo informacija
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paveikti-marsrutai">
+       Paveikti maršrutai
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paveiktos-stoteles">
+       Paveiktos stotelės
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-perdavimas">
+   Duomenų perdavimas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gtfs-realtime">
+     GTFS Realtime
     </a>
    </li>
   </ul>
@@ -578,10 +617,49 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
    Pranešimų keleiviams valdymas
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rinkoje-siulomi-produktai">
+   Rinkoje siūlomi produktai
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#valdymo-budai">
-     Valdymo būdai
+    <a class="reference internal nav-link" href="#google-transit">
+     Google Transit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trillium-transit-alerts">
+     Trillium Transit Alerts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#pranesimo-informacija">
+       Pranešimo informacija
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paveikti-marsrutai">
+       Paveikti maršrutai
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paveiktos-stoteles">
+       Paveiktos stotelės
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duomenu-perdavimas">
+   Duomenų perdavimas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gtfs-realtime">
+     GTFS Realtime
     </a>
    </li>
   </ul>
@@ -605,7 +683,7 @@ laukiantį ar kelionę planuojantį keleivį?</p>
 <h2>Esama situacija<a class="headerlink" href="#esama-situacija" title="Nuoroda į šią antraštę">#</a></h2>
 <p>Šiuo metu Lietuvoje dažniausiai tokia informacija keleiviams teikiama per socialinius tinklus ar vežėjų interneto
 svetaines. Teiakint pranešimus tokiais būdais ypač sunku užtikrinti, kad keleiviai pamatys pranešimus tuomet kada to
-reikia. Taip keleiviai matys informacinius pranešimus nebūtinai susijusius su jų kelione.</p>
+reikia. Taip pat keleiviai matys informacinius pranešimus, kurie nebūtinai yra susiję su jų kelione.</p>
 <figure class="align-default" id="id1">
 <img alt="../_images/73-autobusas-pasikeitimai.png" src="../_images/73-autobusas-pasikeitimai.png" />
 <figcaption>
@@ -626,22 +704,26 @@ standartizuotais formatais verslui, akademijai ir visuomenei per kelionių plana
 </section>
 <section id="pranesimu-keleiviams-valdymas">
 <h2>Pranešimų keleiviams valdymas<a class="headerlink" href="#pranesimu-keleiviams-valdymas" title="Nuoroda į šią antraštę">#</a></h2>
-<p>Pranešimas keleiviui susideda iš:</p>
+<p>Pranešimas keleiviui gali susidėti iš:</p>
 <ul class="simple">
 <li><p>Pranešimo antraštės, teksto ir nuorodos, kurioje pateikiama papildoma informacija (gali būti pateikiama keletu
 kalbų);</p></li>
 <li><p>Galiojimo laiko (pradžios ir pabaigos data bei laikas);</p></li>
 <li><p>Priežasties (pvz., renginys, avarija, streikas);</p></li>
-<li><p>Poveikis keleiviui (pvz., papildomi autobusai, maršruto pakeitimai);</p></li>
-<li><p>Susiejimas su stotelėmis, reisais, maršrutais, maršruto tipais ar agentūromis;</p></li>
+<li><p>Poveikio keleiviui (pvz., papildomi autobusai, maršruto pakeitimai);</p></li>
+<li><p>Įvykio sunkumo (pvz., informacinis pranešimas, įspėjimas);</p></li>
+<li><p>Paveikslėlio (eksperimentinis palaikymas);</p></li>
+<li><p>Susiejimo su stotelėmis, reisais, maršrutais, maršruto tipais ar agentūromis;</p></li>
 </ul>
 <p>Taip pat galima pridėti papildomą informaciją (
 žr. <a class="reference external" href="https://www.rtig.org.uk/system/files/documents/RTIG-PR015-D003-0.2%20SIRI-SX%20Best%20Practice.pdf">SIRI-SX gerasias praktikas</a>)</p>
-<section id="valdymo-budai">
-<h3>Valdymo būdai<a class="headerlink" href="#valdymo-budai" title="Nuoroda į šią antraštę">#</a></h3>
-<p>Pranešimams sukurti turėtų būti naudojamas pranešimų redaktorius. Paprasčiausias ir visiškai nemokamas būdas pridėti
-pranešimus keleiviams yra naudojantis [Google Transit redaktoriumi](<a class="reference external" href="https://support.google">https://support.google</a>.
-com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208).</p>
+</section>
+<section id="rinkoje-siulomi-produktai">
+<h2>Rinkoje siūlomi produktai<a class="headerlink" href="#rinkoje-siulomi-produktai" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="google-transit">
+<h3>Google Transit<a class="headerlink" href="#google-transit" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Paprasčiausias ir visiškai nemokamas būdas pridėti pranešimus keleiviams yra naudojant [Google Transit redaktorių]
+(<a class="reference external" href="https://support.google.com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208">https://support.google.com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208</a>).</p>
 <figure class="align-default" id="id3">
 <img alt="../_images/google-transit-service-alerts-editor.png" src="../_images/google-transit-service-alerts-editor.png" />
 <figcaption>
@@ -651,6 +733,411 @@ com/transitpartners/answer/6384347?hl=en&amp;ref_topic=6384208).</p>
 <p>Vis dėlto, pridėjus pranešimus per Google Transit redaktorių jie bus matomi tik Google Maps. Taip prarasime galimybę<br />
 pranešimus perduoti verslui, akademijai ar kitoms kelionių planavimo priemonėms. Dėl šios priežasties pranešimų
 valdymas turėtų būti viešojo transporto koordinavimo sistemos dalis.</p>
+</section>
+<section id="trillium-transit-alerts">
+<h3>Trillium Transit Alerts<a class="headerlink" href="#trillium-transit-alerts" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Trillium siūlomas pranešimų keleiviams redaktorius susideda iš 3 pagrindinių dalių, o visa į jį suvesta informacija
+išvedama GTFS Realtime foamtu.</p>
+<section id="pranesimo-informacija">
+<h4>Pranešimo informacija<a class="headerlink" href="#pranesimo-informacija" title="Nuoroda į šią antraštę">#</a></h4>
+<figure class="align-default" id="id4">
+<img alt="../_images/trillium-transit-service-alerts.png" src="../_images/trillium-transit-service-alerts.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Trillium Transit Alerts pranešimas. <a class="reference external" href="https://support.trilliumtransit.com/hc/en-us/articles/360025612272">Šaltinis</a>.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="paveikti-marsrutai">
+<h4>Paveikti maršrutai<a class="headerlink" href="#paveikti-marsrutai" title="Nuoroda į šią antraštę">#</a></h4>
+<figure class="align-default" id="id5">
+<img alt="../_images/trillium-transit-service-alerts-routes.png" src="../_images/trillium-transit-service-alerts-routes.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Trillium Transit Alerts su pranešimu susiję maršrutai. [Šaltinis](<a class="reference external" href="https://support.trilliumtransit">https://support.trilliumtransit</a>.
+com/hc/en-us/articles/360025612272).</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="paveiktos-stoteles">
+<h4>Paveiktos stotelės<a class="headerlink" href="#paveiktos-stoteles" title="Nuoroda į šią antraštę">#</a></h4>
+<p>Visos stotelės esančios paveiktuose maršrutuose yra parenkamos automatiškai (jei nenurodama kitaip).</p>
+<figure class="align-default" id="id6">
+<img alt="../_images/trillium-transit-service-alerts-stops.png" src="../_images/trillium-transit-service-alerts-stops.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Trillium Transit Alerts su pranešimu susijusios stotelės. [Šaltinis](<a class="reference external" href="https://support.trilliumtransit">https://support.trilliumtransit</a>.
+com/hc/en-us/articles/360025612272).</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="duomenu-perdavimas">
+<h2>Duomenų perdavimas<a class="headerlink" href="#duomenu-perdavimas" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="gtfs-realtime">
+<h3>GTFS Realtime<a class="headerlink" href="#gtfs-realtime" title="Nuoroda į šią antraštę">#</a></h3>
+<div class="highlight-proto notranslate"><div class="highlight"><pre><span></span><span class="c1">// An alert, indicating some sort of incident in the public transit network.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">Alert</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Time when the alert should be shown to the user. If missing, the</span>
+<span class="w">  </span><span class="c1">// alert will be shown as long as it appears in the feed.</span>
+<span class="w">  </span><span class="c1">// If multiple ranges are given, the alert will be shown during all of them.</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="n">TimeRange</span><span class="w"> </span><span class="na">active_period</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Entities whose users we should notify of this alert.</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="n">EntitySelector</span><span class="w"> </span><span class="na">informed_entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Cause of this alert.</span>
+<span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="n">Cause</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">UNKNOWN_CAUSE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="na">OTHER_CAUSE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// Not machine-representable.</span>
+<span class="w">    </span><span class="na">TECHNICAL_PROBLEM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">    </span><span class="na">STRIKE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w">             </span><span class="c1">// Public transit agency employees stopped working.</span>
+<span class="w">    </span><span class="na">DEMONSTRATION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">      </span><span class="c1">// People are blocking the streets.</span>
+<span class="w">    </span><span class="na">ACCIDENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="w">    </span><span class="na">HOLIDAY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="w">    </span><span class="na">WEATHER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="w">    </span><span class="na">MAINTENANCE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<span class="w">    </span><span class="na">CONSTRUCTION</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="na">POLICE_ACTIVITY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span>
+<span class="w">    </span><span class="na">MEDICAL_EMERGENCY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">Cause</span><span class="w"> </span><span class="na">cause</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="p">[</span><span class="k">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UNKNOWN_CAUSE</span><span class="p">];</span>
+
+<span class="w">  </span><span class="c1">// What is the effect of this problem on the affected entity.</span>
+<span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="n">Effect</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">NO_SERVICE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="na">REDUCED_SERVICE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// We don&#39;t care about INsignificant delays: they are hard to detect, have</span>
+<span class="w">    </span><span class="c1">// little impact on the user, and would clutter the results as they are too</span>
+<span class="w">    </span><span class="c1">// frequent.</span>
+<span class="w">    </span><span class="na">SIGNIFICANT_DELAYS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">    </span><span class="na">DETOUR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">    </span><span class="na">ADDITIONAL_SERVICE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="na">MODIFIED_SERVICE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="w">    </span><span class="na">OTHER_EFFECT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="w">    </span><span class="na">UNKNOWN_EFFECT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="w">    </span><span class="na">STOP_MOVED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<span class="w">    </span><span class="na">NO_EFFECT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="na">ACCESSIBILITY_ISSUE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">Effect</span><span class="w"> </span><span class="na">effect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="p">[</span><span class="k">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UNKNOWN_EFFECT</span><span class="p">];</span>
+
+<span class="w">  </span><span class="c1">// The URL which provides additional information about the alert.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Alert header. Contains a short summary of the alert text as plain-text.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">header_text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Full description for the alert as plain-text. The information in the</span>
+<span class="w">  </span><span class="c1">// description should add to the information of the header.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">description_text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Text for alert header to be used in text-to-speech implementations. This field is the text-to-speech version of header_text.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">tts_header_text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Text for full description for the alert to be used in text-to-speech implementations. This field is the text-to-speech version of description_text.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">tts_description_text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Severity of this alert.</span>
+<span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="n">SeverityLevel</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="na">UNKNOWN_SEVERITY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">	</span><span class="na">INFO</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">	</span><span class="na">WARNING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">	</span><span class="na">SEVERE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">SeverityLevel</span><span class="w"> </span><span class="na">severity_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">14</span><span class="w"> </span><span class="p">[</span><span class="k">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UNKNOWN_SEVERITY</span><span class="p">];</span>
+
+<span class="w">  </span><span class="c1">// TranslatedImage to be displayed along the alert text. Used to explain visually the alert effect of a detour, station closure, etc. The image must enhance the understanding of the alert. Any essential information communicated within the image must also be contained in the alert text.</span>
+<span class="w">  </span><span class="c1">// The following types of images are discouraged : image containing mainly text, marketing or branded images that add no additional information. </span>
+<span class="w">  </span><span class="c1">// NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedImage</span><span class="w"> </span><span class="na">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">  </span><span class="c1">// Text describing the appearance of the linked image in the `image` field (e.g., in case the image can&#39;t be displayed</span>
+<span class="w">  </span><span class="c1">// or the user can&#39;t see the image for accessibility reasons). See the HTML spec for alt image text - https://html.spec.whatwg.org/#alt.</span>
+<span class="w">  </span><span class="c1">// NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TranslatedString</span><span class="w"> </span><span class="na">image_alternative_text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features</span>
+<span class="w">  </span><span class="c1">// and modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//</span>
+<span class="c1">// Low level data structures used above.</span>
+<span class="c1">//</span>
+
+<span class="c1">// A time interval. The interval is considered active at time &#39;t&#39; if &#39;t&#39; is</span>
+<span class="c1">// greater than or equal to the start time and less than the end time.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">TimeRange</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Start time, in POSIX time (i.e., number of seconds since January 1st 1970</span>
+<span class="w">  </span><span class="c1">// 00:00:00 UTC).</span>
+<span class="w">  </span><span class="c1">// If missing, the interval starts at minus infinity.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">uint64</span><span class="w"> </span><span class="na">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// End time, in POSIX time (i.e., number of seconds since January 1st 1970</span>
+<span class="w">  </span><span class="c1">// 00:00:00 UTC).</span>
+<span class="w">  </span><span class="c1">// If missing, the interval ends at plus infinity.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">uint64</span><span class="w"> </span><span class="na">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// A descriptor that identifies an instance of a GTFS trip, or all instances of</span>
+<span class="c1">// a trip along a route.</span>
+<span class="c1">// - To specify a single trip instance, the trip_id (and if necessary,</span>
+<span class="c1">//   start_time) is set. If route_id is also set, then it should be same as one</span>
+<span class="c1">//   that the given trip corresponds to.</span>
+<span class="c1">// - To specify all the trips along a given route, only the route_id should be</span>
+<span class="c1">//   set. Note that if the trip_id is not known, then stop sequence ids in</span>
+<span class="c1">//   TripUpdate are not sufficient, and stop_ids must be provided as well. In</span>
+<span class="c1">//   addition, absolute arrival/departure times must be provided.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">TripDescriptor</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// The trip_id from the GTFS feed that this selector refers to.</span>
+<span class="w">  </span><span class="c1">// For non frequency-based trips, this field is enough to uniquely identify</span>
+<span class="w">  </span><span class="c1">// the trip. For frequency-based trip, start_time and start_date might also be</span>
+<span class="w">  </span><span class="c1">// necessary. When schedule_relationship is DUPLICATED within a TripUpdate, the trip_id identifies the trip from</span>
+<span class="w">  </span><span class="c1">// static GTFS to be duplicated. When schedule_relationship is DUPLICATED within a VehiclePosition, the trip_id</span>
+<span class="w">  </span><span class="c1">// identifies the new duplicate trip and must contain the value for the corresponding TripUpdate.TripProperties.trip_id.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">trip_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The route_id from the GTFS that this selector refers to.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">route_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The direction_id from the GTFS feed trips.txt file, indicating the</span>
+<span class="w">  </span><span class="c1">// direction of travel for trips this selector refers to.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">uint32</span><span class="w"> </span><span class="na">direction_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The initially scheduled start time of this trip instance.</span>
+<span class="w">  </span><span class="c1">// When the trip_id corresponds to a non-frequency-based trip, this field</span>
+<span class="w">  </span><span class="c1">// should either be omitted or be equal to the value in the GTFS feed. When</span>
+<span class="w">  </span><span class="c1">// the trip_id correponds to a frequency-based trip, the start_time must be</span>
+<span class="w">  </span><span class="c1">// specified for trip updates and vehicle positions. If the trip corresponds</span>
+<span class="w">  </span><span class="c1">// to exact_times=1 GTFS record, then start_time must be some multiple</span>
+<span class="w">  </span><span class="c1">// (including zero) of headway_secs later than frequencies.txt start_time for</span>
+<span class="w">  </span><span class="c1">// the corresponding time period. If the trip corresponds to exact_times=0,</span>
+<span class="w">  </span><span class="c1">// then its start_time may be arbitrary, and is initially expected to be the</span>
+<span class="w">  </span><span class="c1">// first departure of the trip. Once established, the start_time of this</span>
+<span class="w">  </span><span class="c1">// frequency-based trip should be considered immutable, even if the first</span>
+<span class="w">  </span><span class="c1">// departure time changes -- that time change may instead be reflected in a</span>
+<span class="w">  </span><span class="c1">// StopTimeUpdate.</span>
+<span class="w">  </span><span class="c1">// Format and semantics of the field is same as that of</span>
+<span class="w">  </span><span class="c1">// GTFS/frequencies.txt/start_time, e.g., 11:15:35 or 25:15:35.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">start_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// The scheduled start date of this trip instance.</span>
+<span class="w">  </span><span class="c1">// Must be provided to disambiguate trips that are so late as to collide with</span>
+<span class="w">  </span><span class="c1">// a scheduled trip on a next day. For example, for a train that departs 8:00</span>
+<span class="w">  </span><span class="c1">// and 20:00 every day, and is 12 hours late, there would be two distinct</span>
+<span class="w">  </span><span class="c1">// trips on the same time.</span>
+<span class="w">  </span><span class="c1">// This field can be provided but is not mandatory for schedules in which such</span>
+<span class="w">  </span><span class="c1">// collisions are impossible - for example, a service running on hourly</span>
+<span class="w">  </span><span class="c1">// schedule where a vehicle that is one hour late is not considered to be</span>
+<span class="w">  </span><span class="c1">// related to schedule anymore.</span>
+<span class="w">  </span><span class="c1">// In YYYYMMDD format.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">start_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The relation between this trip and the static schedule. If a trip is done</span>
+<span class="w">  </span><span class="c1">// in accordance with temporary schedule, not reflected in GTFS, then it</span>
+<span class="w">  </span><span class="c1">// shouldn&#39;t be marked as SCHEDULED, but likely as ADDED.</span>
+<span class="w">  </span><span class="kd">enum</span><span class="w"> </span><span class="n">ScheduleRelationship</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Trip that is running in accordance with its GTFS schedule, or is close</span>
+<span class="w">    </span><span class="c1">// enough to the scheduled trip to be associated with it.</span>
+<span class="w">    </span><span class="na">SCHEDULED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// An extra trip that was added in addition to a running schedule, for</span>
+<span class="w">    </span><span class="c1">// example, to replace a broken vehicle or to respond to sudden passenger</span>
+<span class="w">    </span><span class="c1">// load.</span>
+<span class="w">    </span><span class="c1">// NOTE: Currently, behavior is unspecified for feeds that use this mode. There are discussions on the GTFS GitHub</span>
+<span class="w">    </span><span class="c1">// [(1)](https://github.com/google/transit/issues/106) [(2)](https://github.com/google/transit/pull/221)</span>
+<span class="w">    </span><span class="c1">// [(3)](https://github.com/google/transit/pull/219) around fully specifying or deprecating ADDED trips and the</span>
+<span class="w">    </span><span class="c1">// documentation will be updated when those discussions are finalized.</span>
+<span class="w">    </span><span class="na">ADDED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// A trip that is running with no schedule associated to it (GTFS frequencies.txt exact_times=0).</span>
+<span class="w">    </span><span class="c1">// Trips with ScheduleRelationship=UNSCHEDULED must also set all StopTimeUpdates.ScheduleRelationship=UNSCHEDULED.</span>
+<span class="w">    </span><span class="na">UNSCHEDULED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// A trip that existed in the schedule but was removed.</span>
+<span class="w">    </span><span class="na">CANCELED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Should not be used - for backwards-compatibility only.</span>
+<span class="w">    </span><span class="na">REPLACEMENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="p">[</span><span class="na">deprecated</span><span class="o">=</span><span class="kc">true</span><span class="p">];</span>
+
+<span class="w">    </span><span class="c1">// An extra trip that was added in addition to a running schedule, for example, to replace a broken vehicle or to</span>
+<span class="w">    </span><span class="c1">// respond to sudden passenger load. Used with TripUpdate.TripProperties.trip_id, TripUpdate.TripProperties.start_date,</span>
+<span class="w">    </span><span class="c1">// and TripUpdate.TripProperties.start_time to copy an existing trip from static GTFS but start at a different service</span>
+<span class="w">    </span><span class="c1">// date and/or time. Duplicating a trip is allowed if the service related to the original trip in (CSV) GTFS</span>
+<span class="w">    </span><span class="c1">// (in calendar.txt or calendar_dates.txt) is operating within the next 30 days. The trip to be duplicated is</span>
+<span class="w">    </span><span class="c1">// identified via TripUpdate.TripDescriptor.trip_id. This enumeration does not modify the existing trip referenced by</span>
+<span class="w">    </span><span class="c1">// TripUpdate.TripDescriptor.trip_id - if a producer wants to cancel the original trip, it must publish a separate</span>
+<span class="w">    </span><span class="c1">// TripUpdate with the value of CANCELED. Trips defined in GTFS frequencies.txt with exact_times that is empty or</span>
+<span class="w">    </span><span class="c1">// equal to 0 cannot be duplicated. The VehiclePosition.TripDescriptor.trip_id for the new trip must contain</span>
+<span class="w">    </span><span class="c1">// the matching value from TripUpdate.TripProperties.trip_id and VehiclePosition.TripDescriptor.ScheduleRelationship</span>
+<span class="w">    </span><span class="c1">// must also be set to DUPLICATED.</span>
+<span class="w">    </span><span class="c1">// Existing producers and consumers that were using the ADDED enumeration to represent duplicated trips must follow</span>
+<span class="w">    </span><span class="c1">// the migration guide (https://github.com/google/transit/tree/master/gtfs-realtime/spec/en/examples/migration-duplicated.md)</span>
+<span class="w">    </span><span class="c1">// to transition to the DUPLICATED enumeration.</span>
+<span class="w">    </span><span class="c1">// NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.</span>
+<span class="w">    </span><span class="na">DUPLICATED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">ScheduleRelationship</span><span class="w"> </span><span class="na">schedule_relationship</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Identification information for the vehicle performing the trip.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">VehicleDescriptor</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Internal system identification of the vehicle. Should be unique per</span>
+<span class="w">  </span><span class="c1">// vehicle, and can be used for tracking the vehicle as it proceeds through</span>
+<span class="w">  </span><span class="c1">// the system.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// User visible label, i.e., something that must be shown to the passenger to</span>
+<span class="w">  </span><span class="c1">// help identify the correct vehicle.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The license plate of the vehicle.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">license_plate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// A selector for an entity in a GTFS feed.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">EntitySelector</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// The values of the fields should correspond to the appropriate fields in the</span>
+<span class="w">  </span><span class="c1">// GTFS feed.</span>
+<span class="w">  </span><span class="c1">// At least one specifier must be given. If several are given, then the</span>
+<span class="w">  </span><span class="c1">// matching has to apply to all the given specifiers.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">agency_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">route_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// corresponds to route_type in GTFS.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">int32</span><span class="w"> </span><span class="na">route_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="n">TripDescriptor</span><span class="w"> </span><span class="na">trip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">stop_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Corresponds to trip direction_id in GTFS trips.txt. If provided the</span>
+<span class="w">  </span><span class="c1">// route_id must also be provided.</span>
+<span class="w">  </span><span class="k">optional</span><span class="w"> </span><span class="kt">uint32</span><span class="w"> </span><span class="na">direction_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// An internationalized message containing per-language versions of a snippet of</span>
+<span class="c1">// text or a URL.</span>
+<span class="c1">// One of the strings from a message will be picked up. The resolution proceeds</span>
+<span class="c1">// as follows:</span>
+<span class="c1">// 1. If the UI language matches the language code of a translation,</span>
+<span class="c1">//    the first matching translation is picked.</span>
+<span class="c1">// 2. If a default UI language (e.g., English) matches the language code of a</span>
+<span class="c1">//    translation, the first matching translation is picked.</span>
+<span class="c1">// 3. If some translation has an unspecified language code, that translation is</span>
+<span class="c1">//    picked.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">TranslatedString</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">message</span><span class="w"> </span><span class="nc">Translation</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// A UTF-8 string containing the message.</span>
+<span class="w">    </span><span class="k">required</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// BCP-47 language code. Can be omitted if the language is unknown or if</span>
+<span class="w">    </span><span class="c1">// no i18n is done at all for the feed. At most one translation is</span>
+<span class="w">    </span><span class="c1">// allowed to have an unspecified language tag.</span>
+<span class="w">    </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">    </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">    </span><span class="c1">// modifications to the spec.</span>
+<span class="w">    </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">    </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// At least one translation must be provided.</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="n">Translation</span><span class="w"> </span><span class="na">translation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// An internationalized image containing per-language versions of a URL linking to an image</span>
+<span class="c1">// along with meta information</span>
+<span class="c1">// Only one of the images from a message will be retained by consumers. The resolution proceeds</span>
+<span class="c1">// as follows:</span>
+<span class="c1">// 1. If the UI language matches the language code of a translation,</span>
+<span class="c1">//    the first matching translation is picked.</span>
+<span class="c1">// 2. If a default UI language (e.g., English) matches the language code of a</span>
+<span class="c1">//    translation, the first matching translation is picked.</span>
+<span class="c1">// 3. If some translation has an unspecified language code, that translation is</span>
+<span class="c1">//    picked.</span>
+<span class="c1">// NOTE: This field is still experimental, and subject to change. It may be formally adopted in the future.</span>
+<span class="kd">message</span><span class="w"> </span><span class="nc">TranslatedImage</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">message</span><span class="w"> </span><span class="nc">LocalizedImage</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// String containing an URL linking to an image</span>
+<span class="w">    </span><span class="c1">// The image linked must be less than 2MB. </span>
+<span class="w">    </span><span class="c1">// If an image changes in a significant enough way that an update is required on the consumer side, the producer must update the URL to a new one.</span>
+<span class="w">    </span><span class="c1">// The URL should be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. See the following http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description of how to create fully qualified URL values.</span>
+<span class="w">    </span><span class="k">required</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// IANA media type as to specify the type of image to be displayed. </span>
+<span class="w">    </span><span class="c1">// The type must start with &quot;image/&quot;</span>
+<span class="w">    </span><span class="k">required</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">media_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// BCP-47 language code. Can be omitted if the language is unknown or if</span>
+<span class="w">    </span><span class="c1">// no i18n is done at all for the feed. At most one translation is</span>
+<span class="w">    </span><span class="c1">// allowed to have an unspecified language tag.</span>
+<span class="w">    </span><span class="k">optional</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="na">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+
+
+<span class="w">    </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">    </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">    </span><span class="c1">// modifications to the spec.</span>
+<span class="w">    </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">    </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// At least one localized image must be provided.</span>
+<span class="w">  </span><span class="k">repeated</span><span class="w"> </span><span class="n">LocalizedImage</span><span class="w"> </span><span class="na">localized_image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The extensions namespace allows 3rd-party developers to extend the</span>
+<span class="w">  </span><span class="c1">// GTFS Realtime Specification in order to add and evaluate new features and</span>
+<span class="w">  </span><span class="c1">// modifications to the spec.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">1999</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// The following extension IDs are reserved for private use by any organization.</span>
+<span class="w">  </span><span class="k">extensions</span><span class="w"> </span><span class="mi">9000</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 </section>
 </section>
