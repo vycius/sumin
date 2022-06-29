@@ -92,6 +92,9 @@ com/hc/en-us/articles/360025612272).
 ### GTFS Realtime
 
 ```proto
+:::{admonition} GTFS Realtime kontraktas pranešimsm keleiviams
+:class: tip, dropdown
+
 // An alert, indicating some sort of incident in the public transit network.
 message Alert {
   // Time when the alert should be shown to the user. If missing, the
@@ -455,3 +458,7 @@ message TranslatedImage {
   extensions 9000 to 9999;
 }
 ```
+
+### SIRI Situation Exchange (SX)
+
+- [Norvegijos SIRI Situation Exchange (SX) profilis](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370605/SIRI-SX)
