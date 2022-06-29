@@ -22,7 +22,7 @@ standartizuotais formatais verslui, akademijai ir visuomenei per kelionių plana
 
 ```{figure} /images/apps/google-maps/google-maps-service-alerts.jpg
 
-Google Maps pranešimai keleiviams (žr. *Modified Service* ir *Information*). 
+Google Maps pranešimai keleiviams (žr. *Modified Service* ir *Information*). [Šaltinis](https://www.dailydot.com/debug/google-maps-update-real-time-tracking-transit/).
 ```
 
 ## Pranešimų keleiviams valdymas
@@ -38,43 +38,44 @@ Pranešimas keleiviui gali susidėti iš:
 - Paveikslėlio (eksperimentinis palaikymas);
 - Susiejimo su stotelėmis, reisais, maršrutais, maršruto tipais ar agentūromis;
 
-Taip pat galima pridėti papildomą informaciją (
+Taip pat galima pridėti papildomą informaciją
+(
 žr. [SIRI-SX gerasias praktikas](https://www.rtig.org.uk/system/files/documents/RTIG-PR015-D003-0.2%20SIRI-SX%20Best%20Practice.pdf))
 
 ## Rinkoje siūlomi produktai
 
 ### Google Transit
 
-Paprasčiausias ir visiškai nemokamas būdas pridėti pranešimus keleiviams yra naudojant [Google Transit redaktorių]
-(https://support.google.com/transitpartners/answer/6384347?hl=en&ref_topic=6384208).
+Paprasčiausias ir visiškai nemokamas būdas pridėti pranešimus keleiviams yra
+naudojant
+[Google Transit redaktorių](https://support.google.com/transitpartners/answer/6384347?hl=en&ref_topic=6384208).
 
 ```{figure} /images/sprendimai/pranesimai-keleiviams/google-transit-service-alerts-editor.png
 
 Google Transit [pranešimų valdymo redaktorius](https://support.google.com/transitpartners/answer/6384347?hl=en&ref_topic=6384208).
 ```
 
-Vis dėlto, pridėjus pranešimus per Google Transit redaktorių jie bus matomi tik Google Maps. Taip prarasime galimybę  
+Vis dėlto, pridėjus pranešimus per Google Transit redaktorių jie bus matomi tik Google Maps. Taip prarasime galimybę
 pranešimus perduoti verslui, akademijai ar kitoms kelionių planavimo priemonėms. Dėl šios priežasties pranešimų
 valdymas turėtų būti viešojo transporto koordinavimo sistemos dalis.
 
 ### Trillium Transit Alerts
 
 Trillium siūlomas pranešimų keleiviams redaktorius susideda iš 3 pagrindinių dalių, o visa į jį suvesta informacija
-išvedama GTFS Realtime foamtu.
+išvedama GTFS Realtime formatu.
 
 #### Pranešimo informacija
 
 ```{figure} /images/sprendimai/pranesimai-keleiviams/trillium-transit-service-alerts.png
 
-Trillium Transit Alerts pranešimas. [Šaltinis](https://support.trilliumtransit.com/hc/en-us/articles/360025612272).
+Trillium Transit Alerts pranešimo informacijos langas. [Šaltinis](https://support.trilliumtransit.com/hc/en-us/articles/360025612272).
 ```
 
 #### Paveikti maršrutai
 
 ```{figure} /images/sprendimai/pranesimai-keleiviams/trillium-transit-service-alerts-routes.png
 
-Trillium Transit Alerts su pranešimu susiję maršrutai. [Šaltinis](https://support.trilliumtransit.
-com/hc/en-us/articles/360025612272).
+Trillium Transit Alerts su pranešimu susijusių maršrutų langas. [Šaltinis](https://support.trilliumtransit.com/hc/en-us/articles/360025612272).
 ```
 
 #### Paveiktos stotelės
@@ -83,18 +84,24 @@ Visos stotelės esančios paveiktuose maršrutuose yra parenkamos automatiškai 
 
 ```{figure} /images/sprendimai/pranesimai-keleiviams/trillium-transit-service-alerts-stops.png
 
-Trillium Transit Alerts su pranešimu susijusios stotelės. [Šaltinis](https://support.trilliumtransit.
-com/hc/en-us/articles/360025612272).
+Trillium Transit Alerts su pranešimu susijusių stotelių langas. [Šaltinis](https://support.trilliumtransit.com/hc/en-us/articles/360025612272).
 ```
+
+### Kiti produktai
+
+- [MTC Transit Data Tools](https://mtc-datatools.readthedocs.io/en/mtc-docs/user/service-alerts/#alert-editor)
+  (nemokamas, atviro kodo viešojo transporto kelionių duomenų valdymo sistema su pranešimų keleiviams valdymo
+  funkcija);
+- [ITO World Transit Hub](https://www.itoworld.com/ito-transit-hub/).
 
 ## Duomenų perdavimas
 
 ### GTFS Realtime
 
-```proto
-:::{admonition} GTFS Realtime kontraktas pranešimsm keleiviams
+:::{admonition} GTFS Realtime kontraktas pranešimams keleiviams perduoti
 :class: tip, dropdown
 
+```proto
 // An alert, indicating some sort of incident in the public transit network.
 message Alert {
   // Time when the alert should be shown to the user. If missing, the
@@ -458,6 +465,8 @@ message TranslatedImage {
   extensions 9000 to 9999;
 }
 ```
+
+:::
 
 ### SIRI Situation Exchange (SX)
 
