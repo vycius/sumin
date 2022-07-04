@@ -54,6 +54,7 @@ parts:
       - file: sprendimas/isvestis-statiniai-duomenys
       - file: sprendimas/dinaminiai-duomenys-ivestis
       - file: sprendimas/pranesimai-keleiviams
+      - file: sprendimas/istoriniai-duomenys
 
   - caption: Literatūra
     chapters:
