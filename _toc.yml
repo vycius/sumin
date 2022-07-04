@@ -42,9 +42,10 @@ parts:
   - caption: Gerosios praktikos
     chapters:
       - file: praktikos/index
-      - file: praktikos/norvegija
-      - file: praktikos/svedija
-      - file: praktikos/jungtine-karalyste
+        sections:
+        - file: praktikos/norvegija
+        - file: praktikos/svedija
+        - file: praktikos/jungtine-karalyste
 
   - caption: Sprendimas
     chapters:
