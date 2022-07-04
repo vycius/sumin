@@ -15,3 +15,4 @@ lxml==4.9.1
 tabulate==0.8.10
 openpyxl==3.0.10
 lxml==4.9.1
+pygments-csv-lexer=0.1.3

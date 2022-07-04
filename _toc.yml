@@ -49,6 +49,8 @@ parts:
   - caption: Sprendimas
     chapters:
       - file: sprendimas/vizija
+      - file: sprendimas/ivestis-statiniai-duomenys
+      - file: sprendimas/isvestis-statiniai-duomenys
       - file: sprendimas/pranesimai-keleiviams
 
   - caption: Literatūra
