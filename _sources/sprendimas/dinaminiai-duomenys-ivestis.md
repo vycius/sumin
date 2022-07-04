@@ -30,6 +30,8 @@ transporto priemonių geografinei padėčiai įkelti.
 
 ### Transporto priemonių geografinė padėtis
 
+https://github.com/entur/profile-examples/blob/master/siri/vehicle-monitoring/siri-vm-before-stop.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Siri xmlns="http://www.siri.org.uk/siri"
