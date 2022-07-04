@@ -17,14 +17,14 @@ yra atvirai prieinami visuomenei, verslui bei akademijai.
 
 ## Funkcionalumas
 
-::::{grid} 1 1 2 2
+::::{grid}
 :gutter: 3
 
 :::{grid-item-card}
-:columns: 12
+:columns: 6
 :class-header: bg-light
 
-🚚 Duomenų įvestis
+**1. Transporto duomenų įvestis 🚚**
 ^^^
 
 1. Statiniai duomenys (pvz., tvarkaraščiai, tarifai);
@@ -34,41 +34,41 @@ yra atvirai prieinami visuomenei, verslui bei akademijai.
 :::
 
 :::{grid-item-card}
-:columns: 12
+:columns: 6
 :class-header: bg-light
 
-✨ Duomenų apdorojimas
+**2. Duomenų apdorojimas ✨**
 ^^^
 
-1. Duomenų patikra;
+1. Duomenų kokybės patikra;
 2. Duomenų papildymas ir sujungimas;
 3. Istorinių duomenų kaupimas;
-4. Atvykimo laikų prognozavimas (esant poreikiui);
+4. Atvykimo laikų prognozavimas.
 
 :::
 
 :::{grid-item-card}
-:columns: 12
+:columns: 6
 :class-header: bg-light
 
-🚀 Visos šalies duomenų išvestis
+**3. Visos šalies duomenų išvestis 🚀**
 ^^^
 
 1. Statiniai duomenys (NeTEx ir GTFS);
 2. Dinaminiai duomenys (SIRI ir GTFS Realtime);
-3. Istoriniai duomenys (statiniai ir dinaminiai);
+3. Istoriniai duomenys (statiniai ir dinaminiai).
 
 :::
 
 :::{grid-item-card}
-:columns: 12
+:columns: 6
 :class-header: bg-light
 
-🔍️ Transporto sistemos stebėsena
+**4. Transporto sistemos stebėsena 🔍️**
 ^^^
 
 1. Esama Lietuvos transporto sistemos būsena;
-2. Istorinė transporto sistemos analizė;
+2. Istorinė transporto sistemos analizė.
    :::
 
 ::::
