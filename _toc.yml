@@ -48,8 +48,9 @@ parts:
 
   - caption: Sprendimas
     chapters:
-      - file: sprendimas/architektura
+      - file: sprendimas/vizija
       - file: sprendimas/pranesimai-keleiviams
+
   - caption: Literatūra
     chapters:
       - file: saltiniai
@@ -58,3 +59,4 @@ parts:
       - file: uzrasai
       - file: apps/apple_maps
       - file: internal
+      - file: sprendimas/architektura
