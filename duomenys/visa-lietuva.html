@@ -275,25 +275,32 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../praktikos/index.html">
    Užsienio šalių gerosios praktikos
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../praktikos/norvegija.html">
-   Norvegija
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../praktikos/svedija.html">
-   Švedija
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../praktikos/jungtine-karalyste.html">
-   Jungtinė Karalystė
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../praktikos/norvegija.html">
+     Norvegija
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../praktikos/svedija.html">
+     Švedija
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../praktikos/jungtine-karalyste.html">
+     Jungtinė Karalystė
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -305,6 +312,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../sprendimas/vizija.html">
    Vizija
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/ivestis-statiniai-duomenys.html">
+   Statinių duomenų įvestis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/isvestis-statiniai-duomenys.html">
+   Statinių duomenų išvestis
   </a>
  </li>
  <li class="toctree-l1">
@@ -545,7 +562,7 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3607/3975400520.py:48: FutureWarning: merging between different levels is deprecated and will be removed in a future version. (2 levels on the left, 1 on the right)
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3593/3975400520.py:48: FutureWarning: merging between different levels is deprecated and will be removed in a future version. (2 levels on the left, 1 on the right)
   total_routes_and_trips.merge(valid_routes_and_trips, left_index=True, right_index=True), how=&#39;left&#39;,
 </pre></div>
 </div>

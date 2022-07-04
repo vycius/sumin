@@ -275,25 +275,32 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Užsienio šalių gerosios praktikos
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="norvegija.html">
-   Norvegija
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="svedija.html">
-   Švedija
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="jungtine-karalyste.html">
-   Jungtinė Karalystė
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="norvegija.html">
+     Norvegija
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="svedija.html">
+     Švedija
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jungtine-karalyste.html">
+     Jungtinė Karalystė
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -305,6 +312,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../sprendimas/vizija.html">
    Vizija
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/ivestis-statiniai-duomenys.html">
+   Statinių duomenų įvestis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sprendimas/isvestis-statiniai-duomenys.html">
+   Statinių duomenų išvestis
   </a>
  </li>
  <li class="toctree-l1">
@@ -576,9 +593,10 @@ title="Print to PDF"
 taškus</em></a> (<a class="reference external" href="https://eur-lex.europa.eu/eli/reg_del/2017/1926/oj">pagal 2017/1926
 reglamentą</a>), tačiau daugelis šių prieigos taškų yra
 pasiekiami tik vietine kalba ir norint gauti duomenis reikia prisijungti.</p>
-<p>Toliau pateikiama informacija apie viešojo keleivinio transporto duomenis, jų formatus daugumoje Europos Sąjungos šalių.</p>
+<p>Toliau pateikiama informacija apie viešojo keleivinio transporto duomenis, jų formatus daugumoje Europos Sąjungos
+šalių.</p>
 <table class="colwidths-auto table" id="countries-data-by-formats">
-<caption><span class="caption-number">Table 14 </span><span class="caption-text">Užsienio šalių viešojo transporto duomenų atvėrimo situacija</span><a class="headerlink" href="#countries-data-by-formats" title="Permalink to this table">#</a></caption>
+<caption><span class="caption-number">Table 14 </span><span class="caption-text">Užsienio šalių viešojo transporto duomenų atvėrimo situacija. Adaptuota pagal <a class="reference external" href="https://www.trafiklab.se/api/other-apis/public-transport-europe/">TrafikLab.se</a></span><a class="headerlink" href="#countries-data-by-formats" title="Permalink to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Šalis</p></th>
 <th class="head"><p>GTFS</p></th>
@@ -768,8 +786,8 @@ pasiekiami tik vietine kalba ir norint gauti duomenis reikia prisijungti.</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="https://pna.cestrin.ro">🇷🇴 Rumunija</a></p></td>
 <td><p><a class="reference external" href="https://flashwebit.github.io/ROTI/">GTFS</a></p></td>
-<td><p><a class="reference external" href="https://flashwebit.github.io/ROTI/">GTFS Realtime</a></p></td>
 <td><p></p></td>
+<td><p><a class="reference external" href="https://flashwebit.github.io/ROTI/">GTFS Realtime</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p></p></td>
@@ -802,8 +820,8 @@ pasiekiami tik vietine kalba ir norint gauti duomenis reikia prisijungti.</p>
 <td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/gtfs-regional/static-specification/">GTFS</a></p></td>
 <td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/">NeTEx</a></p></td>
 <td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/gtfs-regional/realtime-specification/">GTFS Realtime</a></p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/">SIRI</a></p></td>
+<td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/koda/koda-api-specification/">Istoriniai GTFS</a></p></td>
 <td><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/koda/">KoDa API</a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://opentransportdata.swiss/en/">🇨🇭 Šveicarija</a></p></td>
@@ -833,6 +851,8 @@ pasiekiami tik vietine kalba ir norint gauti duomenis reikia prisijungti.</p>
 </tbody>
 </table>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
