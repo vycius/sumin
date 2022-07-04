@@ -52,6 +52,7 @@ parts:
       - file: sprendimas/vizija
       - file: sprendimas/ivestis-statiniai-duomenys
       - file: sprendimas/isvestis-statiniai-duomenys
+      - file: sprendimas/dinaminiai-duomenys-ivestis
       - file: sprendimas/pranesimai-keleiviams
 
   - caption: Literatūra
