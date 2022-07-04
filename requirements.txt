@@ -2,7 +2,7 @@ jupyter-book==0.13.0
 gtfs_functions==1.0.1
 plotly==5.9.0
 seaborn==0.11.2
-pandas==1.4.2
+pandas==1.4.3
 geopandas==0.11.0
 itables==1.1.2
 keplergl==0.3.2
