@@ -79,6 +79,8 @@ sphinx:
   extra_extensions:
     - sphinx_sitemap
   config:
+    html_extra_path:
+      - 'robots.txt'
     html_baseurl: 'https://judumas.vycius.lt'
     html_show_copyright: false
     sitemap_url_scheme: "{version}/{link}"
