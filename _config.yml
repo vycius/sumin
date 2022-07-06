@@ -57,7 +57,7 @@ html:
   extra_footer: |
     <p>
       Autorius: <a href="https://www.linkedin.com/in/vycius/" target="_blank">Karolis Vyčius</a>           
-      
+    
       El. paštas: <a href="mailto:karolis.vycius@kurklt.lt" target="_blank">karolis.vycius@kurklt.lt</a>
     </p>
     <div>
@@ -76,10 +76,14 @@ sphinx:
   recursive_update: true
   local_extensions:
     extensions: ./extensions/spinxext/
+  extra_extensions:
+    - sphinx_sitemap
   config:
+    html_baseurl: 'https://judumas.vycius.lt'
     html_show_copyright: false
     language: lt
     bibtex_reference_style: super
     bibtex_default_style: plain
     html_js_files:
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+
