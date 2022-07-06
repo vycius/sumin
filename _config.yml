@@ -85,5 +85,5 @@ sphinx:
     bibtex_reference_style: super
     bibtex_default_style: plain
     html_js_files:
-      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
 
