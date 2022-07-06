@@ -81,6 +81,7 @@ sphinx:
   config:
     html_baseurl: 'https://judumas.vycius.lt'
     html_show_copyright: false
+    sitemap_url_scheme: "{version}/{link}"
     language: lt
     bibtex_reference_style: super
     bibtex_default_style: plain
