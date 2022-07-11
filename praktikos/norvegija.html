@@ -569,6 +569,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#statiniai-duomenys">
    Statiniai duomenys
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#duomenu-valdymas">
+     Duomenų valdymas
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dinaminiai-duomenys">
@@ -659,6 +666,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#statiniai-duomenys">
    Statiniai duomenys
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#duomenu-valdymas">
+     Duomenų valdymas
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dinaminiai-duomenys">
@@ -730,7 +744,7 @@ title="Print to PDF"
 <h1>Norvegija<a class="headerlink" href="#norvegija" title="Nuoroda į šią antraštę">#</a></h1>
 <p>Nacionalinis Novergijos viešojo transporto duomenų registras (<a class="reference external" href="https://developer.entur.org/pages-intro-overview">ENTUR</a>)
 susideda iš daugiau nei 60 transporto operatorių, beveik 60 000 stotelių ir informacijos apie daugiau nei 3 tūkst.
-maršrutų su daugiau nei 21 tūkst. kasdienių išvykimų<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id38" title="Om Entur. Om entur. URL: https://om.entur.no/bedrift/om-entur (visited on 2022-06-02).">11</a></sup></span>. Šis registras yra valdomas „Entur AS“
+maršrutų su daugiau nei 21 tūkst. kasdienių išvykimų<span id="id1"><sup><a class="reference internal" href="../saltiniai.html#id38" title="Om Entur. Om entur. URL: https://om.entur.no/bedrift/om-entur (visited on 2022-06-02).">12</a></sup></span>. Šis registras yra valdomas „Entur AS“
 bendrovės, kuri yra įkurta 2016 m. Norvegijos transporto ir ryšių ministerijos. ENTUR ne tik atsakinga už viešojo
 transporto duomenis, tačiau ir valdo traukinių bilietų pardavimo sistemą bei kuria skaitmeninius produktus lengvesniam
 kelionių planavimui.</p>
@@ -745,8 +759,14 @@ Licence for Open Government Data</em>).</p>
 <p><a class="reference external" href="https://stoppested.entur.org">Nacionalinis stotelių registras</a> yra centrinė duomenų bazė, kurioje yra saugoma su
 stotelėmis susijusi informacija. Šiuos duomenis valdo savivaldybės (norv. <em>fylkeskommune</em>), o visą informaciją
 administruoja ENTUR.</p>
-<p>Pagrindinis nacionlinio stotelių registro tikslas yra išvengti stotelių duplikavimo tarp transporto paslaugų teikėjų ir
-padėti naujiems operatoriams lengviau planuoti bei nustatyti maršrutus. Tai užtikrina, kad visi duomenų teikėjai ir
+<p>Registras susideda iš dviejų pagrindinių atviro kodo komponentų:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/entur/abzu">Abzu</a> - stotelių redaktoriaus vartotojo sąsajos;</p></li>
+<li><p><a class="reference external" href="https://github.com/entur/tiamat">Tiamat</a> - stotelių duomenų bazės komponento;</p></li>
+</ul>
+<p>Pagrindinis nacionlinio stotelių registro tikslas yra vienoje vietoje saugoti visų Norvegijoje esančių stotelių
+išsamią informaciją<span id="id2"><sup><a class="reference internal" href="../saltiniai.html#id39" title="Om Entur. National stop register (nsr). URL: https://developer.entur.org/pages-nsr-nsr (visited on 2022-07-11).">11</a></sup></span>. Tai padeda išvengti stotelių duplikavimo tarp transporto paslaugų teikėjų ir
+leidžia naujiems operatoriams lengviau planuoti bei nustatyti maršrutus. Tai užtikrina, kad visi duomenų teikėjai ir
 transporto operatoriai į ENTUR teikia duomenis su tais pačiais stotelių identifikatoriais. Pagrindinė registre saugoma
 informacija yra stotelės identifikatorius, pavadinimas, geografinė padėtis, tačiau taip pat tvarkomi ir kiti duomenys,
 pvz., stotelės prieinamumas asmeniui turinčiam judėjimo negalią.</p>
@@ -770,6 +790,15 @@ pagal <a class="reference external" href="https://enturas.atlassian.net/wiki/spa
 <p><span class="caption-number">Fig. 11 </span><span class="caption-text">ENTUR statiniai viešojo transporto duomenų rinkiniai.</span><a class="headerlink" href="#entur-static-data-files" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="duomenu-valdymas">
+<h3>Duomenų valdymas<a class="headerlink" href="#duomenu-valdymas" title="Nuoroda į šią antraštę">#</a></h3>
+<p>Duomenų importavimui, patikrinimui, statinių duomenų saugojimui yra naudojama atviro kodo programa Chouette. Ji
+sudeda iš dviejų komponentų:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/entur/chouette">Vartotojo sąsajos komponento</a>;</p></li>
+<li><p><a class="reference external" href="https://github.com/entur/chouette2">Logikos komponento</a>;</p></li>
+</ul>
+</section>
 </section>
 <section id="dinaminiai-duomenys">
 <h2>Dinaminiai duomenys<a class="headerlink" href="#dinaminiai-duomenys" title="Nuoroda į šią antraštę">#</a></h2>

@@ -19,8 +19,14 @@ Licence for Open Government Data*).
 stotelėmis susijusi informacija. Šiuos duomenis valdo savivaldybės (norv. *fylkeskommune*), o visą informaciją
 administruoja ENTUR.
 
-Pagrindinis nacionlinio stotelių registro tikslas yra išvengti stotelių duplikavimo tarp transporto paslaugų teikėjų ir
-padėti naujiems operatoriams lengviau planuoti bei nustatyti maršrutus. Tai užtikrina, kad visi duomenų teikėjai ir
+Registras susideda iš dviejų pagrindinių atviro kodo komponentų:
+
+- [Abzu](https://github.com/entur/abzu) - stotelių redaktoriaus vartotojo sąsajos;
+- [Tiamat](https://github.com/entur/tiamat) - stotelių duomenų bazės komponento;
+
+Pagrindinis nacionlinio stotelių registro tikslas yra vienoje vietoje saugoti visų Norvegijoje esančių stotelių
+išsamią informaciją{cite}`entur_national_stop_registry`. Tai padeda išvengti stotelių duplikavimo tarp transporto paslaugų teikėjų ir
+leidžia naujiems operatoriams lengviau planuoti bei nustatyti maršrutus. Tai užtikrina, kad visi duomenų teikėjai ir
 transporto operatoriai į ENTUR teikia duomenis su tais pačiais stotelių identifikatoriais. Pagrindinė registre saugoma
 informacija yra stotelės identifikatorius, pavadinimas, geografinė padėtis, tačiau taip pat tvarkomi ir kiti duomenys,
 pvz., stotelės prieinamumas asmeniui turinčiam judėjimo negalią.
@@ -45,6 +51,12 @@ pagal [Norvegišką NeTEX profilį](https://enturas.atlassian.net/wiki/spaces/PU
 
 ENTUR statiniai viešojo transporto duomenų rinkiniai.
 ```
+
+### Duomenų valdymas
+Duomenų importavimui, patikrinimui, statinių duomenų saugojimui yra naudojama atviro kodo programa Chouette. Ji 
+sudeda iš dviejų komponentų:
+- [Vartotojo sąsajos komponento](https://github.com/entur/chouette);
+- [Logikos komponento](https://github.com/entur/chouette2);
 
 ## Dinaminiai duomenys
 
