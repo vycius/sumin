@@ -50,6 +50,7 @@ parts:
   - caption: Sprendimas
     chapters:
       - file: sprendimas/vizija
+      - file: sprendimas/nacionalinis-sustojimo-punktu-registras
       - file: sprendimas/ivestis-statiniai-duomenys
       - file: sprendimas/isvestis-statiniai-duomenys
       - file: sprendimas/dinaminiai-duomenys-ivestis
