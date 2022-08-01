@@ -561,6 +561,26 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stoteliu-duomenys">
+   Stotelių duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-sverige-2">
+   GTFS Sverige 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-regional">
+   GTFS Regional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#netex-regional">
+   NeTEx Regional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naudingos-nuorodos">
    Naudingos nuorodos
   </a>
@@ -585,6 +605,26 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stoteliu-duomenys">
+   Stotelių duomenys
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-sverige-2">
+   GTFS Sverige 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-regional">
+   GTFS Regional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#netex-regional">
+   NeTEx Regional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naudingos-nuorodos">
    Naudingos nuorodos
   </a>
@@ -601,6 +641,242 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="svedija">
 <h1>Švedija<a class="headerlink" href="#svedija" title="Nuoroda į šią antraštę">#</a></h1>
+<p>„<a class="reference external" href="https://www.trafiklab.se/api/">Trafiklab</a>“ galima rasti daugybę skirtingų viešojo transporto kelionių duomenų API ir
+duomenų rinkinių. Visi duomenų rinkiniai yra prieinami pagal <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/deed.lt">CC0 1.0 Universali (CC0 1.0) Priskyrimas Viešajai
+sričiai</a> licenciją. Siekiant gauti duomenų rinkinius yra
+būtina registracija.</p>
+<section id="stoteliu-duomenys">
+<h2>Stotelių duomenys<a class="headerlink" href="#stoteliu-duomenys" title="Nuoroda į šią antraštę">#</a></h2>
+<p>Stotelių duomenų rinkinys (<a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/stops-data/">Stops data</a>) apima visas
+Švedijoje esančias viešojo transporto stoteles NeTEx formatu (su papildomais atributais) bei yra atnaujinamas kiekvienos
+dienos ryte.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Gražinamų stotelių pavyzdys NeTEx formatu.  </p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;</span>
+<span class="nt">&lt;PublicationDelivery</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.netex.org.uk/netex&quot;</span> <span class="na">xmlns:ns2=</span><span class="s">&quot;http://www.opengis.net/gml/3.2&quot;</span>
+                     <span class="na">xmlns:ns3=</span><span class="s">&quot;http://www.siri.org.uk/siri&quot;</span> <span class="na">version=</span><span class="s">&quot;1.11:NO-NeTEx-networktimetable:1.3&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;PublicationTimestamp&gt;</span>2022-07-26T07:50:00<span class="nt">&lt;/PublicationTimestamp&gt;</span>
+    <span class="nt">&lt;ParticipantRef&gt;</span>SAM<span class="nt">&lt;/ParticipantRef&gt;</span>
+    <span class="nt">&lt;dataObjects&gt;</span>
+        <span class="nt">&lt;SiteFrame</span> <span class="na">version=</span><span class="s">&quot;20220726075000&quot;</span> <span class="na">id=</span><span class="s">&quot;SE:050:SiteFrame:1&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ValidBetween&gt;</span>
+                <span class="nt">&lt;FromDate&gt;</span>2005-01-01T00:00:00<span class="nt">&lt;/FromDate&gt;</span>
+            <span class="nt">&lt;/ValidBetween&gt;</span>
+            <span class="nt">&lt;codespaces&gt;</span>
+                <span class="nt">&lt;Codespace</span> <span class="na">id=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;Xmlns&gt;</span>50<span class="nt">&lt;/Xmlns&gt;</span>
+                    <span class="nt">&lt;XmlnsUrl&gt;</span>http://www.samtrafiken.se/ns/Samtrafiken<span class="nt">&lt;/XmlnsUrl&gt;</span>
+                <span class="nt">&lt;/Codespace&gt;</span>
+            <span class="nt">&lt;/codespaces&gt;</span>
+            <span class="nt">&lt;FrameDefaults&gt;</span>
+                <span class="nt">&lt;DefaultLocale&gt;</span>
+                    <span class="nt">&lt;TimeZone&gt;</span>Europe/Stockholm<span class="nt">&lt;/TimeZone&gt;</span>
+                    <span class="nt">&lt;DefaultLanguage&gt;</span>se<span class="nt">&lt;/DefaultLanguage&gt;</span>
+                <span class="nt">&lt;/DefaultLocale&gt;</span>
+                <span class="nt">&lt;DefaultLocationSystem&gt;</span>4326<span class="nt">&lt;/DefaultLocationSystem&gt;</span>
+            <span class="nt">&lt;/FrameDefaults&gt;</span>
+            <span class="nt">&lt;stopPlaces&gt;</span>
+                <span class="nt">&lt;StopPlace</span> <span class="na">version=</span><span class="s">&quot;20120623&quot;</span> <span class="na">id=</span><span class="s">&quot;SE:050:StopPlace:1&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;ValidBetween&gt;</span>
+                        <span class="nt">&lt;FromDate&gt;</span>2012-06-23T00:00:00<span class="nt">&lt;/FromDate&gt;</span>
+                    <span class="nt">&lt;/ValidBetween&gt;</span>
+                    <span class="nt">&lt;keyList&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>owner<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>1<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>data-from<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>1<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>rikshallplats<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>740000001<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>trafikverket-name<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>Stockholms central<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>trafikverket-signature<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>CST<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>stip.StopArea.DefaultInterchangeDurationSeconds<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>0<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-name<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>3:9021003191303000:Vasagatan (Stockholm)|3:9021003191709000:Stockholm Central
+                                (Stockholm)|1:9021001005011000:Stockholms central|20:9021020899005000:Stockholm C
+                                (Tåg)|8:9021008199001000:Stockholm Cityterminalen|74:9021074000010000:Stockholms
+                                central|100:9021074000001000:Stockholm Centralstation|172:9021172055861000:Stockholm
+                                Central
+                            <span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-gid<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>
+                                3:9021003191303000|3:9021003191709000|1:9021001005011000|20:9021020899005000|8:9021008199001000|74:9021074000010000|100:9021074000001000|172:9021172055861000
+                            <span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-number<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>3:191303|3:191709|1:5011|20:899005|8:199001|74:10|100:1|172:55861<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                    <span class="nt">&lt;/keyList&gt;</span>
+                    <span class="nt">&lt;Name&gt;</span>Stockholm Centralstation<span class="nt">&lt;/Name&gt;</span>
+                    <span class="nt">&lt;ShortName&gt;</span>Stockholms C<span class="nt">&lt;/ShortName&gt;</span>
+                    <span class="nt">&lt;PrivateCode&gt;</span>1<span class="nt">&lt;/PrivateCode&gt;</span>
+                    <span class="nt">&lt;Centroid&gt;</span>
+                        <span class="nt">&lt;Location&gt;</span>
+                            <span class="nt">&lt;Longitude&gt;</span>18.057845<span class="nt">&lt;/Longitude&gt;</span>
+                            <span class="nt">&lt;Latitude&gt;</span>59.329520<span class="nt">&lt;/Latitude&gt;</span>
+                        <span class="nt">&lt;/Location&gt;</span>
+                    <span class="nt">&lt;/Centroid&gt;</span>
+                    <span class="nt">&lt;alternativeNames&gt;</span>
+                        <span class="nt">&lt;AlternativeName&gt;</span>
+                            <span class="nt">&lt;Abbreviation&gt;</span>CST<span class="nt">&lt;/Abbreviation&gt;</span>
+                        <span class="nt">&lt;/AlternativeName&gt;</span>
+                    <span class="nt">&lt;/alternativeNames&gt;</span>
+                    <span class="nt">&lt;TransportMode&gt;</span>rail<span class="nt">&lt;/TransportMode&gt;</span>
+                    <span class="nt">&lt;StopPlaceType&gt;</span>railStation<span class="nt">&lt;/StopPlaceType&gt;</span>
+                    <span class="nt">&lt;Weighting&gt;</span>preferredInterchange<span class="nt">&lt;/Weighting&gt;</span>
+                <span class="nt">&lt;/StopPlace&gt;</span>
+                <span class="nt">&lt;StopPlace</span> <span class="na">version=</span><span class="s">&quot;20120623&quot;</span> <span class="na">id=</span><span class="s">&quot;SE:050:StopPlace:1_1&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;ValidBetween&gt;</span>
+                        <span class="nt">&lt;FromDate&gt;</span>2012-06-23T00:00:00<span class="nt">&lt;/FromDate&gt;</span>
+                    <span class="nt">&lt;/ValidBetween&gt;</span>
+                    <span class="nt">&lt;keyList&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>owner<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>1<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>data-from<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>1<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>rikshallplats<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>740000001<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>trafikverket-name<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>Stockholms central<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>trafikverket-signature<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>CST<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>stip.StopArea.DefaultInterchangeDurationSeconds<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>0<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-name<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>3:9021003191303000:Vasagatan (Stockholm)|3:9021003191709000:Stockholm Central
+                                (Stockholm)|1:9021001005011000:Stockholms central|20:9021020899005000:Stockholm C
+                                (Tåg)|8:9021008199001000:Stockholm Cityterminalen|74:9021074000010000:Stockholms
+                                central|100:9021074000001000:Stockholm Centralstation|172:9021172055861000:Stockholm
+                                Central
+                            <span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-gid<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>
+                                3:9021003191303000|3:9021003191709000|1:9021001005011000|20:9021020899005000|8:9021008199001000|74:9021074000010000|100:9021074000001000|172:9021172055861000
+                            <span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                        <span class="nt">&lt;KeyValue&gt;</span>
+                            <span class="nt">&lt;Key&gt;</span>local-number<span class="nt">&lt;/Key&gt;</span>
+                            <span class="nt">&lt;Value&gt;</span>3:191303|3:191709|1:5011|20:899005|8:199001|74:10|100:1|172:55861<span class="nt">&lt;/Value&gt;</span>
+                        <span class="nt">&lt;/KeyValue&gt;</span>
+                    <span class="nt">&lt;/keyList&gt;</span>
+                    <span class="nt">&lt;Name&gt;</span>Stockholm Centralstation<span class="nt">&lt;/Name&gt;</span>
+                    <span class="nt">&lt;ShortName&gt;</span>Stockholms C<span class="nt">&lt;/ShortName&gt;</span>
+                    <span class="nt">&lt;PrivateCode&gt;</span>1<span class="nt">&lt;/PrivateCode&gt;</span>
+                    <span class="nt">&lt;Centroid&gt;</span>
+                        <span class="nt">&lt;Location&gt;</span>
+                            <span class="nt">&lt;Longitude&gt;</span>18.057845<span class="nt">&lt;/Longitude&gt;</span>
+                            <span class="nt">&lt;Latitude&gt;</span>59.329520<span class="nt">&lt;/Latitude&gt;</span>
+                        <span class="nt">&lt;/Location&gt;</span>
+                    <span class="nt">&lt;/Centroid&gt;</span>
+                    <span class="nt">&lt;alternativeNames&gt;</span>
+                        <span class="nt">&lt;AlternativeName&gt;</span>
+                            <span class="nt">&lt;Abbreviation&gt;</span>CST<span class="nt">&lt;/Abbreviation&gt;</span>
+                        <span class="nt">&lt;/AlternativeName&gt;</span>
+                    <span class="nt">&lt;/alternativeNames&gt;</span>
+                    <span class="nt">&lt;ParentSiteRef</span> <span class="na">ref=</span><span class="s">&quot;SE:050:StopPlace:1&quot;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;TransportMode&gt;</span>bus<span class="nt">&lt;/TransportMode&gt;</span>
+                    <span class="nt">&lt;StopPlaceType&gt;</span>onstreetBus<span class="nt">&lt;/StopPlaceType&gt;</span>
+                    <span class="nt">&lt;Weighting&gt;</span>preferredInterchange<span class="nt">&lt;/Weighting&gt;</span>
+                    <span class="nt">&lt;quays&gt;</span>
+                        <span class="nt">&lt;Quay</span> <span class="na">version=</span><span class="s">&quot;20210307&quot;</span> <span class="na">id=</span><span class="s">&quot;SE:050:Quay:5021&quot;</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;keyList&gt;</span>
+                                <span class="nt">&lt;KeyValue&gt;</span>
+                                    <span class="nt">&lt;Key&gt;</span>stip.StopPoint.ExistsFromDate<span class="nt">&lt;/Key&gt;</span>
+                                    <span class="nt">&lt;Value&gt;</span>2021-03-07<span class="nt">&lt;/Value&gt;</span>
+                                <span class="nt">&lt;/KeyValue&gt;</span>
+                                <span class="nt">&lt;KeyValue&gt;</span>
+                                    <span class="nt">&lt;Key&gt;</span>stip.StopPoint.ExistsUpToDate<span class="nt">&lt;/Key&gt;</span>
+                                    <span class="nt">&lt;Value&gt;</span>null<span class="nt">&lt;/Value&gt;</span>
+                                <span class="nt">&lt;/KeyValue&gt;</span>
+                                <span class="nt">&lt;KeyValue&gt;</span>
+                                    <span class="nt">&lt;Key&gt;</span>local-journeypatternpoint-gid<span class="nt">&lt;/Key&gt;</span>
+                                    <span class="nt">&lt;Value&gt;</span>3:9025003019130301|8:9025008019900101|74:9025074000010070<span class="nt">&lt;/Value&gt;</span>
+                                <span class="nt">&lt;/KeyValue&gt;</span>
+                                <span class="nt">&lt;KeyValue&gt;</span>
+                                    <span class="nt">&lt;Key&gt;</span>local-stoppoint-gid<span class="nt">&lt;/Key&gt;</span>
+                                    <span class="nt">&lt;Value&gt;</span>3:9022003191303001|8:9022008199001001|74:9022074000010070<span class="nt">&lt;/Value&gt;</span>
+                                <span class="nt">&lt;/KeyValue&gt;</span>
+                                <span class="nt">&lt;KeyValue&gt;</span>
+                                    <span class="nt">&lt;Key&gt;</span>local-designation<span class="nt">&lt;/Key&gt;</span>
+                                    <span class="nt">&lt;Value&gt;</span>3:A|8:A|74:7<span class="nt">&lt;/Value&gt;</span>
+                                <span class="nt">&lt;/KeyValue&gt;</span>
+                            <span class="nt">&lt;/keyList&gt;</span>
+                            <span class="nt">&lt;Name&gt;</span>Stockholm C Vasagatan<span class="nt">&lt;/Name&gt;</span>
+                            <span class="nt">&lt;ShortName&gt;</span>Stockholm C Vasa<span class="nt">&lt;/ShortName&gt;</span>
+                            <span class="nt">&lt;PrivateCode&gt;</span>1<span class="nt">&lt;/PrivateCode&gt;</span>
+                            <span class="nt">&lt;Centroid&gt;</span>
+                                <span class="nt">&lt;Location&gt;</span>
+                                    <span class="nt">&lt;Longitude&gt;</span>18.059323<span class="nt">&lt;/Longitude&gt;</span>
+                                    <span class="nt">&lt;Latitude&gt;</span>59.330532<span class="nt">&lt;/Latitude&gt;</span>
+                                <span class="nt">&lt;/Location&gt;</span>
+                            <span class="nt">&lt;/Centroid&gt;</span>
+                            <span class="nt">&lt;PublicCode&gt;</span>A<span class="nt">&lt;/PublicCode&gt;</span>
+                        <span class="nt">&lt;/Quay&gt;</span>
+                    <span class="nt">&lt;/quays&gt;</span>
+                <span class="nt">&lt;/StopPlace&gt;</span>
+            <span class="nt">&lt;/stopPlaces&gt;</span>
+        <span class="nt">&lt;/SiteFrame&gt;</span>
+    <span class="nt">&lt;/dataObjects&gt;</span>
+<span class="nt">&lt;/PublicationDelivery&gt;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="gtfs-sverige-2">
+<h2>GTFS Sverige 2<a class="headerlink" href="#gtfs-sverige-2" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/gtfs-sverige-2/">GTFS Sverige 2</a> apima visos Švedijos viešojo
+transporto kelionių statinius ir istorinius duomenis. Šis rinkinys prieinamas GTFS formatu ir yra mažiau detalus nei
+regioniniai duomenų rinkiniai prieinami NeTEx formatu.</p>
+<p>Taip pat GTFS Sverige 2 apima istorinius statinius viešojo transporto kelionių duomenis GTFS formatu. Istoriniai
+duomenų rinkiniai GTFS formatu yra sukuriami kiekvieną kartą atnaujinus statinius duomenis.</p>
+</section>
+<section id="gtfs-regional">
+<h2>GTFS Regional<a class="headerlink" href="#gtfs-regional" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/gtfs-regional/">GTFS Regional</a> yra viešojo transporto kelionių statinių
+duomenų rinkinys GTFS formatu bei dinaminiai realaus laiko duomenų rinkinys GTFS Realtime fomatu. Kiekviename
+duomenų rinkinyje yra konkretaus regiono arba operatoriaus duomenys. Verta pastebėti, kad kiekvienas duomenų
+šaltinis naudoja skirtingus stotelių identifikatorius.</p>
+</section>
+<section id="netex-regional">
+<h2>NeTEx Regional<a class="headerlink" href="#netex-regional" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/">NeTEx Regional</a> yra analogiškas GTFS Regional, tik
+duomenys yra prieinami NeTEx formatu bei šiuo formatu grįžta papildomi duomenys, kurių negalima pateikti GTFS formatu.</p>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/">Dinaminiai realaus laiko duomenys</a> prieinami SIRI 2.0 formatu. Duomenų rinkinys remiasi
+<a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370420/Norwegian+SIRI+profile">Norvegijos SIRI profiliu</a>.</p>
+</section>
 <section id="naudingos-nuorodos">
 <h2>Naudingos nuorodos<a class="headerlink" href="#naudingos-nuorodos" title="Nuoroda į šią antraštę">#</a></h2>
 <ul class="simple">
