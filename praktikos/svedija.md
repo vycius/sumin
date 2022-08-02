@@ -239,8 +239,48 @@ duomenų rinkinyje yra konkretaus regiono arba operatoriaus duomenys. Verta past
 [NeTEx Regional](https://www.trafiklab.se/api/trafiklab-apis/netex-regional/) yra analogiškas GTFS Regional, tik
 duomenys yra prieinami NeTEx formatu bei šiuo formatu grįžta papildomi duomenys, kurių negalima pateikti GTFS formatu.
 
-[Dinaminiai realaus laiko duomenys](https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/) prieinami SIRI 2.0 formatu. Duomenų rinkinys remiasi
+[Dinaminiai realaus laiko duomenys](https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/) prieinami SIRI 2.0
+formatu. Duomenų rinkinys remiasi
 [Norvegijos SIRI profiliu](https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370420/Norwegian+SIRI+profile).
+
+## GTFS Sweden 3
+
+[GTFS Sweden 3](https://www.trafiklab.se/api/trafiklab-apis/gtfs-sweden/) yra GTFS duomenų rinkinys apimantis didžiąją
+dalį Švedijos viešojo transporto kelionių duomenų. GTFS
+duomenų rinkinys yra prieinamas, kaip vienas GTFS duomenų failas.
+
+Taip pat yra prieinami dinaminai realaus laiko duomenys GTFS Realtime formatu. Šie duomenys apima transporto
+priemonių geografinės padėties pozicijos, prognozuojamus atvykimo laikus bei pranešimus keleivius. Šie duomenys dėl
+greitaveikos priežasčių yra išskirti į atskirų regionų ar operatorių dinaminių realaus laiko duomenų rinkinius.
+
+## NeTEx Sweden
+
+[NeTEx Sweden](https://www.trafiklab.se/api/trafiklab-apis/netex-sweden/) yra duomenų rinkinys apimantis didžiąją dalį
+Švedijos viešojo transporto kelionių duomenų NeTEx
+formatu. Duomenų rinkinys yra prieinamas, kaip vienas NeTEx duomenų failas. Šis duomenų rinkinys yra analogiškas
+GTFS Sweden 3, tik duomenys yra prieinami NeTEx formatu bei šiuo formatu grįžta papildomi duomenys, kurių negalima
+pateikti GTFS formatu.
+
+## KoDa (istoriniai duomenys)
+
+[KoDa (Kollektivtrafikens Datalabb)](https://www.trafiklab.se/api/trafiklab-apis/koda/) pagrindinis tikslas rinkti,
+saugoti ir teikti istorinius statinius bei dinaminius duomenis. Istoriniai statiniai viešojo transporto
+kelionių duomenys yra prieinami GTFS formatu, dinaminiai - GTFS Realtikme formatu. Šie duomenų rinkiniai yra
+teikiami pagal operatorių ir datą. Šie duomenys leidžia atlikti istorinę duomenų analizę, kurti dirbtiniu intelektu
+grįstus modelius bei naudoti duomenis siekiant priimti geresnius sprendimus.
+
+Istorinius duomenis galima pasiimti ne tik per API. Duomenys taip pat saugomi _Apache Cassandra_ duomenų bazėje.
+Siekiant palengvinti duomenų analizę taip pat gali būti suteikta prieiga prie KoDa JupyterHub.
+
+## Kiti duomenys ar duomenų rinkiniai
+
+- [Trafikverket Open API](https://www.trafiklab.se/api/trafiklab-apis/trafikverket/) - API skirta informacijai apie
+  skirta informacijai apie kelių ir geležinkelių eismą
+  gauti.
+- [SL's APIs](https://www.trafiklab.se/api/trafiklab-apis/sl/) - API skirtas gauti informaciją apie planuojamą ir
+  realaus laiko eismą.
+- [Oxyfi-Realtidspositionering](https://www.trafiklab.se/api/trafiklab-apis/oxyfi/) - realaus laiko traukinių
+  pozicijų duomenys gaunami per Web Socket protokolą;
 
 ## Naudingos nuorodos
 
