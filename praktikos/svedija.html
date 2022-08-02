@@ -581,6 +581,26 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-sweden-3">
+   GTFS Sweden 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#netex-sweden">
+   NeTEx Sweden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#koda-istoriniai-duomenys">
+   KoDa (istoriniai duomenys)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kiti-duomenys-ar-duomenu-rinkiniai">
+   Kiti duomenys ar duomenų rinkiniai
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#naudingos-nuorodos">
    Naudingos nuorodos
   </a>
@@ -622,6 +642,26 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#netex-regional">
    NeTEx Regional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gtfs-sweden-3">
+   GTFS Sweden 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#netex-sweden">
+   NeTEx Sweden
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#koda-istoriniai-duomenys">
+   KoDa (istoriniai duomenys)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kiti-duomenys-ar-duomenu-rinkiniai">
+   Kiti duomenys ar duomenų rinkiniai
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -874,8 +914,48 @@ duomenų rinkinyje yra konkretaus regiono arba operatoriaus duomenys. Verta past
 <h2>NeTEx Regional<a class="headerlink" href="#netex-regional" title="Nuoroda į šią antraštę">#</a></h2>
 <p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/">NeTEx Regional</a> yra analogiškas GTFS Regional, tik
 duomenys yra prieinami NeTEx formatu bei šiuo formatu grįžta papildomi duomenys, kurių negalima pateikti GTFS formatu.</p>
-<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/">Dinaminiai realaus laiko duomenys</a> prieinami SIRI 2.0 formatu. Duomenų rinkinys remiasi
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-regional/siri/">Dinaminiai realaus laiko duomenys</a> prieinami SIRI 2.0
+formatu. Duomenų rinkinys remiasi
 <a class="reference external" href="https://enturas.atlassian.net/wiki/spaces/PUBLIC/pages/637370420/Norwegian+SIRI+profile">Norvegijos SIRI profiliu</a>.</p>
+</section>
+<section id="gtfs-sweden-3">
+<h2>GTFS Sweden 3<a class="headerlink" href="#gtfs-sweden-3" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/gtfs-sweden/">GTFS Sweden 3</a> yra GTFS duomenų rinkinys apimantis didžiąją
+dalį Švedijos viešojo transporto kelionių duomenų. GTFS
+duomenų rinkinys yra prieinamas, kaip vienas GTFS duomenų failas.</p>
+<p>Taip pat yra prieinami dinaminai realaus laiko duomenys GTFS Realtime formatu. Šie duomenys apima transporto
+priemonių geografinės padėties pozicijos, prognozuojamus atvykimo laikus bei pranešimus keleivius. Šie duomenys dėl
+greitaveikos priežasčių yra išskirti į atskirų regionų ar operatorių dinaminių realaus laiko duomenų rinkinius.</p>
+</section>
+<section id="netex-sweden">
+<h2>NeTEx Sweden<a class="headerlink" href="#netex-sweden" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/netex-sweden/">NeTEx Sweden</a> yra duomenų rinkinys apimantis didžiąją dalį
+Švedijos viešojo transporto kelionių duomenų NeTEx
+formatu. Duomenų rinkinys yra prieinamas, kaip vienas NeTEx duomenų failas. Šis duomenų rinkinys yra analogiškas
+GTFS Sweden 3, tik duomenys yra prieinami NeTEx formatu bei šiuo formatu grįžta papildomi duomenys, kurių negalima
+pateikti GTFS formatu.</p>
+</section>
+<section id="koda-istoriniai-duomenys">
+<h2>KoDa (istoriniai duomenys)<a class="headerlink" href="#koda-istoriniai-duomenys" title="Nuoroda į šią antraštę">#</a></h2>
+<p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/koda/">KoDa (Kollektivtrafikens Datalabb)</a> pagrindinis tikslas rinkti,
+saugoti ir teikti istorinius statinius bei dinaminius duomenis. Istoriniai statiniai viešojo transporto
+kelionių duomenys yra prieinami GTFS formatu, dinaminiai - GTFS Realtikme formatu. Šie duomenų rinkiniai yra
+teikiami pagal operatorių ir datą. Šie duomenys leidžia atlikti istorinę duomenų analizę, kurti dirbtiniu intelektu
+grįstus modelius bei naudoti duomenis siekiant priimti geresnius sprendimus.</p>
+<p>Istorinius duomenis galima pasiimti ne tik per API. Duomenys taip pat saugomi <em>Apache Cassandra</em> duomenų bazėje.
+Siekiant palengvinti duomenų analizę taip pat gali būti suteikta prieiga prie KoDa JupyterHub.</p>
+</section>
+<section id="kiti-duomenys-ar-duomenu-rinkiniai">
+<h2>Kiti duomenys ar duomenų rinkiniai<a class="headerlink" href="#kiti-duomenys-ar-duomenu-rinkiniai" title="Nuoroda į šią antraštę">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/trafikverket/">Trafikverket Open API</a> - API skirta informacijai apie
+skirta informacijai apie kelių ir geležinkelių eismą
+gauti.</p></li>
+<li><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/sl/">SL’s APIs</a> - API skirtas gauti informaciją apie planuojamą ir
+realaus laiko eismą.</p></li>
+<li><p><a class="reference external" href="https://www.trafiklab.se/api/trafiklab-apis/oxyfi/">Oxyfi-Realtidspositionering</a> - realaus laiko traukinių
+pozicijų duomenys gaunami per Web Socket protokolą;</p></li>
+</ul>
 </section>
 <section id="naudingos-nuorodos">
 <h2>Naudingos nuorodos<a class="headerlink" href="#naudingos-nuorodos" title="Nuoroda į šią antraštę">#</a></h2>
