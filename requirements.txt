@@ -7,7 +7,7 @@ geopandas==0.11.0
 itables==1.1.2
 keplergl==0.3.2
 gtfs-kit==5.2.3
-pyarrow==8.0.0
+pyarrow==9.0.0
 nbstripout==0.5.0
 diagrams==0.21.1
 kaleido==0.2.1
