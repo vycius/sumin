@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pranešimai keleiviams &#8212; Judumo duomenų ekosistemos plėtra</title>
+    <title>Pranešimų keleiviams redaktorius &#8212; Judumo duomenų ekosistemos plėtra</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -57,8 +57,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Indeksas" href="../genindex.html" />
     <link rel="search" title="Paieška" href="../search.html" />
-    <link rel="next" title="Istoriniai duomenys" href="istoriniai-duomenys.html" />
-    <link rel="prev" title="Dinaminių duomenų įvestis" href="dinaminiai-duomenys-ivestis.html" />
+    <link rel="next" title="Duomenų ežeras" href="duomenu-ezeras.html" />
+    <link rel="prev" title="Statinių duomenų redaktorius" href="statiniu-duomenu-redaktorius.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="lt">
     
@@ -305,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Sprendimas
+  Įgyvendinimo rekomendacijos
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -315,34 +315,48 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="nacionalinis-sustojimo-punktu-registras.html">
+  <a class="reference internal" href="nacionalinis-stoteliu-registras.html">
    Nacionalinis stotelių registras
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ivestis-statiniai-duomenys.html">
-   Statinių duomenų įvestis
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="duomenu-redaktorius.html">
+   Duomenų redaktorius
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="statiniu-duomenu-redaktorius.html">
+     Statinių duomenų redaktorius
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Pranešimų keleiviams redaktorius
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="isvestis-statiniai-duomenys.html">
-   Statinių duomenų išvestis
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="duomenu-ezeras.html">
+   Duomenų ežeras
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dinaminiai-duomenys-ivestis.html">
-   Dinaminių duomenų įvestis
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Pranešimai keleiviams
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="istoriniai-duomenys.html">
-   Istoriniai duomenys
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dinaminiai-duomenys-ivestis.html">
+     Dinaminių duomenų įvestis
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -571,8 +585,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
-   Pranešimų keleiviams valdymas
+  <a class="reference internal nav-link" href="#pranesimu-keleiviams-duomenu-modelis">
+   Pranešimų keleiviams duomenų modelis
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -640,7 +654,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pranešimai keleiviams</h1>
+                <h1>Pranešimų keleiviams redaktorius</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -661,8 +675,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pranesimu-keleiviams-valdymas">
-   Pranešimų keleiviams valdymas
+  <a class="reference internal nav-link" href="#pranesimu-keleiviams-duomenu-modelis">
+   Pranešimų keleiviams duomenų modelis
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -731,8 +745,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pranesimai-keleiviams">
-<h1>Pranešimai keleiviams<a class="headerlink" href="#pranesimai-keleiviams" title="Nuoroda į šią antraštę">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pranesimu-keleiviams-redaktorius">
+<h1>Pranešimų keleiviams redaktorius<a class="headerlink" href="#pranesimu-keleiviams-redaktorius" title="Nuoroda į šią antraštę">#</a></h1>
 <p>Keleivis stovi stotelėje ir laukia atvykstančios transporto priemones, tačiau dėl įvykusios didelės avarijos ar
 mieste vykstančio renginio buvo laikinai pakeistas maršrutas. Kaip apie tokius įvykius informuoti stotelėje
 laukiantį ar kelionę planuojantį keleivį?</p>
@@ -759,8 +773,8 @@ standartizuotais formatais verslui, akademijai ir visuomenei per kelionių plana
 </figcaption>
 </figure>
 </section>
-<section id="pranesimu-keleiviams-valdymas">
-<h2>Pranešimų keleiviams valdymas<a class="headerlink" href="#pranesimu-keleiviams-valdymas" title="Nuoroda į šią antraštę">#</a></h2>
+<section id="pranesimu-keleiviams-duomenu-modelis">
+<h2>Pranešimų keleiviams duomenų modelis<a class="headerlink" href="#pranesimu-keleiviams-duomenu-modelis" title="Nuoroda į šią antraštę">#</a></h2>
 <p>Pranešimas keleiviui gali susidėti iš:</p>
 <ul class="simple">
 <li><p>Pranešimo antraštės, teksto ir nuorodos, kurioje pateikiama papildoma informacija (gali būti pateikiama keletu
@@ -1244,17 +1258,17 @@ funkcija);</p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="dinaminiai-duomenys-ivestis.html" title="praeitas page">
+    <a class='left-prev' id="prev-link" href="statiniu-duomenu-redaktorius.html" title="praeitas page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">praeitas</p>
-            <p class="prev-next-title">Dinaminių duomenų įvestis</p>
+            <p class="prev-next-title">Statinių duomenų redaktorius</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="istoriniai-duomenys.html" title="kitas page">
+    <a class='right-next' id="next-link" href="duomenu-ezeras.html" title="kitas page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">kitas</p>
-        <p class="prev-next-title">Istoriniai duomenys</p>
+        <p class="prev-next-title">Duomenų ežeras</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
