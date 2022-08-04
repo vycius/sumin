@@ -1,4 +1,4 @@
-# Pranešimai keleiviams
+# Pranešimų keleiviams redaktorius
 
 Keleivis stovi stotelėje ir laukia atvykstančios transporto priemones, tačiau dėl įvykusios didelės avarijos ar
 mieste vykstančio renginio buvo laikinai pakeistas maršrutas. Kaip apie tokius įvykius informuoti stotelėje
@@ -25,7 +25,7 @@ standartizuotais formatais verslui, akademijai ir visuomenei per kelionių plana
 Google Maps pranešimai keleiviams (žr. *Modified Service* ir *Information*). [Šaltinis](https://www.dailydot.com/debug/google-maps-update-real-time-tracking-transit/).
 ```
 
-## Pranešimų keleiviams valdymas
+## Pranešimų keleiviams duomenų modelis
 
 Pranešimas keleiviui gali susidėti iš:
 

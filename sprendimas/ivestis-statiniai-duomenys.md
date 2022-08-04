@@ -1,1 +1,0 @@
-# Statinių duomenų įvestis

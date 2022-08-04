@@ -1,4 +1,4 @@
-# Statinių duomenų išvestis
+# Duomenų ežeras
 
 ## Vežėjų informacija
 
@@ -36,3 +36,24 @@ stop_id,stop_name,stop_lat,stop_lon,stop_code,stop_desc,zone_id,stop_url,locatio
 3913,Stankutiškės,54.620421,25.389962,,,3913,"https://www.visimarsrutai.lt/#/stop/result?stopId=3913",,,,,,
 4751,Lyta,54.698099,25.493329,,,4751,"https://www.visimarsrutai.lt/#/stop/result?stopId=4751",,,,,,
 ```
+
+## Istoriniai duomenys
+
+### Dinaminių duomenų kaupimas
+| SIRI                   | GTFS Realtime         | Aprašymas |
+|------------------------|-----------------------|-----------|
+| RecordedAtTime         | Timestamp             |           |
+| LineRef                | RouteId               |           |
+| DatedVehicleJourneyRef | TripId                |           |
+| OperatorRef            |                       |           |
+| VehicleLocation        | Latitude ir Longitude |           |
+| Bearing                | Bearing               |           |
+| Velocity               | Speed                 |           |
+| Occupancy              | Occupancy             |           |
+| Delay                  |                       |           |
+| VehicleStatus          |                       |           |
+| VehicleRef             | VehicleDescriptor.id  |           |
+| StopPointRef           | StopId                |           |
+| VehicleAtStop          |                       |           |
+| VehicleMode            |                       |           |
+| InCongestion           | CongestionLevel       |           |

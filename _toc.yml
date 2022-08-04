@@ -43,19 +43,21 @@ parts:
     chapters:
       - file: praktikos/index
         sections:
-        - file: praktikos/norvegija
-        - file: praktikos/svedija
-        - file: praktikos/jungtine-karalyste
+          - file: praktikos/norvegija
+          - file: praktikos/svedija
+          - file: praktikos/jungtine-karalyste
 
-  - caption: Sprendimas
+  - caption: Įgyvendinimo rekomendacijos
     chapters:
       - file: sprendimas/vizija
-      - file: sprendimas/nacionalinis-sustojimo-punktu-registras
-      - file: sprendimas/ivestis-statiniai-duomenys
-      - file: sprendimas/isvestis-statiniai-duomenys
-      - file: sprendimas/dinaminiai-duomenys-ivestis
-      - file: sprendimas/pranesimai-keleiviams
-      - file: sprendimas/istoriniai-duomenys
+      - file: sprendimas/nacionalinis-stoteliu-registras
+      - file: sprendimas/duomenu-redaktorius
+        sections:
+          - file: sprendimas/statiniu-duomenu-redaktorius
+          - file: sprendimas/pranesimai-keleiviams
+      - file: sprendimas/duomenu-ezeras
+        sections:
+          - file: sprendimas/dinaminiai-duomenys-ivestis
 
   - caption: Literatūra
     chapters:
