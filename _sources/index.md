@@ -15,11 +15,22 @@ patrauklesnės.
 :gutter: 3
 
 :::{grid-item-card}
+:link: https://kurklt.lt/projektai/judumas/
+:columns: 12
+:class-header: bg-light
+
+Kurk Lietuvai projekto santrauka ⭐
+^^^
+
+Projekto santrauka Kurk Lietuvai pagrindiniame puslapyje.
+:::
+
+:::{grid-item-card}
 :link: https://judumas.vycius.lt/projektas
 :columns: 12
 :class-header: bg-light
 
-Kurk Lietuvai projektas ✨
+Kurk Lietuvai projekto platesnė informacija ✨
 ^^^
 
 Platesnė informacija apie Kurk Lietuvai projektą „Judumo duomenų ekosistemos plėtra“, projekto naudos, susiję
@@ -30,6 +41,8 @@ strateginiai dokumentai.
 :::{grid-item-card}
 :link: https://judumas.vycius.lt/standartai/
 :class-header: bg-light
+:columns: 12
+
 
 Judumo duomenų standartų apžvalga ✍
 ^^^
@@ -43,6 +56,8 @@ paslaugomis.
 :::{grid-item-card}
 :link: https://judumas.vycius.lt/duomenys/
 :class-header: bg-light
+:columns: 12
+
 
 Viešojo keleivinio transporto duomenų situacija Lietuvoje 💡
 ^^^
@@ -50,6 +65,19 @@ Viešojo keleivinio transporto duomenų situacija Lietuvoje 💡
 Statinių ir dinaminių viešojo keleivinio transporto duomenų šaltiniai, teisinis reguliavimas bei esama situacijos
 Lietuvoje.
 
+:::
+
+:::{grid-item-card}
+:link: https://judumas.vycius.lt/praktikos/
+:class-header: bg-light
+:columns: 12
+
+
+Užsienio šalių gerųjų praktikų apžvalga 🌐
+^^^
+
+Užsienio šalių gerųjų praktikų apžvalga, kurioje aptariami atvirai prieinamų duomenų apie viešąjį transportą 
+duomenų šaltiniai.
 :::
 
 ::::
