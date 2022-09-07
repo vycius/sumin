@@ -1,2 +1,2 @@
 build:
-	jupyter-book build --warningiserror --nitpick .
+	jupyter-book build --nitpick .

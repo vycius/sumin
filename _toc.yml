@@ -32,9 +32,7 @@ parts:
       - file: duomenys/statiniai-duomenys
         sections:
           - file: duomenys/vietinis-susisiekimas
-          - file: duomenys/visa-lietuva
-            sections:
-              - file: duomenys/palyginimas-su-stops-lt
+#          - file: duomenys/visa-lietuva
           - file: duomenys/tolimasis-susisiekimas
           - file: duomenys/vintra-gtfs
       - file: duomenys/dinaminiai-duomenys
@@ -47,24 +45,20 @@ parts:
           - file: praktikos/svedija
           - file: praktikos/jungtine-karalyste
 
-  - caption: Įgyvendinimo rekomendacijos
-    chapters:
-      - file: sprendimas/vizija
-      - file: sprendimas/nacionalinis-stoteliu-registras
-      - file: sprendimas/duomenu-redaktorius
-        sections:
-          - file: sprendimas/statiniu-duomenu-redaktorius
-          - file: sprendimas/pranesimai-keleiviams
-      - file: sprendimas/duomenu-ezeras
-        sections:
-          - file: sprendimas/dinaminiai-duomenys-ivestis
+#  - caption: Įgyvendinimo rekomendacijos
+#    chapters:
+#      - file: sprendimas/vizija
+#      - file: sprendimas/nacionalinis-stoteliu-registras
+#      - file: sprendimas/duomenu-redaktorius
+#        sections:
+#          - file: sprendimas/statiniu-duomenu-redaktorius
+#          - file: sprendimas/pranesimai-keleiviams
+#      - file: sprendimas/duomenu-ezeras
+#        sections:
+#          - file: sprendimas/dinaminiai-duomenys-ivestis
 
-  - caption: Literatūra
+  - caption: Kita
     chapters:
+      - file: sprendimas/pranesimai-keleiviams
       - file: saltiniai
-  - caption: Aplinka
-    chapters:
-      - file: uzrasai
-      - file: apps/apple_maps
-      - file: internal
-      - file: sprendimas/architektura
+#      - file: sprendimas/nacionalinis-stoteliu-registras
